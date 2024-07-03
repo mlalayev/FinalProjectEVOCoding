@@ -1,22 +1,35 @@
 import './ImageSlider.css';
 import React, { useState, useEffect } from 'react';
-// import { TbCircleDotFilled } from "react-icons/tb";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-function ImageSlider({ slides, interval = 3000 }) {
+function ImageSlider({ slides, interval = 8000 }) {
+  
   const [imageIndex, setImageIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh(); 
+    console.log(imageIndex);
+  }, [imageIndex]);
 
   const handleNextImage = () => {
     if (!isSliding) {
       setIsSliding(true);
-      setImageIndex(index => (index === slides.length - 1 ? 0 : index + 1));
+      setImageIndex((index) => (index === slides.length - 1 ? 0 : index + 1));
     }
   };
 
   const handlePrevImage = () => {
     if (!isSliding) {
       setIsSliding(true);
-      setImageIndex(index => (index === 0 ? slides.length - 1 : index - 1));
+      setImageIndex((index) => (index === 0 ? slides.length - 1 : index - 1));
     }
   };
 
@@ -31,7 +44,6 @@ function ImageSlider({ slides, interval = 3000 }) {
 
     window.addEventListener('keydown', handleKeyDown);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -41,13 +53,12 @@ function ImageSlider({ slides, interval = 3000 }) {
     if (isSliding) {
       const timer = setTimeout(() => {
         setIsSliding(false);
-      }, 500); // match the CSS transition duration
+      }, 500); 
 
       return () => clearTimeout(timer);
     }
   }, [isSliding]);
 
-  // Autoslide effect
   useEffect(() => {
     const autoslide = setInterval(() => {
       handleNextImage();
@@ -84,9 +95,15 @@ function ImageSlider({ slides, interval = 3000 }) {
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
             />
-            <div className="slide-caption">
-              <h3>{title}</h3>
-              <p>{caption}</p>
+            <div
+              data-aos="fade-right"
+              className="slide-caption ptag">
+              <p>{title}</p>
+            </div>
+            <div
+              data-aos="fade-right"
+              className="slide-caption hone">
+              <h1>{caption}</h1>
             </div>
           </div>
         ))}
@@ -107,7 +124,6 @@ function ImageSlider({ slides, interval = 3000 }) {
           </defs>
           <path fill="url(#gradient)" d="M49.132 21.984L12.714 48.039a2.516 2.516 0 0 0-1.051 2.043v.006a2.52 2.52 0 0 0 1.059 2.048L49.14 78.023a2.513 2.513 0 0 0 2.612.183a2.508 2.508 0 0 0 1.361-2.236V63.787l32.709.001a2.514 2.514 0 0 0 2.515-2.516l-.001-22.541a2.515 2.515 0 0 0-2.516-2.516H53.114V24.029c0-.94-.53-1.803-1.367-2.237a2.51 2.51 0 0 0-2.615.192" />
         </svg>
-
       </button>
       <button
         onClick={handleNextImage}
@@ -125,7 +141,6 @@ function ImageSlider({ slides, interval = 3000 }) {
           </defs>
           <path fill="url(#gradient)" d="M50.868 78.016l36.418-26.055a2.516 2.516 0 0 0 1.051-2.043v-.006a2.52 2.52 0 0 0-1.059-2.048L50.86 21.977a2.513 2.513 0 0 0-2.612-.183a2.509 2.509 0 0 0-1.361 2.236v12.183l-32.709-.001a2.514 2.514 0 0 0-2.515 2.516l.001 22.541a2.515 2.515 0 0 0 2.516 2.516h32.706v12.187c0 .94.53 1.803 1.366 2.237a2.512 2.512 0 0 0 2.616-.193" />
         </svg>
-
       </button>
       <div
         style={{
@@ -145,7 +160,6 @@ function ImageSlider({ slides, interval = 3000 }) {
             onClick={() => setImageIndex(index)}
           >
             {/* <TbCircleDotFilled aria-hidden /> */}
-
           </button>
         ))}
       </div>

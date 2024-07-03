@@ -4,16 +4,16 @@ import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import './MainPage.css'
 
 function MainPage() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
     const fetchSlides = async () => {
       try {
-        const response = await fetch('../../../IMGSLIDER.json');
+        const response = await fetch('../../../SliderImgText.json');
         const data = await response.json();
-        setSlides(data[i18n.language] || []); // Ensure slides is set to an array, even if data[i18n.language] is undefined
+        setSlides(data[i18n.language] || []);
       } catch (error) {
         console.error('Error fetching the slides data:', error);
       }
