@@ -7,7 +7,7 @@
 .img-slider-img {
   width: 100vw;
   flex-grow: 0;
-  height: 100vh;
+  height: 500px;
   display: block;
   flex-shrink: 0;
   object-fit: cover;
@@ -101,18 +101,33 @@
 }
 
 .slide-caption {
-  left: 50%;
+  left: 5%;
+  width: 90vw;
   color: #fff;
-  bottom: 10%;
+  bottom: 60%;
   padding: 10px;
+  cursor: default;
+  font-size: 16px;
   position: absolute;
   text-align: center;
   border-radius: 5px;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif;
+}
+
+.ptag{
+  letter-spacing: 4px;
+}
+
+.hone {
+  bottom: 34%;
+  /* font-size: 53px; */
+  font-size: 23px;
+  font-weight: lighter;
 }
 
 .img-slider-btn {
+  display: none;
   top: 50%;
   z-index: 1;
   color: white;
