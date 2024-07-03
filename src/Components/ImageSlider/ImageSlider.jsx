@@ -16,7 +16,6 @@ function ImageSlider({ slides, interval = 8000 }) {
 
   useEffect(() => {
     AOS.refresh(); 
-    console.log(imageIndex);
   }, [imageIndex]);
 
   const handleNextImage = () => {
