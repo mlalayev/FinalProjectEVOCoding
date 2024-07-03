@@ -1,6 +1,6 @@
 import './ImageSlider.css';
 import React, { useState, useEffect } from 'react';
-import { TbCircleDotFilled } from "react-icons/tb";
+// import { TbCircleDotFilled } from "react-icons/tb";
 
 function ImageSlider({ slides, interval = 3000 }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -144,7 +144,7 @@ function ImageSlider({ slides, interval = 3000 }) {
             aria-label={`View Image ${index + 1}`}
             onClick={() => setImageIndex(index)}
           >
-            <TbCircleDotFilled aria-hidden />
+            {/* <TbCircleDotFilled aria-hidden /> */}
 
           </button>
         ))}
