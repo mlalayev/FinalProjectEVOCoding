@@ -1,6 +1,8 @@
 {
     "header": {
         "becomeateacher": "Become A Teacher",
-        "myprofile": "My Profile"
+        "myprofile": "My Profile",
+        "joinliveclass":"Join Live Class",
+        "home":"Home"
     }
 }

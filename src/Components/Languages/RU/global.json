@@ -1,6 +1,8 @@
 {
     "header": {
         "becomeateacher": "Стать учителем",
-        "myprofile": "Мой профиль"
+        "myprofile": "Мой профиль",
+        "joinliveclass": "Присоединиться",
+        "home": "Главная страница"
     }
 }
