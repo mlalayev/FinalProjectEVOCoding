@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './Components/MainPage/MainPage.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './Components/I18N/I18N.jsx';
@@ -9,12 +9,16 @@ function App() {
   return (
     <Router>
       <I18nextProvider i18n={i18n}>
-        <Switch>
-          <Route path="/home">
+        <Routes>
+          <Route path="/" element={<>
             <Header />
             <MainPage />
-          </Route>
-        </Switch>
+          </>} />
+          <Route path='/buraPathyazin' element={<>
+            <Header />
+            <MainPage />
+          </>} />
+        </Routes>
       </I18nextProvider>
     </Router>
   );
