@@ -49,7 +49,7 @@ function Header() {
               {t('header.home')}
               {openSubMenu === 'home' && (
                 <div className="submenu">
-                  <a href="/homepage-style-one" className='submenu-item'>Homepage Style One</a>
+                  <a href="/buraPathyazin" className='submenu-item'>Homepage Style One</a>
                   <a href="/homepage-style-two" className='submenu-item'>Homepage Style Two</a>
                   <a href="/homepage-style-three" className='submenu-item'>Homepage Style Three</a>
                   <a href="/homepage-style-four" className='submenu-item'>Homepage Style Four</a>

@@ -1,18 +1,27 @@
-import React from 'react'
-import MainPage from './Components/MainPage/MainPage.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './Components/MainPage/MainPage.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './Components/I18N/I18N.jsx';
 import Header from './Components/Common/Header/Header.jsx';
 
 function App() {
   return (
-    <>
+    <Router>
       <I18nextProvider i18n={i18n}>
-        <Header/>
-        <MainPage />
+        <Routes>
+          <Route path="/" element={<>
+            <Header />
+            <MainPage />
+          </>} />
+          <Route path='/buraPathyazin' element={<>
+            <Header />
+            <MainPage />
+          </>} />
+        </Routes>
       </I18nextProvider>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
