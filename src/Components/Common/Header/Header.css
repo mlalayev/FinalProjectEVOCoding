@@ -112,10 +112,10 @@
     font-size: var(--14-px);
     color: var(--black-color);
     display: var(--display-flex);
-    transition: var(--transition-medium);
     align-items: var(--display-center);
     font-weight: var(--400-font-weight);
     font-family: var(--Open-font-family);
+    transition: var(--transition-medium);
     text-decoration: var(--display-none);
     justify-content: var(--display-center);
 }
@@ -127,11 +127,12 @@
 .header-lower {
     width: 100vw;
     height: 70px;
+    padding: 0 60px;
     display: var(--display-flex);
     text-align: var(--display-center);
+    position: var(--position-relative);
     align-items: var(--display-center);
-    justify-content: var(--display-space-around);
-    padding: 0 60px;
+    justify-content: var(--display-space-between);
 }
 
 .logo {
@@ -159,41 +160,31 @@
     border: 1px solid var(--main-blue-color);
 }
 
-.header-lower {
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    justify-content: var(--display-space-between);
-    align-items: center;
-}
-
 .menu {
     left: 0%;
     top: 70px;
     width: 100vw;
     z-index: 1000;
-    text-align: left;
-    background-color: white;
+    text-align: var(--text-left);
     position: var(--position-absolute);
+    background-color: var(--white-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .menu-item {
     color: #333;
-    padding: 16px;
-    display: block;
-    text-decoration: none;
+    padding: var(--16-px);
+    display: var(--display-block);
     border-bottom: 1px solid #ddd;
+    text-decoration: var(--display-none);
 }
 
 .menu-item:hover {
-    background-color: #f5f5f5;
+    background-color: var(--grayish-color);
 }
 
 .submenu{
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
 }
