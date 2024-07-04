@@ -1,6 +1,8 @@
 {
     "header": {
         "becomeateacher": "Müəllim ol",
-        "myprofile": "Profilim"
+        "myprofile": "Profilim",
+        "joinliveclass":"Join Live Class",
+        "home":"Əsas səhifə"
     }
 }
