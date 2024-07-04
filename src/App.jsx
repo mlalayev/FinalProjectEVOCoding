@@ -14,10 +14,12 @@ function App() {
             <Header />
             <MainPage />
           </>} />
-          <Route path='/buraPathyazin' element={<>
-            <Header />
-            <MainPage />
-          </>} />
+          <Route path='/salam' element={
+            <>
+              <Header />
+              <MainPage />
+            </>
+          } />
         </Routes>
       </I18nextProvider>
     </Router>
