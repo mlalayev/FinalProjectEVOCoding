@@ -128,7 +128,9 @@ function Header() {
             )}
           </li>
           <li onClick={() => handleSubMenuToggle('pages')}>
+
             {t('header.pages')}Farhad
+
             {openSubMenu === 'pages' && (
               <ul className='submenu-desktop'>
                 <li><a href="/pages">Page One</a></li>
