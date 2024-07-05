@@ -2,7 +2,11 @@
     "header": {
         "becomeateacher": "Müəllim ol",
         "myprofile": "Profilim",
-        "joinliveclass":"Join Live Class",
-        "home":"Əsas səhifə"
+        "joinliveclass": "Join Live Class",
+        "home": "Əsas səhifə",
+        "allCourses": "Kurslarımız",
+        "blogClassic": "Bloq",
+        "pages": "Səhifələr",
+        "contactUs":"Bizimlə Əlaqə"
     }
 }

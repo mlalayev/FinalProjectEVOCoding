@@ -22,21 +22,21 @@
   "az": [
     {
       "image": "./src/assets/sliderone.png",
-      "title": "TƏŞKİLATIMIZA XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır",
-      "button": "Our Courses"
+      "title": "TƏŞKİLATIMIZA XOŞ GƏLDİNİZ",
+      "caption": "Təhsil həyatda uğur qazanmağın ən yaxşı açarıdır",
+      "button": "Kurslarımız"
     },
     {
       "image": "./src/assets/slidertwo.png",
-      "title": "UNİVERSİTETİMİZƏ XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır",
-      "button": "Our Courses"
+      "title": "UNİVERSİTETİMİZƏ XOŞ GƏLDİNİZ",
+      "caption": "Təhsil həyatda uğur qazanmağın ən yaxşı açarıdır",
+      "button": "Kurslarımız"
     },
     {
       "image": "./src/assets/sliderthree.png",
-      "title": "ONLİNE TƏHSİLƏ XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil millətin dayaq nöqtəsidir",
-      "button": "Our Courses"
+      "title": "ONLAYN TƏHSİLƏ XOŞ GƏLDİNİZ",
+      "caption": "Təhsil bir millətin onurğa sütunudur",
+      "button": "Kurslarımız"
     }
   ],
   "ru": [
@@ -44,19 +44,19 @@
       "image": "./src/assets/sliderone.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В НАШУ ОРГАНИЗАЦИЮ",
       "caption": "Образование - лучший ключ к успеху в жизни",
-      "button": "Our Courses"
+      "button": "Наши Курсы"
     },
     {
       "image": "./src/assets/slidertwo.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В НАШ УНИВЕРСИТЕТ",
       "caption": "Образование - лучший ключ к успеху в жизни",
-      "button": "Our Courses"
+      "button": "Наши Курсы"
     },
     {
       "image": "./src/assets/sliderthree.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В ОНЛАЙН ОБРАЗОВАНИЕ",
-      "caption": "Образование - основа нации",
-      "button": "Our Courses"
+      "caption": "Образование - это хребет нации",
+      "button": "Наши Курсы"
     }
   ]
 }
