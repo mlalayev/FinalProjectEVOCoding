@@ -20,13 +20,12 @@ function Header() {
     i18n.changeLanguage(lng);
   };
 
-  const toggleSubMenu = (menu) => {
+  const handleSubMenuToggle = (menu) => {
     setOpenSubMenu(openSubMenu === menu ? null : menu);
   };
 
   return (
     <header>
-
       <LanguageDropdown changeLanguage={changeLanguage} className='salam' />
 
       <div className="header-upper">
@@ -41,10 +40,10 @@ function Header() {
       </div>
 
       <div className="header-lower">
-        <RxHamburgerMenu size={30} onClick={toggleMenu} />
+        <RxHamburgerMenu size={30} onClick={toggleMenu} className='hamburger-icon' />
         {isMenuOpen && (
           <div className="menu">
-            <div className='menu-item' onClick={() => toggleSubMenu('home')}>
+            <div className='menu-item' onClick={() => handleSubMenuToggle('home')}>
               {t('header.home')}
               {openSubMenu === 'home' && (
                 <div className="submenu">
@@ -55,8 +54,8 @@ function Header() {
                 </div>
               )}
             </div>
-            <div className='menu-item' onClick={() => toggleSubMenu('all-courses')}>
-              All Courses
+            <div className='menu-item' onClick={() => handleSubMenuToggle('all-courses')}>
+              {t('header.allCourses')}
               {openSubMenu === 'all-courses' && (
                 <div className="submenu">
                   <a href="/all-courses" className='submenu-item'>Course One</a>
@@ -66,8 +65,8 @@ function Header() {
                 </div>
               )}
             </div>
-            <div className='menu-item' onClick={() => toggleSubMenu('blog-classic')}>
-              Blog Classic
+            <div className='menu-item' onClick={() => handleSubMenuToggle('blog-classic')}>
+              {t('header.blogClassic')}
               {openSubMenu === 'blog-classic' && (
                 <div className="submenu">
                   <a href="/blog-classic" className='submenu-item'>Blog One</a>
@@ -77,8 +76,8 @@ function Header() {
                 </div>
               )}
             </div>
-            <div className='menu-item' onClick={() => toggleSubMenu('pages')}>
-              Pages
+            <div className='menu-item' onClick={() => handleSubMenuToggle('pages')}>
+              {t('header.pages')}
               {openSubMenu === 'pages' && (
                 <div className="submenu">
                   <a href="/pages" className='submenu-item'>Page One</a>
@@ -88,11 +87,60 @@ function Header() {
                 </div>
               )}
             </div>
-            <a href="/contact-us" className='menu-item'>Contact Us</a>
+            <a href="/contact-us" className='menu-item'>{t('header.contactUs')}</a>
           </div>
         )}
 
         <img src={logo} alt="logo" className='logo' />
+
+        <ul className='navigation-menu'>
+          <li onClick={() => handleSubMenuToggle('home')}>
+            {t('header.home')}
+            {openSubMenu === 'home' && (
+              <ul className='submenu-desktop'>
+                <li><a href="/salam">Homepage Style One</a></li>
+                <li><a href="/homepage-style-two">Homepage Style Two</a></li>
+                <li><a href="/homepage-style-three">Homepage Style Three</a></li>
+                <li><a href="/homepage-style-four">Homepage Style Four</a></li>
+              </ul>
+            )}
+          </li>
+          <li onClick={() => handleSubMenuToggle('all-courses')}>
+            {t('header.allCourses')}
+            {openSubMenu === 'all-courses' && (
+              <ul className='submenu-desktop'>
+                <li><a href="/all-courses">Course One</a></li>
+                <li><a href="/all-courses">Course Two</a></li>
+                <li><a href="/all-courses">Course Three</a></li>
+                <li><a href="/all-courses">Course Four</a></li>
+              </ul>
+            )}
+          </li>
+          <li onClick={() => handleSubMenuToggle('blog-classic')}>
+            {t('header.blogClassic')}
+            {openSubMenu === 'blog-classic' && (
+              <ul className='submenu-desktop'>
+                <li><a href="/blog-classic">Blog One</a></li>
+                <li><a href="/blog-classic">Blog Two</a></li>
+                <li><a href="/blog-classic">Blog Three</a></li>
+                <li><a href="/blog-classic">Blog Four</a></li>
+              </ul>
+            )}
+          </li>
+          <li onClick={() => handleSubMenuToggle('pages')}>
+            {t('header.pages')}
+            {openSubMenu === 'pages' && (
+              <ul className='submenu-desktop'>
+                <li><a href="/pages">Page One</a></li>
+                <li><a href="/pages">Page Two</a></li>
+                <li><a href="/pages">Page Three</a></li>
+                <li><a href="/pages">Page Four</a></li>
+              </ul>
+            )}
+          </li>
+          <li><a href="/contact-us" className='menu-item' >{t('header.contactUs')}</a></li>
+        </ul>
+
         <button className='header-button'>{t('header.joinliveclass')}</button>
       </div>
     </header>

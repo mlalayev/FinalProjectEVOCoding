@@ -2,7 +2,11 @@
     "header": {
         "becomeateacher": "Стать учителем",
         "myprofile": "Мой профиль",
-        "joinliveclass": "Присоединиться",
-        "home": "Главная страница"
+        "joinliveclass": "Присоединиться к классу",
+        "home": "Главная страница",
+        "allCourses": "Все курсы",
+        "blogClassic": "Блог",
+        "pages": "Страницы",
+        "contactUs": "Связаться с нами"
     }
 }
