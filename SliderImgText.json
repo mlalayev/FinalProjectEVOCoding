@@ -3,51 +3,60 @@
     {
       "image": "./src/assets/sliderone.png",
       "title": "WELCOME TO OUR ORGANIZATION",
-      "caption": "Education is the best key to success in life"
+      "caption": "Education is the best key to success in life",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/slidertwo.png",
       "title": "WELCOME TO OUR VARSITY",
-      "caption": "Education is the best key to success in life"
+      "caption": "Education is the best key to success in life",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/sliderthree.png",
       "title": "WELCOME TO ONLINE EDUCATION",
-      "caption": "Education is the backbone of a nation"
+      "caption": "Education is the backbone of a nation",
+      "button": "Our Courses"
     }
   ],
   "az": [
     {
       "image": "./src/assets/sliderone.png",
       "title": "TƏŞKİLATIMIZA XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır"
+      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/slidertwo.png",
       "title": "UNİVERSİTETİMİZƏ XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır"
+      "caption": "Təhsil həyatda uğurun ən yaxşı açarıdır",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/sliderthree.png",
       "title": "ONLİNE TƏHSİLƏ XOŞ GƏLMİSİNİZ",
-      "caption": "Təhsil millətin dayaq nöqtəsidir"
+      "caption": "Təhsil millətin dayaq nöqtəsidir",
+      "button": "Our Courses"
     }
   ],
   "ru": [
     {
       "image": "./src/assets/sliderone.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В НАШУ ОРГАНИЗАЦИЮ",
-      "caption": "Образование - лучший ключ к успеху в жизни"
+      "caption": "Образование - лучший ключ к успеху в жизни",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/slidertwo.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В НАШ УНИВЕРСИТЕТ",
-      "caption": "Образование - лучший ключ к успеху в жизни"
+      "caption": "Образование - лучший ключ к успеху в жизни",
+      "button": "Our Courses"
     },
     {
       "image": "./src/assets/sliderthree.png",
       "title": "ДОБРО ПОЖАЛОВАТЬ В ОНЛАЙН ОБРАЗОВАНИЕ",
-      "caption": "Образование - основа нации"
+      "caption": "Образование - основа нации",
+      "button": "Our Courses"
     }
   ]
 }

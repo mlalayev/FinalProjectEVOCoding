@@ -82,7 +82,7 @@ function ImageSlider({ slides, interval = 8000 }) {
           overflow: 'hidden',
         }}
       >
-        {slides.map(({ image, title, caption }, index) => (
+        {slides.map(({ image, title, caption, button }, index) => (
           <div
             key={image}
             className="slide"
@@ -103,6 +103,8 @@ function ImageSlider({ slides, interval = 8000 }) {
               data-aos="fade-right"
               className="slide-caption hone">
               <h1>{caption}</h1>
+
+              <button className='slider-button' >{button}</button>
             </div>
           </div>
         ))}

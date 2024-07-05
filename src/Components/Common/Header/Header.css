@@ -81,12 +81,16 @@
     --cursor-pointer: pointer;
     --cursor-default: default;
     --cursor-not-allowed: not-allowed;
-
+  
     /* Box-Sizing */
     --border-sizing: border-box;
     --content-sizing: content-box;
-  }
   
+    /* Object-Fit */
+    --object-fit-fill: fill;
+    --object-fit-cover: cover;
+    --object-fit-contain: contain;
+  }
 
 .header-upper {
     width: 100%;
@@ -206,5 +210,38 @@ header {
 }
 
 .flag {
-    width: 20px;
+    width: var(--20-px);
+}
+
+@media screen and (min-width:800px) {
+    .header-upper {
+        height: 50px;
+        padding: 0 30px;
+        flex-direction: var(--flex-direction-row);
+    }
+
+    .header-upper-up {
+        width: 100%;
+        gap: var(--40-px);
+        display: var(--display-flex);
+        align-items: var(--display-center);
+        justify-content: var(--display-center);
+        flex-direction: var(--flex-direction-row);
+    }
+
+    .header-upper-down{
+        border: var(--display-none);
+    }
+
+    .margin-bottom {
+        margin-bottom: var(--display-none);
+    }
+
+    .margin-top {
+        margin-top: var(--display-none);
+    }
+
+    .header-lower{
+        padding: 0 80px;
+    }
 }

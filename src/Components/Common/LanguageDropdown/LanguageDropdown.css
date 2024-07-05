@@ -6,7 +6,7 @@
 
 .language-dropdown {
   width: 50px;
-  top: var(--10-px);
+  top: var(--6-px);
   right: var(--10-px);
   display: var(--display-flex);
   box-sizing: var(--content-sizing);
@@ -48,4 +48,7 @@
 
 .language-menu li:hover {
   background-color: var(--gray-color);
+}
+
+@media screen and (min-width:780px) {
 }
