@@ -5,18 +5,19 @@ import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from '../../../assets/logo.png';
+import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   const toggleSubMenu = (menu) => {
@@ -25,11 +26,9 @@ function Header() {
 
   return (
     <header>
-      <ul className="language-menu">
-        <li onClick={() => changeLanguage('en')}>English</li>
-        <li onClick={() => changeLanguage('az')}>Azərbaycan</li>
-        <li onClick={() => changeLanguage('ru')}> Русский</li>
-      </ul>
+
+      <LanguageDropdown changeLanguage={changeLanguage} className='salam' />
+
       <div className="header-upper">
         <div className="header-upper-up">
           <a href="" className='header-a-tag margin-bottom'><FaPhone color='#2772FF' /> +464 145 684 325</a>
