@@ -1,5 +1,5 @@
 import './Header.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaPhone } from "react-icons/fa6";
 import logo from '../../../assets/logo.png';
 import { FaRegEnvelope } from "react-icons/fa";
@@ -12,6 +12,7 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,6 +25,19 @@ function Header() {
   const handleSubMenuToggle = (menu) => {
     setOpenSubMenu(openSubMenu === menu ? null : menu);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setOpenSubMenu(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header>
@@ -40,7 +54,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="header-lower">
+      <div className="header-lower" ref={menuRef}>
         <RxHamburgerMenu size={30} onClick={toggleMenu} className='hamburger-icon' />
         {isMenuOpen && (
           <div className="menu">

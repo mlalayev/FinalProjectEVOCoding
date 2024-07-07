@@ -306,3 +306,21 @@ header {
         justify-content: var(--display-center);
     }
 }
+
+
+.arrow-down {
+    transition: transform var(--transition-medium);
+  }
+  
+  .arrow-down.open {
+    transform: rotate(180deg);
+  }
+  
+  .submenu-desktop, .submenu {
+      z-index: 1000;
+    position: var(--position-absolute);
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
