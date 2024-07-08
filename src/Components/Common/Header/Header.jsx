@@ -161,7 +161,7 @@ function Header() {
         </ul>
 
         <button className='header-button'>{t('header.joinliveclass')}</button>
-      </div>s
+      </div>
     </header>
   );
 }
