@@ -69,10 +69,10 @@ function Header() {
               {t('header.blogClassic')}
               {openSubMenu === 'blog-classic' && (
                 <div className="submenu">
-                  <a href="/blog-classic" className='submenu-item'>Blog One</a>
-                  <a href="/blog-classic" className='submenu-item'>Blog Two</a>
-                  <a href="/blog-classic" className='submenu-item'>Blog Three</a>
-                  <a href="/blog-classic" className='submenu-item'>Blog Four</a>
+                  <a href="/blog" className='submenu-item'>Blog One</a>
+                  <a href="/blog" className='submenu-item'>Blog Two</a>
+                  <a href="/blog" className='submenu-item'>Blog Three</a>
+                  <a href="/blog" className='submenu-item'>Blog Four</a>
                 </div>
               )}
             </div>
