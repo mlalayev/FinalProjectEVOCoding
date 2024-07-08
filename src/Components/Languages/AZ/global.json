@@ -8,5 +8,9 @@
         "blogClassic": "Bloq",
         "pages": "Səhifələr",
         "contactUs":"Bizimlə Əlaqə"
+    },
+    "pages": {
+        "AboutTwoContainer": "Varsity təhsil Bootstrap Premium Şablonudur",
+        "AboutTwoContainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz."
     }
 }
