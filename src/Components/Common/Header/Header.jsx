@@ -92,6 +92,9 @@ function Header() {
                   <a href="/blog" className='submenu-item'>Blog Two</a>
                   <a href="/blog" className='submenu-item'>Blog Three</a>
                   <a href="/blog" className='submenu-item'>Blog Four</a>
+                </div>
+              )}
+              {openSubMenu === 'blog-classic' && (
                 <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                   <a href="/blog-classic" className='submenu-item'>Blog One</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Two</a>
@@ -112,10 +115,10 @@ function Header() {
                 </div>
               )}
             </div>
-            <a href="/contact-us" className='menu-item'>{t('header.contactUs')}</a>
           </div>
         )}
 
+        <a href="/contact-us" className='menu-item'>{t('header.contactUs')}</a>
         <img src={logo} alt="logo" className='logo' />
 
         <ul className='navigation-menu'>
@@ -168,6 +171,7 @@ function Header() {
 
         <button className='header-button'>{t('header.joinliveclass')}</button>
       </div>
+
     </header>
   );
 }
