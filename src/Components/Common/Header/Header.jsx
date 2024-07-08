@@ -87,6 +87,11 @@ function Header() {
               {t('header.blogClassic')}
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} />
               {openSubMenu === 'blog-classic' && (
+                <div className="submenu">
+                  <a href="/blog" className='submenu-item'>Blog One</a>
+                  <a href="/blog" className='submenu-item'>Blog Two</a>
+                  <a href="/blog" className='submenu-item'>Blog Three</a>
+                  <a href="/blog" className='submenu-item'>Blog Four</a>
                 <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                   <a href="/blog-classic" className='submenu-item'>Blog One</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Two</a>

@@ -4,6 +4,9 @@ import MainPage from './Components/MainPage/MainPage.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './Components/I18N/I18N.jsx';
 import Header from './Components/Common/Header/Header.jsx';
+import Blog from './Components/Blog/Blog.jsx';
+
+
 
 function App() {
   return (
@@ -21,6 +24,12 @@ function App() {
               <MainPage />
             </>
           } />
+          <Route path='/Blog' element={
+            <>
+            <Header/>
+            <Blog/>
+            </>
+          }/>
            <Route path='/course' element={
             <>
               <Header />
