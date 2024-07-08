@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<>
             <Header />
             <MainPage />
+            <Footer />
           </>} />
           <Route path='/salam' element={
             <>
@@ -29,6 +30,19 @@ function App() {
             <Blog/>
             </>
           }/>
+           <Route path='/course' element={
+            <>
+              <Header />
+              <Course/>
+            </>
+          } />
+
+           <Route path='/view' element={
+            <>
+              <Header/>
+              <View/>
+            </>
+          } />
         </Routes>
       </I18nextProvider>
     </Router>

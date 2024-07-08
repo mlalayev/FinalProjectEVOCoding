@@ -1,0 +1,185 @@
+.course{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.course .home-course{
+    gap: 5px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+/* home>course finished */
+.course .search{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.search .search-right{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.search-right #text{
+    width: 300px;
+    height: 50px;
+    font-family: cursive;
+    border-radius: 10px;
+}
+.search-right p{
+    margin-top: 14px;
+    cursor: pointer;
+}
+.search-right .inputSearch{
+    position: relative;
+}
+.inputSearch p{
+    position: absolute;
+    left: 260px;
+    bottom:10px;
+}
+/* search finished */
+
+.course .cards{
+    width: 90%;
+    min-height: 400px;
+    gap: 60px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid silver;
+    background-color:#FFFFFF;
+}
+
+.cards .photo{
+    width: 30%;
+    height: 350px;
+    background-color: red;
+}
+.photo img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.cards .information{
+    width: 60%;
+    height: 350px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+/* cards structure finished */
+
+.button_up {
+    position: relative;
+    background: #007bff; 
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  .button_up:before, .button_up:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+  }
+  
+  .button_up:before {
+    left: 0;
+    border-color: #007bff transparent transparent transparent;
+  }
+  
+  .button_up:after {
+    right: 0;
+    border-color: #007bff transparent transparent transparent;
+  }
+  /* cards logo finished */
+
+.information .card_up{
+    display: flex;
+    gap: 25px;
+}
+.card_up a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+/* card_up finished */
+
+.information .card_icons{
+    display: flex;
+    gap: 30px;
+}
+.card_icons .icon{
+    display: flex;
+    gap: 7px;
+}
+.icon span{
+    color: #007bff;
+    font-size: 18px;
+}
+.icon p{
+    font-size: 18px;
+}
+
+/* card information finished */
+
+.card_text p{
+    font-size: 23px;
+    font-family: Georgia, serif;
+    color: rgb(150, 132, 132);
+}
+
+/* card_text finished */
+
+
+
+.card_price{
+    display: flex;
+    justify-content: space-between;
+}
+.card_price button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    font-family: system-ui;
+    background-color: #007bff;
+}
+
+.card_price p{
+    font-size: 22px;
+}
+/* card price finished */
+
+.course_pages{
+    width: 90%;
+    gap: 20px;
+    display: flex;
+}
+.course_pages button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px silver;
+}

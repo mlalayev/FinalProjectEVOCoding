@@ -1,12 +1,17 @@
 {
     "header": {
-        "becomeateacher": "Become a Teacher",
-        "myprofile": "My Profile",
-        "joinliveclass": "Join Live Class",
         "home": "Home",
+        "pages": "Pages",
+        "contactUs": "Contact Us",
+        "myprofile": "My Profile",
         "allCourses": "All Courses",
         "blogClassic": "Blog Classic",
-        "pages": "Pages",
-        "contactUs": "Contact Us"
+        "joinliveclass": "Join Live Class",
+        "becomeateacher": "Become a Teacher"
+    },
+    "footer": {
+        "popularcourses": "Popular Courses",
+        "copyright": "© Copyright 2023 Design by MhrTheme. All rights reserved.",
+        "firsttext": "Loo faff about cockup Harry baking cakes hunky dory mush happy days on your bike mate."
     }
 }

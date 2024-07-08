@@ -1,0 +1,277 @@
+.view{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.view .course_home{
+    gap: 5px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+/* view structure */
+
+/* card start */
+.view .view_card{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#442E66;
+}
+.view_card .card{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card .card_up{
+    display: flex;
+    gap: 300px;
+    color:#FFF;
+    align-items: center;
+    justify-content: start;
+}
+.card_up .up_left{
+    display: flex;
+    gap: 20px;
+}
+.up_left .up_photo{
+    width: 70px;
+    height: 70px;
+}
+.up_photo img{
+    width: 100%;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.up_left .up_info{
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    flex-direction: column;
+}
+.view_card .card_middle{
+    color: #FFF;
+}
+
+/* icons */
+.view_card .card_down{
+    display: flex;
+    gap: 30px;
+}
+.card_down .down_icon{
+    display: flex;
+    gap: 7px;
+}
+.down_icon span{
+    color: #007bff;
+    font-size: 18px;
+}
+.down_icon p{
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+/* ... */
+
+.view .view_information{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view_information .info_left{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    
+}
+
+.view_information .info_right{
+    width:26%;
+    height: 720px;
+    position: relative;
+    display: flex;
+    box-shadow: 2px 2px 2px rgb(176, 175, 175);
+    flex-direction: column;
+    bottom: 200px;
+    background-color:#FFF;
+}
+
+/* ..info_photo.. */
+
+.info_right .info_photo{
+ width: 100%;
+ height: 300px;
+
+}
+.info_photo img{
+    height: 250px;
+    width: 100%;
+}
+
+/* ..info_price */
+.info_right .info_price{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.info_price h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+/* ..info_btn */
+
+.info_right .info_btn{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_btn button{
+    width: 80%;
+    height: 50px;
+    font-size: 15px;
+    border: 0.5 solid silver;
+}
+
+
+/* ..info_up */
+
+.info_right .info_up{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ..info_icons */
+
+.info_right .info_icons{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    font-size: 20px;
+    color: #007bff;
+    gap: 10px;
+    justify-content: center;
+}
+/* info_text */
+
+.info_right .info_text{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    font-size: 20px;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.info_text p{
+    line-height: 30px;
+    color: #626a77;
+    font-family: "Poppins", sans-serif;
+}
+
+/* requaments side!!! */
+
+.info_left .requaments{
+    width: 94%;
+    height: 600px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(188, 184, 184);
+}
+.requaments .requaments_up{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(181, 187, 211, 0.15);
+    justify-content: space-between;
+    
+}
+.requaments .requaments_down{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.requaments .requaments_downTwo{
+    display: none;
+}
+
+.requaments_down .requaments_text{
+    width: 100%;
+    height:100px ;
+    font-size: 20px;
+    display: flex;
+    padding-left: 15px;
+    justify-content: start;
+    align-items: center;
+  
+}
+
+
+/* ../?../ */
+.info_left_down{
+    width: 94%;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.info_left_down .left_up{
+    width: 100%;
+    height: 80px;
+    display: flex;
+   
+}
+.info_left_down .left_down{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.left_up .up_select{
+    width: 25%;
+    height:80px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(181, 187, 211, 0.15);
+}
+.up_select:first-of-type{
+    background-color: #FFF;
+    border-top: 5px solid #007bff;
+    color: #007bff;
+}
