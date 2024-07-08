@@ -115,16 +115,14 @@ function ImageSlider({ slides, interval = 8000 }) {
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
             />
-            <div
-              className={`slide-caption ptag ${imageIndex === index && animateCaption ? 'active' : ''}`}
-            >
-              <p>{title}</p>
-            </div>
-            <div
-              className={`slide-caption hone ${imageIndex === index && animateText ? 'active' : ''}`}
-            >
-              <h1>{caption}</h1>
-              <button className='slider-button'>{button}</button>
+            <div className="textholder">
+              <div
+                className={`slide-caption ptag ${imageIndex === index && animateCaption ? 'active' : ''}`}
+              >
+                <p className='ptag'>{title}</p>
+                <h1 className='hone' >{caption}</h1>
+                <button className='slider-button'>{button}</button>
+              </div>
             </div>
           </div>
         ))}
