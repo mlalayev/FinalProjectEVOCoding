@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
-import { Link } from 'react-router-dom';
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -61,9 +60,9 @@ function Header() {
           <div className="menu">
             <div className='menu-item' onClick={() => handleSubMenuToggle('home')}>
               {t('header.home')}
-              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} />
+              <RiArrowDownSLine className={arrow-down ${openSubMenu === 'home' ? 'open' : ''}} />
               {openSubMenu === 'home' && (
-                <div className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
+                <div className="submenu">
                   <a href="/salam" className='submenu-item'>Homepage Style One</a>
                   <a href="/homepage-style-two" className='submenu-item'>Homepage Style Two</a>
                   <a href="/homepage-style-three" className='submenu-item'>Homepage Style Three</a>
@@ -73,9 +72,9 @@ function Header() {
             </div>
             <div className='menu-item' onClick={() => handleSubMenuToggle('all-courses')}>
               {t('header.allCourses')}
-              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} />
+              <RiArrowDownSLine className={arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}} />
               {openSubMenu === 'all-courses' && (
-                <div className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
+                <div className="submenu">
                   <a href="/all-courses" className='submenu-item'>Course One</a>
                   <a href="/all-courses" className='submenu-item'>Course Two</a>
                   <a href="/all-courses" className='submenu-item'>Course Three</a>
@@ -85,30 +84,31 @@ function Header() {
             </div>
             <div className='menu-item' onClick={() => handleSubMenuToggle('blog-classic')}>
               {t('header.blogClassic')}
-              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} />
+              <RiArrowDownSLine className={arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}} />
               {openSubMenu === 'blog-classic' && (
                 <div className="submenu">
-                  <a href="/blog" className='submenu-item'>Blog One</a>
-                  <a href="/blog" className='submenu-item'>Blog Two</a>
-                  <a href="/blog" className='submenu-item'>Blog Three</a>
-                  <a href="/blog" className='submenu-item'>Blog Four</a>
-                <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                   <a href="/blog-classic" className='submenu-item'>Blog One</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Two</a>
-                  <a href="/blog-classic" className='submenu-item'>Blog Three</a>
+
+
+<a href="/blog-classic" className='submenu-item'>Blog Three</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Four</a>
                 </div>
               )}
             </div>
             <div className='menu-item' onClick={() => handleSubMenuToggle('pages')}>
               {t('header.pages')}
-              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
+              <RiArrowDownSLine className={arrow-down ${openSubMenu === 'pages' ? 'open' : ''}} />
               {openSubMenu === 'pages' && (
-                <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-                  <a href="/pages" className='submenu-item'>Page One</a>
-                  <a href="/pages" className='submenu-item'>Page Two</a>
-                  <a href="/pages" className='submenu-item'>Page Three</a>
-                  <a href="/pages" className='submenu-item'>Page Four</a>
+                <div className="submenu">
+                <a href="/aboutus" className='submenu-item'>About Us</a>
+                <a href="/events" className='submenu-item'>Events</a>
+                <a href="/instructor" className='submenu-item'>Instructor</a>
+                <a href="/testimonial" className='submenu-item'>Testimonial</a>
+                <a href="/samplepage" className='submenu-item'>Sample Page</a>
+                <a href="/pageleftsidebar" className='submenu-item'>Page Left Sidebar</a>
+                <a href="/pagerightsidebar" className='submenu-item'>Page Right Sidebar</a>
+                <a href="/404page" className='submenu-item'>404 Page</a>
                 </div>
               )}
             </div>
@@ -116,13 +116,13 @@ function Header() {
           </div>
         )}
 
-        <img src={logo} alt="logo" className='logo' />
+        <a href="/"><img src={logo} alt="logo" className='logo' /></a>
 
         <ul className='navigation-menu'>
           <li onClick={() => handleSubMenuToggle('home')}>
-            <p className='header-menu-p-tag'>{t('header.home')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} /></p>
+            <p className='header-menu-p-tag'>{t('header.home')} <RiArrowDownSLine className={arrow-down ${openSubMenu === 'home' ? 'open' : ''}} /></p>
             {openSubMenu === 'home' && (
-              <ul className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
+              <ul className='submenu-desktop'>
                 <li><a href="/salam">Homepage Style One</a></li>
                 <li><a href="/homepage-style-two">Homepage Style Two</a></li>
                 <li><a href="/homepage-style-three">Homepage Style Three</a></li>
@@ -131,7 +131,7 @@ function Header() {
             )}
           </li>
           <li onClick={() => handleSubMenuToggle('all-courses')}>
-            <p className='header-menu-p-tag'> {t('header.allCourses')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} /></p>
+            <p className='header-menu-p-tag'> {t('header.allCourses')} <RiArrowDownSLine className={arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}} /></p>
             {openSubMenu === 'all-courses' && (
               <ul className='submenu-desktop'>
                 <li><a href="/all-courses">Course One</a></li>
@@ -142,9 +142,9 @@ function Header() {
             )}
           </li>
           <li onClick={() => handleSubMenuToggle('blog-classic')}>
-            <p className='header-menu-p-tag'>{t('header.blogClassic')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} /></p>
+            <p className='header-menu-p-tag'>{t('header.blogClassic')} <RiArrowDownSLine className={arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}} /></p>
             {openSubMenu === 'blog-classic' && (
-              <ul className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
+              <ul className='submenu-desktop'>
                 <li><a href="/blog-classic">Blog One</a></li>
                 <li><a href="/blog-classic">Blog Two</a></li>
                 <li><a href="/blog-classic">Blog Three</a></li>
@@ -153,13 +153,19 @@ function Header() {
             )}
           </li>
           <li onClick={() => handleSubMenuToggle('pages')}>
-            <p className='header-menu-p-tag'> {t('header.pages')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} /> </p>
+            <p className='header-menu-p-tag'> {t('header.pages')} <RiArrowDownSLine className={arrow-down ${openSubMenu === 'pages' ? 'open' : ''}} /> </p>
             {openSubMenu === 'pages' && (
-              <ul className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-                <li><a href="/pages">Page One</a></li>
-                <li><a href="/pages">Page Two</a></li>
-                <li><a href="/pages">Page Three</a></li>
-                <li><a href="/pages">Page Four</a></li>
+              <ul className='submenu-desktop'>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/instructor">Instructor</a></li>
+                <li><a href="/testimonial">Testimonial</a></li>
+                <li><a href="/samplepage">Sample Page</a></li>
+                <li><a href="/pageleftsidebar">Page Left Sidebar</a></li>
+
+Farhad Sultan, [08.07.2024 22:36]
+<li><a href="/pagerightsidebar">Page Right Sidebar</a></li>
+                <li><a href="/404page">404 Page</a></li>
               </ul>
             )}
           </li>
