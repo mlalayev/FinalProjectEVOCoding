@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -127,7 +128,7 @@ function Header() {
           <li onClick={() => handleSubMenuToggle('all-courses')}>
             <p className='header-menu-p-tag'> {t('header.allCourses')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} /></p>
             {openSubMenu === 'all-courses' && (
-              <ul className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
+              <ul className='submenu-desktop'>
                 <li><a href="/all-courses">Course One</a></li>
                 <li><a href="/all-courses">Course Two</a></li>
                 <li><a href="/all-courses">Course Three</a></li>

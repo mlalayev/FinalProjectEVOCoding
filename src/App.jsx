@@ -4,8 +4,6 @@ import MainPage from './Components/MainPage/MainPage.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './Components/I18N/I18N.jsx';
 import Header from './Components/Common/Header/Header.jsx';
-import Footer from './Components/Common/Footer/Footer.jsx';
-
 
 function App() {
   return (
@@ -21,6 +19,19 @@ function App() {
             <>
               <Header />
               <MainPage />
+            </>
+          } />
+           <Route path='/course' element={
+            <>
+              <Header />
+              <Course/>
+            </>
+          } />
+
+           <Route path='/view' element={
+            <>
+              <Header/>
+              <View/>
             </>
           } />
         </Routes>
