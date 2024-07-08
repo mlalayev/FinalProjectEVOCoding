@@ -62,7 +62,7 @@ function Header() {
               {t('header.home')}
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} />
               {openSubMenu === 'home' && (
-                <div className="submenu">
+                <div className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
                   <a href="/salam" className='submenu-item'>Homepage Style One</a>
                   <a href="/homepage-style-two" className='submenu-item'>Homepage Style Two</a>
                   <a href="/homepage-style-three" className='submenu-item'>Homepage Style Three</a>
@@ -74,7 +74,7 @@ function Header() {
               {t('header.allCourses')}
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} />
               {openSubMenu === 'all-courses' && (
-                <div className="submenu">
+                <div className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
                   <a href="/all-courses" className='submenu-item'>Course One</a>
                   <a href="/all-courses" className='submenu-item'>Course Two</a>
                   <a href="/all-courses" className='submenu-item'>Course Three</a>
@@ -86,7 +86,7 @@ function Header() {
               {t('header.blogClassic')}
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} />
               {openSubMenu === 'blog-classic' && (
-                <div className="submenu">
+                <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                   <a href="/blog-classic" className='submenu-item'>Blog One</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Two</a>
                   <a href="/blog-classic" className='submenu-item'>Blog Three</a>
@@ -98,7 +98,7 @@ function Header() {
               {t('header.pages')}
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
               {openSubMenu === 'pages' && (
-                <div className="submenu">
+                <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
                   <a href="/pages" className='submenu-item'>Page One</a>
                   <a href="/pages" className='submenu-item'>Page Two</a>
                   <a href="/pages" className='submenu-item'>Page Three</a>
@@ -116,7 +116,7 @@ function Header() {
           <li onClick={() => handleSubMenuToggle('home')}>
             <p className='header-menu-p-tag'>{t('header.home')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} /></p>
             {openSubMenu === 'home' && (
-              <ul className='submenu-desktop'>
+              <ul className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
                 <li><a href="/salam">Homepage Style One</a></li>
                 <li><a href="/homepage-style-two">Homepage Style Two</a></li>
                 <li><a href="/homepage-style-three">Homepage Style Three</a></li>
@@ -127,7 +127,7 @@ function Header() {
           <li onClick={() => handleSubMenuToggle('all-courses')}>
             <p className='header-menu-p-tag'> {t('header.allCourses')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} /></p>
             {openSubMenu === 'all-courses' && (
-              <ul className='submenu-desktop'>
+              <ul className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
                 <li><a href="/all-courses">Course One</a></li>
                 <li><a href="/all-courses">Course Two</a></li>
                 <li><a href="/all-courses">Course Three</a></li>
@@ -138,7 +138,7 @@ function Header() {
           <li onClick={() => handleSubMenuToggle('blog-classic')}>
             <p className='header-menu-p-tag'>{t('header.blogClassic')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} /></p>
             {openSubMenu === 'blog-classic' && (
-              <ul className='submenu-desktop'>
+              <ul className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                 <li><a href="/blog-classic">Blog One</a></li>
                 <li><a href="/blog-classic">Blog Two</a></li>
                 <li><a href="/blog-classic">Blog Three</a></li>
@@ -149,7 +149,7 @@ function Header() {
           <li onClick={() => handleSubMenuToggle('pages')}>
             <p className='header-menu-p-tag'> {t('header.pages')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} /> </p>
             {openSubMenu === 'pages' && (
-              <ul className='submenu-desktop'>
+              <ul className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
                 <li><a href="/pages">Page One</a></li>
                 <li><a href="/pages">Page Two</a></li>
                 <li><a href="/pages">Page Three</a></li>
