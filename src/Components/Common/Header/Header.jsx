@@ -6,6 +6,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from '../../../assets/logo.png';
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -109,7 +110,7 @@ function Header() {
             {t('header.allCourses')}
             {openSubMenu === 'all-courses' && (
               <ul className='submenu-desktop'>
-                <li><a href="/all-courses">Course One</a></li>
+                <Link to={'/course'}><li>Course One</li></Link>
                 <li><a href="/all-courses">Course Two</a></li>
                 <li><a href="/all-courses">Course Three</a></li>
                 <li><a href="/all-courses">Course Four</a></li>
