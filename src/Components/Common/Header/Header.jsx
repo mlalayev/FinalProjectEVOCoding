@@ -1,8 +1,7 @@
 import './Header.css';
 import React, { useState, useEffect, useRef } from 'react';
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaRegEnvelope } from "react-icons/fa";
 import logo from '../../../assets/logo.png';
-import { FaRegEnvelope } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -13,6 +12,7 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -35,16 +35,26 @@ function Header() {
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 130) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
 
   return (
     <header>
       <LanguageDropdown changeLanguage={changeLanguage} className='salam' />
 
-      <div className="header-upper">
+      <div className={`header-upper ${isSticky ? 'hidden' : ''}`}>
         <div className="header-upper-up">
           <a href="" className='header-a-tag margin-bottom'><FaPhone color='#2772FF' /> +464 145 684 325</a>
           <a href="" className='header-a-tag'><FaRegEnvelope color='#2772FF' /> admin@example.com</a>
@@ -55,7 +65,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="header-lower" ref={menuRef}>
+      <div className={`header-lower ${isSticky ? 'sticky' : ''}`} ref={menuRef}>
         <RxHamburgerMenu size={30} onClick={toggleMenu} className='hamburger-icon' />
         {isMenuOpen && (
           <div className="menu">
