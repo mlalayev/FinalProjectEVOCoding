@@ -106,12 +106,13 @@
   color: #fff;
   bottom: 60%;
   padding: 10px;
+  transition: 9s;
   cursor: default;
   font-size: 16px;
   position: absolute;
   text-align: center;
   border-radius: 5px;
-  transform: translateX(-50%);
+  transform: translateX(-100px);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -201,4 +202,10 @@
   50% {
     scale: 1.4 0.6;
   }
+}
+
+.slide-caption.active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 3s ease, transform 3s ease;
 }

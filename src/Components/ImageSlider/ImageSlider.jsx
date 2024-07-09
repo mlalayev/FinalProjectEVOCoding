@@ -1,34 +1,45 @@
 import './ImageSlider.css';
 import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 function ImageSlider({ slides, interval = 8000 }) {
-  
   const [imageIndex, setImageIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
+  const [animateCaption, setAnimateCaption] = useState(false);
+  const [animateText, setAnimateText] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 1200, 
-    });
-  }, []);
+    const autoslide = setInterval(() => {
+      handleNextImage();
+    }, interval);
 
-  useEffect(() => {
-    AOS.refresh(); 
-  }, [imageIndex]);
+    return () => clearInterval(autoslide);
+  }, [interval]);
 
   const handleNextImage = () => {
     if (!isSliding) {
       setIsSliding(true);
-      setImageIndex((index) => (index === slides.length - 1 ? 0 : index + 1));
+      setAnimateCaption(false); // Reset caption animation
+      setAnimateText(false); // Reset text animation
+
+      setTimeout(() => {
+        setImageIndex((index) => (index === slides.length - 1 ? 0 : index + 1));
+        setAnimateCaption(true); // Trigger caption animation
+        setAnimateText(true); // Trigger text animation
+      }, 100); // Delay to allow animations to reset
     }
   };
 
   const handlePrevImage = () => {
     if (!isSliding) {
       setIsSliding(true);
-      setImageIndex((index) => (index === 0 ? slides.length - 1 : index - 1));
+      setAnimateCaption(false); // Reset caption animation
+      setAnimateText(false); // Reset text animation
+
+      setTimeout(() => {
+        setImageIndex((index) => (index === 0 ? slides.length - 1 : index - 1));
+        setAnimateCaption(true); // Trigger caption animation
+        setAnimateText(true); // Trigger text animation
+      }, 100); // Delay to allow animations to reset
     }
   };
 
@@ -52,19 +63,29 @@ function ImageSlider({ slides, interval = 8000 }) {
     if (isSliding) {
       const timer = setTimeout(() => {
         setIsSliding(false);
-      }, 500); 
+      }, 500);
 
       return () => clearTimeout(timer);
     }
   }, [isSliding]);
 
   useEffect(() => {
-    const autoslide = setInterval(() => {
-      handleNextImage();
-    }, interval);
+    // Initial animation when component mounts
+    setAnimateCaption(true);
+    setAnimateText(true);
+  }, []);
 
-    return () => clearInterval(autoslide);
-  }, [interval]);
+  useEffect(() => {
+    // Reset animations when imageIndex changes
+    setAnimateCaption(false);
+    setAnimateText(false);
+
+    // Delay setting animations to true to ensure reset happens first
+    setTimeout(() => {
+      setAnimateCaption(true);
+      setAnimateText(true);
+    }, 100); // Adjust delay as needed
+  }, [imageIndex]);
 
   return (
     <section
@@ -95,16 +116,15 @@ function ImageSlider({ slides, interval = 8000 }) {
               className="img-slider-img"
             />
             <div
-              data-aos="fade-right"
-              className="slide-caption ptag">
+              className={`slide-caption ptag ${imageIndex === index && animateCaption ? 'active' : ''}`}
+            >
               <p>{title}</p>
             </div>
             <div
-              data-aos="fade-right"
-              className="slide-caption hone">
+              className={`slide-caption hone ${imageIndex === index && animateText ? 'active' : ''}`}
+            >
               <h1>{caption}</h1>
-
-              <button className='slider-button' >{button}</button>
+              <button className='slider-button'>{button}</button>
             </div>
           </div>
         ))}

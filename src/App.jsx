@@ -6,6 +6,7 @@ import i18n from './Components/I18N/I18N.jsx';
 import Header from './Components/Common/Header/Header.jsx';
 import Course from './Courses/course.jsx';
 import View from './Courses/view.jsx';
+import Buy from './Courses/buyNow.jsx';
 
 function App() {
   return (
@@ -33,6 +34,13 @@ function App() {
             <>
               <Header/>
               <View/>
+            </>
+          } />
+
+            <Route path='/view/buyNow' element={
+            <>
+              <Header/>
+              <Buy/>
             </>
           } />
         </Routes>
