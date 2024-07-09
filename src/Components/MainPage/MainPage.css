@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.sectionfirst-image {
+    width: 56px;
+}
+
+.sectionfirst {
+    gap: 50px;
+    padding: 74px 70px;
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    background-color: var(--grayish-color);
+}
+
+.sectionfirst-htag {
+    margin: 14px 0;
+    font-size: var(--20-px);
+    font-weight: var(--700-font-weight);
+}
+
+.sectionfirst-ptag{
+    font-size: var(--16-px);
+    color: var(--text-gray-color);
+}
