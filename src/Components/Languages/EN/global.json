@@ -12,6 +12,26 @@
     "footer": {
         "popularcourses": "Popular Courses",
         "copyright": "© Copyright 2023 Design by MhrTheme. All rights reserved.",
-        "firsttext": "Loo faff about cockup Harry baking cakes hunky dory mush happy days on your bike mate."
+        "firsttext": "Loo faff about cockup Harry baking cakes hunky dory mush happy days on your bike mate.",
+        "algebra": "Algebra & Calculus",
+        "business": "Business Strategy",
+        "computersecurity": "Computer Security & Network",
+        "dataanalysis": "Data Analysis",
+        "englishlearning": "English Learning",
+        "musicart": "Music & Art",
+        "coursecategories": "Course Categories",
+        "artshumanities": "Arts & Humanities",
+        "businesscategory": "Business",
+        "computerscience": "Computer Science",
+        "datascience": "Data Science",
+        "languagelearning": "Language Learning",
+        "mathlogic": "Math & Logic",
+        "quicklinks": "Quick Links",
+        "liveclass": "Live Class",
+        "tuitionfees": "Tuition Fees",
+        "termsconditions": "Terms & Conditions",
+        "privacypolicy": "Privacy Policy",
+        "support": "Support",
+        "career": "Career"
     }
 }
