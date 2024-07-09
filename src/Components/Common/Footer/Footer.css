@@ -32,28 +32,27 @@
     --text-center: center;
 
     /* Percent */
-    --percent-100: 100%;
-    --percent-95: 95%;
-    --percent-90: 90%;
-    --percent-85: 85%;
-    --percent-80: 80%;
-    --percent-75: 75%;
-    --percent-70: 70%;
-    --percent-65: 65%;
-    --percent-60: 60%;
-    --percent-55: 55%;
-    --percent-50: 50%;
-    --percent-45: 45%;
-    --percent-40: 40%;
-    --percent-35: 35%;
-    --percent-30: 30%;
-    --percent-25: 25%;
-    --percent-20: 20%;
-    --percent-15: 15%;
-    --percent-10: 10%;
-    --percent-5: 5%;
     --percent-0: 0%;
-
+    --percent-5: 5%;
+    --percent-10: 10%;
+    --percent-15: 15%;
+    --percent-20: 20%;
+    --percent-25: 25%;
+    --percent-30: 30%;
+    --percent-35: 35%;
+    --percent-40: 40%;
+    --percent-45: 45%;
+    --percent-50: 50%;
+    --percent-55: 55%;
+    --percent-60: 60%;
+    --percent-65: 65%;
+    --percent-70: 70%;
+    --percent-75: 75%;
+    --percent-80: 80%;
+    --percent-85: 85%;
+    --percent-90: 90%;
+    --percent-95: 95%;
+    --percent-100: 100%;
 
     /* Pixels */
     --2-px: 2px;
@@ -132,11 +131,26 @@
 
 .footer {
     height: 150vh;
+    gap: var(--20-px);
     padding: 53px 69px;
+    border: 1px solid red;
     width: var(--percent-100);
+    display: var(--display-flex);
     text-align: var(--text-left);
     background-color: var(--grayish-color);
+    flex-direction: var(--flex-direction-column);
+}
+
+.footer-first-div-holder{
+    min-height: 220px;
     border: 1px solid red;
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    justify-content: var(--display-space-between);
+}
+
+.footer-logo{
+    width: 160px;
 }
 
 .footer-a-tag {
@@ -275,13 +289,10 @@ footer a {
     background: var(--instagram-red);
 }
 
-
-
 .list-holder {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
-    gap: 20px;
+    gap: var(--20-px);
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
 }
 
 .footer-text-first {

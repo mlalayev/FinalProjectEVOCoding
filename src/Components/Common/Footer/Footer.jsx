@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className="footer-first-div-holder">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className='footer-logo' />
 
         <p className='footer-text-first'>{t('footer.firsttext')}</p>
 
