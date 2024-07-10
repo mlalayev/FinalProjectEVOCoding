@@ -59,13 +59,15 @@ function MainPage() {
           </div>
         ))}
         <div className="inputholder-sectionfirst">
-          <h1>{t('mainpage.registrationtextone')}</h1>
-          <h1>{t('mainpage.registrationtexttwo')}</h1>
+          <div className="inputholder-text-holder">
+            <h1>{t('mainpage.registrationtextone')}</h1>
+            <h1>{t('mainpage.registrationtexttwo')}</h1>
+          </div>
 
           <div className="inputs">
-            <input type="text" placeholder={t('mainpage.inputtextone')} className="input" />
-            <input type="text" placeholder={t('mainpage.inputtexttwo')} className="input" />
-            <input type="text" placeholder={t('mainpage.inputtextthree')} className="input" />
+            <input type="text" placeholder={t('mainpage.inputtextone')} className="input" id='inputone' />
+            <input type="text" placeholder={t('mainpage.inputtexttwo')} className="input" id='inputtwo' />
+            <input type="text" placeholder={t('mainpage.inputtextthree')} className="input" id='inputthree' />
             <select name="" id="select">
               <option value="">C Developer</option>
               <option value="">Java Developer</option>
@@ -77,20 +79,20 @@ function MainPage() {
 
           <div className="countdowntimer">
             <div>
-              <p>{days}</p>
-              <p>Days</p>
+              <p className='blue'>{days}</p>
+              <p className='text-gray'>Days</p>
             </div>
             <div>
-              <p>{hours}</p>
-              <p>Hours</p>
+              <p className='blue'>{hours}</p>
+              <p className='text-gray'>Hours</p>
             </div>
             <div>
-              <p>{minutes}</p>
-              <p>Minutes</p>
+              <p className='blue'>{minutes}</p>
+              <p className='text-gray'>Minutes</p>
             </div>
             <div>
-              <p>{seconds}</p>
-              <p>Seconds</p>
+              <p className='blue'>{seconds}</p>
+              <p className='text-gray'>Seconds</p>
             </div>
           </div>
         </div>

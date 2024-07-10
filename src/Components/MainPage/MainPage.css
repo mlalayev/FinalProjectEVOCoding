@@ -14,9 +14,9 @@
     --display-center: center;
     --flex-direction-row: row;
     --flex-direction-column: column;
+    --display-inline-flex: inline-flex;
     --display-space-around: space-around;
     --display-inline-block: inline-block;
-    --display-inline-flex: inline-flex;
     --display-space-between: space-between;
 
     /* Position properties */
@@ -154,22 +154,34 @@
 
 .inputholder-sectionfirst {
     width: 68vw;
-    height: 300px;
-    padding: 0 20px;
+    height: 440px;
+    padding: 10px 20px;
     display: var(--display-flex);
     background-color: var(--white-color);
-    justify-content: var(--display-center);
+    justify-content: var(--display-space-between);
     flex-direction: var(--flex-direction-column);
 }
 
 .countdowntimer {
+    height: 70px;
+    margin-top: 0px;
     display: var(--display-flex);
+    justify-content: var(--display-space-between);
+    border-top: 1px solid var(--main-blue-line-color);
+}
+
+.countdowntimer div {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
 }
 
 .inputs {
     gap: var(--10-px);
     display: var(--display-flex);
     align-items: var(--display-center);
+    font-family: var(--Open-font-family);
     justify-content: var(--display-center);
     flex-direction: var(--flex-direction-column);
 }
@@ -183,12 +195,8 @@
     background-color: var(--grayish-color);
 }
 
-.input[type="text"]:focus {
-    border: 2px solid #862d59;
-}
-
-#select:focus{
-    border: 1px solid green;
+#select:focus {
+    border: var(--display-none);
 }
 
 #select {
@@ -198,10 +206,22 @@
     border: var(--display-none);
     border-radius: var(--16-px);
     transition: var(--transition-medium);
+    background-color: var(--grayish-color);
 }
 
 .inputs-button {
     height: 48px;
+    font-size: var(--16-px);
     width: var(--percent-100);
+    color: var(--white-color);
     border-radius: var(--24-px);
+    border: var(--display-none);
+    font-weight: var(--600-font-weight);
+    background-color: var(--main-blue-color);
+}
+
+.blue {
+    font-size: var(--18-px);
+    color: var(--main-blue-color);
+    font-weight: var(--700-font-weight);
 }
