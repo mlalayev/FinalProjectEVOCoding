@@ -33,5 +33,14 @@
         "privacypolicy": "Privacy Policy",
         "support": "Support",
         "career": "Career"
+    },
+    "mainpage": {
+        "registrationtextone": "Registration",
+        "registrationtexttwo": "for Course Enroll",
+        "inputtextone":"Name",
+        "inputtexttwo":"Email",
+        "inputtextthree":"Phone",
+        "inputtextfour":"Course Name",
+        "buttonfirsttext":"Apply Now"
     }
 }
