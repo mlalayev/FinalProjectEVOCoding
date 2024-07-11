@@ -1,16 +1,20 @@
 import React from 'react';
 import './AboutUs.css'
-import AboutOneSection from './Onesection/AboutOneSection';
-import AboutTwoSection from './Twosection/AboutTwoSection';
+import AboutOneSection from '../AboutUs/Onesection/AboutOneSection.jsx';
+import AboutTwoSection from '../AboutUs/Twosection/AboutTwoSection.jsx';
+import AboutThreeSection from './ThreeSection/AboutThreeSection.jsx';
+import AboutFourSection from './FourSection/AboutFourSection.jsx';
 
 
-const AboutUss = () => {
+const AboutUs = () => {
   return (
     <>
    <AboutOneSection/>
    <AboutTwoSection/>
+   <AboutThreeSection/>
+   <AboutFourSection/>
    </>
   )
 }
 
-export default AboutUss;
+export default AboutUs;

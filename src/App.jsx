@@ -4,7 +4,7 @@ import MainPage from './Components/MainPage/MainPage.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './Components/I18N/I18N.jsx';
 import Header from './Components/Common/Header/Header.jsx';
-import Eventss from './Components/Pages/Events/Events.jsx';
+import Events from './Components/Pages/Events/Events.jsx';
 import Instructor from './Components/Pages/Instructor/Instructor.jsx';
 import Testimonial from './Components/Pages/Testimonial/Testimonial.jsx';
 import SamplePage from './Components/Pages/SamplePage/SamplePage.jsx';
@@ -15,7 +15,8 @@ import Blog from './Components/Blog/Blog.jsx';
 import Footer from './Components/Common/Footer/Footer.jsx'
 import Course from './Courses/course.jsx'
 import View from './Courses/view.jsx';
-import AboutUss from './Components/Pages/AboutUs/AboutUs.jsx';
+import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx';
+
 
 
 
@@ -29,22 +30,16 @@ function App() {
             <MainPage />
             <Footer />
           </>} />
-          <Route path='/salam' element={
-            <>
-              <Header />
-              <MainPage />
-            </>
-          } />
            <Route path='/aboutus' element={
             <>
               <Header />
-              <AboutUss/>
+              <AboutUs/>
             </>
           } />
           <Route path='/events' element={
             <>
               <Header />
-              <Eventss/>
+              <Events/>
             </>
           } />
           <Route path='/instructor' element={
@@ -83,13 +78,13 @@ function App() {
               <NotFoundPage/>
             </>
           } />
-          <Route path='/Blog' element={
+          <Route path='/blog' element={
             <>
             <Header/>
             <Blog/>
             </>
           }/>
-           <Route path='/course' element={
+           <Route path='/all-courses' element={
             <>
               <Header />
               <Course/>

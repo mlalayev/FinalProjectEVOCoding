@@ -100,7 +100,7 @@ function Header() {
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
               {openSubMenu === 'pages' && (
                 <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-                  <a href="/aboutus" className='submenu-item'>About Us</a>
+                <a href="/aboutus" className='submenu-item'>About Us</a>
                 <a href="/events" className='submenu-item'>Events</a>
                 <a href="/instructor" className='submenu-item'>Instructor</a>
                 <a href="/testimonial" className='submenu-item'>Testimonial</a>
@@ -115,7 +115,7 @@ function Header() {
           </div>
         )}
 
-        <img src={logo} alt="logo" className='logo' />
+        <a href="/"><img src={logo} alt="logo" className='logo' /></a>
 
         <ul className='navigation-menu'>
           <li onClick={() => handleSubMenuToggle('home')}>

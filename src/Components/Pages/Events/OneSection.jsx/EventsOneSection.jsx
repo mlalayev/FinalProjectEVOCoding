@@ -1,24 +1,22 @@
 import React from "react";
-import "./AboutOneSection.css";
+import "./EventsOneSection.css";
 import { FaAngleRight } from "react-icons/fa6";
 
-const AboutOneSection = () => {
-
-
+const EventsOneSection = () => {
   return (
     <div className="PagesBackground">
         <div className="BackgorundText">
       <div className="UpText">
-        <h2>About Us</h2>
+        <h2>Events</h2>
       </div>
       <div className="DownText">
         <a href="/">Home</a>
        <FaAngleRight />
-        <span>About Us</span>
+        <span>Events</span>
       </div>
       </div>
     </div>
   );
 };
 
-export default AboutOneSection;
+export default EventsOneSection;
