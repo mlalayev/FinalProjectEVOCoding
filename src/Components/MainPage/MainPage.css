@@ -292,5 +292,7 @@
     display: var(--display-flex);
     padding: var(--main-page-padding);
     flex-direction: var(--flex-direction-column);
+    justify-content: center;
+    align-items: center !important;
 }
 

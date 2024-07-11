@@ -2,6 +2,8 @@
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     border: 1px solid red;
+    overflow: hidden;
+    position: relative;
 }
 
 .price-rating-holder,
@@ -9,36 +11,40 @@
     display: var(--display-flex);
 }
 
-.price-rating-holder{
+.price-rating-holder {
     justify-content: var(--display-space-between);
 }
 
-.sectionthird-image{
+.sectionthird-image {
     width: var(--percent-100);
 }
 
-.profile-photo-holder{
-    display: var(--display-flex);
-    align-items: var(--display-center);
-}
-
+.profile-photo-holder,
 .lesson-holder-left,
-.lesson-holder-right{
+.lesson-holder-right {
     display: var(--display-flex);
     align-items: var(--display-center);
 }
 
-.lesson-holder{
+.lesson-holder {
     display: flex;
     justify-content: space-between;
 }
 
 .card {
     display: none;
+    flex: auto;
+    max-width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    /* max-width: 350px !important; */
 }
 
 .card.active {
     display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dots {
@@ -60,4 +66,47 @@
 
 .dot.active {
     background-color: #717171;
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+.card-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center !important;
+    border: 1px solid red;
+}
+
+.sectionthird-image {
+    width: 100%;
+}
+
+.price-rating-holder,
+.profile-photo-holder,
+.lesson-holder-left,
+.lesson-holder-right {
+    display: flex;
+    align-items: center;
 }
