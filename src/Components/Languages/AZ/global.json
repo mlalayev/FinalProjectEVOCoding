@@ -12,5 +12,31 @@
     "pages": {
         "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
         "abouttwocontainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz."
+        "contactUs": "Bizimlə Əlaqə"
+    },
+    "footer": {
+        "popularcourses": "Populyar Kurslar",
+        "copyright": "© Müəllif Hüququ 2023 Dizayn MhrTheme tərəfindən. Bütün hüquqlar qorunur.",
+        "firsttext": "Harry-nin tortlar bişirməsi, hunky dory mush, xoşbəxt günlər velosipedinizdə getməyə nə qədər də heyrətamizdir.",
+        "algebra": "Cəbr və Hesablama",
+        "business": "Biznes Strategiyası",
+        "computersecurity": "Kompyuter Təhlükəsizliyi və Şəbəkə",
+        "dataanalysis": "Məlumatların Təhlili",
+        "englishlearning": "İngilis Dilini Öyrənmək",
+        "musicart": "Musiqi və İncəsənət",
+        "coursecategories": "Kurs Kateqoriyaları",
+        "artshumanities": "İncəsənət və Humanitar Elmlər",
+        "businesscategory": "Biznes",
+        "computerscience": "Kompyuter Elmi",
+        "datascience": "Məlumat Elmi",
+        "languagelearning": "Dil Öyrənmə",
+        "mathlogic": "Riyaziyyat və Məntiq",
+        "quicklinks": "Sürətli Keçidlər",
+        "liveclass": "Canlı Dərs",
+        "tuitionfees": "Təhsil Haqları",
+        "termsconditions": "Şərtlər və Qaydalar",
+        "privacypolicy": "Gizlilik Siyasəti",
+        "support": "Dəstək",
+        "career": "Karyera"
     }
 }

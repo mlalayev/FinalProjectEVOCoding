@@ -8,5 +8,30 @@
         "blogClassic": "Блог",
         "pages": "Страницы",
         "contactUs": "Связаться с нами"
+    },
+    "footer": {
+        "popularcourses": "Популярные Курсы",
+        "copyright": "© Авторские права 2023 Дизайн от MhrTheme. Все права защищены.",
+        "firsttext": "О пекарне Гарри, выпекающей торты, удивительно как можно наслаждаться этими днями на велосипеде.",
+        "algebra": "Алгебра и Исчисление",
+        "business": "Бизнес Стратегия",
+        "computersecurity": "Компьютерная Безопасность и Сети",
+        "dataanalysis": "Анализ Данных",
+        "englishlearning": "Изучение Английского",
+        "musicart": "Музыка и Искусство",
+        "coursecategories": "Категории Курсов",
+        "artshumanities": "Искусство и Гуманитарные Науки",
+        "businesscategory": "Бизнес",
+        "computerscience": "Компьютерные Науки",
+        "datascience": "Наука о Данных",
+        "languagelearning": "Изучение Языков",
+        "mathlogic": "Математика и Логика",
+        "quicklinks": "Быстрые Ссылки",
+        "liveclass": "Прямой Класс",
+        "tuitionfees": "Стоимость Обучения",
+        "termsconditions": "Условия и Положения",
+        "privacypolicy": "Политика Конфиденциальности",
+        "support": "Поддержка",
+        "career": "Карьера"
     }
 }
