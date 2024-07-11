@@ -41,6 +41,10 @@
     /* max-width: 350px !important; */
 }
 
+.card:first-child {
+    margin-left: 0;
+}
+
 .card.active {
     display: block;
     opacity: 1;
@@ -78,6 +82,7 @@
     .card {
         flex: 1 0 50%;
         max-width: 50%;
+        margin-left: 10px;
     }
 }
 
@@ -85,6 +90,7 @@
     .card {
         flex: 1 0 33.3333%;
         max-width: 33.3333%;
+        margin-left: 10px;
     }
 }
 
