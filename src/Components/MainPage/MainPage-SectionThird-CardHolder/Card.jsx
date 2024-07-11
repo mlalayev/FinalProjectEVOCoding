@@ -4,10 +4,12 @@ import { IoPerson } from "react-icons/io5";
 import { IoMdStar } from "react-icons/io";
 import cardsData from '../../../../SectionThreeCardsData.json';
 import './Card.css';
+import { useTranslation } from 'react-i18next';
 
 const CardSlider = ({ interval = 8000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(1);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const updateCardsPerView = () => {
@@ -57,6 +59,11 @@ const CardSlider = ({ interval = 8000 }) => {
 
   return (
     <div className="card-slider">
+
+      <h1>{t('card.texthone')}</h1>
+      <h1>{t('card.texthtwo')}</h1>
+      <p className='text-gray'>{t('card.textpone')}</p>
+
       <div className="card-container" >
         {cardsData.map((card, index) => {
           const isActive = Math.floor(index / cardsPerView) === Math.floor(currentIndex / cardsPerView);
@@ -69,6 +76,7 @@ const CardSlider = ({ interval = 8000 }) => {
               <div className="price-rating-holder">
                 <p className="blue font-light">{card.text1}</p>
                 <div className="rating-holder">
+                  <p className="a">{card.text2}</p>
                   {[...Array(card.rating)].map((_, i) => (
                     <IoMdStar key={i} color="gold" />
                   ))}
