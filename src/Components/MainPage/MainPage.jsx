@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect, useRef } from 'react';
 import sectionfirstContent from '../../../SectionFirstMap.json';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
+import sectionsecondimage from '../../assets/mainpagesectiontwo.png'
+import Card from './MainPage-SectionThird-CardHolder/Card.jsx'
+
+
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -59,13 +63,15 @@ function MainPage() {
           </div>
         ))}
         <div className="inputholder-sectionfirst">
-          <h1>{t('mainpage.registrationtextone')}</h1>
-          <h1>{t('mainpage.registrationtexttwo')}</h1>
+          <div className="inputholder-text-holder">
+            <h1>{t('mainpage.registrationtextone')}</h1>
+            <h1>{t('mainpage.registrationtexttwo')}</h1>
+          </div>
 
           <div className="inputs">
-            <input type="text" placeholder={t('mainpage.inputtextone')} className="input" />
-            <input type="text" placeholder={t('mainpage.inputtexttwo')} className="input" />
-            <input type="text" placeholder={t('mainpage.inputtextthree')} className="input" />
+            <input type="text" placeholder={t('mainpage.inputtextone')} className="input" id='inputone' />
+            <input type="text" placeholder={t('mainpage.inputtexttwo')} className="input" id='inputtwo' />
+            <input type="text" placeholder={t('mainpage.inputtextthree')} className="input" id='inputthree' />
             <select name="" id="select">
               <option value="">C Developer</option>
               <option value="">Java Developer</option>
@@ -77,23 +83,37 @@ function MainPage() {
 
           <div className="countdowntimer">
             <div>
-              <p>{days}</p>
-              <p>Days</p>
+              <p className='blue'>{days}</p>
+              <p className='text-gray'>Days</p>
             </div>
             <div>
-              <p>{hours}</p>
-              <p>Hours</p>
+              <p className='blue'>{hours}</p>
+              <p className='text-gray'>Hours</p>
             </div>
             <div>
-              <p>{minutes}</p>
-              <p>Minutes</p>
+              <p className='blue'>{minutes}</p>
+              <p className='text-gray'>Minutes</p>
             </div>
             <div>
-              <p>{seconds}</p>
-              <p>Seconds</p>
+              <p className='blue'>{seconds}</p>
+              <p className='text-gray'>Seconds</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="sectionsecond">
+        <img src={sectionsecondimage} alt="course-pic" className='sectionsecondimage' />
+
+        <h1>{t('mainpage.sectionsecondtexthone')}</h1>
+        <p className='blue font-light'>{t('mainpage.sectionsecondtextptag')}</p>
+        <p className='gray line-height'>{t('mainpage.sectionsecondtextthree')}</p>
+        <p className='call-us font-bold margin-ten'>{t('mainpage.callus')}<span className='blue font-light'>+456 968 562 75</span></p>
+        <button className='mainpagebutton'>{t('mainpage.button')}</button>
+      </section>
+
+      <section className="sectionthird">
+        <Card />
       </section>
     </div>
   );

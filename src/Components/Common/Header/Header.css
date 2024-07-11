@@ -29,7 +29,7 @@
     --text-right: right;
     --text-center: center;
 
-    /* Percent */
+    /* Percent properties */
     --percent-0: 0%;
     --percent-5: 5%;
     --percent-10: 10%;
@@ -52,7 +52,7 @@
     --percent-95: 95%;
     --percent-100: 100%;
 
-    /* Pixels */
+    /* Pixels properties */
     --2-px: 2px;
     --4-px: 4px;
     --6-px: 6px;
@@ -74,7 +74,7 @@
     --38-px: 38px;
     --40-px: 40px;
 
-    /* Font-weight */
+    /* Font-weight properties */
     --100-font-weight: 100;
     --200-font-weight: 200;
     --300-font-weight: 300;
@@ -85,7 +85,7 @@
     --800-font-weight: 800;
     --900-font-weight: 900;
 
-    /* Colors */
+    /* Colors properties */
     --white-color: #ffffff;
     --black-color: #000000;
     --twitter-blue: #1da1f2;
@@ -98,30 +98,30 @@
     --main-blue-line-color: #2773ff34;
     --gray-color: rgba(128, 128, 128, 0.232);
 
-    /* Font-family */
+    /* Font-family properties */
     --Open-font-family: "Open Sans", sans-serif;
 
-    /* Transitions */
+    /* Transitions properties */
     --transition-slow: 1s;
     --transition-fast: 0.2s;
     --transition-medium: 0.5s;
 
-    /* Cursor */
+    /* Cursor properties */
     --cursor-pointer: pointer;
     --cursor-default: default;
     --cursor-not-allowed: not-allowed;
 
-    /* Box-Sizing */
+    /* Box-Sizing properties */
     --border-sizing: border-box;
     --content-sizing: content-box;
 
-    /* Object-Fit */
+    /* Object-Fit properties */
     --object-fit-fill: fill;
     --object-fit-cover: cover;
     --object-fit-contain: contain;
     --object-fit-content: fit-content;
 
-    /* Visibility */
+    /* Visibility properties */
     --auto: auto;
     --hidden: hidden;
     --visible: visible;
