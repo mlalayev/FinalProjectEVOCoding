@@ -1,0 +1,104 @@
+[
+    {
+        "image": "./src/assets/sectionthreeimageone.png",
+        "title": "Card Title 1",
+        "text1": "Text for section one of card 1",
+        "text2": "Text for section two of card 1",
+        "profileImage": "path_to_profile_image1",
+        "profileText": "Profile text for card 1",
+        "lessonCount": "Lesson count for card 1",
+        "lessonPerson": "Person text for card 1",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagetwo.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagethree.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagefour.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagefive.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagesix.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimageseven.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4,
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimageeight.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4,
+        "rating": 4
+    },
+    {
+        "image": "src/assets/sectionthreeimagenine.png",
+        "title": "Card Title 2",
+        "text1": "Text for section one of card 2",
+        "text2": "Text for section two of card 2",
+        "profileImage": "path_to_profile_image2",
+        "profileText": "Profile text for card 2",
+        "lessonCount": "Lesson count for card 2",
+        "lessonPerson": "Person text for card 2",
+        "rating": 4,
+        "rating": 4
+    }
+]

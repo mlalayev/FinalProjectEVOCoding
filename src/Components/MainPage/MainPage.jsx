@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect, useRef } from 'react';
 import sectionfirstContent from '../../../SectionFirstMap.json';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
+import sectionsecondimage from '../../assets/mainpagesectiontwo.png'
+import Card from './MainPage-SectionThird-CardHolder/Card.jsx'
+
+
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -96,6 +100,20 @@ function MainPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="sectionsecond">
+        <img src={sectionsecondimage} alt="course-pic" className='sectionsecondimage' />
+
+        <h1>{t('mainpage.sectionsecondtexthone')}</h1>
+        <p className='blue font-light'>{t('mainpage.sectionsecondtextptag')}</p>
+        <p className='gray line-height'>{t('mainpage.sectionsecondtextthree')}</p>
+        <p className='call-us font-bold margin-ten'>{t('mainpage.callus')}<span className='blue font-light'>+456 968 562 75</span></p>
+        <button className='mainpagebutton'>{t('mainpage.button')}</button>
+      </section>
+
+      <section className="sectionthird">
+        <Card />
       </section>
     </div>
   );

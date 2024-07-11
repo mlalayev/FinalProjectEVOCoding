@@ -1,0 +1,63 @@
+.card-holder-section-three {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    border: 1px solid red;
+}
+
+.price-rating-holder,
+.rating-holder {
+    display: var(--display-flex);
+}
+
+.price-rating-holder{
+    justify-content: var(--display-space-between);
+}
+
+.sectionthird-image{
+    width: var(--percent-100);
+}
+
+.profile-photo-holder{
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.lesson-holder-left,
+.lesson-holder-right{
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.lesson-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: none;
+}
+
+.card.active {
+    display: block;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
