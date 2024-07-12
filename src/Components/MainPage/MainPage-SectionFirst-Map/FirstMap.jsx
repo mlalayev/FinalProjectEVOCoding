@@ -1,7 +1,7 @@
-import React from 'react'
-import './FirstMap.css'
-import sectionfirstContent from '../../../../SectionFirstMap.json';
+import './FirstMap.css';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+import sectionfirstContent from '../../../../SectionFirstMap.json';
 
 
 function FirstMap() {

@@ -1,7 +1,7 @@
-import React from 'react'
-import sectionsecondimage from '../../../assets/mainpagesectiontwo.png'
+import React from 'react';
+import './SectionSecond.css';
 import { useTranslation } from 'react-i18next';
-import './SectionSecond.css'
+import sectionsecondimage from '../../../assets/mainpagesectiontwo.png';
 
 function SectionSecond() {
     const { t, i18n } = useTranslation();
