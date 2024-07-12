@@ -1,0 +1,80 @@
+.sectionfifth-card {
+    overflow: hidden;
+    min-width: 340px;
+    position: relative;
+}
+
+.sectionfifth-image-wrapper::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 255, 0.31);
+}
+
+.sectionfifth-image-wrapper:hover::before {
+    opacity: 1;
+}
+
+.sectionfifth-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.sectionfifth-image-wrapper:hover .sectionfifth-image {
+    filter: brightness(70%) saturate(120%);
+}
+
+.sectionfifth-card {
+    overflow: hidden;
+    max-width: 200px;
+    position: relative;
+}
+
+.sectionfifth-image-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.sectionfifth-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.social-icons {
+    gap: 30px;
+    top: 0;
+    z-index: 2;
+    left: -100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+.sectionfifth-image-wrapper:hover .social-icons {
+    left: 4%;
+}
+
+.icon-holder{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
