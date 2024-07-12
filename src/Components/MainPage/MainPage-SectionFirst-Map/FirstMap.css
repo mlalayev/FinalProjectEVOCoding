@@ -1,0 +1,14 @@
+.sectionfirst-htag {
+    margin: 14px 0;
+    font-size: var(--20-px);
+    font-weight: var(--700-font-weight);
+}
+
+.sectionfirst-ptag {
+    font-size: var(--16-px);
+    color: var(--text-gray-color);
+}
+
+.sectionfirst-image {
+    width: 56px;
+}

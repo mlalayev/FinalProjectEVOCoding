@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { PiBookLight } from "react-icons/pi";
-import { IoPerson } from "react-icons/io5";
-import { IoMdStar } from "react-icons/io";
-import cardsData from '../../../../SectionThreeCardsData.json';
 import './Card.css';
+import { IoMdStar } from "react-icons/io";
+import { IoPerson } from "react-icons/io5";
+import { PiBookLight } from "react-icons/pi";
 import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from 'react';
+import cardsData from '../../../../SectionThreeCardsData.json';
 
 const CardSlider = ({ interval = 8000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,14 +42,14 @@ const CardSlider = ({ interval = 8000 }) => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex + cardsPerView;
-      return newIndex >= cardsData.length ? 0 : newIndex;
+      return newIndex >= cardsData[i18n.language].length ? 0 : newIndex;
     });
   };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex - cardsPerView;
-      return newIndex < 0 ? cardsData.length - cardsPerView : newIndex;
+      return newIndex < 0 ? cardsData[i18n.language].length - cardsPerView : newIndex;
     });
   };
 
@@ -58,53 +58,62 @@ const CardSlider = ({ interval = 8000 }) => {
   };
 
   return (
-    <div className="card-slider">
+    <div className='card-holder-section'>
+      <div className="card-slider">
 
-      <h1>{t('card.texthone')}</h1>
-      <h1>{t('card.texthtwo')}</h1>
-      <p className='text-gray'>{t('card.textpone')}</p>
+        <h1>{t('card.texthone')}</h1>
+        <h1>{t('card.texthtwo')}</h1>
+        <p className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
 
-      <div className="card-container" >
-        {cardsData.map((card, index) => {
-          const isActive = Math.floor(index / cardsPerView) === Math.floor(currentIndex / cardsPerView);
-          return (
-            <div
-              key={index}
-              className={`card ${isActive ? 'active' : ''}`}
-            >
-              <img src={card.image} alt="course-slider-holder" className="sectionthird-image" />
-              <div className="price-rating-holder">
-                <p className="blue font-light">{card.text1}</p>
-                <div className="rating-holder">
-                  <p className="a">{card.text2}</p>
-                  {[...Array(card.rating)].map((_, i) => (
-                    <IoMdStar key={i} color="gold" />
-                  ))}
+        <div className="card-container" >
+          {cardsData[i18n.language].map((card, index) => {
+            const isActive = Math.floor(index / cardsPerView) === Math.floor(currentIndex / cardsPerView);
+            return (
+              <div
+                key={index}
+                className={`card ${isActive ? 'active' : ''}`}
+              >
+                <div className="card-holder">
+                  <img src={card.image} alt="course-slider-holder" className="sectionthird-image" />
+                  <div className="card-text-holder">
+                    <div className="price-rating-holder">
+                      <p className="price-holder">{card.text1}</p>
+                      <div className="rating-holder">
+                        <p className="a">{card.text2}</p>
+                        <div className="star-holder">
+                          {[...Array(card.rating)].map((_, i) => (
+                            <IoMdStar key={i} color="gold" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="profile-holder">
+                      <h1 className='card-title'>{card.title}</h1>
+                      <div className="profile-photo-holder">
+                        <img src={card.profileImage} alt="profile-photo" className="profile-photo" />
+                        <p>{card.profileText}</p>
+                      </div>
+                    </div>
+                    <div className="lesson-holder">
+                      <div className="lesson-holder-left">
+                        <PiBookLight color="var(--main-blue-color)" />
+                        <p>{card.lessonCount}</p>
+                      </div>
+                      <div className="lesson-holder-right">
+                        <IoPerson color="var(--main-blue-color)" />
+                        <p>{card.lessonPerson}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="profile-holder">
-                <h1>{card.title}</h1>
-                <div className="profile-photo-holder">
-                  <img src={card.profileImage} alt="profile-photo" className="profile-photo" />
-                  <p>{card.profileText}</p>
-                </div>
-              </div>
-              <div className="lesson-holder">
-                <div className="lesson-holder-left">
-                  <PiBookLight color="var(--main-blue-color)" />
-                  <p>{card.lessonCount}</p>
-                </div>
-                <div className="lesson-holder-right">
-                  <IoPerson color="var(--main-blue-color)" />
-                  <p>{card.lessonPerson}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
       <div className="dots">
-        {Array(Math.ceil(cardsData.length / cardsPerView)).fill().map((_, index) => (
+        {Array(Math.ceil(cardsData[i18n.language].length / cardsPerView)).fill().map((_, index) => (
           <span
             key={index}
             className={`dot ${index === Math.floor(currentIndex / cardsPerView) ? 'active' : ''}`}
