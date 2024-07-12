@@ -11,10 +11,10 @@ function Instructors() {
                     <div className="sectionfifth-image-wrapper">
                         <img src={instructor.image} alt={instructor.name} className='sectionfifth-image' />
                         <div className="social-icons">
-                            <div className='icon-holder'><FaInstagram size={30} className='icons' /></div>
-                            <div className='icon-holder'><FaTwitter size={30} className='icons' /></div>
-                            <div className='icon-holder'><FaFacebookF size={30} className='icons' /></div>
-                            <div className='icon-holder'><FaLinkedinIn size={30} className='icons' /></div>
+                            <div className='icon-holder'><FaInstagram size={25} className='icons' /></div>
+                            <div className='icon-holder'><FaTwitter size={25} className='icons' /></div>
+                            <div className='icon-holder'><FaFacebookF size={25} className='icons' /></div>
+                            <div className='icon-holder'><FaLinkedinIn size={25} className='icons' /></div>
                         </div>
                     </div>
                     <div className="sectionfifth-card-text-holder">
