@@ -7,6 +7,7 @@ import FirstMap from './MainPage-SectionFirst-Map/FirstMap.jsx';
 import InputHolder from './MainPage-InputHolder/InputHolder.jsx';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
+import Instructors from './MainPage-Instructors/Instructors.jsx';
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -47,6 +48,10 @@ function MainPage() {
 
       <section className="sectionfourth">
         <Categories />
+      </section>
+
+      <section className="sectionfifth">
+        <Instructors />
       </section>
     </div>
   );
