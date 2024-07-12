@@ -9,8 +9,8 @@
     width: 100%;
 }
 
-.EventsTwoSectionContainer > h2,
-p {
+.EventsTwoSectionContainer h2,
+.EventsTwoSectionContainer p {
     text-align: center;
 }
 
@@ -47,16 +47,19 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.EventsTwoSectionCardRight{
+
+.EventsTwoSectionCardRight {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    
+
 }
-.EventsTwoSectionCardRight h2{
+
+.EventsTwoSectionCardRight h2 {
     font-size: 22px;
     max-width: 450px;
 }
+
 .EventsTwoSectionCardRight .oclock {
     display: flex;
     align-items: center;

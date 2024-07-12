@@ -72,31 +72,38 @@ const CardSlider = ({ interval = 8000 }) => {
               key={index}
               className={`card ${isActive ? 'active' : ''}`}
             >
-              <img src={card.image} alt="course-slider-holder" className="sectionthird-image" />
-              <div className="price-rating-holder">
-                <p className="blue font-light">{card.text1}</p>
-                <div className="rating-holder">
-                  <p className="a">{card.text2}</p>
-                  {[...Array(card.rating)].map((_, i) => (
-                    <IoMdStar key={i} color="gold" />
-                  ))}
-                </div>
-              </div>
-              <div className="profile-holder">
-                <h1>{card.title}</h1>
-                <div className="profile-photo-holder">
-                  <img src={card.profileImage} alt="profile-photo" className="profile-photo" />
-                  <p>{card.profileText}</p>
-                </div>
-              </div>
-              <div className="lesson-holder">
-                <div className="lesson-holder-left">
-                  <PiBookLight color="var(--main-blue-color)" />
-                  <p>{card.lessonCount}</p>
-                </div>
-                <div className="lesson-holder-right">
-                  <IoPerson color="var(--main-blue-color)" />
-                  <p>{card.lessonPerson}</p>
+              <div className="card-holder">
+                <img src={card.image} alt="course-slider-holder" className="sectionthird-image" />
+                <div className="card-text-holder">
+                  <div className="price-rating-holder">
+                    <p className="price-holder">{card.text1}</p>
+                    <div className="rating-holder">
+                      <p className="a">{card.text2}</p>
+                      <div className="star-holder">
+                        {[...Array(card.rating)].map((_, i) => (
+                          <IoMdStar key={i} color="gold" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="profile-holder">
+                    <h1 className='card-title'>{card.title}</h1>
+                    <div className="profile-photo-holder">
+                      <img src={card.profileImage} alt="profile-photo" className="profile-photo" />
+                      <p>{card.profileText}</p>
+                    </div>
+                  </div>
+                  <div className="lesson-holder">
+                    <div className="lesson-holder-left">
+                      <PiBookLight color="var(--main-blue-color)" />
+                      <p>{card.lessonCount}</p>
+                    </div>
+                    <div className="lesson-holder-right">
+                      <IoPerson color="var(--main-blue-color)" />
+                      <p>{card.lessonPerson}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
