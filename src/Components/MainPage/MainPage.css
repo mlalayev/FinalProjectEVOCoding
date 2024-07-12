@@ -293,7 +293,7 @@
     padding: var(--main-page-padding);
     flex-direction: var(--flex-direction-column);
     justify-content: center;
-    border: 1px solid red;
+    background-color: var(--grayish-color);
     align-items: center !important;
 }
 

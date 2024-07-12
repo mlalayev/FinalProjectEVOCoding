@@ -32,6 +32,7 @@
 
 .sectionthird-image {
     width: var(--percent-100);
+    max-width: 340px;
 }
 
 .profile-photo-holder,
@@ -47,9 +48,9 @@
 }
 
 .card {
-    max-width: 400px;
+    max-width: 340px;
     flex: var(--auto);
-    min-height: 530px;
+    min-height: 480px;
     opacity: var(--percent-0);
     visibility: var(--hidden);
     border-radius: var(--8-px);
@@ -154,8 +155,8 @@
     flex-direction: var(--flex-direction-column);
 }
 
-.sectionthird-image {
-    width: var(--percent-100);
+.margin-btm{
+    margin-bottom: 40px;
 }
 
 .profile-photo{
