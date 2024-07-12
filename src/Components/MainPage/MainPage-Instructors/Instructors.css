@@ -3,6 +3,7 @@
     min-width: 320px;
     overflow: var(--hidden);
     position: var(--position-relative);
+    margin-left: 15px;
 }
 
 .sectionfifth-image-wrapper::before {
@@ -93,10 +94,79 @@
 
 .sectionfifth-card-holder {
     padding: 0 70px;
-    display: var(--display-flex);
-    /* display: var(--display-grid); */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: var(--display-grid);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: var(--display-space-between);
+}
+
+@media screen and (max-width:1420px) {
+    .sectionfifth-card {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .sectionfifth-card {
+        min-width: 270px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .sectionfifth-card {
+        min-width: 240px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .sectionfifth-card {
+        min-width: 220px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .sectionfifth-card-holder {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .sectionfifth-card {
+        min-width: 360px;
+    }
+}
+
+
+@media screen and (max-width:940px) {
+    .sectionfifth-card {
+        min-width: 330px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .sectionfifth-card {
+        min-width: 290px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sectionfifth-card {
+        min-width: 260px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .sectionfifth-card {
+        min-width: 230px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .sectionfifth-card-holder {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .sectionfifth-card {
+        min-width: 60vw;
+    }
 }
 
 :root {
