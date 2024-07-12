@@ -159,6 +159,7 @@
 
 .sectionfourth{
     display: var(--display-flex);
+    padding: var(--main-page-padding);
     align-items: var(--display-center);
     justify-content: var(--display-center);
     flex-direction: var(--flex-direction-column);
