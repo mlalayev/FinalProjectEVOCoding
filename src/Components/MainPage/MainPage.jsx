@@ -1,11 +1,11 @@
 import './MainPage.css'
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react';
-import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
-import Card from './MainPage-SectionThird-CardHolder/Card.jsx'
-import Categories from './MainPage-Categories/Categories.jsx'
-import InputHolder from './MainPage-InputHolder/InputHolder.jsx';
+import Categories from './MainPage-Categories/Categories.jsx';
+import Card from './MainPage-SectionThird-CardHolder/Card.jsx';
 import FirstMap from './MainPage-SectionFirst-Map/FirstMap.jsx';
+import InputHolder from './MainPage-InputHolder/InputHolder.jsx';
+import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
 
 function MainPage() {

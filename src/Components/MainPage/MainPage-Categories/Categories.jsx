@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './Categories.css';
+import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
 
 const Categories = ({ interval = 8000, language = 'en' }) => {

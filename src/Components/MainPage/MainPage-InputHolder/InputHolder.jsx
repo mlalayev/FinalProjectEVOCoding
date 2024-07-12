@@ -1,7 +1,7 @@
-import React from 'react'
-import CountDown from '../MainPage-CountDown/CountDown'
-import './InputHolder.css'
+import React from 'react';
+import './InputHolder.css';
 import { useTranslation } from 'react-i18next';
+import CountDown from '../MainPage-CountDown/CountDown';
 
 function InputHolder() {
     const { t, i18n } = useTranslation();

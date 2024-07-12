@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import './CountDown.css'
+import './CountDown.css';
+import React, {useState, useEffect} from 'react';
 
 function CountDown() {
 
