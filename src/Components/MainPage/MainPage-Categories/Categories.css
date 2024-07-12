@@ -1,44 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: var(--border-sizing);
 }
 
-.category-card {
-    display: var(--display-flex);
-    text-align: var(--display-center);
-    align-items: var(--display-center);
-    flex-direction: var(--flex-direction-column);
-    background-color: rgba(255, 0, 153, 0.197);
-}
-
-.categoryimage{
-    width: 100px;
-}
-
-.category-cards-holder{
-    display: var(--display-flex);
-}
-
 .category-slider-section {
     width: var(--percent-100);
     position: var(--position-relative);
+    overflow: hidden;
 }
 
 .category-card-container {
-    overflow: var(--hidden);
-    width: var(--percent-100);
-    display: var(--display-flex);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .category-card {
     padding: var(--20-px);
     border-radius: var(--8-px);
-    flex: 0 0 var(--percent-100);
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    transition: transform 0.5s ease-in-out;
-    flex-direction: var(--flex-direction-column);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 0, 153, 0.197);
+    flex: 1 0 100%; /* Default to 100% width for each card */
 }
 
 .categoryimage {
@@ -59,8 +44,8 @@
 
 .dots-categories {
     margin-top: var(--10-px);
-    display: var(--display-flex);
-    justify-content: var(--display-center);
+    display: flex;
+    justify-content: center;
 }
 
 .dot-categories {
@@ -69,17 +54,27 @@
     height: var(--10-px);
     border-radius: var(--percent-50);
     background-color: var(--gray-color);
-    display: var(--display-inline-block);
+    display: inline-block;
     transition: background-color 0.3s ease;
+    cursor: var(--cursor-pointer);
 }
 
 .dot-categories.active {
     background-color: var(--main-blue-color);
 }
 
-.category-card:not(.active) {
-    display: var(--display-none);
+@media (min-width: 600px) {
+    .category-card {
+        flex: 0 0 50%; /* Two cards per row on tablet screens */
+    }
 }
+
+@media (min-width: 1024px) {
+    .category-card {
+        flex: 0 0 25%; /* Four cards per row on desktop screens */
+    }
+}
+
 
 :root {
     /* Display properties */
