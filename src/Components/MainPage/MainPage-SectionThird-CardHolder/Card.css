@@ -47,7 +47,7 @@
     justify-content: var(--display-space-between);
 }
 
-.text-center{
+.text-center {
     text-align: var(--text-center);
 }
 
@@ -83,7 +83,7 @@
     justify-content: var(--display-space-between);
 }
 
-.card-title{
+.card-title {
     font-size: var(--20-px);
     margin-bottom: var(--16-px);
     font-weight: var(--500-font-weight);
@@ -95,7 +95,7 @@
     display: var(--display-block);
 }
 
-.card-holder-section{
+.card-holder-section {
     display: var(--display-flex);
     position: var(--position-relative);
     justify-content: var(--display-center);
@@ -167,11 +167,11 @@
     flex-direction: var(--flex-direction-column);
 }
 
-.margin-btm{
+.margin-btm {
     margin-bottom: 40px;
 }
 
-.profile-photo{
+.profile-photo {
     width: 40px;
     border-radius: 20px;
     margin-right: 10px;
