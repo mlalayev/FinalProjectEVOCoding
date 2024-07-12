@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "img": "./src/assets/course_1.svg",
+      "title": {
+        "en": "Next Scheduled",
+        "az": "Növbəti Təyin Edilmiş",
+        "ru": "Следующий Запланированный"
+      },
+      "text": {
+        "en": "Tosser what plonker mufty squiffy the wireless the monty.",
+        "az": "Dəvəxana necə zərərli çörək varsa o, kababda eyni şəkildə böyüyür.",
+        "ru": "Tosser, что за дурак, муфты, сквиффи, беспроводные монти."
+      }
+    },
+    {
+      "id": 2,
+      "img": "./src/assets/course_2.svg",
+      "title": {
+        "en": "Online Courses",
+        "az": "Onlayn Kurslar",
+        "ru": "Онлайн-Курсы"
+      },
+      "text": {
+        "en": "Tosser what plonker mufty squiffy the wireless the monty.",
+        "az": "Dəvəxana necə zərərli çörək varsa o, kababda eyni şəkildə böyüyür.",
+        "ru": "Tosser, что за дурак, муфты, сквиффи, беспроводные монти."
+      }
+    },
+    {
+      "id": 3,
+      "img": "./src/assets/course_3.svg",
+      "title": {
+        "en": "Graduation",
+        "az": "Tələbələr",
+        "ru": "Выпускной"
+      },
+      "text": {
+        "en": "Tosser what plonker mufty squiffy the wireless the monty.",
+        "az": "Dəvəxana necə zərərli çörək varsa o, kababda eyni şəkildə böyüyür.",
+        "ru": "Tosser, что за дурак, муфты, сквиффи, беспроводные монти."
+      }
+    },
+    {
+      "id": 4,
+      "img": "./src/assets/course_4.svg",
+      "title": {
+        "en": "University Life",
+        "az": "Universitet həyatı",
+        "ru": "Университетская жизнь"
+      },
+      "text": {
+        "en": "Tosser what plonker mufty squiffy the wireless the monty.",
+        "az": "Dəvəxana necə zərərli çörək varsa o, kababda eyni şəkildə böyüyür.",
+        "ru": "Tosser, что за дурак, муфты, сквиффи, беспроводные монти."
+      }
+    }
+  ]
+  

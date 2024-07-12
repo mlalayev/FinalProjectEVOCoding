@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.EventsTwoSectionContainer {
+    height: 157.5vh;
+    width: 100%;
+}
+
+.EventsTwoSectionContainer > h2,
+p {
+    text-align: center;
+}
+
+.EventsTwoSectionCardsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EventsTwoSectionCards {
+    display: grid;
+    grid-template-columns: 870px;
+    grid-template-rows: 290px 290px 290px;
+    gap: 30px;
+}
+
+.EventsTwoSectionCards .EventsTwoSectionCard {
+    display: flex;
+    padding: 55px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px gray;
+}
+
+.EventsTwoSectionCardLeft {
+    margin-right: 50px;
+}
+
+.EventsTwoSectionCardLeft img {
+    width: 13vw;
+    height: 13vw;
+}
+
+.DateLocation {
+    display: flex;
+    justify-content: space-between;
+}
+.EventsTwoSectionCardRight{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    
+}
+.EventsTwoSectionCardRight h2{
+    font-size: 22px;
+    max-width: 450px;
+}
+.EventsTwoSectionCardRight .oclock {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.EventsTwoSectionCardRight .oclock i {
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.EventsTwoSectionCardRight .map {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.EventsTwoSectionCardRight .map i {
+    color: blue;
+    display: flex;
+    align-items: center;
+}

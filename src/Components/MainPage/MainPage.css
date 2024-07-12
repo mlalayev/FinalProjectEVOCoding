@@ -1,5 +1,298 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* Display properties */
+    --display-flex: flex;
+    --display-none: none;
+    --display-grid: grid;
+    --display-block: block;
+    --display-inline: inline;
+    --display-center: center;
+    --flex-direction-row: row;
+    --flex-direction-column: column;
+    --display-inline-flex: inline-flex;
+    --display-space-around: space-around;
+    --display-inline-block: inline-block;
+    --display-space-between: space-between;
+
+    /* Position properties */
+    --position-fixed: fixed;
+    --position-relative: relative;
+    --position-absolute: absolute;
+
+    /* Text properties */
+    --text-left: left;
+    --text-right: right;
+    --text-center: center;
+
+    /* Percent */
+    --percent-0: 0%;
+    --percent-5: 5%;
+    --percent-10: 10%;
+    --percent-15: 15%;
+    --percent-20: 20%;
+    --percent-25: 25%;
+    --percent-30: 30%;
+    --percent-35: 35%;
+    --percent-40: 40%;
+    --percent-45: 45%;
+    --percent-50: 50%;
+    --percent-55: 55%;
+    --percent-60: 60%;
+    --percent-65: 65%;
+    --percent-70: 70%;
+    --percent-75: 75%;
+    --percent-80: 80%;
+    --percent-85: 85%;
+    --percent-90: 90%;
+    --percent-95: 95%;
+    --percent-100: 100%;
+
+    /* Pixels */
+    --2-px: 2px;
+    --4-px: 4px;
+    --6-px: 6px;
+    --8-px: 8px;
+    --10-px: 10px;
+    --12-px: 12px;
+    --14-px: 14px;
+    --16-px: 16px;
+    --18-px: 18px;
+    --20-px: 20px;
+    --22-px: 22px;
+    --24-px: 24px;
+    --26-px: 26px;
+    --28-px: 28px;
+    --30-px: 30px;
+    --32-px: 32px;
+    --34-px: 34px;
+    --36-px: 36px;
+    --38-px: 38px;
+    --40-px: 40px;
+
+    /* Font-weight */
+    --100-font-weight: 100;
+    --200-font-weight: 200;
+    --300-font-weight: 300;
+    --400-font-weight: 400;
+    --500-font-weight: 500;
+    --600-font-weight: 600;
+    --700-font-weight: 700;
+    --800-font-weight: 800;
+    --900-font-weight: 900;
+
+    /* Colors */
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --twitter-blue: #1da1f2;
+    --grayish-color: #F6F7FA;
+    --instagram-red: #e4405f;
+    --facebook-blue: #1877f2;
+    --text-gray-color: #626A77;
+    --transparent: transparent;
+    --main-blue-color: #2772FF;
+    --main-blue-line-color: #2773ff34;
+    --gray-color: rgba(128, 128, 128, 0.232);
+
+    /* Font-family */
+    --Open-font-family: "Open Sans", sans-serif;
+
+    /* Transitions */
+    --transition-slow: 1s;
+    --transition-fast: 0.2s;
+    --transition-medium: 0.5s;
+
+    /* Cursor */
+    --cursor-pointer: pointer;
+    --cursor-default: default;
+    --cursor-not-allowed: not-allowed;
+
+    /* Box-Sizing */
+    --border-sizing: border-box;
+    --content-sizing: content-box;
+
+    /* Object-Fit */
+    --object-fit-fill: fill;
+    --object-fit-cover: cover;
+    --object-fit-contain: contain;
+    --object-fit-content: fit-content;
+
+    /* Visibility */
+    --auto: auto;
+    --hidden: hidden;
+    --visible: visible;
+
+    /* MainPage padding for mobile */
+    --main-page-padding: 74px 70px;
+}
+
+.sectionfirst-image {
+    width: 56px;
+}
+
+.sectionfirst {
+    gap: 50px;
+    display: var(--display-flex);
+    padding: var(--main-page-padding);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    background-color: var(--grayish-color);
+    flex-direction: var(--flex-direction-column);
+}
+
+.sectionfirst-htag {
+    margin: 14px 0;
+    font-size: var(--20-px);
+    font-weight: var(--700-font-weight);
+}
+
+.sectionfirst-ptag {
+    font-size: var(--16-px);
+    color: var(--text-gray-color);
+}
+
+.inputholder-sectionfirst {
+    width: 68vw;
+    height: 440px;
+    padding: 10px 20px;
+    border-radius: var(--10-px);
+    display: var(--display-flex);
+    background-color: var(--white-color);
+    justify-content: var(--display-space-between);
+    flex-direction: var(--flex-direction-column);
+}
+
+.countdowntimer {
+    height: 70px;
+    margin-top: 0px;
+    display: var(--display-flex);
+    justify-content: var(--display-space-between);
+    border-top: 1px solid var(--main-blue-line-color);
+}
+
+.countdowntimer div {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+}
+
+.inputs {
+    gap: var(--10-px);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    font-family: var(--Open-font-family);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+}
+
+.input {
+    padding: 0 20px;
+    height: var(--36-px);
+    width: var(--percent-100);
+    border: var(--display-none);
+    border-radius: var(--16-px);
+    background-color: var(--grayish-color);
+}
+
+.input:focus {
+    outline: 1px solid var(--main-blue-color);
+}
+
+#select:focus {
+    border: var(--display-none);
+    outline: 1px solid var(--main-blue-color);
+}
+
+#select {
+    padding: 0 20px;
+    height: var(--36-px);
+    width: var(--percent-100);
+    border: var(--display-none);
+    border-radius: var(--16-px);
+    background-color: var(--grayish-color);
+}
+
+.inputs-button {
+    height: 48px;
+    font-size: var(--16-px);
+    width: var(--percent-100);
+    color: var(--white-color);
+    border-radius: var(--24-px);
+    border: 2px solid var(--main-blue-color);
+    font-weight: var(--600-font-weight);
+    background-color: var(--main-blue-color);
+    transition: var(--transition-medium);
+}
+
+.inputs-button:hover {
+    color: var(--main-blue-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--main-blue-color);
+}
+
+.blue {
+    font-size: var(--18-px);
+    color: var(--main-blue-color);
+    font-weight: var(--700-font-weight);
+}
+
+.sectionsecond {
+    display: var(--display-flex);
+    padding: var(--main-page-padding);
+    flex-direction: var(--flex-direction-column);
+}
+
+.sectionsecondimage {
+    max-width: 400px;
+    margin-bottom: 20px;
+    width: var(--percent-100);
+}
+
+.font-light {
+    margin: 16px 0;
+    font-size: var(--14-px);
+    font-weight: var(--200-font-weight);
+}
+
+.line-height {
+    font-size: var(--16-px);
+    line-height: var(--28-px);
+}
+
+.font-bold {
+    font-weight: var(--600-font-weight);
+}
+
+.margin-ten {
+    margin: 14px 0;
+}
+
+.mainpagebutton {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: var(--white-color);
+    font-weight: var(--600-font-weight);
+    transition: var(--transition-medium);
+    border: 2px solid var(--main-blue-color);
+    background-color: var(--main-blue-color);
+}
+
+.mainpagebutton:hover {
+    color: var(--main-blue-color);
+    background-color: var(--white-color);
+}
+
+.sectionthird {
+    display: var(--display-flex);
+    padding: var(--main-page-padding);
+    flex-direction: var(--flex-direction-column);
+    justify-content: center;
+    align-items: center !important;
+}
+
