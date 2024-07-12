@@ -1,101 +1,101 @@
 [
     {
         "image": "./src/assets/sectionthreeimageone.png",
-        "title": "Computer Security & Network",
+        "title": "Cyber Security",
         "text1": "$16.00",
-        "text2":"150 review",
+        "text2": "150 review",
         "profileImage": "./src/assets/profileone.jpeg",
         "profileText": "Dylan Meringue",
         "lessonCount": "10 Lessons",
         "lessonPerson": "120",
-        "rating": 4
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagetwo.png",
         "title": "Data Analysis",
         "text1": "$20.00",
-        "text2":"150 review",
+        "text2": "150 review",
         "profileImage": "./src/assets/profiletwo.jpg",
         "profileText": "Chauffina Carr",
         "lessonCount": "20 Lessons",
         "lessonPerson": "130",
-        "rating": 4
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagethree.png",
         "title": "Music & Art",
         "text1": "$40.00",
-        "text2":"150 review",
+        "text2": "150 review",
         "profileImage": "./src/assets/profilethree.jpg",
         "profileText": "Jason Response",
         "lessonCount": "30 Lessons",
         "lessonPerson": "100",
-        "rating": 4
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagefour.png",
         "title": "Business Strategy",
-        "text1": "Justin Case",
-        "text2":"150 review",
+        "text1": "$50.00",
+        "text2": "150 review",
         "profileImage": "./src/assets/profilefour.png",
-        "profileText": " text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "profileText": "Justin Case",
+        "lessonCount": "65 Lessons",
+        "lessonPerson": "122",
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagefive.png",
-        "title": "Card Title 3",
-        "text1": "Text for section one of card 2",
-        "text2":"150 review",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "title": "English Learning",
+        "text1": "$70.00",
+        "text2": "150 review",
+        "profileImage": "./src/assets/profileone.jpeg",
+        "profileText": "Hanson Deck",
+        "lessonCount": "45 Lessons",
+        "lessonPerson": "90",
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagesix.png",
-        "title": "Card Title 4",
-        "text1": "Text for section one of card 2",
-        "text2":"150 review",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "title": "Algebra & Calculus",
+        "text1": "$110.00",
+        "text2": "150 review",
+        "profileImage": "./src/assets/profiletwo.jpg",
+        "profileText": "Adam Smith",
+        "lessonCount": "30 Lessons",
+        "lessonPerson": "80",
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimageseven.png",
-        "title": "Card Title 5",
-        "text1": "Text for section one of card 2",
-        "text2":"150 review",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "title": "History & Philosophy",
+        "text1": "$117.00",
+        "text2": "150 review",
+        "profileImage": "./src/assets/profilethree.jpg",
+        "profileText": "Hanson Deck",
+        "lessonCount": "20 Lessons",
+        "lessonPerson": "17",
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimageeight.png",
-        "title": "Card Title 6",
-        "text1": "Text for section one of card 2",
-        "text2":"150 review",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "title": "Business Essentials",
+        "text1": "$227.00",
+        "text2": "150 review",
+        "profileImage": "./src/assets/profilefour.png",
+        "profileText": "Gunther Beard",
+        "lessonCount": "25 Lessons",
+        "lessonPerson": "28",
+        "rating": 5
     },
     {
         "image": "src/assets/sectionthreeimagenine.png",
-        "title": "Card Title 7",
-        "text1": "Text for section one of card 2",
-        "text2":"150 review",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
+        "title": "Software Development",
+        "text1": "$90.00",
+        "text2": "150 review",
+        "profileImage": "./src/assets/profileone.jpeg",
+        "profileText": "Samuel Serif",
+        "lessonCount": "50 Lessons",
+        "lessonPerson": "42",
+        "rating": 5
     }
 ]
