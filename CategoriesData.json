@@ -1,0 +1,58 @@
+[
+    {
+        "image": "./src/assets/categoryiconone.png",
+        "title": "Art & Humanities",
+        "courses": "20 Courses",
+        "bgColor": "#FEEFF4",
+        "textColor": "#F54A87"
+    },
+    {
+        "image": "./src/assets/categoryicontwo.png",
+        "title": "Science & Technology",
+        "courses": "15 Courses",
+        "bgColor": "#ECF4FF",
+        "textColor": "#2873FF"
+    },
+    {
+        "image": "./src/assets/categoryiconthree.png",
+        "title": "Business & Management",
+        "courses": "25 Courses",
+        "bgColor": "#FFF9EE",
+        "textColor": "#F9AD1A"
+    },
+    {
+        "image": "./src/assets/categoryiconfour.png",
+        "title": "Health & Medicine",
+        "courses": "18 Courses",
+        "bgColor": "#EDFBF0",
+        "textColor": "#44CD3B"
+    },
+    {
+        "image": "./src/assets/categoryiconone.png",
+        "title": "Social Sciences",
+        "courses": "12 Courses",
+        "bgColor": "#FEEFF4",
+        "textColor": "#F54A87"
+    },
+    {
+        "image": "./src/assets/categoryicontwo.png",
+        "title": "Languages & Literature",
+        "courses": "30 Courses",
+        "bgColor": "#ECF4FF",
+        "textColor": "#2873FF"
+    },
+    {
+        "image": "./src/assets/categoryiconthree.png",
+        "title": "Languages & Literature",
+        "courses": "30 Courses",
+        "bgColor": "#FFF9EE",
+        "textColor": "#F9AD1A"
+    },
+    {
+        "image": "./src/assets/categoryiconfour.png",
+        "title": "Languages & Literature",
+        "courses": "30 Courses",
+        "bgColor": "#EDFBF0",
+        "textColor": "#44CD3B"
+    }
+]

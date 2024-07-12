@@ -297,3 +297,9 @@
     align-items: center !important;
 }
 
+.sectionfourth{
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    align-items: center;
+    justify-content: center;
+}
