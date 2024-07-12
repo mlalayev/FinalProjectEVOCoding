@@ -42,14 +42,14 @@ const CardSlider = ({ interval = 8000 }) => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex + cardsPerView;
-      return newIndex >= cardsData.length ? 0 : newIndex;
+      return newIndex >= cardsData[i18n.language].length ? 0 : newIndex;
     });
   };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex - cardsPerView;
-      return newIndex < 0 ? cardsData.length - cardsPerView : newIndex;
+      return newIndex < 0 ? cardsData[i18n.language].length - cardsPerView : newIndex;
     });
   };
 
@@ -65,7 +65,7 @@ const CardSlider = ({ interval = 8000 }) => {
       <p className='text-gray'>{t('card.textpone')}</p>
 
       <div className="card-container" >
-        {cardsData.map((card, index) => {
+        {cardsData[i18n.language].map((card, index) => {
           const isActive = Math.floor(index / cardsPerView) === Math.floor(currentIndex / cardsPerView);
           return (
             <div
@@ -111,7 +111,7 @@ const CardSlider = ({ interval = 8000 }) => {
         })}
       </div>
       <div className="dots">
-        {Array(Math.ceil(cardsData.length / cardsPerView)).fill().map((_, index) => (
+        {Array(Math.ceil(cardsData[i18n.language].length / cardsPerView)).fill().map((_, index) => (
           <span
             key={index}
             className={`dot ${index === Math.floor(currentIndex / cardsPerView) ? 'active' : ''}`}
