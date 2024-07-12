@@ -1,7 +1,8 @@
 .sectionfifth-card {
     overflow: hidden;
-    min-width: 340px;
+    min-width: 320px;
     position: relative;
+    border: 10px;
 }
 
 .sectionfifth-image-wrapper::before {
@@ -14,6 +15,7 @@
     content: "";
     height: 100%;
     position: absolute;
+    border-radius: 10px;
     transition: opacity 0.3s ease;
     background-color: rgba(0, 0, 255, 0.31);
 }
@@ -27,6 +29,7 @@
     height: auto;
     display: block;
     transition: filter 0.3s ease;
+    border-radius: 10px;
 }
 
 .sectionfifth-image-wrapper:hover .sectionfifth-image {
@@ -77,4 +80,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+}
+
+.sectionfifth-card-holder{
+    display: flex;
+    padding: 0 70px;
+    justify-content: space-between;
 }
