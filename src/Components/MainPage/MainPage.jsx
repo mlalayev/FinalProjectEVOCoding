@@ -5,8 +5,7 @@ import sectionfirstContent from '../../../SectionFirstMap.json';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import sectionsecondimage from '../../assets/mainpagesectiontwo.png'
 import Card from './MainPage-SectionThird-CardHolder/Card.jsx'
-
-
+import Categories from './MainPage-Categories/Categories.jsx'
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -114,6 +113,10 @@ function MainPage() {
 
       <section className="sectionthird">
         <Card />
+      </section>
+
+      <section className="sectionfourth">
+        <Categories />
       </section>
     </div>
   );
