@@ -6,26 +6,13 @@ import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import sectionsecondimage from '../../assets/mainpagesectiontwo.png'
 import Card from './MainPage-SectionThird-CardHolder/Card.jsx'
 import Categories from './MainPage-Categories/Categories.jsx'
+import CountDown from './MainPage-CountDown/CountDown.jsx'
 
 function MainPage() {
   const { t, i18n } = useTranslation();
   const [slides, setSlides] = useState([]);
 
-  const initialTime = 143 * 24 * 60 * 60 + 21 * 60 * 60 + 12 * 60 + 30;
-  const [time, setTime] = useState(initialTime);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(prevTime => (prevTime > 0 ? prevTime - 1 : 0));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const days = Math.floor(time / (24 * 60 * 60));
-  const hours = Math.floor((time % (24 * 60 * 60)) / (60 * 60));
-  const minutes = Math.floor((time % (60 * 60)) / 60);
-  const seconds = Math.floor(time % 60);
-
+  
 
 
   useEffect(() => {
@@ -80,24 +67,7 @@ function MainPage() {
             <button className='inputs-button'>{t('mainpage.buttonfirsttext')}</button>
           </div>
 
-          <div className="countdowntimer">
-            <div>
-              <p className='blue'>{days}</p>
-              <p className='text-gray'>Days</p>
-            </div>
-            <div>
-              <p className='blue'>{hours}</p>
-              <p className='text-gray'>Hours</p>
-            </div>
-            <div>
-              <p className='blue'>{minutes}</p>
-              <p className='text-gray'>Minutes</p>
-            </div>
-            <div>
-              <p className='blue'>{seconds}</p>
-              <p className='text-gray'>Seconds</p>
-            </div>
-          </div>
+          <CountDown/>
         </div>
       </section>
 

@@ -166,21 +166,6 @@
     flex-direction: var(--flex-direction-column);
 }
 
-.countdowntimer {
-    height: 70px;
-    margin-top: 0px;
-    display: var(--display-flex);
-    justify-content: var(--display-space-between);
-    border-top: 1px solid var(--main-blue-line-color);
-}
-
-.countdowntimer div {
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    justify-content: var(--display-center);
-    flex-direction: var(--flex-direction-column);
-}
-
 .inputs {
     gap: var(--10-px);
     display: var(--display-flex);
