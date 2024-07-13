@@ -7,7 +7,7 @@
         "allCourses": "Kurslarımız",
         "blogClassic": "Bloq",
         "pages": "Səhifələr",
-        "contactUs":"Bizimlə Əlaqə"
+        "contactUs": "Bizimlə Əlaqə"
     },
     "pages": {
         "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
@@ -38,5 +38,12 @@
         "privacypolicy": "Gizlilik Siyasəti",
         "support": "Dəstək",
         "career": "Karyera"
+    },
+    "sectionsixth": {
+        "textone": "Sizin motivasiyanız və diqqətiniz sizi ən yaxşı şəkildə öyrədəcək",
+        "texttwo": "Cack gormless gənc cinayətkar bits və bobs o nicked it mush, spiffing smashing he legged it have it codswallop.",
+        "graphicsdesign": "Qrafik Dizayn",
+        "selfdevelopment": "Özünü inkişaf etdirmək",
+        "itsoftware": "IT və Proqram təminatı"
     }
 }
