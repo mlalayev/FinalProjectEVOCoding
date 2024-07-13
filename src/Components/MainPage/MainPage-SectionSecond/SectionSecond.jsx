@@ -20,7 +20,7 @@ function SectionSecond() {
 
     return (
         <div
-            data-aos="fade-right"
+            data-aos="fade-left"
         >
             <img src={sectionsecondimage} alt="course-pic" className='sectionsecondimage' />
 
