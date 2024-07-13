@@ -1,19 +1,19 @@
 import './Header.css';
 import React, { useState, useEffect, useRef } from 'react';
-import { FaPhone, FaRegEnvelope } from "react-icons/fa";
 import logo from '../../../assets/logo.png';
 import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
 import { Link } from 'react-router-dom';
+import NonStickyHeader from './Header-NonStickyPart/NotStickyHeader.jsx';
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
-  const [isSticky, setIsSticky] = useState(false);
   const menuRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,16 +54,7 @@ function Header() {
     <header>
       <LanguageDropdown changeLanguage={changeLanguage} className='salam' />
 
-      <div className={`header-upper ${isSticky ? 'hidden' : ''}`}>
-        <div className="header-upper-up">
-          <a href="" className='header-a-tag margin-bottom'><FaPhone color='#2772FF' /> +464 145 684 325</a>
-          <a href="" className='header-a-tag'><FaRegEnvelope color='#2772FF' /> admin@example.com</a>
-        </div>
-        <div className="header-upper-down">
-          <a href="" className='header-a-tag margin-top'>{t('header.becomeateacher')}</a>
-          <a href="" className='header-a-tag margin-top'>{t('header.myprofile')}</a>
-        </div>
-      </div>
+      <NonStickyHeader />
 
       <div className={`header-lower ${isSticky ? 'sticky' : ''}`} ref={menuRef}>
         <RxHamburgerMenu size={30} onClick={toggleMenu} className='hamburger-icon' />
@@ -110,14 +101,14 @@ function Header() {
               <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
               {openSubMenu === 'pages' && (
                 <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-                <a href="/aboutus" className='submenu-item'>About Us</a>
-                <a href="/events" className='submenu-item'>Events</a>
-                <a href="/instructor" className='submenu-item'>Instructor</a>
-                <a href="/testimonial" className='submenu-item'>Testimonial</a>
-                <a href="/samplepage" className='submenu-item'>Sample Page</a>
-                <a href="/pageleftsidebar" className='submenu-item'>Page Left Sidebar</a>
-                <a href="/pagerightsidebar" className='submenu-item'>Page Right Sidebar</a>
-                <a href="/404page" className='submenu-item'>404 Page</a>
+                  <a href="/aboutus" className='submenu-item'>About Us</a>
+                  <a href="/events" className='submenu-item'>Events</a>
+                  <a href="/instructor" className='submenu-item'>Instructor</a>
+                  <a href="/testimonial" className='submenu-item'>Testimonial</a>
+                  <a href="/samplepage" className='submenu-item'>Sample Page</a>
+                  <a href="/pageleftsidebar" className='submenu-item'>Page Left Sidebar</a>
+                  <a href="/pagerightsidebar" className='submenu-item'>Page Right Sidebar</a>
+                  <a href="/404page" className='submenu-item'>404 Page</a>
                 </div>
               )}
             </div>
