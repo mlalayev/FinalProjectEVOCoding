@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.InstructorOneSectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InstructorOneSectionCardsPart{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 370px;
+    gap: 30px;
+}

@@ -12,7 +12,7 @@
     gap: 30px;
     align-items: center;
     justify-content: space-around;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .AboutThreeSectionContainer .AboutThreeSectionUp {
@@ -77,6 +77,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .AboutThreeSectionContainer{
+        height: 100%;
+    }
     .AboutThreeSectionContainer .AboutThreeSectionUp {
         flex-direction: column-reverse;
     }
@@ -87,5 +90,8 @@
 
     .AboutThreeSectionUpLeft p {
         font-size: 14px;
+    }
+    .AboutThreeSectionUpRight img{
+        width: 50vw;
     }
 }
