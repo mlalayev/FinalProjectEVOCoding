@@ -1,0 +1,26 @@
+[
+    {
+        "date": "21 January, 2023",
+        "title": "Why you Need Advance Development Process Course?",
+        "time": "8.30 AM - 5.30 PM",
+        "location": "9 Road, Mirpur Dohs, New York, USA",
+        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+        "image": "./src/assets/eventsone.png"
+    },
+    {
+        "date": "21 January, 2023",
+        "title": "Graphic Illustration: Design with Color and Shape",
+        "time": "8.30 AM - 5.30 PM",
+        "location": "9 Road, Mirpur Dohs, New York, USA",
+        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+        "image": "./src/assets/eventstwo.png"
+    },
+    {
+        "date": "21 January, 2023",
+        "title": "Magazine Design Start to Finish: The Inside Pages",
+        "time": "8.30 AM - 5.30 PM",
+        "location": "9 Road, Mirpur Dohs, New York, USA",
+        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+        "image": "./src/assets/eventsthree.png"
+    }
+]

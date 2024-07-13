@@ -19,7 +19,6 @@
     --display-inline-block: inline-block;
     --display-space-between: space-between;
 
-
     /* Position properties */
     --position-fixed: fixed;
     --position-relative: relative;
@@ -93,11 +92,13 @@
     --grayish-color: #F6F7FA;
     --instagram-red: #e4405f;
     --facebook-blue: #1877f2;
-    --text-gray-color: #626A77;
     --transparent: transparent;
+    --text-gray-color: #626A77;
     --main-blue-color: #2772FF;
+    --yellow-date-color: #F9B70C;
     --main-blue-line-color: #2773ff34;
     --gray-color: rgba(128, 128, 128, 0.232);
+    --gray-card-holder-color: rgba(128, 128, 128, 0.389);
 
     /* Font-family */
     --Open-font-family: "Open Sans", sans-serif;
@@ -131,60 +132,32 @@
     --main-page-padding: 74px 70px;
 }
 
-.sectionfirst {
-    gap: 50px;
+.yellow-color {
+    font-size: var(--18-px);
+    color: var(--yellow-date-color);
+    font-weight: var(--400-font-weight);
+}
+
+.center {
     display: var(--display-flex);
-    padding: var(--main-page-padding);
     align-items: var(--display-center);
-    justify-content: var(--display-center);
-    background-color: var(--grayish-color);
-    flex-direction: var(--flex-direction-column);
 }
 
-.sectionsecond {
-    display: var(--display-flex);
-    padding: var(--main-page-padding);
-    flex-direction: var(--flex-direction-column);
-}
-
-
-.sectionthird {
-    display: var(--display-flex);
-    padding: var(--main-page-padding);
-    align-items: var(--display-center);
-    justify-content: var(--display-center);
-    background-color: var(--grayish-color);
-    flex-direction: var(--flex-direction-column);
-}
-
-.sectionfourth {
-    display: var(--display-flex);
-    padding: var(--main-page-padding);
-    align-items: var(--display-center);
-    justify-content: var(--display-center);
-    flex-direction: var(--flex-direction-column);
-}
-
-.sectionfifth {
-    display: flex;
+.column{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
 }
 
-.sectionsixth {
-    background-color: var(--grayish-color);
-    display: flex;
-    flex-direction: column;
+.events-holder{
+    width: 70vw;
+    padding: 0 30px;
+}
+
+.image-part-events{
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-.sectionseventh {
-    background-color: #FCFCFD;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.font-size{
+    font-size: var(--20-px);
 }
