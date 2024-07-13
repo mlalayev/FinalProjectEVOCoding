@@ -61,8 +61,12 @@
     "sectionsixth": {
         "textone": "Your motivition & attention will teach you best",
         "texttwo": "Cack gormless young delinquent that bits and bobs he nicked it mush, spiffing smashing he legged it have it codswallop.",
-        "graphicsdesign":"Graphics Design",
-        "selfdevelopment":"Self Development",
-        "itsoftware":"IT & Software"
+        "graphicsdesign": "Graphics Design",
+        "selfdevelopment": "Self Development",
+        "itsoftware": "IT & Software"
+    },
+    "events": {
+        "title": "Our Upcoming Events",
+        "intro": "Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!"
     }
 }
