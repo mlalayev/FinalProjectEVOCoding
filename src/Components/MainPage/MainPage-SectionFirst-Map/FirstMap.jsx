@@ -1,14 +1,25 @@
 import './FirstMap.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import sectionfirstContent from '../../../../SectionFirstMap.json';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function FirstMap() {
     const { t, i18n } = useTranslation();
 
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            delay: 0,
+            duration: 2000,
+            easing: 'ease',
+            once: false
+        });
+    }, []);
+
     return (
-        <>
+        <div data-aos="fade-right">
             {sectionfirstContent.map((item) => (
                 <div className="sectionfirst__item" key={item.id}>
                     <div className="sectionfirst__item__img">
@@ -18,7 +29,7 @@ function FirstMap() {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 

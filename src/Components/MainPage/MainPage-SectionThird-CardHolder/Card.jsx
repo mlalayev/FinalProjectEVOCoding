@@ -5,11 +5,24 @@ import { PiBookLight } from "react-icons/pi";
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react';
 import cardsData from '../../../../SectionThreeCardsData.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const CardSlider = ({ interval = 8000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(1);
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 0,
+      duration: 2000,
+      easing: 'ease',
+      once: false
+    });
+  }, []);
 
   useEffect(() => {
     const updateCardsPerView = () => {
@@ -58,7 +71,9 @@ const CardSlider = ({ interval = 8000 }) => {
   };
 
   return (
-    <div className='card-holder-section'>
+    <div
+      data-aos="fade-right"
+      className='card-holder-section'>
       <div className="card-slider">
 
         <h1>{t('card.texthone')}</h1>
