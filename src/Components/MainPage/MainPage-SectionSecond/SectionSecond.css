@@ -1,0 +1,46 @@
+.sectionsecondimage {
+    max-width: 400px;
+    margin-bottom: 20px;
+    width: var(--percent-100);
+}
+
+.blue {
+    font-size: var(--18-px);
+    color: var(--main-blue-color);
+    font-weight: var(--700-font-weight);
+}
+
+.font-light {
+    margin: 16px 0;
+    font-size: var(--14-px);
+    font-weight: var(--200-font-weight);
+}
+
+.line-height {
+    font-size: var(--16-px);
+    line-height: var(--28-px);
+}
+
+.font-bold {
+    font-weight: var(--600-font-weight);
+}
+
+.margin-ten {
+    margin: 14px 0;
+}
+
+.mainpagebutton {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: var(--white-color);
+    font-weight: var(--600-font-weight);
+    transition: var(--transition-medium);
+    border: 2px solid var(--main-blue-color);
+    background-color: var(--main-blue-color);
+}
+
+.mainpagebutton:hover {
+    color: var(--main-blue-color);
+    background-color: var(--white-color);
+}

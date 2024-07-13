@@ -5,7 +5,6 @@ import enTranslations from '../Languages/EN/global.json';
 import azTranslations from '../Languages/AZ/global.json';
 import ruTranslations from '../Languages/RU/global.json';
 
-// Retrieve the saved language from localStorage, or default to 'en'
 const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
 
 i18n
