@@ -7,12 +7,23 @@ import { IoSaveOutline } from "react-icons/io5";
 import categories from '../../../../MainPage-SectionSixth.json';
 import { FaPlay } from "react-icons/fa";
 import { IoPlayCircle } from "react-icons/io5";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function SectionSixth() {
     const { t, i18n } = useTranslation();
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            delay: 0,
+            duration: 2000,
+            easing: 'ease',
+            once: false
+        });
+    }, []);
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
@@ -29,7 +40,9 @@ function SectionSixth() {
     };
 
     return (
-        <div className='SixthSection'>
+        <div
+            data-aos="fade-right"
+            className='SixthSection'>
             <h1>{t('sectionsixth.textone')}</h1>
             <p>{t('sectionsixth.texttwo')}</p>
 
