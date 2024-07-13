@@ -32,6 +32,7 @@ function Events() {
                     </div>
                 ))}
             </div>
+            <button className='events-button'>{t('events.button')}</button>
         </div>
     );
 }
