@@ -138,26 +138,34 @@
     font-weight: var(--400-font-weight);
 }
 
+.events {
+    border: 1px solid blue;
+    padding: 0 30px;
+}
+
 .center {
     display: var(--display-flex);
     align-items: var(--display-center);
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.events-holder{
-    width: 70vw;
+.events-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80vw;
     padding: 0 30px;
 }
 
-.image-part-events{
+.image-part-events {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-.font-size{
+.font-size {
     font-size: var(--20-px);
 }

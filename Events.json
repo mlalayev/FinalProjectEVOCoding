@@ -1,26 +1,80 @@
-[
-    {
-        "date": "21 January, 2023",
-        "title": "Why you Need Advance Development Process Course?",
-        "time": "8.30 AM - 5.30 PM",
-        "location": "9 Road, Mirpur Dohs, New York, USA",
-        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
-        "image": "./src/assets/eventsone.png"
-    },
-    {
-        "date": "21 January, 2023",
-        "title": "Graphic Illustration: Design with Color and Shape",
-        "time": "8.30 AM - 5.30 PM",
-        "location": "9 Road, Mirpur Dohs, New York, USA",
-        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
-        "image": "./src/assets/eventstwo.png"
-    },
-    {
-        "date": "21 January, 2023",
-        "title": "Magazine Design Start to Finish: The Inside Pages",
-        "time": "8.30 AM - 5.30 PM",
-        "location": "9 Road, Mirpur Dohs, New York, USA",
-        "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
-        "image": "./src/assets/eventsthree.png"
-    }
-]
+{
+    "en": [
+        {
+            "date": "21 January, 2023",
+            "title": "Why you Need Advance Development Process Course?",
+            "time": "8.30 AM - 5.30 PM",
+            "location": "28 May, Baku, Azerbaijan",
+            "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+            "image": "./src/assets/eventsone.png"
+        },
+        {
+            "date": "21 January, 2023",
+            "title": "Graphic Illustration: Design with Color and Shape",
+            "time": "8.30 AM - 5.30 PM",
+            "location": "28 May, Baku, Azerbaijan",
+            "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+            "image": "./src/assets/eventstwo.png"
+        },
+        {
+            "date": "21 January, 2023",
+            "title": "Magazine Design Start to Finish: The Inside Pages",
+            "time": "8.30 AM - 5.30 PM",
+            "location": "28 May, Baku, Azerbaijan",
+            "description": "He lost his bottle bamboozled golly gosh some dodgy chav only a quid my lady chip shop argy-bargy, the bee's knees morish loo get stuffed mate pardon me zonked knees.!",
+            "image": "./src/assets/eventsthree.png"
+        }
+    ],
+    "az": [
+        {
+            "date": "21 Yanvar, 2023",
+            "title": "Əvvəlki İnkşa Prosesi Kursuna Ehtiyacınız Nədir?",
+            "time": "Səhər 8.30 - Axşam 5.30",
+            "location": "28 May, Bakı, Azərbaycan",
+            "description": "O, şişini itirdi, dəhşətlə tənqid edildi, quyruq kürdü, yalnız bir funt dəniz bayramı, argy-bargy, arınniçi stol, meymununcay, meymununcay, dostum, bağışlayın məni, zonked dizlər.!",
+            "image": "./src/assets/eventsone.png"
+        },
+        {
+            "date": "21 Yanvar, 2023",
+            "title": "Qrafik İllüstrasiya: Rəng və Şəkil Dizaynı",
+            "time": "Səhər 8.30 - Axşam 5.30",
+            "location": "28 May, Bakı, Azərbaycan",
+            "description": "O, şişini itirdi, dəhşətlə tənqid edildi, quyruq kürdü, yalnız bir funt dəniz bayramı, argy-bargy, arınniçi stol, meymununcay, meymununcay, dostum, bağışlayın məni, zonked dizlər.!",
+            "image": "./src/assets/eventstwo.png"
+        },
+        {
+            "date": "21 Yanvar, 2023",
+            "title": "Jurnal Dizaynı Başdan Sonunu: İç Səhifələr",
+            "time": "Səhər 8.30 - Axşam 5.30",
+            "location": "28 May, Bakı, Azərbaycan",
+            "description": "O, şişini itirdi, dəhşətlə tənqid edildi, quyruq kürdü, yalnız bir funt dəniz bayramı, argy-bargy, arınniçi stol, meymununcay, meymununcay, dostum, bağışlayın məni, zonked dizlər.!",
+            "image": "./src/assets/eventsthree.png"
+        }
+    ],
+    "ru": [
+        {
+            "date": "21 января 2023",
+            "title": "Почему вам нужен курс по развитию передового процесса?",
+            "time": "8.30 утра - 5.30 вечера",
+            "location": "28 мая, Баку, Азербайджан",
+            "description": "Он потерял свою бутылку, обманул глупого голубя, лишь фунт моей дамы, рыбный чип-шоп, арги-барги, пчелы колени моего друга, прошу прощения, меня засасывает, зонкнутые колени.!",
+            "image": "./src/assets/eventsone.png"
+        },
+        {
+            "date": "21 января 2023",
+            "title": "Графическая иллюстрация: дизайн с цветом и формой",
+            "time": "8.30 утра - 5.30 вечера",
+            "location": "28 мая, Баку, Азербайджан",
+            "description": "Он потерял свою бутылку, обманул глупого голубя, лишь фунт моей дамы, рыбный чип-шоп, арги-барги, пчелы колени моего друга, прошу прощения, меня засасывает, зонкнутые колени.!",
+            "image": "./src/assets/eventstwo.png"
+        },
+        {
+            "date": "21 января 2023",
+            "title": "Дизайн журнала от начала до конца: внутренние страницы",
+            "time": "8.30 утра - 5.30 вечера",
+            "location": "28 мая, Баку, Азербайджан",
+            "description": "Он потерял свою бутылку, обманул глупого голубя, лишь фунт моей дамы, рыбный чип-шоп, арги-барги, пчелы колени моего друга, прошу прощения, меня засасывает, зонкнутые колени.!",
+            "image": "./src/assets/eventsthree.png"
+        }
+    ]
+}
