@@ -8,6 +8,7 @@ import InputHolder from './MainPage-InputHolder/InputHolder.jsx';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
 import Instructors from './MainPage-Instructors/Instructors.jsx';
+import SectionSixth from './MainPage-SectionSixth/SectionSixth.jsx';
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -52,6 +53,10 @@ function MainPage() {
 
       <section className="sectionfifth">
         <Instructors />
+      </section>
+
+      <section className="sectionsixth">
+        <SectionSixth />
       </section>
     </div>
   );
