@@ -36,7 +36,7 @@ const View = () => {
             </div>
 
             <div className="view_card">
-                <div className="card">
+                <div id="card">
                     <div className="card_up">
                         <div className="up_left">
                             <div className="up_photo">

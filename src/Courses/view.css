@@ -25,7 +25,7 @@
     justify-content: center;
     background-color:#442E66;
 }
-.view_card .card{
+.view_card #card{
     width: 90%;
     height: 300px;
     display: flex;
@@ -34,7 +34,7 @@
     gap: 40px;
 }
 
-.card .card_up{
+#card .card_up{
     display: flex;
     gap: 300px;
     color:#FFF;

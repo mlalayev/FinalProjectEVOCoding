@@ -19,6 +19,7 @@
     width: 90%;
     height: 100px;
     display: flex;
+   
     justify-content: space-between;
 }
 .search .search-right{
@@ -44,6 +45,8 @@
     left: 260px;
     bottom:10px;
 }
+
+
 /* search finished */
 
 .course .cards{
