@@ -6,6 +6,11 @@
     align-items: center;
     flex-direction: column;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .course .home-course{
     gap: 5px;
     width: 90%;
