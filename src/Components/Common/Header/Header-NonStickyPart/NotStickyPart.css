@@ -73,10 +73,6 @@
     .margin-top {
         margin-top: var(--display-none);
     }
-
-    .header-lower {
-        padding: 0 80px;
-    }
 }
 
 .header-upper {
@@ -91,13 +87,39 @@
 .header-lower {
     transition: top 0.3s ease;
     position: var(--position-relative);
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
 }
 
 .header-lower.sticky {
     top: 0;
     left: 0;
+    right: 0;
     z-index: 999;
     width: var(--percent-100);
     position: var(--position-fixed);
     background-color: var(--white-color);
+}
+
+.header-lower.sticky::before{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.header-lower.sticky::after{
+    top: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    background-color: #fff;
 }
