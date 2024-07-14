@@ -1,0 +1,56 @@
+[
+    {
+        "quote": {
+            "en": "The greatest glory in living lies not in never falling, but in rising every time we fall. Life is what happens when you're busy making other plans. The way to get started is to quit talking and begin doing.",
+            "az": "Həyatda ən böyük şərəf heç vaxt yıxılmamaqda deyil, hər dəfə yıxıldığımız zaman qalxmaqda yatır. Həyat, başqa planlar qurarkən baş verənlərdir. Başlamağın yolu danışmağı dayandırmaq və etməyə başlamaqdır.",
+            "ru": "Величайшая слава в жизни заключается не в том, чтобы никогда не падать, а в том, чтобы подниматься каждый раз, когда мы падаем. Жизнь - это то, что происходит, когда вы заняты составлением других планов. Способ начать - перестать говорить и начать делать."
+        },
+        "name": {
+            "en": "Nelson Mandela",
+            "az": "Nelson Mandela",
+            "ru": "Нельсон Мандела"
+        },
+        "title": {
+            "en": "Former President of South Africa",
+            "az": "Cənubi Afrikanın keçmiş prezidenti",
+            "ru": "Бывший президент Южной Африки"
+        },
+        "profileImage": "./src/assets/eventstwo.png"
+    },
+    {
+        "quote": {
+            "en": "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice.",
+            "az": "Vaxtınız məhduddur, buna görə də onu başqasının həyatı ilə yaşamayın. Dogmanın əsarətində qalmayın – bu, başqalarının düşüncələrinin nəticələri ilə yaşamaq deməkdir. Başqalarının fikirlərinin səsi sizin öz daxili səsinizi boğmasına imkan verməyin.",
+            "ru": "Ваше время ограничено, поэтому не тратьте его на жизнь других людей. Не попадайте в ловушку догм - это жизнь с результатами мышления других людей. Не позволяйте шуму чужих мнений заглушать ваш собственный внутренний голос."
+        },
+        "name": {
+            "en": "Steve Jobs",
+            "az": "Steve Jobs",
+            "ru": "Стив Джобс"
+        },
+        "title": {
+            "en": "Co-founder of Apple Inc.",
+            "az": "Apple Inc. şirkətinin həmtəsisçisi",
+            "ru": "Соучредитель Apple Inc."
+        },
+        "profileImage": "./src/assets/eventsone.png"
+    },
+    {
+        "quote": {
+            "en": "The purpose of our lives is to be happy. Life is short, and it's up to you to make it sweet. Turn your wounds into wisdom. We are what we repeatedly do. Excellence, then, is not an act but a habit.",
+            "az": "Həyatımızın məqsədi xoşbəxt olmaqdır. Həyat qısadır və onu şirin etmək sizin əlinizdədir. Yaralarınızı hikmətə çevirin. Biz təkrarən etdiyimiz şeyik. Mükəmməllik, beləliklə, bir hərəkət deyil, vərdişdir.",
+            "ru": "Цель нашей жизни - быть счастливыми. Жизнь коротка, и от вас зависит, сделать ее сладкой. Превратите свои раны в мудрость. Мы то, что мы делаем неоднократно. Совершенство, таким образом, не действие, а привычка."
+        },
+        "name": {
+            "en": "Dalai Lama",
+            "az": "Dalai Lama",
+            "ru": "Далай-лама"
+        },
+        "title": {
+            "en": "Spiritual Leader",
+            "az": "Ruhani Lider",
+            "ru": "Духовный лидер"
+        },
+        "profileImage": "./src/assets/eventsthree.png"
+    }
+]

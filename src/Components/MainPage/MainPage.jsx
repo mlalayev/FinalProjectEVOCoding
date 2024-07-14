@@ -10,6 +10,7 @@ import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
 import Instructors from './MainPage-Instructors/Instructors.jsx';
 import SectionSixth from './MainPage-SectionSixth/SectionSixth.jsx';
 import Events from './MainPage-Events/Events.jsx';
+import LastSection from './MainPage-LastSection/LastSection.jsx';
 
 function MainPage() {
   const { t, i18n } = useTranslation();
@@ -62,6 +63,10 @@ function MainPage() {
 
       <section className="setionseventh">
         <Events />
+      </section>
+
+      <section className="sectioneighth">
+        <LastSection />
       </section>
     </div>
   );
