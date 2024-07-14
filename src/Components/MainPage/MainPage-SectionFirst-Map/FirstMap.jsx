@@ -19,7 +19,9 @@ function FirstMap() {
     }, []);
 
     return (
-        <div data-aos="fade-right">
+        <div 
+        className='map-holder'
+        data-aos="fade-right">
             {sectionfirstContent.map((item) => (
                 <div className="sectionfirst__item" key={item.id}>
                     <div className="sectionfirst__item__img">

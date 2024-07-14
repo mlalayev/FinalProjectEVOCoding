@@ -10,6 +10,7 @@
     --display-none: none;
     --display-grid: grid;
     --display-block: block;
+    --flex-start: flex-start;
     --display-inline: inline;
     --display-center: center;
     --flex-direction-row: row;
@@ -187,4 +188,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width:1230px) {
+    .sectionfirst {
+        flex-direction: row;
+    }
 }
