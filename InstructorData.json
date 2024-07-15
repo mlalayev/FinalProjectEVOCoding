@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Dylan Meringue",
+        "role": "Sales Director",
+        "image": "./src/assets/instructorone.png"
+    },
+    {
+        "id": 2,
+        "name": "Dylan Meringue",
+        "role": "Sales Director",
+        "image": "./src/assets/instructortwo.png"
+    },
+    {
+        "id": 3,
+        "name": "Emma Smith",
+        "role": "Marketing Manager",
+        "image": "./src/assets/instructorthree.png"
+    },
+    {
+        "id": 4,
+        "name": "Emma Smith",
+        "role": "Marketing Manager",
+        "image": "./src/assets/instructorfour.png"
+    }
+]

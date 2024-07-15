@@ -127,126 +127,8 @@
     --visible: visible;
 }
 
-.header-upper {
-    width: 100%;
-    height: 130px;
-    gap: var(--20-px);
-    display: var(--display-flex);
-    text-align: var(--display-center);
-    align-items: var(--display-center);
-    justify-content: var(--display-center);
-    background-color: var(--grayish-color);
-    flex-direction: var(--flex-direction-column);
-}
-
-.margin-bottom {
-    margin-bottom: var(--6-px);
-}
-
-.margin-top {
-    margin-top: var(--10-px);
-}
-
-.header-upper-down {
-    width: 70%;
-    height: 40px;
-    gap: var(--30-px);
-    display: var(--display-flex);
-    text-align: var(--display-center);
-    align-items: var(--display-center);
-    justify-content: var(--display-center);
-    border-top: 1px solid var(--main-blue-line-color);
-}
-
 header {
     width: 100%;
-}
-
-.header-a-tag {
-    gap: var(--14-px);
-    font-size: var(--14-px);
-    color: var(--black-color);
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    font-weight: var(--400-font-weight);
-    font-family: var(--Open-font-family);
-    transition: var(--transition-medium);
-    text-decoration: var(--display-none);
-    justify-content: var(--display-center);
-}
-
-.header-a-tag:hover {
-    color: var(--main-blue-color);
-}
-
-.header-lower {
-    width: 100%;
-    height: 70px;
-    padding: 0 60px;
-    display: var(--display-flex);
-    text-align: var(--display-center);
-    position: var(--position-relative);
-    align-items: var(--display-center);
-    justify-content: var(--display-space-between);
-}
-
-.logo {
-    width: 100px;
-}
-
-.header-button {
-    width: 140px;
-    height: 40px;
-    font-size: var(--12-px);
-    color: var(--white-color);
-    border: var(--display-none);
-    border-radius: var(--20-px);
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    font-weight: var(--600-font-weight);
-    transition: var(--transition-medium);
-    justify-content: var(--display-center);
-    background-color: var(--main-blue-color);
-}
-
-.header-button:hover {
-    color: var(--main-blue-color);
-    background-color: var(--white-color);
-    border: 1px solid var(--main-blue-color);
-}
-
-.menu {
-    left: 0%;
-    top: 70px;
-    width: 100vw;
-    z-index: 1000;
-    text-align: var(--text-left);
-    position: var(--position-absolute);
-    background-color: var(--white-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.menu-item,
-.navigation-menu li a {
-    color: #333;
-    padding: var(--16-px);
-    display: var(--display-block);
-    border-bottom: 1px solid #ddd;
-    text-decoration: var(--display-none);
-}
-
-.navigation-menu li a {
-    border: var(--display-none);
-}
-
-.menu-item:hover {
-    background-color: var(--grayish-color);
-}
-
-.submenu {
-    display: var(--display-flex);
-    flex-direction: var(--flex-direction-column);
 }
 
 .flag {
@@ -263,14 +145,7 @@ header {
     align-items: var(--display-center);
 }
 
-.arrow-down {
-    margin-top: 1px;
-    transform: var(--transition-medium) ease;
-}
 
-.arrow-down.open {
-    transform: rotate(180deg);
-}
 
 @media screen and (min-width:800px) {
     .header-upper {
@@ -298,10 +173,6 @@ header {
 
     .margin-top {
         margin-top: var(--display-none);
-    }
-
-    .header-lower {
-        padding: 0 80px;
     }
 }
 
@@ -356,6 +227,30 @@ header {
         background-color: var(--white-color);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .header-lower {
+        min-width: 950px;
+    }
+
+    .header-lower ul{
+        padding: 0 80px;
+    }
+
+    .logo{
+        width: 130px !important;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .header-lower {
+        min-width: 1050px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .header-lower {
+        min-width: 1200px;
+    }
 }
 
 .header-upper {
@@ -367,16 +262,6 @@ header {
     visibility: var(--hidden);
 }
 
-.header-lower {
-    transition: top 0.3s ease;
-    position: var(--position-relative);
-}
-
-.header-lower.sticky {
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: var(--percent-100);
-    position: var(--position-fixed);
-    background-color: var(--white-color);
+.logo {
+    margin-top: 8px;
 }

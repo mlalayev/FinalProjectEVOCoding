@@ -235,9 +235,7 @@
       width: 200px;
       height: 60px;
       border-radius: 30px;
-    }
-
-    
+    }   
 }
 
 .slide-caption{
@@ -245,7 +243,6 @@
   bottom: 30%;
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
   flex-direction: column;
   justify-content: space-between;
 }

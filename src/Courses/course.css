@@ -6,6 +6,11 @@
     align-items: center;
     flex-direction: column;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .course .home-course{
     gap: 5px;
     width: 90%;
@@ -19,6 +24,7 @@
     width: 90%;
     height: 100px;
     display: flex;
+   
     justify-content: space-between;
 }
 .search .search-right{
@@ -44,6 +50,8 @@
     left: 260px;
     bottom:10px;
 }
+
+
 /* search finished */
 
 .course .cards{
@@ -54,7 +62,7 @@
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    border: 0.1px solid silver;
+    border: 0.1px solid rgb(230, 227, 227);
     background-color:#FFFFFF;
 }
 

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "graphicsdesign",
+        "icon": "PiBookLight",
+        "text": "sectionsixth.graphicsdesign",
+        "image": "./src/assets/sectionsixthone.png",
+        "videoUrl": "https://www.youtube.com/watch?v=Pqv-u9V2lJs&t=2353s"
+    },
+    {
+        "id": "selfdevelopment",
+        "icon": "FaKey",
+        "text": "sectionsixth.selfdevelopment",
+        "image": "./src/assets/sectionsixthtwo.png",
+        "videoUrl": "https://www.youtube.com/watch?v=example2"
+    },
+    {
+        "id": "itsoftware",
+        "icon": "IoSaveOutline",
+        "text": "sectionsixth.itsoftware",
+        "image": "./src/assets/sectionsixththree.png",
+        "videoUrl": "https://www.youtube.com/watch?v=example3"
+    }
+]

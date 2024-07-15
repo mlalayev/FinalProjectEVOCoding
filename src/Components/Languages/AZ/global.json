@@ -7,11 +7,6 @@
         "allCourses": "Kurslarımız",
         "blogClassic": "Bloq",
         "pages": "Səhifələr",
-        "contactUs":"Bizimlə Əlaqə"
-    },
-    "pages": {
-        "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
-        "abouttwocontainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz."
         "contactUs": "Bizimlə Əlaqə"
     },
     "footer": {
@@ -38,5 +33,45 @@
         "privacypolicy": "Gizlilik Siyasəti",
         "support": "Dəstək",
         "career": "Karyera"
+    },
+    "pages": {
+        "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
+        "abouttwocontainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz.",
+        "contactUs": "Bizimlə Əlaqə"
+    },
+    "mainpage": {
+        "registrationtextone": "Qeydiyyat",
+        "registrationtexttwo": "Kursa qeydiyyat",
+        "inputtextone": "Ad",
+        "inputtexttwo": "E-poçt",
+        "inputtextthree": "Telefon",
+        "inputtextfour": "Kurs adı",
+        "buttonfirsttext": "İstifadə et",
+        "sectionsecondtexthone": "Biz Təhsil Müəssisəsi Mütəxəssisləriyik",
+        "sectionsecondtextptag": "20 İllik Təcrübə",
+        "sectionsecondtextthree": "Birinin bütün körpüldə mümkün olan tək bir bugər all dostum yalnız bir funt o cip şop arasında, bir şübhələ, fransız limonu squeezy bender zonked my lady gosh cayı var, bu spiffing yaxşı vaxt naff rüzgarı birləşdirin codswallop crikey.",
+        "callus": "Zəng edin",
+        "button": "Kursları göstər"
+    },
+    "card": {
+        "texthone": "Araşdırın bizim",
+        "texthtwo": "Populyar Kurslar",
+        "textpone": "Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!"
+    },
+    "sectionsixth": {
+        "textone": "Sizin motivasiyanız və diqqətiniz sizi ən yaxşı şəkildə öyrədəcək",
+        "texttwo": "Cack gormless gənc cinayətkar bits və bobs o nicked it mush, spiffing smashing he legged it have it codswallop.",
+        "graphicsdesign": "Qrafik Dizayn",
+        "selfdevelopment": "Özünü inkişaf etdirmək",
+        "itsoftware": "IT və Proqram təminatı"
+    },
+    "events": {
+        "title": "Gələcəkdəki Tədbirlərimiz",
+        "intro": "Cənab Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!",
+        "button": "Bütün Tədbirlərə Keçid"
+    },
+    "lastsection": {
+        "firsttext": "Tələbələr Deyir",
+        "secondtext": "Haqqımızda."
     }
 }
