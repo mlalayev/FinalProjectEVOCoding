@@ -1,6 +1,5 @@
 .course{
     width: 100%;
-    height: 800px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -8,7 +7,7 @@
 }
 .course .home-course{
     gap: 5px;
-    width: 90%;
+    width: 87%;
     height: 100px;
     display: flex;
     font-size: 18px;
@@ -16,7 +15,7 @@
 }
 /* home>course finished */
 .course .search{
-    width: 90%;
+    width: 87%;
     height: 100px;
     display: flex;
    
@@ -43,14 +42,14 @@
 .inputSearch p{
     position: absolute;
     left: 260px;
-    bottom:10px;
+    bottom:56px;
 }
 
 
 /* search finished */
 
 .course .cards{
-    width: 90%;
+    width: 87%;
     min-height: 400px;
     gap: 60px;
     display: flex;
@@ -172,7 +171,7 @@
 /* card price finished */
 
 .course_pages{
-    width: 90%;
+    width: 87%;
     gap: 20px;
     display: flex;
 }

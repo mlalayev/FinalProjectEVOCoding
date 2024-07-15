@@ -90,6 +90,7 @@ function App() {
             <>
               <Header />
               <Course/>
+              <Footer/>
             </>
           } />
 
@@ -97,6 +98,7 @@ function App() {
             <>
               <Header/>
               <View/>
+              <Footer/>
             </>
           } />
 
