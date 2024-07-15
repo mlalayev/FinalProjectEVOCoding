@@ -1,6 +1,7 @@
 import './Categories.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
+import { t } from 'i18next';
 
 const Categories = ({ interval = 8000, language = 'en' }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,6 +45,12 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
 
     return (
         <div className='category-slider-section'>
+            <h1>{t('category.textone')}</h1>
+            <h1>{t('category.texttwo')}</h1>
+            <p style={{
+                marginBottom:"40px"
+            }}            
+            >{t('category.textthree')}</p>
             <div
                 className="category-card-container"
                 style={{ transform: `translateX(-${(currentIndex / visibleCards) * 100}%)` }}
