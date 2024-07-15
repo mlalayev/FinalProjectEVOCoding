@@ -9,8 +9,8 @@ const AboutTwoSection = () => {
     <div className="AboutTwoContainer">
     <div className="AboutTwoSectionLeftSide">
       <h1>About Varsity</h1>
-      <p>{t('pages.abouttwocontainer')}Varsity is an educational Bootstrap Premium Template</p>
-      <p>{t('pages.abouttwocontainerr')}You can use it for making your modern educational website.</p>
+      <p>{t('pages.abouttwocontainer')}</p>
+      <p>{t('pages.abouttwocontainerr')}</p>
     </div>
     <div className="AboutTwoSectionRightSide">
     <img src={AboutTwoSectionImg} alt="AboutTwoSectionImg" />

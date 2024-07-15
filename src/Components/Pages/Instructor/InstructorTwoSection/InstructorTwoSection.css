@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.InstructorTwoSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.InstructorTwoSectionCardsPart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    gap: 15px;
+}
+
+.InstructorTwoSectionCardsPart .InstructorTwoSectionCard {
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+.InstructorTwoSectionCardsPart .InstructorTwoSectionCard:hover .InstructorTwoSectionCardSocials {
+    right: 0;
+}
+
+.InstructorTwoSectionCardUpPart {
+    overflow: hidden;
+}
+
+.InstructorTwoSectionCardUpPart img {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.InstructorTwoSectionCardsPart .InstructorTwoSectionCard:hover .InstructorTwoSectionCardUpPart img {
+    transform: scale(1.1);
+}
+
+.InstructorTwoSectionCard .InstructorTwoSectionCardSocials {
+    position: absolute;
+    right: 270px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.496);
+    height: 89%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.InstructorTwoSectionCard .InstructorTwoSectionCardSocials a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.InstructorTwoSectionCardUpPart>img:hover .InstructorTwoSectionCardSocials {
+    position: absolute;
+    right: -270px;
+    top: 0;
+}
+
+.InstructorTwoSectionCard .InstructorTwoSectionCardSocials .InstructorSocials {
+    background-color: white;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.InstructorTwoSectionCardDownPart p {
+    color: #626a77;
+}
+
+@media (max-width: 1200px) {
+    .InstructorTwoSectionCardsPart {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .InstructorTwoSectionCardsPart {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .InstructorTwoSectionCardsPart {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}

@@ -9,8 +9,7 @@
     width: 100%;
 }
 
-.EventsTwoSectionContainer h2,
-.EventsTwoSectionContainer p {
+.EventsTwoSectionContainer  h2, .EventsTwoSectionContainer p {
     text-align: center;
 }
 
