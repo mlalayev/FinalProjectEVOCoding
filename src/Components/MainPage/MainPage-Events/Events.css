@@ -139,8 +139,12 @@
 }
 
 .events {
-    padding: 0 30px;
+    padding: 20px 30px;
     border-radius: 10px;
+    box-shadow:
+        0px 0px 5.3px rgba(0, 0, 0, 0.028),
+        0px 0px 17.9px rgba(0, 0, 0, 0.042),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
 }
 
 .center {
@@ -161,8 +165,8 @@
 }
 
 .image-part-events {
-    align-items: var(--display-center);
     display: var(--display-flex);
+    align-items: var(--display-center);
     justify-content: var(--display-center);
 }
 
