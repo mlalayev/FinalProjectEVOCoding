@@ -1,101 +1,305 @@
-[
-    {
-        "image": "./src/assets/sectionthreeimageone.png",
-        "title": "Card Title 1",
-        "text1": "Text for section one of card 1",
-        "text2": "Text for section two of card 1",
-        "profileImage": "path_to_profile_image1",
-        "profileText": "Profile text for card 1",
-        "lessonCount": "Lesson count for card 1",
-        "lessonPerson": "Person text for card 1",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagetwo.png",
-        "title": "Card Title 2",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagethree.png",
-        "title": "Card Title 2",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagefour.png",
-        "title": "Card Title 2",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagefive.png",
-        "title": "Card Title 3",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagesix.png",
-        "title": "Card Title 4",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimageseven.png",
-        "title": "Card Title 5",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimageeight.png",
-        "title": "Card Title 6",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    },
-    {
-        "image": "src/assets/sectionthreeimagenine.png",
-        "title": "Card Title 7",
-        "text1": "Text for section one of card 2",
-        "text2": "Text for section two of card 2",
-        "profileImage": "path_to_profile_image2",
-        "profileText": "Profile text for card 2",
-        "lessonCount": "Lesson count for card 2",
-        "lessonPerson": "Person text for card 2",
-        "rating": 4
-    }
-]
+{
+    "en": [
+        {
+            "image": "./src/assets/sectionthreeimageone.png",
+            "title": "Cyber Security",
+            "text1": "$16.00",
+            "text2": "120 reviews",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Dylan Meringue",
+            "lessonCount": "10 Lessons",
+            "lessonPerson": "120",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagetwo.png",
+            "title": "Data Analysis",
+            "text1": "$20.00",
+            "text2": "140 reviews",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Chauffina Carr",
+            "lessonCount": "20 Lessons",
+            "lessonPerson": "130",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagethree.png",
+            "title": "Music & Art",
+            "text1": "$40.00",
+            "text2": "150 reviews",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Jason Response",
+            "lessonCount": "30 Lessons",
+            "lessonPerson": "100",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefour.png",
+            "title": "Business Strategy",
+            "text1": "$50.00",
+            "text2": "135 reviews",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Justin Case",
+            "lessonCount": "65 Lessons",
+            "lessonPerson": "122",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefive.png",
+            "title": "English Learning",
+            "text1": "$70.00",
+            "text2": "299 reviews",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Hanson Deck",
+            "lessonCount": "45 Lessons",
+            "lessonPerson": "90",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagesix.png",
+            "title": "Algebra & Calculus",
+            "text1": "$110.00",
+            "text2": "105 reviews",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Adam Smith",
+            "lessonCount": "30 Lessons",
+            "lessonPerson": "80",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageseven.png",
+            "title": "History & Philosophy",
+            "text1": "$117.00",
+            "text2": "221 reviews",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Hanson Deck",
+            "lessonCount": "20 Lessons",
+            "lessonPerson": "17",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageeight.png",
+            "title": "Business Essentials",
+            "text1": "$227.00",
+            "text2": "90 reviews",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Gunther Beard",
+            "lessonCount": "25 Lessons",
+            "lessonPerson": "28",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagenine.png",
+            "title": "Software Development",
+            "text1": "$90.00",
+            "text2": "177 reviews",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Samuel Serif",
+            "lessonCount": "50 Lessons",
+            "lessonPerson": "42",
+            "rating": 5
+        }
+    ],
+    "az": [
+        {
+            "image": "./src/assets/sectionthreeimageone.png",
+            "title": "Kiber Təhlükəsizlik",
+            "text1": "$16.00",
+            "text2": "120 rəylər",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Dylan Meringue",
+            "lessonCount": "10 Dərs",
+            "lessonPerson": "120",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagetwo.png",
+            "title": "Məlumat Təhlili",
+            "text1": "$20.00",
+            "text2": "140 rəylər",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Chauffina Carr",
+            "lessonCount": "20 Dərs",
+            "lessonPerson": "130",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagethree.png",
+            "title": "Musiqi və İncəsənət",
+            "text1": "$40.00",
+            "text2": "150 rəylər",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Jason Response",
+            "lessonCount": "30 Dərs",
+            "lessonPerson": "100",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefour.png",
+            "title": "Biznes Strategiyası",
+            "text1": "$50.00",
+            "text2": "135 rəylər",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Justin Case",
+            "lessonCount": "65 Dərs",
+            "lessonPerson": "122",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefive.png",
+            "title": "İngilis Dili Öyrənmə",
+            "text1": "$70.00",
+            "text2": "299 rəylər",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Hanson Deck",
+            "lessonCount": "45 Dərs",
+            "lessonPerson": "90",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagesix.png",
+            "title": "Cəbr və Hesab",
+            "text1": "$110.00",
+            "text2": "105 rəylər",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Adam Smith",
+            "lessonCount": "30 Dərs",
+            "lessonPerson": "80",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageseven.png",
+            "title": "Tarix və Fəlsəfə",
+            "text1": "$117.00",
+            "text2": "221 rəylər",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Hanson Deck",
+            "lessonCount": "20 Dərs",
+            "lessonPerson": "17",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageeight.png",
+            "title": "Biznes Əsasları",
+            "text1": "$227.00",
+            "text2": "90 rəylər",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Gunther Beard",
+            "lessonCount": "25 Dərs",
+            "lessonPerson": "28",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagenine.png",
+            "title": "Proqram İnkişafı",
+            "text1": "$90.00",
+            "text2": "177 rəylər",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Samuel Serif",
+            "lessonCount": "50 Dərs",
+            "lessonPerson": "42",
+            "rating": 5
+        }
+    ],
+    "ru": [
+        {
+            "image": "./src/assets/sectionthreeimageone.png",
+            "title": "Кибербезопасность",
+            "text1": "$16.00",
+            "text2": "120 отзывов",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Дилан Меринг",
+            "lessonCount": "10 уроков",
+            "lessonPerson": "120",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagetwo.png",
+            "title": "Анализ данных",
+            "text1": "$20.00",
+            "text2": "140 отзывов",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Шаффина Карр",
+            "lessonCount": "20 уроков",
+            "lessonPerson": "130",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagethree.png",
+            "title": "Музыка и искусство",
+            "text1": "$40.00",
+            "text2": "150 отзывов",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Джейсон Респонс",
+            "lessonCount": "30 уроков",
+            "lessonPerson": "100",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefour.png",
+            "title": "Бизнес-стратегия",
+            "text1": "$50.00",
+            "text2": "135 отзывов",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Джастин Кейс",
+            "lessonCount": "65 уроков",
+            "lessonPerson": "122",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagefive.png",
+            "title": "Изучение английского языка",
+            "text1": "$70.00",
+            "text2": "299 отзывов",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Хансон Дек",
+            "lessonCount": "45 уроков",
+            "lessonPerson": "90",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagesix.png",
+            "title": "Алгебра и анализ",
+            "text1": "$110.00",
+            "text2": "105 отзывов",
+            "profileImage": "./src/assets/profiletwo.jpg",
+            "profileText": "Адам Смит",
+            "lessonCount": "30 уроков",
+            "lessonPerson": "80",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageseven.png",
+            "title": "История и философия",
+            "text1": "$117.00",
+            "text2": "221 отзывов",
+            "profileImage": "./src/assets/profilethree.jpg",
+            "profileText": "Хансон Дек",
+            "lessonCount": "20 уроков",
+            "lessonPerson": "17",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimageeight.png",
+            "title": "Основы бизнеса",
+            "text1": "$227.00",
+            "text2": "90 отзывов",
+            "profileImage": "./src/assets/profilefour.png",
+            "profileText": "Гюнтер Беард",
+            "lessonCount": "25 уроков",
+            "lessonPerson": "28",
+            "rating": 5
+        },
+        {
+            "image": "src/assets/sectionthreeimagenine.png",
+            "title": "Разработка программного обеспечения",
+            "text1": "$90.00",
+            "text2": "177 отзывов",
+            "profileImage": "./src/assets/profileone.jpeg",
+            "profileText": "Самуэль Сериф",
+            "lessonCount": "50 уроков",
+            "lessonPerson": "42",
+            "rating": 5
+        }
+    ]
+}

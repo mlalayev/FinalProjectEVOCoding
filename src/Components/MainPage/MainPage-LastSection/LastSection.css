@@ -1,0 +1,47 @@
+.last-section-holder {
+    background-image: url(../../../assets/sectioneights.png);
+    width: 100%;
+    height: 418px;
+    padding: 50px 70px;
+    color: white;
+}
+
+.quote-holder p {
+    line-height: 26px;
+}
+
+.profile-pic {
+    width: 60px;
+    border-radius: 40px;
+    border: 5px solid white;
+    box-sizing: content-box;
+}
+
+.last-section-holder {
+    position: relative;
+}
+
+.dots-last-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.profile-holder-eighthsection{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

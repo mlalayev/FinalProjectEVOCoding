@@ -1,0 +1,124 @@
+.display-flex {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.bgcolorWhite {
+    gap: 10px;
+    width: 360px;
+    height: 60px;
+    padding: 0 30px;
+    background-color: white;
+}
+
+.sectionsixth-category-holder {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bgcolorWhite:hover {
+    color: var(--main-blue-color);
+}
+
+.category-holder {
+    width: 100%;
+    color: #666;
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.selected-category-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.selected-category-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sectionsixthimage{
+    position: relative;
+}
+
+.display-flex {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.bgcolorWhite {
+    gap: 10px;
+    width: 360px;
+    height: 60px;
+    padding: 0 30px;
+    background-color: white;
+}
+
+.sectionsixth-category-holder {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bgcolorWhite:hover {
+    color: var(--main-blue-color);
+}
+
+.sectionsixth-category-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-holder:hover,
+.category-holder.selected {
+    background-color: #f0f0f0;
+    color: #2772FF;
+    border-color: #2772FF;
+}
+
+.selected-category-content {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.selected-category-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.play-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin-left: -40px;
+}
+
+.play-icon-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-blue-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}

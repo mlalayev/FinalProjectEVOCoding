@@ -15,10 +15,12 @@ import Blog from './Components/Blog/Blog.jsx';
 import Footer from './Components/Common/Footer/Footer.jsx'
 import Course from './Courses/course.jsx'
 import View from './Courses/view.jsx';
+
+import Buy from './Courses/buyNow.jsx'
 import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx';
 
 
-
+ 
 
 function App() {
   return (
@@ -88,6 +90,7 @@ function App() {
             <>
               <Header />
               <Course/>
+              <Footer/>
             </>
           } />
 
@@ -95,6 +98,14 @@ function App() {
             <>
               <Header/>
               <View/>
+              <Footer/>
+            </>
+          } />
+
+            <Route path='/view/buyNow' element={
+            <>
+              <Header/>
+              <Buy/>
             </>
           } />
         </Routes>
