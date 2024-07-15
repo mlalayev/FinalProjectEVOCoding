@@ -23,7 +23,7 @@
   
   .BackgorundText .UpText h2 {
     font-size: 50px;
-    font-weight: var(--700-font-weight);
+  font-weight: 700;
     color: var(--white-color);
   }
   

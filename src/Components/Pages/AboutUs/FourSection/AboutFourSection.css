@@ -71,8 +71,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  
     .AboutFourSectionContainer .AboutFourCardSection {
         grid-template-columns: 222px 222px;
+        grid-template-rows: 244px 244px;
     }
 
     .AboutFourSectionText {

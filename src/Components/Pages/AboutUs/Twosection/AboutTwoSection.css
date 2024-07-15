@@ -30,9 +30,11 @@
 @media only screen and (max-width: 767px){
     .AboutTwoContainer{
         flex-direction: column;
+        height: 35vh;
     }
     .AboutTwoSectionLeftSide h1{
         font-size: 32px;
+        font-weight: 400;
     }
     .AboutTwoSectionLeftSide p{
         max-width: 58vw;
