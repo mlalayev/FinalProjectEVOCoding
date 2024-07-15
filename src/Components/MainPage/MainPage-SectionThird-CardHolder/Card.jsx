@@ -29,7 +29,7 @@ const CardSlider = ({ interval = 8000 }) => {
       const width = window.innerWidth;
       if (width >= 1024) {
         setCardsPerView(3);
-      } else if (width >= 768) {
+      } else if (width >= 800) {
         setCardsPerView(2);
       } else {
         setCardsPerView(1);
@@ -127,11 +127,11 @@ const CardSlider = ({ interval = 8000 }) => {
           })}
         </div>
       </div>
-      <div className="dots">
+      <div className="dots-card">
         {Array(Math.ceil(cardsData[i18n.language].length / cardsPerView)).fill().map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === Math.floor(currentIndex / cardsPerView) ? 'active' : ''}`}
+            className={`dot-card ${index === Math.floor(currentIndex / cardsPerView) ? 'active' : ''}`}
             onClick={() => handleDotClick(index)}
           ></span>
         ))}

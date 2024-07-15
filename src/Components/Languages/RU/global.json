@@ -73,5 +73,9 @@
     "lastsection": {
         "firsttext": "Студенты Говорят",
         "secondtext": "О Нас."
+    },
+    "category": {
+        "textone": "Просмотр Онлайн",
+        "texttwo": "Категории Курсов"
     }
 }
