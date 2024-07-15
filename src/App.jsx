@@ -1,25 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainPage from './Components/MainPage/MainPage.jsx';
-import { I18nextProvider } from 'react-i18next';
+import View from './Courses/view.jsx';
+import Buy from './Courses/buyNow.jsx';
+import Course from './Courses/course.jsx';
 import i18n from './Components/I18N/I18N.jsx';
-import Header from './Components/Common/Header/Header.jsx';
+import Blog from './Components/Blog/Blog.jsx';
+import { I18nextProvider } from 'react-i18next';
 import Events from './Components/Pages/Events/Events.jsx';
+import MainPage from './Components/MainPage/MainPage.jsx';
+import Footer from './Components/Common/Footer/Footer.jsx';
+import Header from './Components/Common/Header/Header.jsx';
+import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx';
 import Instructor from './Components/Pages/Instructor/Instructor.jsx';
-import Testimonial from './Components/Pages/Testimonial/Testimonial.jsx';
 import SamplePage from './Components/Pages/SamplePage/SamplePage.jsx';
+import Testimonial from './Components/Pages/Testimonial/Testimonial.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage.jsx';
 import PageLeftSideBar from './Components/Pages/PageLeftSideBar/PageLeftSideBar.jsx';
 import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideBar.jsx';
-import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage.jsx';
-import Blog from './Components/Blog/Blog.jsx';
-import Footer from './Components/Common/Footer/Footer.jsx'
-import Course from './Courses/course.jsx'
-import View from './Courses/view.jsx';
-
-import Buy from './Courses/buyNow.jsx'
-import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx';
-
-
  
 
 function App() {

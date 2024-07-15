@@ -157,11 +157,12 @@
 }
 
 .events-holder {
-    display: var(--display-flex);
-    flex-direction: var(--flex-direction-column);
-    gap: var(--40-px);
     width: 80vw;
     padding: 0 30px;
+    gap: var(--40-px);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    flex-direction: var(--flex-direction-column);
 }
 
 .image-part-events {
@@ -200,15 +201,12 @@
         gap: 30px;
         display: flex;
         height: 300px;
-        box-shadow:
-            0px 0px 5.3px rgba(0, 0, 0, 0.028),
-            0px 0px 17.9px rgba(0, 0, 0, 0.042),
-            0px 0px 80px rgba(0, 0, 0, 0.07);
+        max-width: 1000px;
     }
 
     .text-part-events {
-        align-content: space-around;
         padding: 0;
+        align-content: space-around;
     }
 
     .events img {
