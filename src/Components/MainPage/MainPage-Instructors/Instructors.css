@@ -1,9 +1,9 @@
 .sectionfifth-card {
     border: 10px;
-    min-width: 320px;
+    min-width: 290px;
+    margin-left: 15px;
     overflow: var(--hidden);
     position: var(--position-relative);
-    margin-left: 15px;
 }
 
 .sectionfifth-image-wrapper::before {
@@ -37,11 +37,6 @@
     filter: brightness(70%) saturate(120%);
 }
 
-.sectionfifth-card {
-    max-width: 200px;
-    overflow: var(--hidden);
-    position: var(--position-relative);
-}
 
 .sectionfifth-image-wrapper {
     overflow: var(--hidden);
@@ -101,7 +96,7 @@
 
 @media screen and (max-width:1420px) {
     .sectionfifth-card {
-        min-width: 300px;
+        min-width: 290px;
     }
 }
 
@@ -164,6 +159,7 @@
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     .sectionfifth-card {
         min-width: 60vw;
     }
