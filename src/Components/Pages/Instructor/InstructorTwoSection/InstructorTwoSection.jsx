@@ -139,7 +139,7 @@ const InstructorTwoSection = () => {
               <p>Sales Director</p>
             </div>
             <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram className="insta"/></a></div> 
+              <div className="InstructorSocials a"><a href=""><FaInstagram className="insta"/></a></div> 
               <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
               <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
               <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 

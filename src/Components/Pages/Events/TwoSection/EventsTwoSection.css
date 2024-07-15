@@ -7,13 +7,28 @@
 .EventsTwoSectionContainer {
     height: 157.5vh;
     width: 100%;
+    padding: 5vh 0;
 }
-
-.EventsTwoSectionContainer  h2, .EventsTwoSectionContainer p {
+.EventsTwoSectionTextpart{
     text-align: center;
+    margin: 5vh 0;
+}
+.EventsTwoSectionTextpart h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    color: #0b1c39;
+}
+.EventsTwoSectionTextpart p{
+    font-size: 15px;
+    color: #626a77;
+    max-width: 28vw;
+    line-height: 25px;
+    font-weight: 400;
+    margin: auto;
 }
 
-.EventsTwoSectionCardsContainer {
+.EventsTwoSectionCards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,30 +36,26 @@
 
 .EventsTwoSectionCards {
     display: grid;
-    grid-template-columns: 870px;
-    grid-template-rows: 290px 290px 290px;
+    grid-template-columns: 55vw;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
 }
 
 .EventsTwoSectionCards .EventsTwoSectionCard {
     display: flex;
-    padding: 55px;
+    padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 3px gray;
+    box-shadow: 0px 30px 70px 0px rgba(2, 25, 55, 0.08);
+    border-radius: 10px;
 }
 
 .EventsTwoSectionCardLeft {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .EventsTwoSectionCardLeft img {
-    width: 13vw;
-    height: 13vw;
-}
+    width: 15vw;
 
-.DateLocation {
-    display: flex;
-    justify-content: space-between;
 }
 
 .EventsTwoSectionCardRight {
@@ -53,10 +64,20 @@
     gap: 6px;
 
 }
+.EventsTwoSectionCardRight h5{
+    color: #fdb70d;
+}
 
 .EventsTwoSectionCardRight h2 {
     font-size: 22px;
     max-width: 450px;
+    margin-bottom: 3vh;
+}
+
+.DateLocation {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 3vh;
 }
 
 .EventsTwoSectionCardRight .oclock {
@@ -81,4 +102,32 @@
     color: blue;
     display: flex;
     align-items: center;
+}
+
+
+@media (max-width: 768px){
+    .EventsTwoSectionCards .EventsTwoSectionCard{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .EventsTwoSectionTextpart h2{
+        font-size: 25px;
+    }
+    .EventsTwoSectionTextpart p{
+        max-width: 50vw;
+    }
+    .EventsTwoSectionCardRight p{
+        max-width: 60vw;
+    }
+    .EventsTwoSectionCardLeft img{
+        width: 35vw;
+    }
+    .DateLocation{
+        flex-direction: column;
+    }
+    .DateLocation p{
+        font-size: 14px;
+        gap: 2vh;
+    }
 }

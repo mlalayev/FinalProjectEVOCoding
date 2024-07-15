@@ -1,13 +1,14 @@
 import React from "react";
 import "./Instructor.css";
-import InstructorOneSection from "./Onesection/InstructorOneSection";
-import InstructorTwoSection from "./Twosection/InstructorTwoSection";
+import InstructorTwoSection from "./InstructorTwoSection/InstructorTwoSection.jsx";
+import InstructorOneSection from "./InstructorOneSection/InstructorOneSection.jsx";
+
 
 const Instructor = () => {
   return (
     <>
-      <InstructorOneSection />
-      <InstructorTwoSection/>
+    <InstructorOneSection/>
+    <InstructorTwoSection/>
     </>
   );
 };

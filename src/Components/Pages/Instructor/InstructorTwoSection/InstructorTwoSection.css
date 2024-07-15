@@ -9,8 +9,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
 }
-
+.InstructorTwoSectionTextPart{
+    text-align: center;
+    margin: 5vh 0;
+}
+.InstructorTwoSectionTextPart h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    color: #0b1c39;
+}
+.InstructorTwoSectionTextPart p{
+    font-size: 15px;
+    color: #626a77;
+    max-width: 28vw;
+    line-height: 25px;
+    font-weight: 400;
+}
 .InstructorTwoSectionCardsPart {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,7 +37,6 @@
 }
 
 .InstructorTwoSectionCardsPart .InstructorTwoSectionCard {
-    border: 2px solid red;
     position: relative;
     overflow: hidden;
 }
@@ -39,7 +55,7 @@
 }
 
 .InstructorTwoSectionCardsPart .InstructorTwoSectionCard:hover .InstructorTwoSectionCardUpPart img {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .InstructorTwoSectionCard .InstructorTwoSectionCardSocials {
@@ -57,7 +73,12 @@
     padding: 15px;
     transition: 0.5s;
 }
-
+.InstructorTwoSectionCard .InstructorTwoSectionCardSocials .InstructorSocials:hover{
+    background-color: rgba(0, 0, 255, 0.534);
+}
+.InstructorTwoSectionCard .InstructorTwoSectionCardSocials .InstructorSocials:hover a{
+    color: white;
+}
 .InstructorTwoSectionCard .InstructorTwoSectionCardSocials a {
     text-decoration: none;
     color: black;
@@ -81,6 +102,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .InstructorTwoSectionCardDownPart p {
@@ -105,5 +127,11 @@
     .InstructorTwoSectionCardsPart {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+    }
+    .InstructorTwoSectionTextPart h2{
+        font-size: 25px;
+    }
+    .InstructorTwoSectionTextPart p{
+        max-width: 50vw;
     }
 }

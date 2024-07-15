@@ -8,7 +8,6 @@ import CardAvatarFourImg from '../../../../assets/Pages/AboutUs/avatar4.png'
 const AboutFourSection = () => {
   return (
     <>
-    
     <div className="AboutFourSectionContainer">
     <div className="AboutFourSectionText">
         <h2>Our Team</h2>

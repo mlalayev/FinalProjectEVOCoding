@@ -9,12 +9,13 @@ import { CiLocationOn } from "react-icons/ci";
 const EventsTwoSection = () => {
   return (
     <div className="EventsTwoSectionContainer">
+      <div className="EventsTwoSectionTextpart">
       <h2>Our Upcoming Events</h2>
       <p>
         Jeffrey crikey victoria sponge mush spiffing super arse over tit matie
-        boy smashing. The little rotter off his nut codswallop.!F
+        boy smashing. The little rotter off his nut codswallop.!
       </p>
-      <div className="EventsTwoSectionCardsContainer">
+      </div>
         <div className="EventsTwoSectionCards">
           <div className="EventsTwoSectionCard">
             <div className="EventsTwoSectionCardLeft">
@@ -56,18 +57,20 @@ const EventsTwoSection = () => {
             </div>
             <div className="EventsTwoSectionCardRight">
               <h5>14 JANUARY, 2023</h5>
-              <h2>Why you Need Advance Developmemt Process Course?</h2>
-              <div className="oclock">
-                <i>
-                  <GoClock />
-                </i>
-                <p>8.30 AM - 5.30 PM</p>
-              </div>
-              <div className="map">
-                <i>
-                  <CiLocationOn />
-                </i>
-                <p>9 Road, Mirpur Dohs, New York, USA</p>
+              <h2>Graphic Illustration: Design with Color and Shape</h2>
+              <div className="DateLocation">
+                <div className="oclock">
+                  <i>
+                    <GoClock />
+                  </i>
+                  <p>8.30 AM - 5.30 PM</p>
+                </div>
+                <div className="map">
+                  <i>
+                    <CiLocationOn />
+                  </i>
+                  <p>9 Road, Mirpur Dohs, New York, USA</p>
+                </div>
               </div>
               <p>
                 He lost his bottle bamboozled golly gosh some dodgy chav only a
@@ -85,18 +88,20 @@ const EventsTwoSection = () => {
             </div>
             <div className="EventsTwoSectionCardRight">
               <h5>14 JANUARY, 2023</h5>
-              <h2>Why you Need Advance Developmemt Process Course?</h2>
-              <div className="oclock">
-                <i>
-                  <GoClock />
-                </i>
-                <p>8.30 AM - 5.30 PM</p>
-              </div>
-              <div className="map">
-                <i>
-                  <CiLocationOn />
-                </i>
-                <p>9 Road, Mirpur Dohs, New York, USA</p>
+              <h2>Magazine Design Start to Finish: The Inside Pages</h2>
+              <div className="DateLocation">
+                <div className="oclock">
+                  <i>
+                    <GoClock />
+                  </i>
+                  <p>8.30 AM - 5.30 PM</p>
+                </div>
+                <div className="map">
+                  <i>
+                    <CiLocationOn />
+                  </i>
+                  <p>9 Road, Mirpur Dohs, New York, USA</p>
+                </div>
               </div>
               <p>
                 He lost his bottle bamboozled golly gosh some dodgy chav only a
@@ -106,7 +111,6 @@ const EventsTwoSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
