@@ -65,6 +65,8 @@
         width: 300px;
         margin-bottom: 0;
         border-radius: var(--14-px);
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0 !important;
     }
 }
 

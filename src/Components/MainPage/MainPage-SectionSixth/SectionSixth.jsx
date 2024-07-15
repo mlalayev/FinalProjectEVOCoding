@@ -43,22 +43,25 @@ function SectionSixth() {
         <div
             data-aos="fade-right"
             className='SixthSection'>
-            <h1>{t('sectionsixth.textone')}</h1>
-            <p>{t('sectionsixth.texttwo')}</p>
+            <div>
+                <div className="sectionsixth-text-holder">
+                    <h1>{t('sectionsixth.textone')}</h1>
+                    <p>{t('sectionsixth.texttwo')}</p>
+                </div>
 
-            <div className="sectionsixth-category-holder">
-                {categories.map(category => (
-                    <div
-                        key={category.id}
-                        className={`category-holder bgcolorWhite display-flex ${selectedCategory?.id === category.id ? 'selected' : ''}`}
-                        onClick={() => handleCategoryClick(category)}
-                    >
-                        {renderIcon(category.icon, category.color)}
-                        <p className='category-holder-text-one'>{t(category.text)}</p>
-                    </div>
-                ))}
+                <div className="sectionsixth-category-holder">
+                    {categories.map(category => (
+                        <div
+                            key={category.id}
+                            className={`category-holder bgcolorWhite display-flex ${selectedCategory?.id === category.id ? 'selected' : ''}`}
+                            onClick={() => handleCategoryClick(category)}
+                        >
+                            {renderIcon(category.icon, category.color)}
+                            <p className='category-holder-text-one'>{t(category.text)}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-
             {selectedCategory && (
                 <div className="selected-category-content">
                     <img src={selectedCategory.image} alt={t(selectedCategory.text)} className='sectionsixthimage' />
