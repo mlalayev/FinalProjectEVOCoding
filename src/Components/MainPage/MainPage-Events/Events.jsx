@@ -19,7 +19,7 @@ function Events() {
                     maxWidth: "400px",
                     textAlign: "center",
                     color: "gray",
-                    margin:"20px 0"
+                    margin: "20px 0"
                 }}
             >{t('events.intro')}</p>
 
@@ -30,16 +30,36 @@ function Events() {
                             <img src={event.image} alt="" className='events-image' />
                         </div>
                         <div className="text-part-events">
-                            <h1 className='yellow-color'>{event.date}</h1>
-                            <h1 className='font-size'>{event.title}</h1>
-                            <p className='center text-gray'><IoTimeOutline color='var(--main-blue-color)' />{event.time}</p>
-                            <p className='center text-gray'><IoLocationOutline color='var(--main-blue-color)' />{event.location}</p>
-                            <p className='text-gray'>{event.description}</p>
+                            <h1 className='yellow-color'
+                                style={{
+                                    margin: "10px 0"
+                                }}
+                            >{event.date}</h1>
+                            <h1 className='font-size'
+                                style={{
+                                    margin: "10px 0"
+                                }}>{event.title}</h1>
+                            <p className='center text-gray'
+                                style={{
+                                    margin: "10px 0"
+                                }}><IoTimeOutline color='var(--main-blue-color)' />{event.time}</p>
+                            <p className='center text-gray'
+                                style={{
+                                    margin: "10px 0"
+                                }}><IoLocationOutline color='var(--main-blue-color)' />{event.location}</p>
+                            <p className='text-gray'
+                                style={{
+                                    margin: "10px 0"
+                                }}>{event.description}</p>
                         </div>
                     </div>
                 ))}
             </div>
-            <button className='events-button'>{t('events.button')}</button>
+            <button className='events-button'
+                style={{
+                    margin: "40px 0"
+                }}
+            >{t('events.button')}</button>
         </div>
     );
 }
