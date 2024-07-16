@@ -19,11 +19,12 @@ function FirstMap() {
     }, []);
 
     return (
-        <div 
-        className='map-holder'
-        data-aos="fade-right">
+        <div
+            className='map-holder'>
             {sectionfirstContent.map((item) => (
-                <div className="sectionfirst__item" key={item.id}>
+                <div
+                    data-aos="fade-right"
+                    className="sectionfirst__item" key={item.id}>
                     <div className="sectionfirst__item__img">
                         <img src={item.img} alt="" className="sectionfirst-image" />
                         <h1 className="sectionfirst-htag">{item.title[i18n.language]}</h1>

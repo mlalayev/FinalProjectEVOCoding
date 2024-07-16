@@ -77,5 +77,8 @@
     "category": {
         "textone": "Kurs Kateqoriyalarını",
         "texttwo": "Gözdən Keçirin"
-    }
+    }, "instructors": {
+        "textone": "Ən Yaxşı Təlimçi",
+        "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
+      }
 }
