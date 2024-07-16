@@ -1,7 +1,7 @@
 import './Categories.css';
+import { t } from 'i18next';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
-import { t } from 'i18next';
 
 const Categories = ({ interval = 8000, language = 'en' }) => {
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,12 +1,12 @@
 import './Card.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { IoMdStar } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
 import { PiBookLight } from "react-icons/pi";
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react';
 import cardsData from '../../../../SectionThreeCardsData.json';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 const CardSlider = ({ interval = 8000 }) => {

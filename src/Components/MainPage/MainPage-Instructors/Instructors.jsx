@@ -1,8 +1,8 @@
 import React from 'react';
 import './Instructors.css';
+import { useTranslation } from 'react-i18next';
 import instructorData from '../../../../InstructorData.json';
 import { FaInstagram, FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { useTranslation } from 'react-i18next';
 
 function Instructors() {
 
