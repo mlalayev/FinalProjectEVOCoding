@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './LastSection.css';
 import LastSectionData from '../../../../LastSectionData.json';
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 function LastSection({ interval = 8000 }) {
     const { t, i18n } = useTranslation();
@@ -24,28 +27,39 @@ function LastSection({ interval = 8000 }) {
         setCurrentIndex(index);
     };
 
+    const handlePrevClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + LastSectionData.length) % LastSectionData.length);
+    };
+
+    const handleNextClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % LastSectionData.length);
+    };
+
     return (
         <div className='last-section-holder'>
-            <h1>{t('lastsection.firsttext')}</h1>
-            <h1>{t('lastsection.secondtext')}</h1>
+            <div className="last-section-left">
+                <div className="last-section-text-holder">
+                    <h1>{t('lastsection.firsttext')}</h1>
+                    <h1>{t('lastsection.secondtext')}</h1>
+                </div>
+                <div className="button-holder-last-section">
+                    <button className="prev-button" onClick={handlePrevClick}>
+                        <FaArrowLeftLong className='color-icon' size={16} />
+                    </button>
+                    <button className="next-button" onClick={handleNextClick}>
+                        <FaArrowRightLong className='color-icon' size={16} />
+                    </button>
+                </div>
+            </div>
             <div className="quote-holder">
                 <p>{LastSectionData[currentIndex].quote[language]}</p>
                 <div className="profile-holder-eighthsection">
                     <img src={LastSectionData[currentIndex].profileImage} alt="Profile" className='profile-pic' />
                     <div className="profile-text-holder">
-                        <h1>{LastSectionData[currentIndex].name[language]}</h1>
+                        <h1 className='last-section-hone'>{LastSectionData[currentIndex].name[language]}</h1>
                         <p>{LastSectionData[currentIndex].title[language]}</p>
                     </div>
                 </div>
-            </div>
-            <div className="dots-last-section">
-                {LastSectionData.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`dot ${index === currentIndex ? 'active' : ''}`}
-                        onClick={() => handleDotClick(index)}
-                    ></span>
-                ))}
             </div>
         </div>
     );
