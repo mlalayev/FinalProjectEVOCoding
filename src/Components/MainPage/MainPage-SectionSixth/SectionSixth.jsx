@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import './SectionSixth.css';
-import { useTranslation } from 'react-i18next';
-import { PiBookLight } from "react-icons/pi";
-import { FaKey } from "react-icons/fa";
-import { IoSaveOutline } from "react-icons/io5";
-import categories from '../../../../MainPage-SectionSixth.json';
-import { FaPlay } from "react-icons/fa";
-import { IoPlayCircle } from "react-icons/io5";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './SectionSixth.css';
+import { FaKey } from "react-icons/fa";
+import { PiBookLight } from "react-icons/pi";
+import { IoPlayCircle } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
+import { IoSaveOutline } from "react-icons/io5";
+import React, { useState, useEffect } from 'react';
+import categories from '../../../../MainPage-SectionSixth.json';
 
 
 function SectionSixth() {

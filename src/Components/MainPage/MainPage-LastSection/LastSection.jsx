@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import './LastSection.css';
-import LastSectionData from '../../../../LastSectionData.json';
+import { useTranslation } from 'react-i18next';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
+import React, { useState, useEffect } from 'react';
+import LastSectionData from '../../../../LastSectionData.json';
 
 
 function LastSection({ interval = 8000 }) {
