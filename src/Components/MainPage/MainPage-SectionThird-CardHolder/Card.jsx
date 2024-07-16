@@ -78,7 +78,14 @@ const CardSlider = ({ interval = 8000 }) => {
 
         <h1>{t('card.texthone')}</h1>
         <h1>{t('card.texthtwo')}</h1>
-        <p className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
+        <p
+          style={{
+            maxWidth: "400px",
+            textAlign: "center",
+            color: "gray",
+            margin:"20px 0"
+          }}
+          className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
 
         <div className="card-container" >
           {cardsData[i18n.language].map((card, index) => {
