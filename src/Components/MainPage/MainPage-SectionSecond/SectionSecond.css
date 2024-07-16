@@ -27,6 +27,14 @@
     font-weight: var(--600-font-weight);
 }
 
+.section-second-text-holder{
+    padding: 20px;
+}
+
+.section-second-text-holder button{
+    margin: 20px 0;
+}
+
 .mainpagebutton {
     width: 200px;
     height: 50px;
