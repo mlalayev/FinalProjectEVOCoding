@@ -14,7 +14,14 @@ function Events() {
     return (
         <div className='center column'>
             <h1>{t('events.title')}</h1>
-            <p>{t('events.intro')}</p>
+            <p
+                style={{
+                    maxWidth: "400px",
+                    textAlign: "center",
+                    color: "gray",
+                    margin:"20px 0"
+                }}
+            >{t('events.intro')}</p>
 
             <div className="events-holder">
                 {events.map((event, index) => (

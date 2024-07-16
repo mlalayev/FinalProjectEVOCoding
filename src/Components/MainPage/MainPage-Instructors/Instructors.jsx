@@ -28,7 +28,11 @@ function Instructors() {
                                 <div className='icon-holder'><FaLinkedinIn size={25} className='icons' /></div>
                             </div>
                         </div>
-                        <div className="sectionfifth-card-text-holder">
+                        <div
+                        style={{
+                            margin:"5px 0 10px 0"
+                        }}
+                        className="sectionfifth-card-text-holder">
                             <h1>{instructor.name}</h1>
                             <p>{instructor.role}</p>
                         </div>
