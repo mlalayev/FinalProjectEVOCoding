@@ -48,8 +48,11 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
             <h1>{t('category.textone')}</h1>
             <h1>{t('category.texttwo')}</h1>
             <p style={{
-                marginBottom:"40px"
-            }}            
+                maxWidth: "400px",
+                textAlign: "center",
+                color: "gray",
+                margin: "30px 0"
+            }}
             >{t('category.textthree')}</p>
             <div
                 className="category-card-container"

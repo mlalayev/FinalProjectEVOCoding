@@ -11,7 +11,11 @@ function Instructors() {
     return (
         <>
             <h1>{t('instructor.textone')}</h1>
-            <p>{t('instructor.texttwo')}</p>
+            <p style={{
+                maxWidth:"400px",
+                textAlign:"center",
+                color:"gray"
+            }}>{t('instructor.texttwo')}</p>
             <div className='sectionfifth-card-holder'>
                 {instructorData.map((instructor) => (
                     <div className="sectionfifth-card" key={instructor.id}>
