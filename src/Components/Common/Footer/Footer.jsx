@@ -12,7 +12,12 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className="footerupper">
-        <div className="footer-first-div-holder">
+        <div
+          style={{
+            maxWidth: "250px",
+            maxHeight:"250px"
+          }}
+          className="footer-first-div-holder">
           <img src={logo} alt="logo" className='footer-logo' />
 
           <p

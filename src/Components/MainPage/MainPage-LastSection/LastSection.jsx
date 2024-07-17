@@ -36,7 +36,13 @@ function LastSection({ interval = 8000 }) {
     };
 
     return (
-        <div className='last-section-holder'>
+        <div
+            style={{
+                maxWidth: "1350px",
+                margin:"0 auto"
+            }}
+
+            className='last-section-holder'>
             <div className="last-section-left">
                 <div className="last-section-text-holder">
                     <h1>{t('lastsection.firsttext')}</h1>
