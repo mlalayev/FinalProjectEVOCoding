@@ -27,13 +27,12 @@
     text-decoration: underline;
 }
 
-.ribbon {
+.ribbon i{
     position: absolute;
     top: 0px;
     right: 15px;
-    width: 15px;
-    height: 20px;
-    background-color: green;
+ font-size: 25px;
+ color: green;
 }
 
 
@@ -66,7 +65,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 35vw;
+    width: 30vw;
 }
 
 h2 {

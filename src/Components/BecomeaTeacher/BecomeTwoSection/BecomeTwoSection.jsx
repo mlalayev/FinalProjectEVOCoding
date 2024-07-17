@@ -1,5 +1,6 @@
 import React from "react";
 import "./BecomeTwoSection.css";
+import { FaBookmark } from "react-icons/fa";
 
 const BecomeTwoSection = () => {
   return (
@@ -10,7 +11,7 @@ const BecomeTwoSection = () => {
         <span>
           Please <a href="#">login</a> to send your request!
         </span>
-        <div className="ribbon" />
+       <div className="ribbon"><i><FaBookmark /></i></div>
       </div>
       </div>
       
