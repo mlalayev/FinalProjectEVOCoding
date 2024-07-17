@@ -140,14 +140,14 @@ footer {
     flex-direction: var(--flex-direction-column);
 }
 
-.footer-first-div-holder{
+.footer-first-div-holder {
     min-height: 220px;
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     justify-content: var(--display-space-between);
 }
 
-.footer-logo{
+.footer-logo {
     width: 160px;
 }
 
@@ -298,4 +298,18 @@ footer a {
 .footer-text-first {
     color: var(--text-gray-color);
     font-weight: var(--500-font-weight);
+}
+
+@media screen and (min-width:870px) {
+    .footerupper{
+        display: flex;
+        /* flex-wrap: wrap; */
+        border: 1px solid red;
+    }
+
+    .list-holder{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
