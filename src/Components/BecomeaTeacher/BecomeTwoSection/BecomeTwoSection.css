@@ -1,0 +1,134 @@
+.BecomeTwoSectionBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notification {
+    padding: 8px 60px;
+    position: relative;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-top: 6px solid green;
+    font-size: 20px;
+}
+
+.notification span {
+    display: inline-block;
+}
+
+.notification a {
+    color: blue;
+    text-decoration: none;
+}
+
+.notification a:hover {
+    text-decoration: underline;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 15px;
+    height: 20px;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+.BecomeTwoSectionForm {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.BecomeTwoSectionFormContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35vw;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px){
+
+    .form-container{
+        width: 100%;
+    }
+}

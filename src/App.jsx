@@ -17,6 +17,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage.jsx';
 import PageLeftSideBar from './Components/Pages/PageLeftSideBar/PageLeftSideBar.jsx';
 import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideBar.jsx';
+import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
  
 
 function App() {
@@ -33,54 +34,63 @@ function App() {
             <>
               <Header />
               <AboutUs/>
+              <Footer/>
             </>
           } />
           <Route path='/events' element={
             <>
               <Header />
               <Events/>
+              <Footer/>
             </>
           } />
           <Route path='/instructor' element={
             <>
               <Header />
               <Instructor/>
+              <Footer/>
             </>
           } />
           <Route path='/testimonial' element={
             <>
               <Header />
               <Testimonial/>
+              <Footer/>
             </>
           } />
           <Route path='/samplepage' element={
             <>
               <Header />
               <SamplePage/>
+              <Footer/>
             </>
           } />
           <Route path='/pageleftsidebar' element={
             <>
               <Header />
               <PageLeftSideBar/>
+              <Footer/>
             </>
           } />
           <Route path='/pagerightsidebar' element={
             <>
               <Header />
               <PageRightSideBar/>
+              <Footer/>
             </>
           } />
           <Route path='/404page' element={
             <>
               <Header />
               <NotFoundPage/>
+              <Footer/>
             </>
           } />
           <Route path='/blog' element={
             <>
             <Header/>
             <Blog/>
+            <Footer/>
             </>
           }/>
            <Route path='/all-courses' element={
@@ -103,6 +113,14 @@ function App() {
             <>
               <Header/>
               <Buy/>
+              <Footer/>
+            </>
+          } />
+            <Route path='/becomeateacher' element={
+            <>
+              <Header/>
+              <BecomeTeacher/>
+              <Footer/>
             </>
           } />
         </Routes>
