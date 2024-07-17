@@ -11,47 +11,53 @@ function Footer() {
 
   return (
     <footer className='footer'>
-      <div className="footer-first-div-holder">
-        <img src={logo} alt="logo" className='footer-logo' />
+      <div className="footerupper">
+        <div className="footer-first-div-holder">
+          <img src={logo} alt="logo" className='footer-logo' />
 
-        <p className='footer-text-first'>{t('footer.firsttext')}</p>
+          <p
+            style={{
+              maxWidth: "250px"
+            }}
+            className='footer-text-first'>{t('footer.firsttext')}</p>
 
-        <div className="footer-upper-up">
-          <a href="" className='footer-a-tag margin-bottom'><FaPhone color='#2772FF' /> +464 145 684 325</a>
-          <a href="" className='footer-a-tag'><FaRegEnvelope color='#2772FF' /> education@example.com</a>
+          <div className="footer-upper-up">
+            <a href="" className='footer-a-tag margin-bottom'><FaPhone color='#2772FF' /> +464 145 684 325</a>
+            <a href="" className='footer-a-tag'><FaRegEnvelope color='#2772FF' /> education@example.com</a>
+          </div>
         </div>
-      </div>
 
-      <div className="list-holder">
-        <ul className='footerul'>
-          <li><a href="/">{t('footer.popularcourses')}</a></li>
-          <li><a href="/">{t('footer.algebra')}</a></li>
-          <li><a href="/">{t('footer.business')}</a></li>
-          <li><a href="/">{t('footer.computersecurity')}</a></li>
-          <li><a href="/">{t('footer.dataanalysis')}</a></li>
-          <li><a href="/">{t('footer.englishlearning')}</a></li>
-          <li><a href="/">{t('footer.musicart')}</a></li>
-        </ul>
+        <div className="list-holder">
+          <ul className='footerul'>
+            <li><a href="/">{t('footer.popularcourses')}</a></li>
+            <li><a href="/">{t('footer.algebra')}</a></li>
+            <li><a href="/">{t('footer.business')}</a></li>
+            <li><a href="/">{t('footer.computersecurity')}</a></li>
+            <li><a href="/">{t('footer.dataanalysis')}</a></li>
+            <li><a href="/">{t('footer.englishlearning')}</a></li>
+            <li><a href="/">{t('footer.musicart')}</a></li>
+          </ul>
 
-        <ul className='footerul'>
-          <li><a href="/">{t('footer.coursecategories')}</a></li>
-          <li><a href="/">{t('footer.artshumanities')}</a></li>
-          <li><a href="/">{t('footer.businesscategory')}</a></li>
-          <li><a href="/">{t('footer.computerscience')}</a></li>
-          <li><a href="/">{t('footer.datascience')}</a></li>
-          <li><a href="/">{t('footer.languagelearning')}</a></li>
-          <li><a href="/">{t('footer.mathlogic')}</a></li>
-        </ul>
+          <ul className='footerul'>
+            <li><a href="/">{t('footer.coursecategories')}</a></li>
+            <li><a href="/">{t('footer.artshumanities')}</a></li>
+            <li><a href="/">{t('footer.businesscategory')}</a></li>
+            <li><a href="/">{t('footer.computerscience')}</a></li>
+            <li><a href="/">{t('footer.datascience')}</a></li>
+            <li><a href="/">{t('footer.languagelearning')}</a></li>
+            <li><a href="/">{t('footer.mathlogic')}</a></li>
+          </ul>
 
-        <ul className='footerul'>
-          <li><a href="/">{t('footer.quicklinks')}</a></li>
-          <li><a href="/">{t('footer.liveclass')}</a></li>
-          <li><a href="/">{t('footer.tuitionfees')}</a></li>
-          <li><a href="/">{t('footer.termsconditions')}</a></li>
-          <li><a href="/">{t('footer.privacypolicy')}</a></li>
-          <li><a href="/">{t('footer.support')}</a></li>
-          <li><a href="/">{t('footer.career')}</a></li>
-        </ul>
+          <ul className='footerul'>
+            <li><a href="/">{t('footer.quicklinks')}</a></li>
+            <li><a href="/">{t('footer.liveclass')}</a></li>
+            <li><a href="/">{t('footer.tuitionfees')}</a></li>
+            <li><a href="/">{t('footer.termsconditions')}</a></li>
+            <li><a href="/">{t('footer.privacypolicy')}</a></li>
+            <li><a href="/">{t('footer.support')}</a></li>
+            <li><a href="/">{t('footer.career')}</a></li>
+          </ul>
+        </div>
       </div>
 
 
