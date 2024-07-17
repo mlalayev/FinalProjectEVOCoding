@@ -1,5 +1,12 @@
-.last-section-holder {
+.last-section-holder::before {
+    content: "";
     background-image: url(../../../assets/sectioneights.png);
+    height: 80%;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.last-section-holder {
     width: 100%;
     height: 560px;
     padding: 50px 70px;
@@ -121,7 +128,7 @@
 
 @media screen and (min-width:870px) {
     .last-section-holder {
-        height: 418px;
+        height: 430px;
         display: flex;
         justify-content: space-around;
         flex-direction: row;

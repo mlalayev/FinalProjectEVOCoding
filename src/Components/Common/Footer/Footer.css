@@ -303,13 +303,87 @@ footer a {
 @media screen and (min-width:870px) {
     .footerupper{
         display: flex;
-        /* flex-wrap: wrap; */
-        border: 1px solid red;
     }
 
     .list-holder{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footerul li:first-child{
+        font-size: 18px;
+    }
+
+    .footerul li{
+        font-size: 16px;
+    }
+
+    footer{
+        height: 100%;
+        max-width: 870px;
+        margin: 0 auto;
+    }
+    
+    .copyright-text{
+        display: flex;
+        max-height: 40px;
+        position: relative;
+        align-items: center;
+        margin: 60px 0 20px 0;
+        justify-content: space-between;
+    }
+
+    .iconholder{
+        right: 50px;
+        top: -70px;
+        position: absolute;
+    }
+
+    footer .footer-logo{
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .footer-text-first{
+        font-size: 14px;
+    }
+
+    .footer-a-tag{
+        font-size: 14px;
     }
 }
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+    footer{
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1250px) {
+    footer{
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 1350px) {
+    footer{
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1450px) {
+    footer{
+        max-width: 1400px;
+    }
+}
+
+
+@media screen and (min-width: 1350px) {
+    footer{
+        max-width: 1300px;
+    }
+}
+
