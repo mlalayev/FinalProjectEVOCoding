@@ -1,0 +1,159 @@
+{
+    "en": [
+      {
+        "id": 1,
+        "image": "./src/assets/box1.png",
+        "author": "Jim Sechen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "October 14, 2023",
+        "title": "Top 10 WordPress Themes for Local Businesses",
+        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "image": "./src/assets/box2.png",
+        "author": "Jim Sechen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "October 14, 2023",
+        "title": "Top 10 WordPress Themes for Local Businesses",
+        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "image": "./src/assets/box3.png",
+        "author": "Jim Sechen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "October 14, 2023",
+        "title": "Top 10 WordPress Themes for Local Businesses",
+        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "image": "./src/assets/box4.png",
+        "author": "Jim Sechen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "October 14, 2023",
+        "title": "Best products for fitness nutrition and muscles",
+        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
+        "link": "#"
+      },
+      {
+        "id": 5,
+        "image": "./src/assets/box5.png",
+        "author": "Jim Sechen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "October 14, 2023",
+        "title": "How to Become Master In CSS within a Week.",
+        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
+        "link": "#"
+      }
+    ],
+    "az": [
+      {
+        "id": 1,
+        "image": "./src/assets/box1.png",
+        "author": "Cim Seçen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 oktyabr 2023",
+        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
+        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "image": "./src/assets/box2.png",
+        "author": "Cim Seçen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 oktyabr 2023",
+        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
+        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "image": "./src/assets/box3.png",
+        "author": "Cim Seçen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 oktyabr 2023",
+        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
+        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "image": "./src/assets/box4.png",
+        "author": "Cim Seçen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 oktyabr 2023",
+        "title": "Fitnes, nutrisiya və məşqlər üçün ən yaxşı məhsullar",
+        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
+        "link": "#"
+      },
+      {
+        "id": 5,
+        "image": "./src/assets/box5.png",
+        "author": "Cim Seçen",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 oktyabr 2023",
+        "title": "CSS-də Bir Həftə Ərzində Usta Ola Bilərəm",
+        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
+        "link": "#"
+      }
+    ],
+    "ru": [
+      {
+        "id": 1,
+        "image": "./src/assets/box1.png",
+        "author": "Джим Сечен",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 октября 2023",
+        "title": "Топ-10 тем WordPress для местных бизнесов",
+        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "image": "./src/assets/box2.png",
+        "author": "Джим Сечен",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 октября 2023",
+        "title": "Топ-10 тем WordPress для местных бизнесов",
+        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "image": "./src/assets/box3.png",
+        "author": "Джим Сечен",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 октября 2023",
+        "title": "Топ-10 тем WordPress для местных бизнесов",
+        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "image": "./src/assets/box4.png",
+        "author": "Джим Сечен",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 октября 2023",
+        "title": "Лучшие продукты для фитнеса, питания и мышц",
+        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
+        "link": "#"
+      },
+      {
+        "id": 5,
+        "image": "./src/assets/box5.png",
+        "author": "Джим Сечен",
+        "authorImg": "./src/assets/icon1.jpg",
+        "date": "14 октября 2023",
+        "title": "Как стать мастером CSS за неделю.",
+        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
+        "link": "#"
+      }
+    ]
+  }
+  
