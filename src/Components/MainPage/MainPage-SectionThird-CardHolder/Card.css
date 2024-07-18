@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: var(--border-sizing);
+}
+
+.card-holder-section-three {
+    overflow: var(--hidden);
+    display: var(--display-flex);
+    position: var(--position-relative);
+    flex-direction: var(--flex-direction-column);
+}
+
+.price-rating-holder,
+.rating-holder {
+    display: var(--display-flex);
+}
+
+.rating-holder {
+    gap: var(--10-px);
+    align-items: var(--display-center);
+}
+
+.star-holder {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.price-rating-holder {
+    justify-content: var(--display-space-between);
+}
+
+.sectionthird-image {
+    width: var(--percent-100);
+    max-width: 340px;
+}
+
+.profile-photo-holder,
+.lesson-holder-left,
+.lesson-holder-right {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}
+
+.lesson-holder {
+    display: var(--display-flex);
+    justify-content: var(--display-space-between);
+}
+
+.text-center {
+    text-align: var(--text-center);
+}
+
+.card {
+    max-width: 340px;
+    flex: var(--auto);
+    min-height: 480px;
+    opacity: var(--percent-0);
+    visibility: var(--hidden);
+    border-radius: var(--8-px);
+    display: var(--display-none);
+    border: 1px solid var(--gray-card-holder-color);
+    transition: opacity var(--transition-medium) ease, visibility var(--transition-medium) ease;
+    box-shadow:
+        33px 0px 80px rgba(0, 0, 0, 0.07);
+}
+
+.price-holder {
+    border-radius: 13px;
+    height: var(--26-px);
+    padding: 0 var(--10-px);
+    color: var(--white-color);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    background-color: var(--main-blue-color);
+}
+
+.card-text-holder {
+    height: 200px;
+    padding: var(--20-px);
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    justify-content: var(--display-space-between);
+}
+
+.card-title {
+    font-size: var(--20-px);
+    margin-bottom: var(--16-px);
+    font-weight: var(--500-font-weight);
+}
+
+.card.active {
+    visibility: var(--visible);
+    opacity: var(--percent-100);
+    display: var(--display-block);
+}
+
+.card-holder-section {
+    display: var(--display-flex);
+    position: var(--position-relative);
+    justify-content: var(--display-center);
+}
+
+.dots {
+    position: var(--position-absolute);
+    bottom: -40px;
+    margin-top: var(--20-px);
+    display: var(--display-flex);
+    justify-content: var(--display-center);
+}
+
+.dot {
+    margin: 0 5px;
+    width: var(--10-px);
+    height: var(--10-px);
+    cursor: var(--cursor-pointer);
+    border-radius: var(--percent-50);
+    background-color: var(--gray-color);
+    display: var(--display-inline-block);
+    transition: background-color var(--transition-fast);
+}
+
+.dot.active {
+    background-color: var(--main-blue-color);
+}
+
+.card-container {
+    width: var(--percent-100);
+    display: var(--display-flex);
+    justify-content: var(--display-center);
+    transition: transform var(--transition-medium) ease;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 1 0 var(--percent-50);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 0 33.3333%;
+        margin-left: 20px;
+    }
+
+    .card:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .card:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .card:nth-child(7) {
+        margin-left: 0;
+    }
+
+}
+
+.card-slider {
+    overflow: var(--hidden);
+    width: var(--percent-100);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    position: var(--position-relative);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+}
+
+.margin-btm {
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.price-rating-holder,
+.profile-photo-holder,
+.lesson-holder-left,
+.lesson-holder-right {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+}

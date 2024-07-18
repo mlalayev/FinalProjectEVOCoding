@@ -1,0 +1,64 @@
+.inputholder-sectionfirst {
+    width: 68vw;
+    height: 440px;
+    padding: 10px 20px;
+    border-radius: var(--10-px);
+    display: var(--display-flex);
+    background-color: var(--white-color);
+    justify-content: var(--display-space-between);
+    flex-direction: var(--flex-direction-column);
+}
+
+.inputs {
+    gap: var(--10-px);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    font-family: var(--Open-font-family);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+}
+
+.input {
+    padding: 0 20px;
+    height: var(--36-px);
+    width: var(--percent-100);
+    border: var(--display-none);
+    border-radius: var(--16-px);
+    background-color: var(--grayish-color);
+}
+
+.input:focus {
+    outline: 1px solid var(--main-blue-color);
+}
+
+#select:focus {
+    border: var(--display-none);
+    outline: 1px solid var(--main-blue-color);
+}
+
+#select {
+    padding: 0 20px;
+    height: var(--36-px);
+    width: var(--percent-100);
+    border: var(--display-none);
+    border-radius: var(--16-px);
+    background-color: var(--grayish-color);
+}
+
+.inputs-button {
+    height: 48px;
+    font-size: var(--16-px);
+    width: var(--percent-100);
+    color: var(--white-color);
+    border-radius: var(--24-px);
+    border: 2px solid var(--main-blue-color);
+    font-weight: var(--600-font-weight);
+    background-color: var(--main-blue-color);
+    transition: var(--transition-medium);
+}
+
+.inputs-button:hover {
+    color: var(--main-blue-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--main-blue-color);
+}

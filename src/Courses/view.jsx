@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../Courses/view.css';
 import { Link } from "react-router-dom";
 import { MdNavigateNext } from "react-icons/md";
@@ -12,8 +12,9 @@ import { FaStar } from "react-icons/fa6";
 import photo from '../assets/Cards/card1.jpg'
 import photo2 from '../assets/Cards/card5.jpg'
 import Info from "./info_left";
-import Overview from "./view_components/overview";
-import Instructor from "./view_components/instructor";
+
+
+
 
 const View = () => {
     return (
@@ -35,7 +36,7 @@ const View = () => {
             </div>
 
             <div className="view_card">
-                <div className="card">
+                <div id="card">
                     <div className="card_up">
                         <div className="up_left">
                             <div className="up_photo">
@@ -133,15 +134,18 @@ const View = () => {
                             <h2>Curriculum</h2>
                         </div>
                         <div className="up_select">
-                            <h2 >Instructor</h2>
+                            <h2>Instructor</h2>
                         </div>
                         <div className="up_select">
-                            <h2>FAQs</h2>
+                            <h2 >FAQs</h2>
                         </div>
                      </div>
-                    
-                      <Overview/>
-                      {/* <Instructor/> */}
+
+                     <div className="left_down">
+                         <p>Fusi absolutam contra licentiam contenti verba tu solebat callido anteponebas positum amicos moriare praestantia disputare philosophi affectus turpe sapientis plebem</p>
+                         <p>Gestiret expetenda hoc ennius conveniat defecerit subito</p>
+                    </div>
+                   
                 </div>
     
                </div>
@@ -154,7 +158,7 @@ const View = () => {
                         <h1>$ 120</h1>
                     </div>
                     <div className="info_btn">
-                        <button>Buy Now</button>
+                        <Link to={'/view/buyNow'} style={{width:'80%'}}><button>Buy Now</button></Link>
                     </div>
                     <div className="info_up">
                         <h2>Featured Review</h2>

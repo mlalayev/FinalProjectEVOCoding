@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: var(--border-sizing);
+}
+
+.countdowntimer {
+    height: 70px;
+    margin-top: 0px;
+    display: var(--display-flex);
+    justify-content: var(--display-space-between);
+    border-top: 1px solid var(--main-blue-line-color);
+}
+
+.countdowntimer div {
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+}
