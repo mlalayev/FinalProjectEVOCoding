@@ -21,9 +21,6 @@ const AboutThreeSection = () => {
         </div>
       </div>
       <div className="AboutThreeSectionUp">
-      <div className="AboutThreeSectionUpRight">
-            <img src={AboutThreeSectionUpRightImgTwo} alt="" />
-        </div>
         <div className="AboutThreeSectionUpLeft">
           <h2>Lorem ipsum dolor sit amet</h2>
           <p>
@@ -31,6 +28,9 @@ const AboutThreeSection = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <button><a href="/all-courses">All events</a></button>
+        </div>
+        <div className="AboutThreeSectionUpRight">
+            <img src={AboutThreeSectionUpRightImgTwo} alt="" />
         </div>
       </div>
     </div>

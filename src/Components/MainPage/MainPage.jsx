@@ -1,19 +1,32 @@
-import './MainPage.css'
+import AOS from 'aos';
+import './MainPage.css';
+import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
+import Events from './MainPage-Events/Events.jsx';
 import React, { useState, useEffect } from 'react';
 import Categories from './MainPage-Categories/Categories.jsx';
 import Card from './MainPage-SectionThird-CardHolder/Card.jsx';
 import FirstMap from './MainPage-SectionFirst-Map/FirstMap.jsx';
 import InputHolder from './MainPage-InputHolder/InputHolder.jsx';
-import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
-import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
+import LastSection from './MainPage-LastSection/LastSection.jsx';
 import Instructors from './MainPage-Instructors/Instructors.jsx';
 import SectionSixth from './MainPage-SectionSixth/SectionSixth.jsx';
-import Events from './MainPage-Events/Events.jsx';
+import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
+import SectionSecond from './MainPage-SectionSecond/SectionSecond.jsx';
 
 function MainPage() {
   const { t, i18n } = useTranslation();
   const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: '1s',
+      duration: 3000,
+      easing: 'ease',
+      once: false
+    });
+  }, []);
 
   useEffect(() => {
     const fetchSlides = async () => {
@@ -35,33 +48,53 @@ function MainPage() {
         {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
       </section>
 
-      <section className="sectionfirst">
+      <section
+        data-aos="fade-right"
+        className="sectionfirst">
         <FirstMap />
         <InputHolder />
       </section>
 
-      <section className="sectionsecond">
+      <section
+        data-aos="fade-right"
+        className="sectionsecond">
         <SectionSecond />
       </section>
 
-      <section className="sectionthird">
+      <section
+        data-aos="fade-right"
+        className="sectionthird">
         <Card />
       </section>
 
-      <section className="sectionfourth">
+      <section
+        data-aos="fade-right"
+        className="sectionfourth">
         <Categories />
       </section>
 
-      <section className="sectionfifth">
+      <section
+        data-aos="fade-right"
+        className="sectionfifth">
         <Instructors />
       </section>
 
-      <section className="sectionsixth">
+      <section
+        data-aos="fade-right"
+        className="sectionsixth">
         <SectionSixth />
       </section>
 
-      <section className="setionseventh">
+      <section
+        data-aos="fade-right"
+        className="setionseventh">
         <Events />
+      </section>
+
+      <section
+        data-aos="fade-right"
+        className="sectioneighth">
+        <LastSection />
       </section>
     </div>
   );

@@ -68,6 +68,19 @@
     "events": {
         "title": "Our Upcoming Events",
         "intro": "Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!",
-        "button":"View All Events"
+        "button": "View All Events"
+    },
+    "lastsection": {
+        "firsttext": "Students Say",
+        "secondtext": "About Us."
+    },
+    "category": {
+        "textone": "Browse Online",
+        "texttwo": "Course Categories",
+        "textthree": "Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!"
+    },
+    "instructor": {
+        "textone": "Top Instructor",
+        "texttwo": "Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!"
     }
 }

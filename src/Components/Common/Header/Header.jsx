@@ -1,10 +1,10 @@
+import '../Root.css';
 import './Header.css';
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown.jsx';
-import { Link } from 'react-router-dom';
-import NonStickyHeader from './Header-NonStickyPart/NotStickyHeader.jsx';
 import HeaderStickyPart from './Header-StickyPart/HeaderStickyPart.jsx';
+import NonStickyHeader from './Header-NonStickyPart/NotStickyHeader.jsx';
 
 function Header() {
   const { t, i18n } = useTranslation();

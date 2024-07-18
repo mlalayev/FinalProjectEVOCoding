@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import './InputHolder.css';
-import { useTranslation } from 'react-i18next';
-import CountDown from '../MainPage-CountDown/CountDown';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './InputHolder.css';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import CountDown from '../MainPage-CountDown/CountDown';
 
 function InputHolder() {
     const { t, i18n } = useTranslation();

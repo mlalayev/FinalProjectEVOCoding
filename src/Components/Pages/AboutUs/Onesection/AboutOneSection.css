@@ -22,8 +22,8 @@
 }
 
 .BackgorundText .UpText h2 {
-  font-size: var(--50-px);
-  font-weight: var(--700-font-weight);
+  font-size: 50px;
+  font-weight: 700;
   color: var(--white-color);
 }
 
@@ -43,5 +43,8 @@
 @media only screen and (max-width: 767px) {
   .PagesBackground {
     height: 40vh;
+  }
+  .BackgorundText .UpText h2{
+    font-size: 25px;
   }
 }

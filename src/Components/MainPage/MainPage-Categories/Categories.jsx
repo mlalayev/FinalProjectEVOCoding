@@ -1,4 +1,6 @@
 import './Categories.css';
+import { t } from 'i18next';
+import '../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
 
@@ -44,6 +46,15 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
 
     return (
         <div className='category-slider-section'>
+            <h1>{t('category.textone')}</h1>
+            <h1>{t('category.texttwo')}</h1>
+            <p style={{
+                maxWidth: "400px",
+                textAlign: "center",
+                color: "gray",
+                margin: "30px 0"
+            }}
+            >{t('category.textthree')}</p>
             <div
                 className="category-card-container"
                 style={{ transform: `translateX(-${(currentIndex / visibleCards) * 100}%)` }}

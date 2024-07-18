@@ -1,14 +1,18 @@
 .course{
     width: 100%;
-    height: 800px;
     display: flex;
     gap: 20px;
     align-items: center;
     flex-direction: column;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .course .home-course{
     gap: 5px;
-    width: 90%;
+    width: 87%;
     height: 100px;
     display: flex;
     font-size: 18px;
@@ -16,7 +20,7 @@
 }
 /* home>course finished */
 .course .search{
-    width: 90%;
+    width: 87%;
     height: 100px;
     display: flex;
    
@@ -43,14 +47,14 @@
 .inputSearch p{
     position: absolute;
     left: 260px;
-    bottom:10px;
+    bottom:56px;
 }
 
 
 /* search finished */
 
 .course .cards{
-    width: 90%;
+    width: 87%;
     min-height: 400px;
     gap: 60px;
     display: flex;
@@ -75,7 +79,7 @@
 .cards .information{
     width: 60%;
     height: 350px;
-    gap: 20px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     /* background-color: blue; */
@@ -125,6 +129,7 @@
 .information .card_icons{
     display: flex;
     gap: 30px;
+   
 }
 .card_icons .icon{
     display: flex;
@@ -172,7 +177,7 @@
 /* card price finished */
 
 .course_pages{
-    width: 90%;
+    width: 87%;
     gap: 20px;
     display: flex;
 }
@@ -185,4 +190,94 @@
     font-size: 18px;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 5px silver;
+}
+
+
+
+@media  (min-width: 300px) and (max-width: 800px){
+  
+    /* .... */
+    
+    .course .search{
+        width: 87%;
+        height: 100px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+    }
+    .search-right .inputSearch{
+        position: relative;
+    }
+    .inputSearch p{
+        position: absolute;
+        left: 260px;
+        bottom:10px;
+    }
+
+    /* cards */
+    
+.course .cards{
+    width:87%;
+   height: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid rgb(230, 227, 227);
+    background-color:#FFFFFF;
+}
+
+.cards .photo{
+    width: 100%;
+}
+.photo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards .information{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    /* background-color: blue; */
+}
+
+
+/* info */
+
+.card_icons .icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon p{
+    font-size: 10px;
+   
+}
+
+/* card_text finished */
+.card_price{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card_price button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    font-family: system-ui;
+    background-color: #007bff;
+    margin-bottom: 20px;
+}
+
 }

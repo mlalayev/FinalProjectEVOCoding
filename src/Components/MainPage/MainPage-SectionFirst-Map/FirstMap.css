@@ -12,3 +12,51 @@
 .sectionfirst-image {
     width: 56px;
 }
+
+.map-holder {
+    gap: var(--40-px);
+    grid-template-columns: 1fr;
+    display: var(--display-grid);
+}
+
+@media screen and (min-width:600px) {
+    .map-holder {
+        display: var(--display-grid);
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .sectionfirst__item {
+        max-width: 200px;
+        margin-right: 50px;
+        margin-top: 20px;
+        align-items: var(--flex-start);
+        justify-content: var(--flex-start);
+    }
+
+    .sectionfirst {
+        padding-top: 20px;
+        padding-left: 170px;
+        justify-content: var(--flex-start);
+    }
+
+    .inputs input {
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    .inputs #select {
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    .inputs-button {
+        height: 60px !important;
+        border-radius: 30px !important ;
+    }
+
+    .map-holder {
+        gap: 40px;
+    }
+}

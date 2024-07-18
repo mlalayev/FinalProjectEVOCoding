@@ -1,16 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react'
+import '../../Root.css';
+import './HeaderStickyPart.css';
 import { useTranslation } from 'react-i18next';
 import logo from '../../../../assets/logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
-import './HeaderStickyPart.css'
+import React, { useState, useEffect, useRef } from 'react';
 
 function HeaderStickyPart() {
+  const menuRef = useRef(null);
   const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
-  const [openSubMenu, setOpenSubMenu] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const [openSubMenu, setOpenSubMenu] = useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -99,7 +100,7 @@ function HeaderStickyPart() {
               </div>
             )}
           </div>
-          <a href="/contact-us" className='menu-item'>{t('header.contactUs')}</a>
+          <a href="/contactus" className='menu-item'>{t('header.contactUs')}</a>
         </div>
       )}
 
@@ -154,7 +155,7 @@ function HeaderStickyPart() {
             </ul>
           )}
         </li>
-        <li><a href="/contact-us" className='' >{t('header.contactUs')}</a></li>
+        <li><a href="/contactus" className='' >{t('header.contactUs')}</a></li>
       </ul>
 
       <button className='header-button'>{t('header.joinliveclass')}</button>

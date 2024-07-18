@@ -68,6 +68,18 @@
     "events": {
         "title": "Gələcəkdəki Tədbirlərimiz",
         "intro": "Cənab Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!",
-        "button":"Bütün Tədbirlərə Keçid"
+        "button": "Bütün Tədbirlərə Keçid"
+    },
+    "lastsection": {
+        "firsttext": "Tələbələr Deyir",
+        "secondtext": "Haqqımızda."
+    },
+    "category": {
+        "textone": "Kurs Kateqoriyalarını",
+        "texttwo": "Gözdən Keçirin"
+    },
+    "instructor": {
+        "textone": "Ən Yaxşı Təlimçi",
+        "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
     }
 }

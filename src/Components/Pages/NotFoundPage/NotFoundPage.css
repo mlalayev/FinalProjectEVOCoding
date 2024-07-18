@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ErrorPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.ErrorPageContainer h3 {
+    font-size: 36px;
+    color: #0b1c39;
+    margin-bottom: 5vh;
+}
+
+.ErrorPageSearchForm {
+    width: 670px;
+    height: 64px;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.ErrorPageSearchInput {
+    width: 100%;
+    border: 1px solid #cbe0fb;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 16px 30px;
+    line-height: 26px;
+}
+
+.ErrorPageSearchForm .ErrorPageSearchBtn {
+    padding: 7px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #2572ff;
+    border: 1px solid #2572ff;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    line-height: 8px;
+    border-radius: 50px;
+    z-index: 999;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ErrorPageBackHome a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.ErrorPageBackHome i{
+    transition: 0.5s;
+}
+.ErrorPageBackHome:hover{
+    color: #007bff;
+}
+.ErrorPageBackHome:hover a{
+    color: #007bff;
+}

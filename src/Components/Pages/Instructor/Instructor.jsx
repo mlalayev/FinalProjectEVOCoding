@@ -1,11 +1,16 @@
-import React from 'react';
-import './Instructor.css'
-React
+import React from "react";
+import "./Instructor.css";
+import InstructorTwoSection from "./InstructorTwoSection/InstructorTwoSection.jsx";
+import InstructorOneSection from "./InstructorOneSection/InstructorOneSection.jsx";
+
 
 const Instructor = () => {
   return (
-    <div>Instructor</div>
-  )
-}
+    <>
+    <InstructorOneSection/>
+    <InstructorTwoSection/>
+    </>
+  );
+};
 
 export default Instructor;

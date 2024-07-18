@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ContactUsTwoSectionContainer{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContactUsTwoSectionContainer h1{
+    margin-bottom: 5vh;
+}
+.ContactUsTwoSectionContainer form input, textarea{
+    padding: 17px 30px;
+    border-radius: 30px;
+}
+.ContactUsTwoSectionContainer .ContactUsTwoSectionTopInputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ContactUsTwoSectionContainer .ContactUsTwoSectionBottomInputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
