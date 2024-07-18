@@ -100,7 +100,7 @@ function HeaderStickyPart() {
               </div>
             )}
           </div>
-          <a href="/contact-us" className='menu-item'>{t('header.contactUs')}</a>
+          <a href="/contactus" className='menu-item'>{t('header.contactUs')}</a>
         </div>
       )}
 
@@ -155,7 +155,7 @@ function HeaderStickyPart() {
             </ul>
           )}
         </li>
-        <li><a href="/contact-us" className='' >{t('header.contactUs')}</a></li>
+        <li><a href="/contactus" className='' >{t('header.contactUs')}</a></li>
       </ul>
 
       <button className='header-button'>{t('header.joinliveclass')}</button>

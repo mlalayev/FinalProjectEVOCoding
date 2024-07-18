@@ -17,6 +17,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage.jsx';
 import PageLeftSideBar from './Components/Pages/PageLeftSideBar/PageLeftSideBar.jsx';
 import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideBar.jsx';
+import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
+import MyProfile from './Components/MyProfile/MyProfile.jsx';
+import ContactUs from './Components/ContactUs/ContactUs.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
 
 
@@ -33,55 +36,71 @@ function App() {
           <Route path='/aboutus' element={
             <>
               <Header />
-              <AboutUs />
+              <AboutUs/>
+              <Footer/>
             </>
           } />
           <Route path='/events' element={
             <>
               <Header />
-              <Events />
+              <Events/>
+              <Footer/>
             </>
           } />
           <Route path='/instructor' element={
             <>
               <Header />
-              <Instructor />
+              <Instructor/>
+              <Footer/>
             </>
           } />
           <Route path='/testimonial' element={
             <>
               <Header />
-              <Testimonial />
+              <Testimonial/>
+              <Footer/>
             </>
           } />
           <Route path='/samplepage' element={
             <>
               <Header />
-              <SamplePage />
+              <SamplePage/>
+              <Footer/>
             </>
           } />
           <Route path='/pageleftsidebar' element={
             <>
               <Header />
-              <PageLeftSideBar />
+              <PageLeftSideBar/>
+              <Footer/>
             </>
           } />
           <Route path='/pagerightsidebar' element={
             <>
               <Header />
-              <PageRightSideBar />
+              <PageRightSideBar/>
+              <Footer/>
             </>
           } />
           <Route path='/404page' element={
             <>
               <Header />
-              <NotFoundPage />
+              <NotFoundPage/>
+              <Footer/>
             </>
           } />
           <Route path='/blog' element={
             <>
-              <Header />
-              <Blog />
+            <Header/>
+            <Blog/>
+            <Footer/>
+            </>
+          }/>
+          <Route path='/contactus' element={
+            <>
+            <Header/>
+           <ContactUs/>
+            <Footer/>
             </>
           } />
           <Route path='/all-courses' element={
@@ -107,11 +126,18 @@ function App() {
             </>
           } />
 
-          <Route path='/myprofile' element={
+            <Route path='/becomeateacher' element={
             <>
-              <Header />
-              <MyProfile />
-              <Footer />
+              <Header/>
+              <BecomeTeacher/>
+              <Footer/>
+            </>
+          } />
+            <Route path='/myprofile' element={
+            <>
+              <Header/>
+              <MyProfile/>
+              <Footer/>
             </>
           } />
         </Routes>
