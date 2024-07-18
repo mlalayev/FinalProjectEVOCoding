@@ -13,7 +13,16 @@
 .MyProfileTwoSectionLeftSide ul{
     list-style: none;
 }
-
+.MyProfileTwoSectionLeftSide ul li:first-child{
+    background-color: #2572ff;
+    color: white;
+}
+.MyProfileTwoSectionLeftSide ul li:first-child span{
+    color: white;
+}
+.MyProfileTwoSectionLeftSide ul li:first-child a{
+    color: white;
+}
 .MyProfileTwoSectionLeftSide ul li{
     font-size: 17px;
     text-align: center;
@@ -24,23 +33,23 @@
     box-sizing: border-box;
     font-weight: 500;
     transition: 0.5s;
-
-}   
+}  
 .MyProfileTwoSectionLeftSide ul a {
-    background-color: white;
     text-decoration: none;
     color: black;
+    display: flex;
 }
 
-.MyProfileTwoSectionLeftSide ul a.active {
-    background-color: gray;
-}
 .MyProfileTwoSectionLeftSide ul li::after{
     content: '❯';
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    transition: 0.5s;
+}
+.MyProfileTwoSectionLeftSide ul li:hover::after {
+    transform: rotate(180deg); 
 }
 
 .MyProfileTwoSectionLeftSide ul li span{

@@ -12,15 +12,15 @@ const MyProfileTwoSection = () => {
     <div className="MyProfileTwoSectionontainer">
        <div className="MyProfileTwoSectionLeftSide">
     <ul>
-        <a href="#" className="active"><li><span><IoBook /></span>Courses </li></a>
-        <a href="#"><li><span><FaPuzzlePiece /></span>Quizzes </li></a>
-        <a href="#"><li><span><RiShoppingCart2Fill /> </span>Orders </li></a>
-        <a href="#"><li><span><MdSettings /></span>Settings</li></a>
-        <a href="/"><li><span><FaSignOutAlt /></span>Logout</li></a>
+        <li><a href=""><span><IoBook /></span>Courses</a></li>
+        <li><a href=""><span><FaPuzzlePiece /></span>Quizzes </a></li>
+        <li><a href=""><span><RiShoppingCart2Fill /> </span>Orders </a></li>
+        <li><a href=""><span><MdSettings /></span>Settings </a></li>
+        <li><a href="/"><span><FaSignOutAlt /></span>Logout </a></li>
     </ul>
 </div>
-        <div className="MyProfileTwoSectionLeftSide">
-                <div className="MyProfileTwoSectionLeftSideTopPart">
+        <div className="MyProfileTwoSectionRightSide">
+                <div className="MyProfileTwoSectionRightSideTopPart">
                     <div className="StatisticBox">
                         <p>Enrolled Courses</p>
                         <span>0</span>
@@ -34,7 +34,7 @@ const MyProfileTwoSection = () => {
                         <span>0</span>
                     </div>
                 </div>
-                <div className="MyProfileTwoSectionLeftSideBottomPart">
+                <div className="MyProfileTwoSectionRightSideBottomPart">
                 <div className="StatisticBox">
                         <p>Enrolled Courses</p>
                         <span>0</span>
