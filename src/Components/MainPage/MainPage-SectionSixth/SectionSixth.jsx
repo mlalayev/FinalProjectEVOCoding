@@ -14,16 +14,6 @@ function SectionSixth() {
     const { t, i18n } = useTranslation();
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
-    useEffect(() => {
-        AOS.init({
-            offset: 100,
-            delay: 0,
-            duration: 2000,
-            easing: 'ease',
-            once: false
-        });
-    }, []);
-
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
     };

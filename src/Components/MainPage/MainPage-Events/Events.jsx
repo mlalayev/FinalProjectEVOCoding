@@ -12,7 +12,11 @@ function Events() {
     let events = eventsData[lang] || []; // Default to empty array if language data not found
 
     return (
-        <div className='center column'>
+        <div 
+        style={{
+            padding:"80px 0 10px 0"
+        }}
+        className='center column'>
             <h1>{t('events.title')}</h1>
             <p
                 style={{
