@@ -1,11 +1,25 @@
 .last-section-holder::before {
     content: "";
     background-image: url(../../../assets/sectioneights.png);
-    height: 80%;
     width: 100vw;
     position: absolute;
     z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
 }
+
+.last-section-holder::after {
+    content: "";
+    background-image: url(../../../assets/sectioneights.png);
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
 .last-section-holder {
     width: 100%;
     height: 560px;
@@ -93,7 +107,7 @@
     color: var(--main-blue-color) !important;
 }
 
-.color-icon{
+.color-icon {
     color: var(--white-color);
 }
 
