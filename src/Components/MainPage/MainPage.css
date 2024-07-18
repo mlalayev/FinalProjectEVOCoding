@@ -1,20 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: var(--border-sizing);
-    /* border: 1px solid red; */
-}
+
 
 .sectionfirst {
     gap: 50px;
+    margin: 0 auto;
+    max-width: 1350px;
     display: var(--display-flex);
     padding: var(--main-page-padding);
     align-items: var(--display-center);
     justify-content: var(--display-center);
     background-color: var(--grayish-color);
     flex-direction: var(--flex-direction-column);
-    max-width: 1350px;
-    margin: 0 auto;
 }
 
 .sectionfirst::after{

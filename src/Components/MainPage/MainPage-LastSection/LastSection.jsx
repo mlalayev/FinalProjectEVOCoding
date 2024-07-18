@@ -1,4 +1,5 @@
 import './LastSection.css';
+import '../../Common/Root.css';
 import { useTranslation } from 'react-i18next';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";

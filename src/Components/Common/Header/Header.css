@@ -4,6 +4,7 @@
     box-sizing: var(--border-sizing);
 }
 
+
 header {
     width: var(--percent-100);
 }
