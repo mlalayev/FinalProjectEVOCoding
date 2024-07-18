@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react'
+import '../../Root.css';
+import './HeaderStickyPart.css';
 import { useTranslation } from 'react-i18next';
 import logo from '../../../../assets/logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
-import './HeaderStickyPart.css'
-import '../../Root.css'
+import React, { useState, useEffect, useRef } from 'react';
 
 function HeaderStickyPart() {
+  const menuRef = useRef(null);
   const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
-  const [openSubMenu, setOpenSubMenu] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const [openSubMenu, setOpenSubMenu] = useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
