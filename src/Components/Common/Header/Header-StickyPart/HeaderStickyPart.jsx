@@ -4,6 +4,7 @@ import logo from '../../../../assets/logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import './HeaderStickyPart.css'
+import '../../Root.css'
 
 function HeaderStickyPart() {
   const { t, i18n } = useTranslation();

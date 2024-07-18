@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import '../Header.css';
+import '../../Root.css';
+import './NotStickyPart.css';
+import React, {useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaPhone, FaRegEnvelope } from "react-icons/fa";
-import './NotStickyPart.css'
-import '../Header.css'
+
 
 function StickyHeader() {
     const { t, i18n } = useTranslation();
