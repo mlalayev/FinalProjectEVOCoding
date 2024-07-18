@@ -19,6 +19,7 @@ import PageLeftSideBar from './Components/Pages/PageLeftSideBar/PageLeftSideBar.
 import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideBar.jsx';
 import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
+import ContactUs from './Components/ContactUs/ContactUs.jsx';
  
 
 function App() {
@@ -91,6 +92,13 @@ function App() {
             <>
             <Header/>
             <Blog/>
+            <Footer/>
+            </>
+          }/>
+          <Route path='/contactus' element={
+            <>
+            <Header/>
+           <ContactUs/>
             <Footer/>
             </>
           }/>

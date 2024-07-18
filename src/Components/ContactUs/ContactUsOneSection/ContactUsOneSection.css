@@ -38,10 +38,6 @@
   .DownText a {
     text-decoration: none;
     color: var(--white-color);
-    transition: 0.3s;
-  }
-  .DownText a:hover{
-    color: #007bff;
   }
   
   @media only screen and (max-width: 767px) {
