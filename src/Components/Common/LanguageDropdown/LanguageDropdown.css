@@ -49,6 +49,3 @@
 .language-menu li:hover {
   background-color: var(--gray-color);
 }
-
-@media screen and (min-width:780px) {
-}

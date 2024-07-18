@@ -20,7 +20,8 @@ import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideB
 import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
 import ContactUs from './Components/ContactUs/ContactUs.jsx';
- 
+import MyProfile from './Components/MyProfile/MyProfile.jsx';
+
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <MainPage />
             <Footer />
           </>} />
-           <Route path='/aboutus' element={
+          <Route path='/aboutus' element={
             <>
               <Header />
               <AboutUs/>
@@ -101,30 +102,30 @@ function App() {
            <ContactUs/>
             <Footer/>
             </>
-          }/>
-           <Route path='/all-courses' element={
+          } />
+          <Route path='/all-courses' element={
             <>
               <Header />
-              <Course/>
-              <Footer/>
+              <Course />
+              <Footer />
             </>
           } />
 
-           <Route path='/view' element={
+          <Route path='/view' element={
             <>
-              <Header/>
-              <View/>
-              <Footer/>
+              <Header />
+              <View />
+              <Footer />
             </>
           } />
 
-            <Route path='/view/buyNow' element={
+          <Route path='/view/buyNow' element={
             <>
-              <Header/>
-              <Buy/>
-              <Footer/>
+              <Header />
+              <Buy />
             </>
           } />
+
             <Route path='/becomeateacher' element={
             <>
               <Header/>

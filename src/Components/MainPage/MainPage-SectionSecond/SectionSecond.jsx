@@ -1,27 +1,16 @@
-import React, { useEffect } from 'react';
-import './SectionSecond.css';
-import { useTranslation } from 'react-i18next';
-import sectionsecondimage from '../../../assets/mainpagesectiontwo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './SectionSecond.css';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import sectionsecondimage from '../../../assets/mainpagesectiontwo.png';
 
 function SectionSecond() {
     const { t, i18n } = useTranslation();
 
-    useEffect(() => {
-        AOS.init({
-            offset: 100,
-            delay: 0,
-            duration: 2000,
-            easing: 'ease',
-            once: false
-        });
-    }, []);
-
     return (
         <div
             className='second-section-holder'
-            data-aos="fade-left"
         >
             <img src={sectionsecondimage} alt="course-pic" className='sectionsecondimage' />
             <div className="section-second-text-holder">

@@ -1,118 +1,8 @@
-.sectionsecondimage {
-    max-width: 400px;
-    margin: var(--auto);
-    margin-bottom: 20px;
-    width: var(--percent-100);
-    display: var(--display-flex);
-}
-
-.blue {
-    font-size: var(--18-px);
-    color: var(--main-blue-color);
-    font-weight: var(--700-font-weight);
-}
-
-.font-light {
-    margin: 16px 0;
-    font-size: var(--14-px);
-    font-weight: var(--200-font-weight);
-}
-
-.line-height {
-    font-size: var(--16-px);
-    line-height: var(--28-px);
-}
-
-.font-bold {
-    font-weight: var(--600-font-weight);
-}
-
-.section-second-text-holder{
-    padding: 20px;
-}
-
-.section-second-text-holder button{
-    margin: 20px 0;
-}
-
-.mainpagebutton {
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    color: var(--white-color);
-    font-weight: var(--600-font-weight);
-    transition: var(--transition-medium);
-    border: 2px solid var(--main-blue-color);
-    background-color: var(--main-blue-color);
-}
-
-.mainpagebutton:hover {
-    color: var(--main-blue-color);
-    background-color: var(--white-color);
-}
-
-.second-section-holder {
-    box-shadow:
-        0px 0px 5.3px rgba(0, 0, 0, 0.028),
-        0px 0px 17.9px rgba(0, 0, 0, 0.042),
-        0px 0px 80px rgba(0, 0, 0, 0.07);
-}
-
-@media screen and (min-width:770px) {
-    .second-section-holder {
-        padding: 0;
-        max-width: 700px;
-        gap: var(--20-px);
-        margin: 0 var(--auto);
-        display: var(--display-flex);
-        align-items: var(--display-center);
-        justify-content: var(--display-center);
-    }
-
-    .second-section-holder img {
-        width: 300px;
-        margin-bottom: 0;
-        border-radius: var(--14-px);
-        border-top-right-radius: 0px !important;
-        border-bottom-right-radius: 0 !important;
-    }
-}
-
-@media screen and (min-width:1050px) {
-    .second-section-holder {
-        max-width: 950px;
-    }
-
-    .second-section-holder img {
-        margin: 0;
-        height: 400px;
-    }
-
-    .section-second-text-holder {
-        height: 400px;
-        padding: 30px 60px;
-        display: var(--display-flex);
-        flex-direction: var(--flex-direction-column);
-        justify-content: var(--display-space-around);
-    }
-
-    .section-second-text-holder h1 {
-        font-size: var(--28-px);
-    }
-
-    .section-second-text-holder p {
-        font-size: var(--18-px);
-    }
-}
-
-@media screen and (min-width:1250px) {
-    .second-section-holder {
-        max-width: 1150px;
-    }
-}
-
-.call-us span {
-    margin-left: var(--20-px);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: var(--border-sizing);
+    font-family: var(--Open-font-family);
 }
 
 :root {
@@ -131,6 +21,10 @@
     --display-inline-block: inline-block;
     --display-space-between: space-between;
 
+    /* Flex Wrap */
+    --flex-wrap-wrap: wrap;
+    --flex-wrap-nowrap: nowrap;
+    --flex-wrap-wrap-reverse: wrap-reverse;
 
     /* Position properties */
     --position-fixed: fixed;
@@ -187,6 +81,52 @@
     --38-px: 38px;
     --40-px: 40px;
 
+    /* View Width */
+    --vw-0: 0vw;
+    --vw-5: 5vw;
+    --vw-10: 10vw;
+    --vw-15: 15vw;
+    --vw-20: 20vw;
+    --vw-25: 25vw;
+    --vw-30: 30vw;
+    --vw-35: 35vw;
+    --vw-40: 40vw;
+    --vw-45: 45vw;
+    --vw-50: 50vw;
+    --vw-55: 55vw;
+    --vw-60: 60vw;
+    --vw-65: 65vw;
+    --vw-70: 70vw;
+    --vw-75: 75vw;
+    --vw-80: 80vw;
+    --vw-85: 85vw;
+    --vw-90: 90vw;
+    --vw-95: 95vw;
+    --vw-100: 100vw;
+
+    /* View Height */
+    --vh-0: 0vh;
+    --vh-5: 5vh;
+    --vh-10: 10vh;
+    --vh-15: 15vh;
+    --vh-20: 20vh;
+    --vh-25: 25vh;
+    --vh-30: 30vh;
+    --vh-35: 35vh;
+    --vh-40: 40vh;
+    --vh-45: 45vh;
+    --vh-50: 50vh;
+    --vh-55: 55vh;
+    --vh-60: 60vh;
+    --vh-65: 65vh;
+    --vh-70: 70vh;
+    --vh-75: 75vh;
+    --vh-80: 80vh;
+    --vh-85: 85vh;
+    --vh-90: 90vh;
+    --vh-95: 95vh;
+    --vh-100: 100vh;
+
     /* Font-weight */
     --100-font-weight: 100;
     --200-font-weight: 200;
@@ -236,6 +176,7 @@
 
     /* Visibility */
     --auto: auto;
+    --unset: unset;
     --hidden: hidden;
     --visible: visible;
 

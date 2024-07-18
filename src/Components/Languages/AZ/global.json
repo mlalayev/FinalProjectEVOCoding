@@ -7,7 +7,7 @@
         "allCourses": "Kurslarımız",
         "blogClassic": "Bloq",
         "pages": "Səhifələr",
-        "contactUs":"Bizimlə Əlaqə"
+        "contactUs": "Bizimlə Əlaqə"
     },
     "footer": {
         "popularcourses": "Populyar Kurslar",
@@ -77,5 +77,9 @@
     "category": {
         "textone": "Kurs Kateqoriyalarını",
         "texttwo": "Gözdən Keçirin"
+    },
+    "instructor": {
+        "textone": "Ən Yaxşı Təlimçi",
+        "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
     }
 }

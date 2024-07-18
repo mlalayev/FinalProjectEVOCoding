@@ -1,8 +1,8 @@
 import React from 'react';
 import './Instructors.css';
+import { useTranslation } from 'react-i18next';
 import instructorData from '../../../../InstructorData.json';
 import { FaInstagram, FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { useTranslation } from 'react-i18next';
 
 function Instructors() {
 
@@ -11,7 +11,11 @@ function Instructors() {
     return (
         <>
             <h1>{t('instructor.textone')}</h1>
-            <p>{t('instructor.texttwo')}</p>
+            <p style={{
+                maxWidth:"400px",
+                textAlign:"center",
+                color:"gray"
+            }}>{t('instructor.texttwo')}</p>
             <div className='sectionfifth-card-holder'>
                 {instructorData.map((instructor) => (
                     <div className="sectionfifth-card" key={instructor.id}>
@@ -24,7 +28,11 @@ function Instructors() {
                                 <div className='icon-holder'><FaLinkedinIn size={25} className='icons' /></div>
                             </div>
                         </div>
-                        <div className="sectionfifth-card-text-holder">
+                        <div
+                        style={{
+                            margin:"5px 0 10px 0"
+                        }}
+                        className="sectionfifth-card-text-holder">
                             <h1>{instructor.name}</h1>
                             <p>{instructor.role}</p>
                         </div>

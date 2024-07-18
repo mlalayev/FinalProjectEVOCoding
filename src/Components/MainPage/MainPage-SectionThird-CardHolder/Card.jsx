@@ -1,12 +1,12 @@
 import './Card.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { IoMdStar } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
 import { PiBookLight } from "react-icons/pi";
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react';
 import cardsData from '../../../../SectionThreeCardsData.json';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 const CardSlider = ({ interval = 8000 }) => {
@@ -14,15 +14,7 @@ const CardSlider = ({ interval = 8000 }) => {
   const [cardsPerView, setCardsPerView] = useState(1);
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000,
-      easing: 'ease',
-      once: false
-    });
-  }, []);
+
 
   useEffect(() => {
     const updateCardsPerView = () => {
@@ -78,7 +70,14 @@ const CardSlider = ({ interval = 8000 }) => {
 
         <h1>{t('card.texthone')}</h1>
         <h1>{t('card.texthtwo')}</h1>
-        <p className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
+        <p
+          style={{
+            maxWidth: "400px",
+            textAlign: "center",
+            color: "gray",
+            margin:"20px 0"
+          }}
+          className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
 
         <div className="card-container" >
           {cardsData[i18n.language].map((card, index) => {

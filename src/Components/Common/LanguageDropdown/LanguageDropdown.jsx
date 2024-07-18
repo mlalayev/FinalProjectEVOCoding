@@ -1,15 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import '../Root.css';
 import './LanguageDropdown.css';
 import ruFlag from '../../../assets/ru.svg';
 import gbFlag from '../../../assets/gb.svg';
 import azFlag from '../../../assets/az.svg';
+import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect, useRef } from 'react';
 
 const LanguageDropdown = ({ changeLanguage }) => {
+  const dropdownRef = useRef(null);
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language || 'en');
-  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
