@@ -14,15 +14,7 @@ const CardSlider = ({ interval = 8000 }) => {
   const [cardsPerView, setCardsPerView] = useState(1);
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      delay: 0,
-      duration: 2000,
-      easing: 'ease',
-      once: false
-    });
-  }, []);
+
 
   useEffect(() => {
     const updateCardsPerView = () => {
