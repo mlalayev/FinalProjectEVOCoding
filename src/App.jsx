@@ -20,7 +20,6 @@ import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideB
 import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
 import ContactUs from './Components/ContactUs/ContactUs.jsx';
-import MyProfile from './Components/MyProfile/MyProfile.jsx';
 
 
 function App() {
