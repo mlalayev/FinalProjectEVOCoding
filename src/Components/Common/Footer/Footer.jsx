@@ -1,8 +1,9 @@
-import React from 'react'
-import './Footer.css'
-import { useTranslation } from 'react-i18next';
-import logo from '../../../assets/logo.png'
+import '../Root.css';
+import './Footer.css';
+import React from 'react';
 import { FaPhone } from "react-icons/fa6";
+import logo from '../../../assets/logo.png';
+import { useTranslation } from 'react-i18next';
 import { FaRegEnvelope } from "react-icons/fa";
 
 
