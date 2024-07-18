@@ -17,7 +17,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './Components/Pages/NotFoundPage/NotFoundPage.jsx';
 import PageLeftSideBar from './Components/Pages/PageLeftSideBar/PageLeftSideBar.jsx';
 import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideBar.jsx';
- 
+import MyProfile from './Components/MyProfile/MyProfile.jsx';
+
 
 function App() {
   return (
@@ -29,80 +30,88 @@ function App() {
             <MainPage />
             <Footer />
           </>} />
-           <Route path='/aboutus' element={
+          <Route path='/aboutus' element={
             <>
               <Header />
-              <AboutUs/>
+              <AboutUs />
             </>
           } />
           <Route path='/events' element={
             <>
               <Header />
-              <Events/>
+              <Events />
             </>
           } />
           <Route path='/instructor' element={
             <>
               <Header />
-              <Instructor/>
+              <Instructor />
             </>
           } />
           <Route path='/testimonial' element={
             <>
               <Header />
-              <Testimonial/>
+              <Testimonial />
             </>
           } />
           <Route path='/samplepage' element={
             <>
               <Header />
-              <SamplePage/>
+              <SamplePage />
             </>
           } />
           <Route path='/pageleftsidebar' element={
             <>
               <Header />
-              <PageLeftSideBar/>
+              <PageLeftSideBar />
             </>
           } />
           <Route path='/pagerightsidebar' element={
             <>
               <Header />
-              <PageRightSideBar/>
+              <PageRightSideBar />
             </>
           } />
           <Route path='/404page' element={
             <>
               <Header />
-              <NotFoundPage/>
+              <NotFoundPage />
             </>
           } />
           <Route path='/blog' element={
             <>
-            <Header/>
-            <Blog/>
+              <Header />
+              <Blog />
             </>
-          }/>
-           <Route path='/all-courses' element={
+          } />
+          <Route path='/all-courses' element={
             <>
               <Header />
-              <Course/>
-              <Footer/>
+              <Course />
+              <Footer />
             </>
           } />
 
-           <Route path='/view' element={
+          <Route path='/view' element={
             <>
-              <Header/>
-              <View/>
-              <Footer/>
+              <Header />
+              <View />
+              <Footer />
             </>
           } />
 
-            <Route path='/view/buyNow' element={
+          <Route path='/view/buyNow' element={
             <>
-              <Header/>
-              <Buy/>
+              <Header />
+              <Buy />
+            </>
+          } />
+
+          <Route path='/myprofile' element={
+            <>
+              <Header />
+              <MyProfile />
+              <Footer />
             </>
           } />
         </Routes>
