@@ -1,11 +1,12 @@
 import './ImageSlider.css';
+import '../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 
 function ImageSlider({ slides, interval = 8000 }) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
-  const [animateCaption, setAnimateCaption] = useState(false);
   const [animateText, setAnimateText] = useState(false);
+  const [animateCaption, setAnimateCaption] = useState(false);
 
   useEffect(() => {
     const autoslide = setInterval(() => {

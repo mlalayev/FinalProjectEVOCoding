@@ -1,5 +1,6 @@
 import './Categories.css';
 import { t } from 'i18next';
+import '../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
 
