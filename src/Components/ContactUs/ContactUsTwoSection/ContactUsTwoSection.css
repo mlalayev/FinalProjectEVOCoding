@@ -22,15 +22,13 @@ textarea {
     border-radius: 30px;
     width: 30vw;
     background-color: #f6f7fa;
-    border: 1px solid #f6f7fa;
-    transition: 0.5s;
+    border: 1px solid #d3d3d3;
+    outline: none;
 }
 
 .ContactUsTwoSectionContainer form input:focus,
 textarea:focus {
-    background-color: #fff;
-    border: 1px solid #f6f7fa;
-    outline-color: #fff;
+    outline: 1px solid #bababa;
     color: #626a77;
     box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
 }
@@ -76,6 +74,7 @@ textarea:focus {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+
     .ContactUsTwoSectionContainer form input,
     textarea {
         width: 100%;
