@@ -70,9 +70,9 @@ label {
     margin: 10px 0 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
