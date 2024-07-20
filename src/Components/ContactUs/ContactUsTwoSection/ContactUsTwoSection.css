@@ -16,7 +16,7 @@
     margin-bottom: 5vh;
 }
 
-.ContactUsTwoSectionContainer form input,
+.ContactUsTwoSectionContainer form #inputs,
 textarea {
     padding: 17px 30px;
     border-radius: 30px;
@@ -26,7 +26,7 @@ textarea {
     outline: none;
 }
 
-.ContactUsTwoSectionContainer form input:focus,
+.ContactUsTwoSectionContainer form #inputs:focus,
 textarea:focus {
     outline: 1px solid #bababa;
     color: #626a77;
@@ -75,7 +75,7 @@ textarea:focus {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 
-    .ContactUsTwoSectionContainer form input,
+    .ContactUsTwoSectionContainer form #inputs,
     textarea {
         width: 100%;
         resize: none;

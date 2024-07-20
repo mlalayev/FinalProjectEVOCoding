@@ -7,12 +7,12 @@ const ContactUsTwoSection = () => {
     <h1>Feel Free to Contact with Us</h1>
     <form action="#">
     <div className="ContactUsTwoSectionTopInputs">
-        <input type="text" placeholder='Name' required/>
-        <input type="email" placeholder='Email' required/>
+        <input id='inputs' type="text" placeholder='Name' required/>
+        <input id='inputs' type="email" placeholder='Email' required/>
     </div>
     <div className="ContactUsTwoSectionBottomInputs">
-    <input type="text" placeholder='Phone' required/>
-    <input type="text" placeholder='Subject' required/>
+    <input id='inputs' type="text" placeholder='Phone' required/>
+    <input id='inputs' type="text" placeholder='Subject' required/>
     </div>
     <textarea name="textarea"></textarea>
     <button type='submit'>Submit</button>
