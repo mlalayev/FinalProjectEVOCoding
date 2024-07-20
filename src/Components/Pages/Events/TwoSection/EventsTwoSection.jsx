@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./EventsTwoSection.css";
 import EventsTwoSectionImgOneAvatar from "../../../../assets/Pages/Events/eventsavatar1.png";
 import EventsTwoSectionImgTwoAvatar from "../../../../assets/Pages/Events/eventsavatar2.png";
 import EventsTwoSectionImgThreeAvatar from "../../../../assets/Pages/Events/eventsavatar3.png";
 import { GoClock } from "react-icons/go";
 import { CiLocationOn } from "react-icons/ci";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const EventsTwoSection = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 120,
+      duration: 2000,
+      easing: "ease",
+      once: false,
+    });
+  }, []);
   return (
     <div className="EventsTwoSectionContainer">
-      <div className="EventsTwoSectionTextpart">
+      <div className="EventsTwoSectionTextpart" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
       <h2>Our Upcoming Events</h2>
       <p>
         Jeffrey crikey victoria sponge mush spiffing super arse over tit matie
@@ -17,7 +28,8 @@ const EventsTwoSection = () => {
       </p>
       </div>
         <div className="EventsTwoSectionCards">
-          <div className="EventsTwoSectionCard">
+          <div className="EventsTwoSectionCard" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
             <div className="EventsTwoSectionCardLeft">
               <img
                 src={EventsTwoSectionImgOneAvatar}
@@ -48,7 +60,8 @@ const EventsTwoSection = () => {
               </p>
             </div>
           </div>
-          <div className="EventsTwoSectionCard">
+          <div className="EventsTwoSectionCard" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
             <div className="EventsTwoSectionCardLeft">
               <img
                 src={EventsTwoSectionImgTwoAvatar}
@@ -79,7 +92,8 @@ const EventsTwoSection = () => {
               </p>
             </div>
           </div>
-          <div className="EventsTwoSectionCard">
+          <div className="EventsTwoSectionCard" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
             <div className="EventsTwoSectionCardLeft">
               <img
                 src={EventsTwoSectionImgThreeAvatar}

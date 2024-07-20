@@ -5,9 +5,10 @@
 }
 
 .EventsTwoSectionContainer {
-    height: 157.5vh;
+    height: 100%;
     width: 100%;
     padding: 5vh 0;
+    margin-top: 3vh;
 }
 .EventsTwoSectionTextpart{
     text-align: center;

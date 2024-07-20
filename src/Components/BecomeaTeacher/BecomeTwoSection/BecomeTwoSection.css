@@ -35,14 +35,6 @@
  color: green;
 }
 
-
-
-
-
-
-
-
-
 .BecomeTwoSectionForm {
     font-family: Arial, sans-serif;
     display: flex;
@@ -88,7 +80,7 @@ input[type="password"] {
     border-radius: 5px;
 }
 
-button {
+.BecomeTwoSectionFormContainer button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -99,7 +91,7 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.BecomeTwoSectionFormContainer button:hover {
     background-color: #0056b3;
 }
 
