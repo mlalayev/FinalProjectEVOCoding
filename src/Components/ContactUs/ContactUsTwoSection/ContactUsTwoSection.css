@@ -14,23 +14,27 @@
 
 .ContactUsTwoSectionContainer h1 {
     margin-bottom: 5vh;
+    width: 100%;
+    text-align: center;
 }
-
+.ContactUsTwoSectionContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
 .ContactUsTwoSectionContainer form input,
 textarea {
     padding: 17px 30px;
     border-radius: 30px;
     width: 30vw;
     background-color: #f6f7fa;
-    border: 1px solid #f6f7fa;
-    transition: 0.5s;
+    border: 1px solid #d3d3d3;
+    outline: none;
 }
 
 .ContactUsTwoSectionContainer form input:focus,
 textarea:focus {
-    background-color: #fff;
-    border: 1px solid #f6f7fa;
-    outline-color: #fff;
+    outline: 1px solid #bababa;
     color: #626a77;
     box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
 }
@@ -60,31 +64,41 @@ textarea:focus {
     border: 2px solid #2572ff;
     box-shadow: 0px 20px 40px 0px rgba(68, 134, 254, 0.2);
     background-color: #2572ff;
+    cursor: pointer;
 }
 
-.ContactUsTwoSectionContainer .ContactUsTwoSectionTopInputs {
+.ContactUsTwoSectionContainer .ContactUsTwoSectionTopInputs, .ContactUsTwoSectionContainer .ContactUsTwoSectionBottomInputs {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 1vh;
 }
 
-.ContactUsTwoSectionContainer .ContactUsTwoSectionBottomInputs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 1200px) {
+    .ContactUsTwoSectionContainer form input, 
+    .ContactUsTwoSectionContainer textarea {
+        width: 40vw;
+    }
 }
 
-/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .ContactUsTwoSectionContainer form input, 
+    .ContactUsTwoSectionContainer textarea {
+        width: 50vw;
+    }
+}
+
 @media (max-width: 768px) {
-    .ContactUsTwoSectionContainer form input,
-    textarea {
-        width: 100%;
-        resize: none;
+    .ContactUsTwoSectionContainer form input, 
+    .ContactUsTwoSectionContainer textarea {
+        width: 70vw;
     }
 
     .ContactUsTwoSectionContainer .ContactUsTwoSectionTopInputs,
     .ContactUsTwoSectionContainer .ContactUsTwoSectionBottomInputs {
         flex-direction: column;
-        gap: 2vh;
+        gap: 1vh;
+    }
+    .ContactUsTwoSectionContainer h1{
+        font-size: 22px;
     }
 }

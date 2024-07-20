@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./BecomeTwoSection.css";
 import { FaBookmark } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const BecomeTwoSection = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 120,
+      duration: 2000,
+      easing: "ease",
+      once: true,
+    });
+  }, []);
   return (
     <>
     <div className="BecomeTwoSectionContainer">
-      <div className="BecomeTwoSectionBody">
+      <div className="BecomeTwoSectionBody" data-aos="zoom-in">
       <div className="notification">
         <span>
           Please <a href="#">login</a> to send your request!
@@ -17,7 +27,7 @@ const BecomeTwoSection = () => {
       
       <div className="BecomeTwoSectionForm">
 <div className="BecomeTwoSectionFormContainer">
-  <div className="form-container login-container">
+  <div className="form-container login-container" data-aos="zoom-in-left">
     <form action="#">
       <h2>Login</h2>
       <label htmlFor="login-username">Username or email *</label>
@@ -25,17 +35,17 @@ const BecomeTwoSection = () => {
         type="text"
         id="login-username"
         placeholder="Email or username"
-        required=""
+        required
       />
       <label htmlFor="login-password">Password *</label>
       <input
         type="password"
         id="login-password"
         placeholder="Password"
-        required=""
+        required
       />
       <div className="remember-me">
-        <input type="checkbox" id="remember-me" />
+        <input type="checkbox" id="remember-me" required/>
         <label htmlFor="remember-me">Remember me</label>
       </div>
       <button type="submit">Login</button>
@@ -46,31 +56,31 @@ const BecomeTwoSection = () => {
     </form>
   </div>
 
-  <div className="form-container register-container">
+  <div className="form-container register-container" data-aos="zoom-in-right">
     <form action="#">
       <h2>Register</h2>
       <label htmlFor="register-email">Email address *</label>
-      <input type="email" id="register-email" placeholder="Email" required="" />
+      <input type="email" id="register-email" placeholder="Email" required />
       <label htmlFor="register-username">Username *</label>
       <input
         type="text"
         id="register-username"
         placeholder="Username"
-        required=""
+        required
       />
       <label htmlFor="register-password">Password *</label>
       <input
         type="password"
         id="register-password"
         placeholder="Password"
-        required=""
+        required
       />
       <label htmlFor="register-confirm-password">Confirm Password *</label>
       <input
         type="password"
         id="register-confirm-password"
         placeholder="Password"
-        required=""
+        required
       />
       <button type="submit">Register</button>
     </form>
