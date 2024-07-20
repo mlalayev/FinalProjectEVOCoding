@@ -11,13 +11,14 @@
     width: 100%;
     padding-top: 30px;
     box-sizing: border-box;
-    height: 60vh;
+    height: 100%;
 }
 
 .AboutFourSectionText {
-    transform: translateX(-290px);
     margin-bottom: 1.5rem;
     line-height: 50px;
+    width: calc(222px * 4 + 30px * 3);
+    
 }
 
 .AboutFourSectionText h2 {
@@ -52,7 +53,7 @@
 
 .AboutFourSectionCardItem p {
     font-size: 10px;
-    
+
 }
 
 .AboutFourSectionCardItem .RoundDiv {
@@ -71,13 +72,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-  
+
     .AboutFourSectionContainer .AboutFourCardSection {
         grid-template-columns: 222px 222px;
         grid-template-rows: 244px 244px;
     }
 
     .AboutFourSectionText {
-        transform: translateX(-30px);
+        text-align: center;
     }
 }
