@@ -106,11 +106,12 @@
     bottom: 0;
     left: auto;
     right: auto;
+    width: 1px;
     border: none;
     color: whitesmoke;
     position: absolute;
     margin-left: -40px;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .play-icon-holder:hover {
