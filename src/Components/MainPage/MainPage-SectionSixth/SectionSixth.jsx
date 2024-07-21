@@ -10,27 +10,37 @@ import React, { useState, useEffect } from 'react';
 import categories from '../../../../MainPage-SectionSixth.json';
 
 
+
 function SectionSixth() {
     const { t, i18n } = useTranslation();
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
-
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: true
+        });
+    }, []);
+    
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
     };
-
+    
     const renderIcon = (iconName, color) => {
         const IconComponent = {
             PiBookLight: PiBookLight,
             FaKey: FaKey,
             IoSaveOutline: IoSaveOutline
         }[iconName];
-
+        
         return <IconComponent size={18} color={color} className='icons-section-sixth' />;
     };
-
+    
     return (
         <div
-            data-aos="fade-right"
+        data-aos="fade-right"
             className='SixthSection'>
             <div>
                 <div className="sectionsixth-text-holder">

@@ -8,8 +8,19 @@ import sectionsecondimage from '../../../assets/mainpagesectiontwo.png';
 function SectionSecond() {
     const { t, i18n } = useTranslation();
 
+    useEffect(() => {
+        AOS.init({
+          offset: 200,
+          delay: '1s',
+          duration: 3000,
+          easing: 'ease',
+          once: true
+        });
+      }, []);
+
     return (
         <div
+            data-aos="fade-right"
             className='second-section-holder'
         >
             <img src={sectionsecondimage} alt="course-pic" className='sectionsecondimage' />

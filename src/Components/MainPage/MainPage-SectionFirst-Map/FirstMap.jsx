@@ -7,6 +7,15 @@ import sectionfirstContent from '../../../../SectionFirstMap.json';
 
 function FirstMap() {
     const { t, i18n } = useTranslation();
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: true
+        });
+    }, []);
 
     useEffect(() => {
         AOS.init({
@@ -20,6 +29,7 @@ function FirstMap() {
 
     return (
         <div
+            data-aos="fade-right"
             className='map-holder'>
             {sectionfirstContent.map((item) => (
                 <div

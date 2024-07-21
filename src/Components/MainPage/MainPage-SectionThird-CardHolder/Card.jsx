@@ -14,8 +14,6 @@ const CardSlider = ({ interval = 8000 }) => {
   const [cardsPerView, setCardsPerView] = useState(1);
   const { t, i18n } = useTranslation();
 
-
-
   useEffect(() => {
     const updateCardsPerView = () => {
       const width = window.innerWidth;
@@ -34,6 +32,16 @@ const CardSlider = ({ interval = 8000 }) => {
     return () => {
       window.removeEventListener('resize', updateCardsPerView);
     };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: '1s',
+      duration: 3000,
+      easing: 'ease',
+      once: true
+    });
   }, []);
 
   useEffect(() => {
@@ -75,11 +83,13 @@ const CardSlider = ({ interval = 8000 }) => {
             maxWidth: "400px",
             textAlign: "center",
             color: "gray",
-            margin:"20px 0"
+            margin: "20px 0"
           }}
           className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
 
-        <div className="card-container" >
+        <div
+          data-aos="fade-right"
+          className="card-container" >
           {cardsData[i18n.language].map((card, index) => {
             const isActive = Math.floor(index / cardsPerView) === Math.floor(currentIndex / cardsPerView);
             return (

@@ -1,7 +1,20 @@
 import './CountDown.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function CountDown() {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: true
+        });
+    }, []);
 
     const initialTime = 143 * 24 * 60 * 60 + 21 * 60 * 60 + 12 * 60 + 30;
     const [time, setTime] = useState(initialTime);
@@ -20,7 +33,9 @@ function CountDown() {
 
 
     return (
-        <div className="countdowntimer">
+        <div
+            data-aos="fade-right"
+            className="countdowntimer">
             <div>
                 <p className='blue'>{days}</p>
                 <p className='text-gray'>Days</p>

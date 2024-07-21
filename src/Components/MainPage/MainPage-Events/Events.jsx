@@ -1,20 +1,34 @@
 import './Events.css';
-import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, {useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
-import eventsData from '../../../../Events.json'; 
+import eventsData from '../../../../Events.json';
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
+
 
 function Events() {
     const { t, i18n } = useTranslation();
-    let lang = i18n.language.substr(0, 2); 
+    let lang = i18n.language.substr(0, 2);
     let events = eventsData[lang] || []; 
 
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: true
+        });
+    }, []);
+
     return (
-        <div 
-        style={{
-            padding:"80px 0 10px 0"
-        }}
-        className='center column'>
+        <div
+            data-aos="fade-right"
+            style={{
+                padding: "80px 0 10px 0"
+            }}
+            className='center column'>
             <h1>{t('events.title')}</h1>
             <p
                 style={{
@@ -27,7 +41,9 @@ function Events() {
 
             <div className="events-holder">
                 {events.map((event, index) => (
-                    <div className="events" key={index}>
+                    <div
+                        data-aos="fade-right"
+                        className="events" key={index}>
                         <div className="image-part-events">
                             <img src={event.image} alt="" className='events-image' />
                         </div>
