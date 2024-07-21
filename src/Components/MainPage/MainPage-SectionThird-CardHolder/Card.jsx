@@ -26,22 +26,22 @@ const CardSlider = ({ interval = 8000 }) => {
       }
     };
 
-    useEffect(() => {
-      AOS.init({
-        offset: 200,
-        delay: '1s',
-        duration: 3000,
-        easing: 'ease',
-        once: true
-      });
-    }, []);
-
     updateCardsPerView();
     window.addEventListener('resize', updateCardsPerView);
 
     return () => {
       window.removeEventListener('resize', updateCardsPerView);
     };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: '1s',
+      duration: 3000,
+      easing: 'ease',
+      once: true
+    });
   }, []);
 
   useEffect(() => {
