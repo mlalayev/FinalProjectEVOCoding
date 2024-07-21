@@ -127,6 +127,7 @@ function App() {
             <>
               <Header />
               <Buy />
+              <Footer />
             </>
           } />
 
@@ -142,6 +143,13 @@ function App() {
               <Header/>
               <MyProfile/>
               <Footer/>
+            </>
+          } />
+            <Route path='*' element={
+            <>
+              <Header/>
+              <NotFoundPage/>
+              <Footer />
             </>
           } />
         </Routes>
