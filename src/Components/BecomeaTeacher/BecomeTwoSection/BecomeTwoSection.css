@@ -60,12 +60,12 @@
     width: 30vw;
 }
 
-h2 {
+.BecomeTwoSectionFormContainer h2 {
     margin-bottom: 20px;
     font-size: 24px;
 }
 
-label {
+.BecomeTwoSectionFormContainer label {
     display: block;
     margin: 10px 0 5px;
 }

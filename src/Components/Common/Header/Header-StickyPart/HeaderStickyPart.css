@@ -82,7 +82,7 @@
     position: var(--position-relative);
 }
 
-.header-lower::before{
+.header-lower::before {
     left: 0;
     content: "";
     z-index: -1;
@@ -92,7 +92,7 @@
     height: var(--percent-100) !important;
 }
 
-.header-lower::after{
+.header-lower::after {
     right: 0;
     content: "";
     z-index: -1;
@@ -111,7 +111,7 @@
 }
 
 @media screen and (min-width:800px) {
-    .header-lower{
+    .header-lower {
         max-width: 700px;
     }
 }
