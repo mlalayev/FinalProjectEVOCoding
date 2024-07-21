@@ -9,7 +9,6 @@ import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
 function Events() {
     const { t, i18n } = useTranslation();
-
     let lang = i18n.language.substr(0, 2);
     let events = eventsData[lang] || []; 
 

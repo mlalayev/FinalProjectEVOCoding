@@ -12,7 +12,7 @@ const AboutThreeSection = () => {
         offset: 100,
         duration: 2000,
         easing: 'ease',
-        once: false
+        once: true
     });
 }, []);
   return (

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "avatarSrc": "../../../../../src/assets/Pages/Events/eventsavatar1.png",
+    "date": {
+      "az": "14 Yanvar 2023",
+      "ru": "14 января 2023 г.",
+      "en": "January 14, 2023"
+    },
+    "title": {
+      "az": "Gelişmiş İnkişaf Proses Kursuna Ehtiyacınız Var?",
+      "ru": "Почему вам нужен курс по продвинутым разработкам?",
+      "en": "Why you Need Advance Development Process Course?"
+    },
+    "time": "8.30 AM - 5.30 PM",
+    "location": {
+      "az": "9 Road, Mirpur Dohs, Nyu-York, ABŞ",
+      "ru": "9 Road, Mirpur Dohs, New York, USA",
+      "en": "9 Road, Mirpur Dohs, New York, USA"
+    },
+    "description": {
+      "az": "O, əşyanı alır, qollarını çarpıb, goly gosh bir neçə qeyri-münasib chav, yalnız bir quid qadının cip dükan argy-bargy, arı bacaklar morish loo get stuffed mate bağışlayın mən zonked dizlər.",
+      "ru": "Он берет свой бунт, бьет своими руками, бросает голы, гош, несколько нелепых справок, только одна женщина в салоне своего магазина, пчелы ноги, потряпанные мешки, извините, я устал колени.",
+      "en": "He takes his revolt, banging his arms, throwing goals, gosh, a few out-of-place notes, only one woman in the salon of his shop, bees legs, ragged bags, excuse me, I'm tired knees."
+    }
+  },
+  {
+    "id": 2,
+    "avatarSrc": "../../../../../src/assets/Pages/Events/eventsavatar2.png",
+    "date": {
+      "az": "14 Yanvar 2023",
+      "ru": "14 января 2023 г.",
+      "en": "January 14, 2023"
+    },
+    "title": {
+      "az": "Qrafik İllüstrasiya: Rəng və Şəkil İlə Dizayn",
+      "ru": "Графическая иллюстрация: дизайн с цветом и формой",
+      "en": "Graphic Illustration: Design with Color and Shape"
+    },
+    "time": "8.30 AM - 5.30 PM",
+    "location": {
+      "az": "9 Road, Mirpur Dohs, Nyu-York, ABŞ",
+      "ru": "9 Road, Mirpur Dohs, New York, USA",
+      "en": "9 Road, Mirpur Dohs, New York, USA"
+    },
+    "description": {
+      "az": "O, əşyanı alır, qollarını çarpıb, goly gosh bir neçə qeyri-münasib chav, yalnız bir quid qadının cip dükan argy-bargy, arı bacaklar morish loo get stuffed mate bağışlayın mən zonked dizlər.",
+      "ru": "Он берет свой бунт, бьет своими руками, бросает голы, гош, несколько нелепых справок, только одна женщина в салоне своего магазина, пчелы ноги, потряпанные мешки, извините, я устал колени.",
+      "en": "He takes his revolt, banging his arms, throwing goals, gosh, a few out-of-place notes, only one woman in the salon of his shop, bees legs, ragged bags, excuse me, I'm tired knees."
+    }
+  },
+  {
+    "id": 3,
+    "avatarSrc": "../../../../../src/assets/Pages/Events/eventsavatar3.png",
+    "date": {
+      "az": "14 Yanvar 2023",
+      "ru": "14 января 2023 г.",
+      "en": "January 14, 2023"
+    },
+    "title": {
+      "az": "Jurnal Dizayn Başa Çatdırma: İç Səhifələr",
+      "ru": "Дизайн журнала от начала до конца: внутренние страницы",
+      "en": "Magazine Design Start to Finish: The Inside Pages"
+    },
+    "time": "8.30 AM - 5.30 PM",
+    "location": {
+      "az": "9 Road, Mirpur Dohs, Nyu-York, ABŞ",
+      "ru": "9 Road, Mirpur Dohs, New York, USA",
+      "en": "9 Road, Mirpur Dohs, New York, USA"
+    },
+    "description": {
+      "az": "O, əşyanı alır, qollarını çarpıb, goly gosh bir neçə qeyri-münasib chav, yalnız bir quid qadının cip dükan argy-bargy, arı bacaklar morish loo get stuffed mate bağışlayın mən zonked dizlər.",
+      "ru": "Он берет свой бунт, бьет своими руками, бросает голы, гош, несколько нелепых справок, только одна женщина в салоне своего магазина, пчелы ноги, потряпанные мешки, извините, я устал колени.",
+      "en": "He takes his revolt, banging his arms, throwing goals, gosh, a few out-of-place notes, only one woman in the salon of his shop, bees legs, ragged bags, excuse me, I'm tired knees."
+    }
+  }
+]

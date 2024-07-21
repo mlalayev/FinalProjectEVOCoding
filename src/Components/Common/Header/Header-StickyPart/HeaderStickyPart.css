@@ -53,7 +53,14 @@
     display: var(--display-block);
     border-bottom: 1px solid #ddd;
     text-decoration: var(--display-none);
+    transition: 0.5s;
+    width: 100%;
 }
+/* .menu-item,
+.navigation-menu li a:hover{
+    background-color: rgba(128, 128, 128, 0.397);
+    color: white;
+} */
 
 .navigation-menu li a {
     border: var(--display-none);

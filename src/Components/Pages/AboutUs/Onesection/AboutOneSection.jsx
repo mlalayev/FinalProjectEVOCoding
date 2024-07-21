@@ -1,20 +1,20 @@
 import React from "react";
 import "./AboutOneSection.css";
 import { FaAngleRight } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 const AboutOneSection = () => {
-
-
+  const { t, i18n } = useTranslation();
   return (
     <div className="PagesBackground">
         <div className="BackgorundText">
       <div className="UpText">
-        <h2>About Us</h2>
+        <h2>{t('pages.aboutus')}</h2>
       </div>
       <div className="DownText">
-        <a href="/">Home</a>
+        <a href="/">{t('header.home')}</a>
        <FaAngleRight />
-        <span>About Us</span>
+        <span>{t('pages.aboutus')}</span>
       </div>
       </div>
     </div>

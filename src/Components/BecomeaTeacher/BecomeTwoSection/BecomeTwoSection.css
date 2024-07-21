@@ -27,12 +27,12 @@
     text-decoration: underline;
 }
 
-.ribbon i{
+.ribbon i {
     position: absolute;
-    top: 0px;
+    bottom: 15px;
     right: 15px;
- font-size: 25px;
- color: green;
+    font-size: 25px;
+    color: green;
 }
 
 .BecomeTwoSectionForm {
@@ -121,9 +121,9 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
-    .form-container{
+    .form-container {
         width: 100%;
     }
 }
