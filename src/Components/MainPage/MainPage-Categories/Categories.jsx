@@ -3,10 +3,23 @@ import { t } from 'i18next';
 import '../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Categories = ({ interval = 8000, language = 'en' }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleCards, setVisibleCards] = useState(1);
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: false
+        });
+    }, []);
 
     useEffect(() => {
         const updateVisibleCards = () => {
@@ -45,7 +58,9 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
     };
 
     return (
-        <div className='category-slider-section'>
+        <div
+            data-aos="fade-right"
+            className='category-slider-section' >
             <h1>{t('category.textone')}</h1>
             <h1>{t('category.texttwo')}</h1>
             <p style={{
@@ -62,6 +77,7 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
                 {CategoriesData.map((category, index) => (
                     <div
                         key={index}
+                        data-aos="fade-right"
                         className="category-card"
                         style={{ backgroundColor: category.bgColor, color: category.textColor }}
                     >
@@ -82,7 +98,7 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
                     ></span>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 
