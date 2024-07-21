@@ -14,8 +14,6 @@ const CardSlider = ({ interval = 8000 }) => {
   const [cardsPerView, setCardsPerView] = useState(1);
   const { t, i18n } = useTranslation();
 
-
-
   useEffect(() => {
     const updateCardsPerView = () => {
       const width = window.innerWidth;
@@ -27,6 +25,16 @@ const CardSlider = ({ interval = 8000 }) => {
         setCardsPerView(1);
       }
     };
+
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        delay: '1s',
+        duration: 3000,
+        easing: 'ease',
+        once: true
+      });
+    }, []);
 
     updateCardsPerView();
     window.addEventListener('resize', updateCardsPerView);

@@ -16,7 +16,7 @@ function Instructors() {
             delay: '1s',
             duration: 3000,
             easing: 'ease',
-            once: false
+            once: true
         });
     }, []);
 

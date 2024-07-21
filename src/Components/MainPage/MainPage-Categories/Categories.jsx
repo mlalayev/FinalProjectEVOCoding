@@ -17,7 +17,7 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
             delay: '1s',
             duration: 3000,
             easing: 'ease',
-            once: false
+            once: true
         });
     }, []);
 
