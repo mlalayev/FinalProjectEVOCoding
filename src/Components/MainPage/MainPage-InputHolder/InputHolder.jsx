@@ -14,7 +14,7 @@ function InputHolder() {
             delay: 0,
             duration: 2000,
             easing: 'ease',
-            once: false
+            once: true
         });
     }, []);
 
