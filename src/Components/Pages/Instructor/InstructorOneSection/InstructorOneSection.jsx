@@ -1,19 +1,21 @@
 import React from "react";
 import "./InstructorOneSection.css";
 import { FaAngleRight } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 
 const InstructorOneSection = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="PagesBackground">
     <div className="BackgorundText">
   <div className="UpText">
-    <h2>Instructor</h2>
+    <h2>{t('pages.instructor')}</h2>
   </div>
   <div className="DownText">
-    <a href="/">Home</a>
+    <a href="/">{t('header.home')}</a>
    <FaAngleRight />
-    <span>Instructor</span>
+    <span>{t('pages.instructor')}</span>
   </div>
   </div>
 </div>

@@ -27,8 +27,10 @@
     max-width: 35vw;
     font-size: 6px;
 }
-
-@media only screen and (max-width: 767px){
+.AboutTwoSectionRightSide img{
+    width: min(40vw, 300rem, 450px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
     .AboutTwoContainer{
         flex-direction: column;
         height: 35vh;

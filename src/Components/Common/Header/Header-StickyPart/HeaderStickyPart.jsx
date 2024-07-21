@@ -89,14 +89,14 @@ function HeaderStickyPart() {
             <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
             {openSubMenu === 'pages' && (
               <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-                <a href="/aboutus" className='submenu-item'>About Us</a>
-                <a href="/events" className='submenu-item'>Events</a>
-                <a href="/instructor" className='submenu-item'>Instructor</a>
-                <a href="/testimonial" className='submenu-item'>Testimonial</a>
-                <a href="/samplepage" className='submenu-item'>Sample Page</a>
-                <a href="/pageleftsidebar" className='submenu-item'>Page Left Sidebar</a>
-                <a href="/pagerightsidebar" className='submenu-item'>Page Right Sidebar</a>
-                <a href="/404page" className='submenu-item'>404 Page</a>
+                <a href="/aboutus" className='submenu-item'>{t('pages.aboutus')}</a>
+                <a href="/events" className='submenu-item'>{t('pages.events')}</a>
+                <a href="/instructor" className='submenu-item'>{t('pages.instructor')}</a>
+                <a href="/testimonial" className='submenu-item'>{t('pages.testimonials')}</a>
+                <a href="/samplepage" className='submenu-item'>{t('pages.samplepage')}</a>
+                <a href="/pageleftsidebar" className='submenu-item'>{t('pages.pageleftsidebar')}</a>
+                <a href="/pagerightsidebar" className='submenu-item'>{t('pages.pagerightsidebar')}</a>
+                <a href="/404page" className='submenu-item'>{t('pages.404page')}</a>
               </div>
             )}
           </div>
@@ -144,14 +144,14 @@ function HeaderStickyPart() {
           <p className='header-menu-p-tag'> {t('header.pages')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} /> </p>
           {openSubMenu === 'pages' && (
             <ul className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
-              <li><a href="/aboutus">About Us</a></li>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/instructor">Instructor</a></li>
-              <li><a href="/testimonial">Testimonial</a></li>
-              <li><a href="/samplepage">Sample Page</a></li>
-              <li><a href="/pageleftsidebar">Page Left Sidebar</a></li>
-              <li><a href="/pagerightsidebar">Page Right Sidebar</a></li>
-              <li><a href="/404page">404 Page</a></li>
+              <li><a href="/aboutus">{t('pages.aboutus')}</a></li>
+              <li><a href="/events">{t('pages.events')}</a></li>
+              <li><a href="/instructor">{t('pages.instructor')}</a></li>
+              <li><a href="/testimonial">{t('pages.testimonial')}</a></li>
+              <li><a href="/samplepage">{t('pages.samplepage')}</a></li>
+              <li><a href="/pageleftsidebar">{t('pages.pageleftsidebar')}</a></li>
+              <li><a href="/pagerightsidebar">{t('pages.pagerightsidebar')}</a></li>
+              <li><a href="/404page">{t('pages.404page')}</a></li>
             </ul>
           )}
         </li>

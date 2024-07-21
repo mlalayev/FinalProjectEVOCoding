@@ -37,7 +37,15 @@
     "pages": {
         "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
         "abouttwocontainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz.",
-        "contactUs": "Bizimlə Əlaqə"
+        "contactUs": "Bizimlə Əlaqə",
+        "aboutus": "Haqqımızda",
+        "events": "Hadisələr",
+        "instructor": "Təlimatçı",
+        "testimonial": "Referans",
+        "samplepage": "Nümunə Səhifə",
+        "pageleftsidebar": "Səhifənin Sol Yan Paneli",
+        "pagerightsidebar": "Səhifənin Sağ Yan Paneli",
+        "404page": "404 Səhifə"
     },
     "mainpage": {
         "registrationtextone": "Qeydiyyat",
@@ -81,5 +89,9 @@
     "instructor": {
         "textone": "Ən Yaxşı Təlimçi",
         "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
+    },
+    "notfoundpage": {
+        "notfoundinfo": "Vay! Bir şey səhvdir.",
+        "notfoundbackhome": "Əsas səhifəyə qayıt, daha yaxşıdır."
     }
 }

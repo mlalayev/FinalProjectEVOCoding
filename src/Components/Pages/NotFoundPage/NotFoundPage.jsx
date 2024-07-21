@@ -1,26 +1,18 @@
-import React from 'react';
-import './NotFoundPage.css'
-import ErrorImg from '../../../assets/Pages/404page/errorpage.png'
-import { GoArrowRight } from "react-icons/go";
-import { IoArrowUndo } from "react-icons/io5";
+import React from "react";
+import "./NotFoundPage.css";
+import { useTranslation } from 'react-i18next';
 
 const NotFoundPage = () => {
+  const { t, i18n } = useTranslation();
   return (
-    <div className="ErrorPageContainer">
-      <div className="ErrorImage">
-        <img src={ErrorImg} alt="ErrorImg" />
-      </div>
-      <h3>We are Sorry, Page not found</h3>
-      <form action="#" className='ErrorPageSearchForm'>
-        <input type="text" placeholder='Search...' className='ErrorPageSearchInput' required />
-        <button type='submit' className='ErrorPageSearchBtn'><i><GoArrowRight /></i></button>
-        </form>
-      <div className="ErrorPageBackHome">
-      <i><IoArrowUndo /></i>
-      <a href="/">Back to Homepage</a>
-      </div>
+    <div className="NotFoundBodys">
+      <h1>404</h1>
+      <p>{t('notfoundpage.notfoundinfo')}</p>
+      <a className="button" href="/">
+        <i className="icon-home" /> {t('notfoundpage.notfoundbackhome')}
+      </a>
     </div>
-  )
-}
+  );
+};
 
 export default NotFoundPage;

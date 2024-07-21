@@ -6,10 +6,8 @@ import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
 function Events() {
     const { t, i18n } = useTranslation();
-
-    // Determine which language data to use based on current i18next language
-    let lang = i18n.language.substr(0, 2); // Get language code (en, az, ru)
-    let events = eventsData[lang] || []; // Default to empty array if language data not found
+    let lang = i18n.language.substr(0, 2); 
+    let events = eventsData[lang] || []; 
 
     return (
         <div 

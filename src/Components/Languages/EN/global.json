@@ -37,7 +37,15 @@
     "pages": {
         "abouttwocontainer": "Varsity is an educational Bootstrap Premium Template",
         "abouttwocontainerr": "You can use it for making your modern educational website.",
-        "firsttext": "Loo faff about cockup Harry baking cakes hunky dory mush happy days on your bike mate."
+        "firsttext": "Loo faff about cockup Harry baking cakes hunky dory mush happy days on your bike mate.",
+        "aboutus": "About Us",
+        "events": "Events",
+        "instructor": "Instructor",
+        "testimonial": "Testimonial",
+        "samplepage": "Sample Page",
+        "pageleftsidebar": "Page Left Sidebar",
+        "pagerightsidebar": "Page Right Sidebar",
+        "404page": "404 Page"
     },
     "mainpage": {
         "registrationtextone": "Registration",
@@ -82,5 +90,9 @@
     "instructor": {
         "textone": "Top Instructor",
         "texttwo": "Jeffrey crikey victoria sponge mush spiffing super arse over tit matie boy smashing. The little rotter off his nut codswallop.!"
+    },
+    "notfoundpage": {
+        "notfoundinfo": "Oops! Something is wrong.",
+        "notfoundbackhome": "Go back in initial page, is better."
     }
 }
