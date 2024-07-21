@@ -5,12 +5,23 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState, useEffect } from 'react';
 import LastSectionData from '../../../../LastSectionData.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function LastSection({ interval = 8000 }) {
     const { t, i18n } = useTranslation();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [language, setLanguage] = useState(i18n.language);
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: '1s',
+            duration: 3000,
+            easing: 'ease',
+            once: false
+        });
+    }, []);
 
     useEffect(() => {
         const autoSlide = setInterval(() => {
@@ -38,9 +49,10 @@ function LastSection({ interval = 8000 }) {
 
     return (
         <div
+            data-aos="fade-right"
             style={{
                 maxWidth: "1350px",
-                margin:"0 auto"
+                margin: "0 auto"
             }}
 
             className='last-section-holder'>

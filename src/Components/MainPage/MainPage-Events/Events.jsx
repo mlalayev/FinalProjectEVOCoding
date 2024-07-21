@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import eventsData from '../../../../Events.json';
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
+
 function Events() {
     const { t, i18n } = useTranslation();
 
