@@ -35,8 +35,6 @@
         "career": "Карьера"
     },
     "pages": {
-        "abouttwocontainer": "Varsity - это образовательный премиум-шаблон на Bootstrap.",
-        "abouttwocontainerr": "Вы можете использовать его для создания современного образовательного сайта.",
         "firsttext": "Лу фафф о кокап Гарри выпекание пирогов супер, дори мошь счастливые дни на своем велосипеде, приятель.",
         "aboutus": "О нас",
         "events": "События",
@@ -85,6 +83,19 @@
     "category": {
         "textone": "Просмотр Онлайн",
         "texttwo": "Категории Курсов"
+    },
+    "aboutus": {
+        "oneheader": "Об университете",
+        "onetext": "Varsity — это образовательный премиум-шаблон Bootstrap",
+        "onetextt": "Вы можете использовать его для создания современного образовательного веб-сайта.",
+        "twoheader": "Lorem ipsum dolor sit amet",
+        "twotext": "Вы можете выбрать все необходимое для труда и работы с размахом.",
+        "twobutton": "Наши курсы",
+        "threeheader": "Lorem ipsum dolor sit amet",
+        "threetext": "Вы можете выбрать все необходимое для труда и работы с размахом.",
+        "threebutton": "Все события",
+        "fourheader": "Наша команда",
+        "fourtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     },
     "instructor": {
         "textone": "Лучший Инструктор",

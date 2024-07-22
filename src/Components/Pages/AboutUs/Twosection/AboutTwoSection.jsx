@@ -19,9 +19,9 @@ const AboutTwoSection = () => {
   return (
     <div className="AboutTwoContainer">
     <div className="AboutTwoSectionLeftSide" data-aos="fade-up" data-aos-delay="400">
-      <h1>About Varsity</h1>
-      <p>{t('pages.abouttwocontainer')}</p>
-      <p>{t('pages.abouttwocontainerr')}</p>
+      <h1>{t('aboutus.oneheader')}</h1>
+      <p>{t('aboutus.onetext')}</p>
+      <p>{t('aboutus.onetextt')}</p>
     </div>
     <div className="AboutTwoSectionRightSide" data-aos="fade-up" data-aos-delay="200">
     <img src={AboutTwoSectionImg} alt="AboutTwoSectionImg" data-aos="fade-up" data-aos-delay="200"/>
