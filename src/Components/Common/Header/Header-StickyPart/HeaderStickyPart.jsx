@@ -49,8 +49,10 @@ function HeaderStickyPart() {
       {isMenuOpen && (
         <div className="menu">
           <div className='menu-item' onClick={() => handleSubMenuToggle('home')}>
-            {t('header.home')}
-            <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} />
+            <span className='menu-span'>
+              {t('header.home')}
+              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} />
+            </span>
             {openSubMenu === 'home' && (
               <div className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
                 <a href="/salam" className='submenu-item'>Homepage Style One</a>
@@ -61,8 +63,10 @@ function HeaderStickyPart() {
             )}
           </div>
           <div className='menu-item' onClick={() => handleSubMenuToggle('all-courses')}>
-            {t('header.allCourses')}
-            <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} />
+            <span className='menu-span' >
+              {t('header.allCourses')}
+              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'all-courses' ? 'open' : ''}`} />
+            </span>
             {openSubMenu === 'all-courses' && (
               <div className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
                 <a href="/all-courses" className='submenu-item'>Course One</a>
@@ -73,8 +77,10 @@ function HeaderStickyPart() {
             )}
           </div>
           <div className='menu-item' onClick={() => handleSubMenuToggle('blog-classic')}>
-            {t('header.blogClassic')}
-            <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} />
+            <span className='menu-span' >
+              {t('header.blogClassic')}
+              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} />
+            </span>
             {openSubMenu === 'blog-classic' && (
               <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                 <a href="/blog-classic" className='submenu-item'>Blog One</a>
@@ -85,8 +91,10 @@ function HeaderStickyPart() {
             )}
           </div>
           <div className='menu-item' onClick={() => handleSubMenuToggle('pages')}>
-            {t('header.pages')}
-            <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
+            <span className='menu-span' >
+              {t('header.pages')}
+              <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'pages' ? 'open' : ''}`} />
+            </span>
             {openSubMenu === 'pages' && (
               <div className={`submenu-desktop ${openSubMenu === 'pages' ? 'open' : ''}`}>
                 <a href="/aboutus" className='submenu-item'>{t('pages.aboutus')}</a>
