@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "name": "Dylan Meringue",
+      "title": "Sales Director",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar1.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/johndoe",
+        "linkedin": "https://www.linkedin.com/in/johndoe",
+        "twitter": "https://twitter.com/johndoe",
+        "facebook": "https://www.facebook.com/johndoe"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Chauffina Carr",
+      "title": "Mathematics",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar2.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jason Response",
+      "title": "Marketing",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar3.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Hanson Deck",
+      "title": "Sales Director",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar4.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Adam Smith",
+      "title": "Web Designer",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar5.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "title": "Web Developer",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar6.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Mural Evan",
+      "title": "Web Application",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar7.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jeffer Smith",
+      "title": "Analyzer",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar8.png",
+      "socials": {
+        "instagram": "https://www.instagram.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith",
+        "twitter": "https://twitter.com/janesmith",
+        "facebook": "https://www.facebook.com/janesmith"
+      }
+    }
+  ]
+  

@@ -1,0 +1,33 @@
+{
+    "members": [
+      {
+        "id": 1,
+        "name": "Manuella Nevoresky",
+        "role": "CEO - FOUNDER",
+        "avatar": "src/assets/Pages/AboutUs/avatar1.png"
+      },
+      {
+        "id": 2,
+        "name": "Samuel Hardy",
+        "role": "MANAGING DIRECTOR",
+        "avatar": "src/assets/Pages/AboutUs/avatar2.png"
+      },
+      {
+        "id": 3,
+        "name": "Tom Sunderland",
+        "role": "SUPERVISOR",
+        "avatar": "src/assets/Pages/AboutUs/avatar3.png"
+      },
+      {
+        "id": 4,
+        "name": "John Tarly",
+        "role": "TEAM LEADER",
+        "avatar": "src/assets/Pages/AboutUs/avatar4.png"
+      }
+    ],
+    "sectionHeader": {
+      "header": "aboutus.fourheader",
+      "text": "aboutus.fourtext"
+    }
+  }
+  

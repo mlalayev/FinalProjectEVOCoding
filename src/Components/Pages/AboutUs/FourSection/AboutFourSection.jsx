@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./AboutFourSection.css";
-import CardAvatarOneImg from "../../../../assets/Pages/AboutUs/avatar1.png";
-import CardAvatarTwoImg from "../../../../assets/Pages/AboutUs/avatar2.png";
-import CardAvatarThreeImg from "../../../../assets/Pages/AboutUs/avatar3.png";
-import CardAvatarFourImg from "../../../../assets/Pages/AboutUs/avatar4.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from 'react-i18next';
+import aboutData from "./AboutFourSection.json"; 
 
 const AboutFourSection = () => {
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     Aos.init({
       offset: 100,
@@ -16,6 +16,7 @@ const AboutFourSection = () => {
       once: true
     });
   }, []);
+
   return (
     <>
       <div className="AboutFourSectionContainer">
@@ -24,54 +25,24 @@ const AboutFourSection = () => {
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <h2>Our Team</h2>
-          <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i>
+          <h2>{t(aboutData.sectionHeader.header)}</h2>
+          <i>{t(aboutData.sectionHeader.text)}</i>
         </div>
         <div className="AboutFourCardSection">
-          <div
-            className="AboutFourSectionCardItem"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="RoundDiv">
-              <img src={CardAvatarOneImg} alt="RoundDivImg" />
+          {aboutData.members.map((member) => (
+            <div
+              key={member.id}
+              className="AboutFourSectionCardItem"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div className="RoundDiv">
+                <img src={member.avatar} alt="RoundDivImg" />
+              </div>
+              <h5>{member.name}</h5>
+              <p>{member.role}</p>
             </div>
-            <h5>Manuella Nevoresky</h5>
-            <p>CEO - FOUNDER</p>
-          </div>
-          <div
-            className="AboutFourSectionCardItem"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="RoundDiv">
-              <img src={CardAvatarTwoImg} alt="RoundDivImg" />
-            </div>
-            <h5>Samuel Hardy</h5>
-            <p>MANAGING DIRECTOR</p>
-          </div>
-          <div
-            className="AboutFourSectionCardItem"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="RoundDiv">
-              <img src={CardAvatarThreeImg} alt="RoundDivImg" />
-            </div>
-            <h5>Tom Sunderland</h5>
-            <p>SUPERVISOR</p>
-          </div>
-          <div
-            className="AboutFourSectionCardItem"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="RoundDiv">
-              <img src={CardAvatarFourImg} alt="RoundDivImg" />
-            </div>
-            <h5>John Tarly</h5>
-            <p>TEAM LEADER</p>
-          </div>
+          ))}
         </div>
       </div>
     </>

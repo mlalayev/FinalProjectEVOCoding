@@ -4,9 +4,11 @@ import AboutThreeSectionUpRightImg from '../../../../assets/Pages/AboutUs/AboutT
 import AboutThreeSectionUpRightImgTwo from '../../../../assets/Pages/AboutUs/three.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { useTranslation } from 'react-i18next';
 
 
 const AboutThreeSection = () => {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     Aos.init({
         offset: 100,
@@ -19,12 +21,11 @@ const AboutThreeSection = () => {
     <div className="AboutThreeSectionContainer">
       <div className="AboutThreeSectionUp">
         <div className="AboutThreeSectionUpLeft" data-aos="fade-up" data-aos-delay="500">
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>{t('aboutus.twoheader')}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          {t('aboutus.twotext')}
           </p>
-          <button><a href="/all-courses">Our Courses</a></button>
+          <button><a href="/all-courses">{t('aboutus.twobutton')}</a></button>
         </div>
         <div className="AboutThreeSectionUpRight" data-aos="fade-up" data-aos-delay="200">
             <img src={AboutThreeSectionUpRightImg} alt="" />
@@ -32,12 +33,11 @@ const AboutThreeSection = () => {
       </div>
       <div className="AboutThreeSectionUp">
         <div className="AboutThreeSectionUpLeft" data-aos="fade-up" data-aos-delay="500">
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>{t('aboutus.threeheader')}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          {t('aboutus.threetext')}
           </p>
-          <button><a href="/all-courses">All events</a></button>
+          <button><a href="/all-courses">{t('aboutus.threebutton')}</a></button>
         </div>
         <div className="AboutThreeSectionUpRight" data-aos="fade-up" data-aos-delay="200">
             <img src={AboutThreeSectionUpRightImgTwo} alt="" />

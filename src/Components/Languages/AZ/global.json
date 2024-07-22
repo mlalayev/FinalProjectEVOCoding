@@ -11,7 +11,7 @@
     },
     "footer": {
         "popularcourses": "Populyar Kurslar",
-        "copyright": "© Müəllif Hüququ 2023 Dizayn Evo Coding Tələbələri tərəfindən edilib. Bütün hüquqlar qorunur.",
+        "copyright": "© Müəllif Hüququ 2024 Dizayn Evo Coding Tələbələri tərəfindən edilib. Bütün hüquqlar qorunur.",
         "firsttext": "Harry-nin tortlar bişirməsi, hunky dory mush, xoşbəxt günlər velosipedinizdə getməyə nə qədər də heyrətamizdir.",
         "algebra": "Cəbr və Hesablama",
         "business": "Biznes Strategiyası",
@@ -35,8 +35,6 @@
         "career": "Karyera"
     },
     "pages": {
-        "abouttwocontainer": "Varsity təhsil Bootstrap Premium Şablonudur",
-        "abouttwocontainerr": "Siz ondan müasir təhsil saytınızı yaratmaq üçün istifadə edə bilərsiniz.",
         "contactUs": "Bizimlə Əlaqə",
         "aboutus": "Haqqımızda",
         "events": "Hadisələr",
@@ -85,6 +83,19 @@
     "category": {
         "textone": "Kurs Kateqoriyalarını",
         "texttwo": "Gözdən Keçirin"
+    },
+    "aboutus": {
+        "oneheader": "Varsity haqqında",
+        "onetext": "Varsity təhsil üçün Bootstrap Premium Şablonudur",
+        "onetextt": "Siz ondan müasir təhsil veb-saytınızı yaratmaq üçün istifadə edə bilərsiniz",
+        "twoheader": "Lorem ipsum dolor sit amet",
+        "twotext": "Əmək və möhtəşəm miqyasda işləmək üçün lazım olan hər şeyi seçə bilərsiniz",
+        "twobutton": "Kurslarımız",
+        "threeheader": "Lorem ipsum dolor sit amet",
+        "threetext": "Əmək və hər hansı bir möcüzə ilə işləmək mümkün deyil, adipisinq elitindən istifadə edin.",
+        "threebutton": "Bütün hadisələr",
+        "fourheader": "Komandamız",
+        "fourtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     },
     "instructor": {
         "textone": "Ən Yaxşı Təlimçi",

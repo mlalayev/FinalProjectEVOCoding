@@ -1,22 +1,18 @@
+
 import React, { useEffect } from "react";
 import './InstructorTwoSection.css'
-import InstructorTwoSectionOneImg from "../../../../assets/Pages/Instructor/avatar1.png";
-import InstructorTwoSectionTwoImg from "../../../../assets/Pages/Instructor/avatar2.png";
-import InstructorTwoSectionThreeImg from "../../../../assets/Pages/Instructor/avatar3.png";
-import InstructorTwoSectionFourImg from "../../../../assets/Pages/Instructor/avatar4.png";
-import InstructorTwoSectionFiveImg from "../../../../assets/Pages/Instructor/avatar5.png";
-import InstructorTwoSectionSixImg from "../../../../assets/Pages/Instructor/avatar6.png";
-import InstructorTwoSectionSevenImg from "../../../../assets/Pages/Instructor/avatar7.png";
-import InstructorTwoSectionEightImg from "../../../../assets/Pages/Instructor/avatar8.png";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { useTranslation } from 'react-i18next';
+import instructorsData from './instructors.json';
 
 const InstructorTwoSection = () => {
+  const { t, i18n } = useTranslation();
+  
   useEffect(() => {
     Aos.init({
       offset: 60,
@@ -26,148 +22,31 @@ const InstructorTwoSection = () => {
       once: true,
     });
   }, []);
+
   return (
     <div className="InstructorTwoSectionContainer">
-      <div className="InstructorTwoSectionTextPart" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-        <h2>Top Instructor</h2>
-        <p>
-          Jeffrey crikey victoria sponge mush spiffing super arse over tit matie
-          boy smashing. The little rotter off his nut codswallop.!
-        </p>
+      <div className="InstructorTwoSectionTextPart" data-aos="fade-up" data-aos-anchor-placement="center-center">
+        <h2>{t('instructor.textone')}</h2>
+        <p>{t('instructor.texttwo')}</p>
       </div>
       <div className="InstructorTwoSectionCardsPart">
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionOneImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
+        {instructorsData.map((instructor) => (
+          <div className="InstructorTwoSectionCard" key={instructor.id} data-aos="fade-up" data-aos-anchor-placement="center-center">
+            <div className="InstructorTwoSectionCardUpPart">
+              <img src={instructor.imgSrc} alt={`Instructor_${instructor.name}`} />
+              <div className="InstructorTwoSectionCardSocials">
+                <div className="InstructorSocials"><a href={instructor.socials.instagram}><FaInstagram /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.linkedin}><AiOutlineLinkedin /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.twitter}><FaTwitter /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.facebook}><FaFacebookF /></a></div> 
               </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
             </div>
-              
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionTwoImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
             <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
+              <h4>{instructor.name}</h4>
+              <p>{instructor.title}</p>
             </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionThreeImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
           </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
-            </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionFourImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
-            </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionFiveImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
-            </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionSixImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Dylan Meringue</h4>
-              <p>Sales Director</p>
-            </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionSevenImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Mural Evan</h4>
-              <p>Web Application</p>
-            </div>
-        </div>
-        <div className="InstructorTwoSectionCard" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
-          <div className="InstructorTwoSectionCardUpPart">
-            <img src={InstructorTwoSectionEightImg} alt="Instructor_TwoSection_OneImg" />
-            <div className="InstructorTwoSectionCardSocials">
-              <div className="InstructorSocials"><a href=""><FaInstagram /></a></div> 
-              <div className="InstructorSocials"><a href=""><AiOutlineLinkedin /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaTwitter /></a></div> 
-              <div className="InstructorSocials"><a href=""><FaFacebookF /></a></div> 
-              </div>
-          </div>
-            <div className="InstructorTwoSectionCardDownPart">
-              <h4>Jeffer Smith</h4>
-              <p>Analyzer</p>
-            </div>
-        </div>
-        
-
+        ))}
       </div>
     </div>
   );
