@@ -80,16 +80,16 @@
     text-decoration: var(--display-none);
 }
 
-.menu-item:hover {
-    background-color: rgba(140, 140, 140, 0.395);
-}
+/* .menu-item:hover { */
+    /* background-color: rgba(140, 140, 140, 0.395); */
+/* } */
 
-.menu-item:hover .submenu-desktop {
-    transition: 0;
-    margin-bottom: -10px;
-    width: 100% !important;
-    background-color: #FFF;
-}
+/* .menu-item:hover .submenu-desktop { */
+    /* transition: 0; */
+    /* margin-bottom: -10px; */
+    /* width: 100% !important; */
+    /* background-color: #FFF; */
+/* } */
 
 .navigation-menu li a {
     border: var(--display-none);
