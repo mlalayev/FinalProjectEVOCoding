@@ -1,12 +1,16 @@
 import './ImageSlider.css';
 import '../Common/Root.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function ImageSlider({ slides, interval = 8000 }) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
   const [animateText, setAnimateText] = useState(false);
   const [animateCaption, setAnimateCaption] = useState(false);
+
+  const sliderRef = useRef(null);
+  const startX = useRef(0);
+  const isDragging = useRef(false);
 
   useEffect(() => {
     const autoslide = setInterval(() => {
@@ -88,6 +92,45 @@ function ImageSlider({ slides, interval = 8000 }) {
     }, 100); // Adjust delay as needed
   }, [imageIndex]);
 
+  const handleMouseDown = (e) => {
+    startX.current = e.clientX; // Use clientX for consistent horizontal dragging
+    isDragging.current = true;
+  };
+
+  const handleMouseMove = (e) => {
+    if (isDragging.current) {
+      const deltaX = e.clientX - startX.current;
+      const slideWidth = sliderRef.current.clientWidth;
+      const threshold = slideWidth / 3; // Drag threshold to detect slide change
+      if (Math.abs(deltaX) > threshold) {
+        const newIndex = deltaX < 0 ? imageIndex + 1 : imageIndex - 1;
+        setImageIndex((index) => {
+          if (index < 0) return slides.length - 1;
+          if (index >= slides.length) return 0;
+          return index;
+        });
+        startX.current = e.clientX; // Reset start position for next drag
+      }
+    }
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+  };
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    slider.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      slider.removeEventListener('mousedown', handleMouseDown);
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [imageIndex]);
+
   return (
     <section
       aria-label="Image Slider"
@@ -97,11 +140,13 @@ function ImageSlider({ slides, interval = 8000 }) {
         Skip Image Slider Controls
       </a>
       <div
+        ref={sliderRef}
         style={{
           width: '100%',
           height: '100%',
           display: 'flex',
           overflow: 'hidden',
+          position: 'relative',
         }}
       >
         {slides.map(({ image, title, caption, button }, index) => (
@@ -115,6 +160,7 @@ function ImageSlider({ slides, interval = 8000 }) {
               alt={title}
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
+              onMouseDown={handleMouseDown}
             />
             <div className="textholder">
               <div
