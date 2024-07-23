@@ -13,18 +13,18 @@
     },
     {
       "id": 2,
-      "name": "Chauffina Carr",
-      "title": "Mathematics",
-      "imgSrc": "../../../src/assets/Pages/Instructor/avatar2.png",
+      "name": "Farhad Sultan",
+      "title": "Frontend Developer",
+      "imgSrc": "../../../src/assets/Pages/Instructor/avatar9.jpg",
       "socials": {
-        "instagram": "https://www.instagram.com/janesmith",
-        "linkedin": "https://www.linkedin.com/in/janesmith",
-        "twitter": "https://twitter.com/janesmith",
-        "facebook": "https://www.facebook.com/janesmith"
+        "instagram": "https://www.instagram.com/ferhad.sultann",
+        "linkedin": "https://www.linkedin.com/in/farhadsultan98",
+        "twitter": "https://twitter.com/farhadsultan",
+        "facebook": "https://www.facebook.com/ferhad.sultann"
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Jason Response",
       "title": "Marketing",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar3.png",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 4,
       "name": "Hanson Deck",
       "title": "Sales Director",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar4.png",
@@ -48,7 +48,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 5,
       "name": "Adam Smith",
       "title": "Web Designer",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar5.png",
@@ -60,7 +60,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 6,
       "name": "John Doe",
       "title": "Web Developer",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar6.png",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 7,
       "name": "Mural Evan",
       "title": "Web Application",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar7.png",
@@ -84,7 +84,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 8,
       "name": "Jeffer Smith",
       "title": "Analyzer",
       "imgSrc": "../../../src/assets/Pages/Instructor/avatar8.png",
