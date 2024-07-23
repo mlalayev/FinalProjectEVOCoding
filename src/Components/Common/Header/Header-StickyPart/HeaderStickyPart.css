@@ -84,6 +84,10 @@
     /* background-color: rgba(140, 140, 140, 0.395); */
 /* } */
 
+.menu{
+    padding: 0 20px;
+}
+
 /* .menu-item:hover .submenu-desktop { */
     /* transition: 0; */
     /* margin-bottom: -10px; */
