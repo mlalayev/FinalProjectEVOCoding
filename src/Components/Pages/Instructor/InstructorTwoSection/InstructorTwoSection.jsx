@@ -15,7 +15,7 @@ const InstructorTwoSection = () => {
   
   useEffect(() => {
     Aos.init({
-      offset: 60,
+      offset: 220,
       delay: 0,
       duration: 2000,
       easing: "ease",
@@ -35,10 +35,10 @@ const InstructorTwoSection = () => {
             <div className="InstructorTwoSectionCardUpPart">
               <img src={instructor.imgSrc} alt={`Instructor_${instructor.name}`} />
               <div className="InstructorTwoSectionCardSocials">
-                <div className="InstructorSocials"><a href={instructor.socials.instagram}><FaInstagram /></a></div> 
-                <div className="InstructorSocials"><a href={instructor.socials.linkedin}><AiOutlineLinkedin /></a></div> 
-                <div className="InstructorSocials"><a href={instructor.socials.twitter}><FaTwitter /></a></div> 
-                <div className="InstructorSocials"><a href={instructor.socials.facebook}><FaFacebookF /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.instagram} target="_blank"><FaInstagram /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.linkedin} target="_blank"><AiOutlineLinkedin /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.twitter} target="_blank"><FaTwitter /></a></div> 
+                <div className="InstructorSocials"><a href={instructor.socials.facebook} target="_blank"><FaFacebookF /></a></div> 
               </div>
             </div>
             <div className="InstructorTwoSectionCardDownPart">

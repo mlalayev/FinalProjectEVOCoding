@@ -5,12 +5,16 @@ import { FaPhone } from "react-icons/fa6";
 import logo from '../../../assets/logo.png';
 import { useTranslation } from 'react-i18next';
 import { FaRegEnvelope } from "react-icons/fa";
+import ScrollButton from '../../ScrollButton/Scroll';
 
 
 function Footer() {
   const { t, i18n } = useTranslation();
 
   return (
+    <>
+    <ScrollButton/>
+    <div className="footerContainer">
     <footer className='footer'>
       <div className="footerupper">
         <div
@@ -65,8 +69,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-
-
+<hr />
       <div className="copyright-text">
         <p>{t('footer.copyright')}</p>
         <div className="iconholder">
@@ -116,6 +119,12 @@ function Footer() {
         </div>
       </div>
     </footer>
+    <div className="AnimationBox">
+            <div className="TriangleBox"></div>
+            <div className="CircleBox"></div>
+    </div>
+    </div>
+    </>
   )
 }
 

@@ -56,4 +56,4 @@ function CountDown() {
     )
 }
 
-export default CountDown
+export default CountDown;

@@ -166,7 +166,7 @@ function HeaderStickyPart() {
         <li><a href="/contactus" className='' >{t('header.contactUs')}</a></li>
       </ul>
 
-      <button className='header-button'>{t('header.joinliveclass')}</button>
+      <button className='header-button'><a href="/liveclass">{t('header.joinliveclass')}</a></button>
     </div>
   )
 }

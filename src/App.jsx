@@ -20,6 +20,7 @@ import PageRightSideBar from './Components/Pages/PageRightSideBar/PageRightSideB
 import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
 import ContactUs from './Components/ContactUs/ContactUs.jsx';
+import LiveClass from './Components/LiveClass/LiveClass.jsx';
 
 
 
@@ -142,6 +143,13 @@ function App() {
             <>
               <Header/>
               <MyProfile/>
+              <Footer/>
+            </>
+          } />
+            <Route path='/liveclass' element={
+            <>
+              <Header/>
+              <LiveClass/>
               <Footer/>
             </>
           } />

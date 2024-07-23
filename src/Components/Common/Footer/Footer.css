@@ -1,3 +1,7 @@
+.footerContainer {
+    background-color: #f6f7fa;
+}
+
 footer {
     height: 150vh;
     gap: var(--20-px);
@@ -6,6 +10,98 @@ footer {
     display: var(--display-flex);
     text-align: var(--text-left);
     flex-direction: var(--flex-direction-column);
+    position: relative;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #cccccc93;
+}
+
+.AnimationBox {
+    position: relative;
+    bottom: 180px;
+    left: 20px;
+}
+
+.AnimationBox .TriangleBox {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #F7E6E0;
+    animation: triangleAnimation 4s infinite alternate ease-in-out;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+}
+
+.AnimationBox .CircleBox {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #DEE8FB;
+    border-radius: 50%;
+    animation: circleAnimation 4s infinite alternate ease-in-out;
+    animation-delay: 1s;
+    transition: all 5s ease 3s;
+    user-select: none;
+}
+
+@keyframes triangleAnimation {
+    0% {
+        transform: translateY(10px) translateX(0) rotate(0) scale(1);
+        opacity: 0.9;
+    }
+
+    20% {
+        transform: translateY(20px) translateX(10px) rotate(-20deg) scale(0.8);
+        opacity: 0.8;
+    }
+
+    40% {
+        transform: translateY(15px) translateX(-15px) rotate(10deg) scale(0.75);
+        opacity: 0.8;
+    }
+
+    40% {
+        transform: translateY(-15px) translateX(-25px) rotate(10deg) scale(0.5);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(-30px) translateX(20px) rotate(-20deg) scale(0.75);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(15px) translateX(15px) rotate(0) scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: translateY(0px) translateX(0) rotate(0) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(-10px) translateX(-10px) rotate(2deg) scale(0.9);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-20px) translateX(-20px) rotate(0) scale(1);
+        opacity: 0.85;
+    }
 }
 
 .footer-first-div-holder {
@@ -169,11 +265,11 @@ footer a {
 }
 
 @media screen and (min-width:870px) {
-    .footerupper{
+    .footerupper {
         display: var(--display-flex);
     }
 
-    .list-holder{
+    .list-holder {
         width: 100%;
         display: var(--display-flex);
         flex-wrap: var(--flex-wrap-wrap);
@@ -181,21 +277,21 @@ footer a {
         justify-content: var(--display-space-around);
     }
 
-    .footerul li:first-child{
+    .footerul li:first-child {
         font-size: var(--18-px);
     }
 
-    .footerul li{
+    .footerul li {
         font-size: var(--16-px);
     }
 
-    footer{
+    footer {
         height: 100%;
         max-width: 870px;
         margin: 0 var(--auto);
     }
-    
-    .copyright-text{
+
+    .copyright-text {
         max-height: 40px;
         margin: 60px 0 20px 0;
         display: var(--display-flex);
@@ -204,52 +300,63 @@ footer a {
         justify-content: var(--display-space-between);
     }
 
-    .iconholder{
+    .iconholder {
         top: -70px;
         right: 50px;
         position: var(--position-absolute);
     }
 
-    footer .footer-logo{
+    footer .footer-logo {
         width: 120px;
         margin-top: var(--20-px);
     }
 
-    .footer-text-first{
+    .footer-text-first {
         font-size: var(--14-px);
     }
 
-    .footer-a-tag{
+    .footer-a-tag {
         font-size: var(--14-px);
     }
 }
 
 @media (min-width: 1050px) and (max-width: 1150px) {
-    footer{
+    footer {
         max-width: 1000px;
     }
 }
 
 @media (min-width: 1150px) and (max-width: 1250px) {
-    footer{
+    footer {
         max-width: 1200px;
     }
 }
 
 @media (min-width: 1250px) and (max-width: 1350px) {
-    footer{
+    footer {
         max-width: 1300px;
     }
 }
 
 @media (min-width: 1350px) and (max-width: 1450px) {
-    footer{
+    footer {
         max-width: 1400px;
+
     }
 }
 
 @media screen and (min-width: 1350px) {
-    footer{
+    footer {
         max-width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        height: 100%;
+    }
+    .AnimationBox{
+        left: 50%;
+        top: 2%;
     }
 }

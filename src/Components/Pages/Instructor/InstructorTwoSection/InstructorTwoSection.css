@@ -56,6 +56,8 @@
 .InstructorTwoSectionCardUpPart img {
     transition: 0.5s;
     cursor: pointer;
+    height: 300px;
+    width: 100%;
 }
 
 .InstructorTwoSectionCardsPart .InstructorTwoSectionCard:hover .InstructorTwoSectionCardUpPart img {
@@ -64,7 +66,7 @@
 
 .InstructorTwoSectionCard .InstructorTwoSectionCardSocials {
     position: absolute;
-    right: 270px;
+    right: 320px;
     top: 0;
     background-color: #0b1c3991;
     width: 100%;
@@ -118,7 +120,7 @@
 
 .InstructorTwoSectionCardUpPart>img:hover .InstructorTwoSectionCardSocials {
     position: absolute;
-    right: -270px;
+    left: 320px;
     top: 0;
 }
 
