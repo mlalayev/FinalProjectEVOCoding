@@ -49,9 +49,9 @@
 
 .submenu-desktop {
     display: flex;
-    margin-top: 10px;
-    /* border: 1px solid #333; */
+    margin-top: 3px;
     flex-direction: column;
+    border: 1px solid #33333354;
 }
 
 .submenu-desktop a {

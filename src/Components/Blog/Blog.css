@@ -1,0 +1,81 @@
+.blogimage {
+    max-width: min(70vw, 500px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blogcard {
+    border-radius: 10px;
+    padding-bottom: 40px;
+    max-width: min(70vw, 500px);
+    border: 1px solid lightgray;
+    transition: var(--transition-fast);
+}
+
+.blogcard:hover{
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.452);
+}
+
+.cardholderblog {
+    gap: 50px;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    justify-content: center;
+}
+
+.blogcardinfotexttwo {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blogcardinfotext {
+    gap: 50px;
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.blogtextholder {
+    padding: 0 20px;
+}
+
+.blogcardbtn {
+    gap: 10px;
+    border: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    align-self: flex-start;
+    background-color: transparent;
+    transition: var(--transition-fast);
+}
+
+.blogcardbtn:hover {
+    cursor: var(--cursor-pointer);
+    color: var(--main-blue-color);
+}
+
+.blogcardinfotext p {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(93, 92, 92);
+}
+
+.blogcardinfotexttwo p {
+    color: rgb(93, 92, 92);
+}
+
+.blogcardinfotexttwo h1 {
+    cursor: var(--cursor-pointer);
+    transition: var(--transition-fast);
+}
+
+.blogcardinfotexttwo h1:hover {
+    color: var(--main-blue-color);
+}

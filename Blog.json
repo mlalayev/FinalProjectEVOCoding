@@ -1,159 +1,152 @@
 {
-    "en": [
-      {
-        "id": 1,
-        "image": "./src/assets/box1.png",
-        "author": "Jim Sechen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "October 14, 2023",
-        "title": "Top 10 WordPress Themes for Local Businesses",
-        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
-        "link": "#"
-      },
-      {
-        "id": 2,
-        "image": "./src/assets/box2.png",
-        "author": "Jim Sechen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "October 14, 2023",
-        "title": "Top 10 WordPress Themes for Local Businesses",
-        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
-        "link": "#"
-      },
-      {
-        "id": 3,
-        "image": "./src/assets/box3.png",
-        "author": "Jim Sechen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "October 14, 2023",
-        "title": "Top 10 WordPress Themes for Local Businesses",
-        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
-        "link": "#"
-      },
-      {
-        "id": 4,
-        "image": "./src/assets/box4.png",
-        "author": "Jim Sechen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "October 14, 2023",
-        "title": "Best products for fitness nutrition and muscles",
-        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
-        "link": "#"
-      },
-      {
-        "id": 5,
-        "image": "./src/assets/box5.png",
-        "author": "Jim Sechen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "October 14, 2023",
-        "title": "How to Become Master In CSS within a Week.",
-        "content": "Twit cuppa Oxford car boot baking cakes I dropped a clanger...",
-        "link": "#"
-      }
-    ],
-    "az": [
-      {
-        "id": 1,
-        "image": "./src/assets/box1.png",
-        "author": "Cim Seçen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 oktyabr 2023",
-        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
-        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
-        "link": "#"
-      },
-      {
-        "id": 2,
-        "image": "./src/assets/box2.png",
-        "author": "Cim Seçen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 oktyabr 2023",
-        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
-        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
-        "link": "#"
-      },
-      {
-        "id": 3,
-        "image": "./src/assets/box3.png",
-        "author": "Cim Seçen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 oktyabr 2023",
-        "title": "Yerli Bizneslər üçün 10 ən yaxşı WordPress mövzuları",
-        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
-        "link": "#"
-      },
-      {
-        "id": 4,
-        "image": "./src/assets/box4.png",
-        "author": "Cim Seçen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 oktyabr 2023",
-        "title": "Fitnes, nutrisiya və məşqlər üçün ən yaxşı məhsullar",
-        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
-        "link": "#"
-      },
-      {
-        "id": 5,
-        "image": "./src/assets/box5.png",
-        "author": "Cim Seçen",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 oktyabr 2023",
-        "title": "CSS-də Bir Həftə Ərzində Usta Ola Bilərəm",
-        "content": "Twit cuppa Oxford avto çantaları kek pişirmək mən bir səhv etdim...",
-        "link": "#"
-      }
-    ],
-    "ru": [
-      {
-        "id": 1,
-        "image": "./src/assets/box1.png",
-        "author": "Джим Сечен",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 октября 2023",
-        "title": "Топ-10 тем WordPress для местных бизнесов",
-        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
-        "link": "#"
-      },
-      {
-        "id": 2,
-        "image": "./src/assets/box2.png",
-        "author": "Джим Сечен",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 октября 2023",
-        "title": "Топ-10 тем WordPress для местных бизнесов",
-        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
-        "link": "#"
-      },
-      {
-        "id": 3,
-        "image": "./src/assets/box3.png",
-        "author": "Джим Сечен",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 октября 2023",
-        "title": "Топ-10 тем WordPress для местных бизнесов",
-        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
-        "link": "#"
-      },
-      {
-        "id": 4,
-        "image": "./src/assets/box4.png",
-        "author": "Джим Сечен",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 октября 2023",
-        "title": "Лучшие продукты для фитнеса, питания и мышц",
-        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
-        "link": "#"
-      },
-      {
-        "id": 5,
-        "image": "./src/assets/box5.png",
-        "author": "Джим Сечен",
-        "authorImg": "./src/assets/icon1.jpg",
-        "date": "14 октября 2023",
-        "title": "Как стать мастером CSS за неделю.",
-        "content": "Я выкинул кленгер твит-стакан Оксфорд автомобильный багаж пироги я совершил ошибку...",
-        "link": "#"
-      }
-    ]
-  }
-  
+  "en": [
+    {
+      "author": "Jim Chechen",
+      "date": "October 14, 2023",
+      "title": "WordPress Local Businesses",
+      "description": "Twit cuppa Oxford car boot baking cakes I dropped a clanger cheeky bugger young delinquent say, hunky-dory ruddy butty matie boy cheeky cup of char ummm I'm telling get stuffed mate owt to do with me blow.",
+      "image": "./src/assets/blog1.png",
+      "button": "View More"
+    },
+    {
+      "author": "Anna Smith",
+      "date": "November 22, 2023",
+      "title": "Effective SEO Strategies",
+      "description": "Search engine optimization can be a complex field, but with the right strategies, you can boost your website's visibility and rank higher in search engine results.",
+      "image": "./src/assets/blog2.png",
+      "button": "View More"
+    },
+    {
+      "author": "Michael Johnson",
+      "date": "December 5, 2023",
+      "title": "Top Web Development Tools",
+      "description": "Discover the top tools and technologies that are revolutionizing the web development industry and making developers' lives easier.",
+      "image": "./src/assets/blog3.png",
+      "button": "View More"
+    },
+    {
+      "author": "Emily Davis",
+      "date": "January 10, 2024",
+      "title": "UI/UX Design Trends",
+      "description": "Stay updated with the latest trends in UI/UX design to create visually appealing and user-friendly interfaces for your applications.",
+      "image": "./src/assets/blog4.png",
+      "button": "View More"
+    },
+    {
+      "author": "Robert Brown",
+      "date": "February 20, 2024",
+      "title": "Cybersecurity Basics",
+      "description": "Understanding the basics of cybersecurity is essential for protecting your online presence and personal data from potential threats.",
+      "image": "./src/assets/blog2.png",
+      "button": "View More"
+    },
+    {
+      "author": "Linda White",
+      "date": "March 15, 2024",
+      "title": "Future of AI in Web Development",
+      "description": "Artificial Intelligence is rapidly transforming the web development landscape. Learn about the future trends and how to stay ahead in the game.",
+      "image": "./src/assets/blog1.png",
+      "button": "View More"
+    }
+  ],
+  "az": [
+    {
+      "author": "Jim Çeçen",
+      "date": "14 Oktyabr 2023",
+      "title": "WordPress Yerli Bizneslər",
+      "description": "Twit cuppa Oxford car boot baking cakes I dropped a clanger cheeky bugger young delinquent say, hunky-dory ruddy butty matie boy cheeky cup of char ummm I'm telling get stuffed mate owt to do with me blow.",
+      "image": "./src/assets/blog1.png",
+      "button": "Daha Çox"
+    },
+    {
+      "author": "Anna Smit",
+      "date": "22 Noyabr 2023",
+      "title": "Effektiv SEO Strategiyaları",
+      "description": "Axtarış motoru optimizasiyası mürəkkəb bir sahə ola bilər, lakin doğru strategiyalarla veb saytınızın görünürlüğünü artıraraq axtarış motoru nəticələrində daha yüksək mövqelər qazana bilərsiniz.",
+      "image": "./src/assets/blog2.png",
+      "button": "Daha Çox"
+    },
+    {
+      "author": "Mikayıl Johnson",
+      "date": "5 Dekabr 2023",
+      "title": "Ən Yaxşı Veb İnkişaf Alətləri",
+      "description": "Veb inkişaf sənayesində inqilab edən və inkişaf etdiricilərin işini asanlaşdıran ən yaxşı alətləri və texnologiyaları kəşf edin.",
+      "image": "./src/assets/blog3.png",
+      "button": "Daha Çox"
+    },
+    {
+      "author": "Emily Davis",
+      "date": "10 Yanvar 2024",
+      "title": "UI/UX Dizayn Trendləri",
+      "description": "Tətbiqləriniz üçün vizual olaraq cəlbedici və istifadəçi dostu interfeyslər yaratmaq üçün UI/UX dizaynında ən son trendlərlə tanış olun.",
+      "image": "./src/assets/blog4.png",
+      "button": "Daha Çox"
+    },
+    {
+      "author": "Robert Brown",
+      "date": "20 Fevral 2024",
+      "title": "Kibertəhlükəsizlik Əsasları",
+      "description": "Kibertəhlükəsizlik əsaslarını anlamaq, onlayn varlığınızı və şəxsi məlumatlarınızı potensial təhdidlərdən qorumaq üçün vacibdir.",
+      "image": "./src/assets/blog2.png",
+      "button": "Daha Çox"
+    },
+    {
+      "author": "Linda White",
+      "date": "15 Mart 2024",
+      "title": "Veb İnkişafında Süni İntellektin Gələcəyi",
+      "description": "Süni intellekt sürətlə veb inkişafını dəyişdirir. Gələcək trendlər və oyunda necə qabaqda qalmaq haqqında məlumat alın.",
+      "image": "./src/assets/blog1.png",
+      "button": "Daha Çox"
+    }
+  ],
+  "ru": [
+    {
+      "author": "Джим Чечен",
+      "date": "14 октября 2023",
+      "title": "WordPress Местные Бизнесы",
+      "description": "Twit cuppa Oxford car boot baking cakes I dropped a clanger cheeky bugger young delinquent say, hunky-dory ruddy butty matie boy cheeky cup of char ummm I'm telling get stuffed mate owt to do with me blow.",
+      "image": "./src/assets/blog1.png",
+      "button": "Подробнее"
+    },
+    {
+      "author": "Анна Смит",
+      "date": "22 ноября 2023",
+      "title": "Эффективные Стратегии SEO",
+      "description": "Поисковая оптимизация может быть сложной областью, но с правильными стратегиями вы можете повысить видимость вашего сайта и занять более высокие позиции в результатах поиска.",
+      "image": "./src/assets/blog2.png",
+      "button": "Подробнее"
+    },
+    {
+      "author": "Михаил Джонсон",
+      "date": "5 декабря 2023",
+      "title": "Лучшие Инструменты Веб-Разработки",
+      "description": "Откройте для себя лучшие инструменты и технологии, которые революционизируют индустрию веб-разработки и облегчают жизнь разработчиков.",
+      "image": "./src/assets/blog3.png",
+      "button": "Подробнее"
+    },
+    {
+      "author": "Эмили Дэвис",
+      "date": "10 января 2024",
+      "title": "Тренды Дизайна UI/UX",
+      "description": "Оставайтесь в курсе последних тенденций в дизайне UI/UX, чтобы создавать визуально привлекательные и удобные интерфейсы для ваших приложений.",
+      "image": "./src/assets/blog4.png",
+      "button": "Подробнее"
+    },
+    {
+      "author": "Роберт Браун",
+      "date": "20 февраля 2024",
+      "title": "Основы Кибербезопасности",
+      "description": "Понимание основ кибербезопасности необходимо для защиты вашего онлайн-присутствия и личных данных от потенциальных угроз.",
+      "image": "./src/assets/blog2.png",
+      "button": "Подробнее"
+    },
+    {
+      "author": "Линда Уайт",
+      "date": "15 марта 2024",
+      "title": "Будущее ИИ в Веб-Разработке",
+      "description": "Искусственный интеллект стремительно трансформирует область веб-разработки. Узнайте о будущих тенденциях и о том, как оставаться впереди.",
+      "image": "./src/assets/blog1.png",
+      "button": "Подробнее"
+    }
+  ]
+}
