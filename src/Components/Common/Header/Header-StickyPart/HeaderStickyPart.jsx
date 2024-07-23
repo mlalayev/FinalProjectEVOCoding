@@ -55,10 +55,10 @@ function HeaderStickyPart() {
             </span>
             {openSubMenu === 'home' && (
               <div className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
-                <a href="/salam" className='submenu-item'>Homepage Style One</a>
-                <a href="/homepage-style-two" className='submenu-item'>Homepage Style Two</a>
-                <a href="/homepage-style-three" className='submenu-item'>Homepage Style Three</a>
-                <a href="/homepage-style-four" className='submenu-item'>Homepage Style Four</a>
+                <a href="/" className='submenu-item'>Homepage Style One</a>
+                <a href="/" className='submenu-item'>Homepage Style Two</a>
+                <a href="/" className='submenu-item'>Homepage Style Three</a>
+                <a href="/" className='submenu-item'>Homepage Style Four</a>
               </div>
             )}
           </div>
@@ -83,10 +83,10 @@ function HeaderStickyPart() {
             </span>
             {openSubMenu === 'blog-classic' && (
               <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
-                <a href="/blog-classic" className='submenu-item'>Blog One</a>
-                <a href="/blog-classic" className='submenu-item'>Blog Two</a>
-                <a href="/blog-classic" className='submenu-item'>Blog Three</a>
-                <a href="/blog-classic" className='submenu-item'>Blog Four</a>
+                <a href="/blog" className='submenu-item'>Blog One</a>
+                <a href="/blog" className='submenu-item'>Blog Two</a>
+                <a href="/blog" className='submenu-item'>Blog Three</a>
+                <a href="/blog" className='submenu-item'>Blog Four</a>
               </div>
             )}
           </div>
@@ -100,10 +100,10 @@ function HeaderStickyPart() {
                 <a href="/aboutus" className='submenu-item'>{t('pages.aboutus')}</a>
                 <a href="/events" className='submenu-item'>{t('pages.events')}</a>
                 <a href="/instructor" className='submenu-item'>{t('pages.instructor')}</a>
-                <a href="/testimonial" className='submenu-item'>{t('pages.testimonials')}</a>
-                <a href="/samplepage" className='submenu-item'>{t('pages.samplepage')}</a>
-                <a href="/pageleftsidebar" className='submenu-item'>{t('pages.pageleftsidebar')}</a>
-                <a href="/pagerightsidebar" className='submenu-item'>{t('pages.pagerightsidebar')}</a>
+                <a href="/aboutus" className='submenu-item'>{t('pages.testimonials')}</a>
+                <a href="/instructor" className='submenu-item'>{t('pages.samplepage')}</a>
+                <a href="/events" className='submenu-item'>{t('pages.pageleftsidebar')}</a>
+                <a href="/events" className='submenu-item'>{t('pages.pagerightsidebar')}</a>
                 <a href="/404page" className='submenu-item'>{t('pages.404page')}</a>
               </div>
             )}
@@ -119,10 +119,10 @@ function HeaderStickyPart() {
           <p className='header-menu-p-tag'>{t('header.home')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'home' ? 'open' : ''}`} /></p>
           {openSubMenu === 'home' && (
             <ul className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
-              <li><a href="/salam">Homepage Style One</a></li>
-              <li><a href="/homepage-style-two">Homepage Style Two</a></li>
-              <li><a href="/homepage-style-three">Homepage Style Three</a></li>
-              <li><a href="/homepage-style-four">Homepage Style Four</a></li>
+              <li><a href="/">Homepage Style One</a></li>
+              <li><a href="/">Homepage Style Two</a></li>
+              <li><a href="/">Homepage Style Three</a></li>
+              <li><a href="/">Homepage Style Four</a></li>
             </ul>
           )}
         </li>
@@ -141,10 +141,10 @@ function HeaderStickyPart() {
           <p className='header-menu-p-tag'>{t('header.blogClassic')} <RiArrowDownSLine className={`arrow-down ${openSubMenu === 'blog-classic' ? 'open' : ''}`} /></p>
           {openSubMenu === 'blog-classic' && (
             <ul className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
-              <li><a href="/blog-classic">Blog One</a></li>
-              <li><a href="/blog-classic">Blog Two</a></li>
-              <li><a href="/blog-classic">Blog Three</a></li>
-              <li><a href="/blog-classic">Blog Four</a></li>
+              <li><a href="/blog">Blog One</a></li>
+              <li><a href="/blog">Blog Two</a></li>
+              <li><a href="/blog">Blog Three</a></li>
+              <li><a href="/blog">Blog Four</a></li>
             </ul>
           )}
         </li>
@@ -155,10 +155,10 @@ function HeaderStickyPart() {
               <li><a href="/aboutus">{t('pages.aboutus')}</a></li>
               <li><a href="/events">{t('pages.events')}</a></li>
               <li><a href="/instructor">{t('pages.instructor')}</a></li>
-              <li><a href="/testimonial">{t('pages.testimonial')}</a></li>
-              <li><a href="/samplepage">{t('pages.samplepage')}</a></li>
-              <li><a href="/pageleftsidebar">{t('pages.pageleftsidebar')}</a></li>
-              <li><a href="/pagerightsidebar">{t('pages.pagerightsidebar')}</a></li>
+              <li><a href="/aboutus">{t('pages.testimonial')}</a></li>
+              <li><a href="/events">{t('pages.samplepage')}</a></li>
+              <li><a href="/instructor">{t('pages.pageleftsidebar')}</a></li>
+              <li><a href="/aboutus">{t('pages.pagerightsidebar')}</a></li>
               <li><a href="/404page">{t('pages.404page')}</a></li>
             </ul>
           )}
