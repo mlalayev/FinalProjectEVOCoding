@@ -1,16 +1,13 @@
 import './Events.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import eventsData from '../../../../Events.json';
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
-
 function Events() {
     const { t, i18n } = useTranslation();
-    let lang = i18n.language.substr(0, 2);
-    let events = eventsData[lang] || []; 
 
     useEffect(() => {
         AOS.init({
@@ -40,7 +37,7 @@ function Events() {
             >{t('events.intro')}</p>
 
             <div className="events-holder">
-                {events.map((event, index) => (
+                {(eventsData[i18n.language]).map((event, index) => (
                     <div
                         data-aos="fade-right"
                         className="events" key={index}>
