@@ -44,20 +44,39 @@
     padding: 0 20px;
 }
 
-.blogcardbtn {
+.blogcardicon{
+    margin-top: 3px;
+}
+
+.blogcardbtn{
     gap: 10px;
     border: none;
     display: flex;
+    color: black;
     font-size: 16px;
     align-items: center;
+    text-decoration: none;
     align-self: flex-start;
     background-color: transparent;
     transition: var(--transition-fast);
+    font-weight: var(--500-font-weight);
 }
 
 .blogcardbtn:hover {
     cursor: var(--cursor-pointer);
     color: var(--main-blue-color);
+}
+
+.course_pages button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.course_pages button:hover{
+    color: var(--white-color);
+    background-color: var(--main-blue-color);
 }
 
 .blogcardinfotext p {
