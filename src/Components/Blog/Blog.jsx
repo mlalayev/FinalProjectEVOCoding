@@ -1,10 +1,11 @@
+import './Blog.css';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { BsFillPersonFill } from 'react-icons/bs';
-import { IoTimeOutline } from 'react-icons/io5';
-import { FaAngleRight } from 'react-icons/fa';
 import blogsData from '../../../Blog.json';
-import './Blog.css'; // Replace with your actual CSS file
+import { GrLinkNext } from "react-icons/gr";
+import { FaAngleRight } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
+import { IoTimeOutline } from 'react-icons/io5';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 function Blog() {
   const { t, i18n } = useTranslation();
@@ -37,11 +38,21 @@ function Blog() {
               <div className="blogcardinfotexttwo">
                 <h1>{blog.title}</h1>
                 <p>{blog.description}</p>
-                <button className="blogcardbtn">{blog.button} <FaAngleRight /></button>
+                <a className='blogcardbtn' href={blog.path}>{blog.button} <FaAngleRight className='blogcardicon' /></a>
               </div>
             </div>
           </div>
         ))}
+      </div>
+      <div 
+      style={{
+        margin:"0 auto",
+        maxWidth:"1050px",
+      }}
+      className="course_pages">
+        <button style={{ backgroundColor: '#007bff', color: '#FFFF' }}>1</button>
+        <button>2</button>
+        <button style={{ marginBottom: '20px' }}><GrLinkNext /></button>
       </div>
     </section>
   );
