@@ -89,17 +89,22 @@
 .view .view_information{
     width: 80%;
     height: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
     display: var(--display-flex);
     justify-content: var(--display-space-between);
 }
 
 .view_information .info_left{
+    gap: 5px;
     width: 70%;
+    display: flex;
+    flex-direction: column;
     height: 200px;
     gap:5px;
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
-    
 }
 
 .view_information .info_right{
@@ -206,7 +211,6 @@
 
 .info_left .requaments{
     width: 94%;
-    height: 600px;
     border-radius: 5px;
     border: 0.5px solid rgb(188, 184, 184);
 }
