@@ -14,6 +14,7 @@ function Footer() {
   return (
     <>
     <ScrollButton/>
+    <div className="footerContainer">
     <footer className='footer'>
       <div className="footerupper">
         <div
@@ -68,8 +69,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-
-
+<hr />
       <div className="copyright-text">
         <p>{t('footer.copyright')}</p>
         <div className="iconholder">
@@ -119,6 +119,11 @@ function Footer() {
         </div>
       </div>
     </footer>
+    <div className="AnimationBox">
+            <div className="TriangleBox"></div>
+            <div className="CircleBox"></div>
+    </div>
+    </div>
     </>
   )
 }

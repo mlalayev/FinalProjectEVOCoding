@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ThreeSectionContainerBodys {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.ThreeSectionContainer {
+    display: grid;
+    grid-template-columns: 767px 379px;
+    grid-template-rows: 785px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ThreeSectionContainer .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThreeSectionContainer .image-section {
+    flex: 1;
+    overflow: hidden;
+}
+
+.ThreeSectionContainer .image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.ThreeSectionContainer .text-section {
+    padding: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+.ThreeSectionContainer .text-section p{
+    line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #626a77;
+}
+.ThreeSectionContainer .details-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ThreeSectionContainer .countdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ThreeSectionContainer .time {
+    text-align: center;
+}
+
+.ThreeSectionContainer .time .number {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ThreeSectionContainer .time .label {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.ThreeSectionContainer .details {
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.ThreeSectionContainer .details h2 {
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.ThreeSectionContainer .details p {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThreeSectionContainer .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ThreeSectionContainer button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.ThreeSectionContainer .zoom {
+    background-color: #b1411e;
+    color: white;
+}
+
+.ThreeSectionContainer .web {
+    background-color: #a35739;
+    color: white;
+}
+
+.ThreeSectionContainer .start {
+    background-color: #3759b1;
+    color: white;
+}
+@media (max-width: 767px) {
+    .ThreeSectionContainer {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    .ThreeSectionContainer .left-section {
+        order: 1; /* Swap order with details section */
+    }
+    .ThreeSectionContainer .details-section {
+        order: 2; 
+    }
+}
