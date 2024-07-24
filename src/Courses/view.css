@@ -89,19 +89,17 @@
 .view .view_information{
     width: 90%;
     height: 600px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .view_information .info_left{
-    width: 70%;
-    height: 200px;
-    display: flex;
     gap: 5px;
-    /* justify-content: center;
-    align-items: center; */
+    width: 70%;
+    /* height: 50px; */
+    display: flex;
     flex-direction: column;
-    
 }
 
 .view_information .info_right{
@@ -207,7 +205,6 @@
 
 .info_left .requaments{
     width: 94%;
-    height: 600px;
     border-radius: 5px;
     border: 0.5px solid rgb(188, 184, 184);
 }
