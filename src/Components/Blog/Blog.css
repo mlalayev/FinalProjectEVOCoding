@@ -29,15 +29,14 @@
 .blogcardinfotexttwo {
     gap: 30px;
     display: flex;
-    align-items: center;
+    text-align: left !important;
     flex-direction: column;
 }
 
 .blogcardinfotext {
-    gap: 30px;
     display: flex;
     margin: 20px 0;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .blogtextholder {
