@@ -105,5 +105,11 @@
     "notfoundpage": {
         "notfoundinfo": "Oops! Something is wrong.",
         "notfoundbackhome": "Go back in initial page, is better."
+    },
+
+    "view":{
+        "home": "Home"
     }
+
+
 }

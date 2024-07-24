@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import '../Courses/view.css';
+import '../Components/Common/Root.css'
 import { Link } from "react-router-dom";
 import { MdNavigateNext } from "react-icons/md";
 import { HiBookmark } from "react-icons/hi2";
@@ -12,20 +13,22 @@ import { FaStar } from "react-icons/fa6";
 import photo from '../assets/Cards/card1.jpg'
 import photo2 from '../assets/Cards/card5.jpg'
 import Info from "./info_left";
+import { useTranslation } from "react-i18next";
 
 
 
 
 const View = () => {
+    const {t,i18n}=useTranslation()
     return (
         <div className="view">
             <div className="course_home">
                 <Link to={'/'} style={{ textDecoration: 'none' }}>
-                    <p style={{ color: '#ACACAC', cursor: 'pointer' }}>Home </p>
+                    <p style={{ color: '#ACACAC', cursor: 'pointer' }}>{t('view.home')} </p>
                 </Link>
                 <p style={{ marginTop: '7px' }}>{<MdNavigateNext />}</p>
 
-                <p style={{ color: '#ACACAC', cursor: 'pointer' }}>All courses</p>
+                <p style={{ color: '#ACACAC', cursor: 'pointer' }}> All courses</p>
 
                 <p style={{ marginTop: '7px' }}>{<MdNavigateNext />}</p>
 
