@@ -12,7 +12,7 @@ body{
 
 .course .home-course{
     gap: 5px;
-    width: 87%;
+    width: 80%;
     height: 100px;
     display: flex;
     font-size: 18px;
@@ -20,7 +20,7 @@ body{
 }
 /* home>course finished */
 .course .search{
-    width: 87%;
+    width: 80%;
     height: 100px;
     display: flex;
    
@@ -47,14 +47,14 @@ body{
 .inputSearch p{
     position: absolute;
     left: 260px;
-    bottom:56px;
+    bottom:58px;
 }
 
 
 /* search finished */
 
 .course .cards{
-    width: 87%;
+    width: 80%;
     min-height: 400px;
     gap: 60px;
     display: flex;
@@ -177,7 +177,7 @@ body{
 /* card price finished */
 
 .course_pages{
-    width: 87%;
+    width: 80%;
     gap: 20px;
     display: flex;
 }
@@ -212,7 +212,7 @@ body{
     .inputSearch p{
         position: absolute;
         left: 260px;
-        bottom:10px;
+        bottom:16px;
     }
 
     /* cards */
@@ -257,8 +257,7 @@ body{
 }
 
 .icon p{
-    font-size: 10px;
-   
+    font-size: 10px
 }
 
 /* card_text finished */
@@ -280,4 +279,27 @@ body{
     margin-bottom: 20px;
 }
 
+}
+
+@media  (min-width: 768px) and (max-width:1050px) {
+      
+.course .cards{
+    width:100%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid rgb(230, 227, 227);
+    background-color:#FFFFFF;
+}
+.card_icons .icon{
+    display: flex;
+   flex-wrap: wrap;
+}
+.icon p{
+    font-size: 12px;
+    
+}
 }
