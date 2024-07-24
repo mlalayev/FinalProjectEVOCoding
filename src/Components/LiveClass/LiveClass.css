@@ -10,11 +10,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
     margin-bottom: 5vh;
 }
 
 .ThreeSectionContainer {
     display: grid;
+    /* width: 100%; */
+    /* min-width: 1350px; */
+    justify-content: center;
+    min-width: 100%;
+    margin: 0 auto;
     grid-template-columns: 767px 379px;
     grid-template-rows: 785px;
     background-color: white;
