@@ -108,7 +108,21 @@
     },
 
     "view":{
-        "home": "Home"
+        "home": "Home",
+        "All" :"All course",
+        "computer":"Computer Science",
+        "software":"Software Development",
+        "Computer":"Computer Science",
+        "Instructure":"Instructure",
+        "Catogery":"Catogery",
+        "buy":"Buy Now",
+        "text":"Aperiendum doctorum agimus perspexerit isti verborumne duas illi cupiditatum democritus haberent luci facillimum inventoribus eriperes",
+        "fusi":"Fusi absolutam contra licentiam contenti verba tu solebat callido anteponebas positum amicos moriare praestantia disputare philosophi affectus turpe sapientis plebem",
+        "gess":"Gestiret expetenda hoc ennius conveniat defecerit subito",
+        "Overview" :"Overview",
+        "Curriculum":"Curriculum",
+        "Instructor":"Instructor",
+        "FAQs":"FAQs"
     }
 
 

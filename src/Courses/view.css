@@ -1,6 +1,6 @@
 .view{
     width: 100%;
-   height: 100%;
+    height: 100%;
     display: var(--display-flex);
     gap: var(--20-px);
     align-items: var(--display-center);
@@ -109,7 +109,7 @@
 
 .view_information .info_right{
     width:30%;
-    height: 720px;
+    height: 760px;
     box-shadow: 2px 2px 2px rgb(176, 175, 175);
     bottom: 200px;
     position: var(--position-relative);
@@ -250,8 +250,9 @@
 /* ../?../ */
 .info_left_down{
     width: 94%;
-    height: auto;
+    height: 100%;
     margin-top: 50px;
+    gap: var(--20-px);
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
 }
@@ -292,7 +293,9 @@
 
     .view{
         width: 100%;
-        height: 100%;
+       
+       
+        
     }
     .view .course_home{
         gap: 5px;
@@ -317,7 +320,7 @@
     }
     .view_card #card{
         width: 90%;
-        
+        height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
