@@ -104,5 +104,8 @@
     "notfoundpage": {
         "notfoundinfo": "Vay! Bir şey səhvdir.",
         "notfoundbackhome": "Əsas səhifəyə qayıt, daha yaxşıdır."
+    },
+    "view":{
+        "home": "Esas sehife"
     }
 }
