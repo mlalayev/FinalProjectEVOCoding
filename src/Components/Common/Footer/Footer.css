@@ -9,50 +9,50 @@ footer {
     width: var(--percent-100);
     display: var(--display-flex);
     text-align: var(--text-left);
+    position: var(--position-relative);
     flex-direction: var(--flex-direction-column);
-    position: relative;
 }
 
 footer hr {
-    border: none;
+    border: var(--display-none);
     border-top: 1px solid #cccccc93;
 }
 
 .AnimationBox {
-    position: relative;
     bottom: 180px;
-    left: 20px;
+    left: var(--20-px);
+    position: var(--position-relative);
 }
 
 .AnimationBox .TriangleBox {
-    position: absolute;
-    top: 50%;
     left: 2%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 30px solid #F7E6E0;
-    animation: triangleAnimation 4s infinite alternate ease-in-out;
-    animation-delay: 1s;
+    top: var(--percent-50);
+    width: var(--percent-0);
+    height: var(--percent-0);
     transition: all 7s ease 2s;
-    user-select: none;
+    transform: translate(-50%, -50%);
+    user-select: var(--display-none);
+    position: var(--position-absolute);
+    animation-delay: var(--transition-slow);
+    border-bottom: var(--30-px) solid #F7E6E0;
+    border-left: var(--20-px) solid transparent;
+    border-right: var(--20-px) solid transparent;
+    animation: triangleAnimation 4s infinite alternate ease-in-out;
 }
 
 .AnimationBox .CircleBox {
-    position: absolute;
     top: 8%;
     left: 8%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
+    width: var(--30-px);
+    height: var(--30-px);
     background-color: #DEE8FB;
-    border-radius: 50%;
-    animation: circleAnimation 4s infinite alternate ease-in-out;
-    animation-delay: 1s;
     transition: all 5s ease 3s;
-    user-select: none;
+    transform: translate(-50%, -50%);
+    border-radius: var(--percent-50);
+    user-select: var(--display-none);
+    position: var(--position-absolute);
+    animation-delay: var(--transition-slow);
+    animation: circleAnimation 4s infinite alternate ease-in-out;
 }
 
 @keyframes triangleAnimation {
@@ -139,8 +139,8 @@ footer a {
 }
 
 .footerul {
-    margin-top: 20px;
     gap: var(--8-px);
+    margin-top: var(--20-px);
     display: var(--display-flex);
     list-style: var(--display-none);
     flex-direction: var(--flex-direction-column);
@@ -270,7 +270,7 @@ footer a {
     }
 
     .list-holder {
-        width: 100%;
+        width: var(--percent-100);
         display: var(--display-flex);
         flex-wrap: var(--flex-wrap-wrap);
         flex-direction: var(--flex-direction-row);
@@ -286,13 +286,13 @@ footer a {
     }
 
     footer {
-        height: 100%;
         max-width: 870px;
         margin: 0 var(--auto);
+        height: var(--percent-100);
     }
 
     .copyright-text {
-        max-height: 40px;
+        max-height: var(--40-px);
         margin: 60px 0 20px 0;
         display: var(--display-flex);
         position: var(--position-relative);
@@ -353,10 +353,11 @@ footer a {
 
 @media only screen and (max-width: 767px) {
     footer {
-        height: 100%;
+        height: var(--percent-100);
     }
-    .AnimationBox{
-        left: 50%;
+
+    .AnimationBox {
+        left: var(--percent-50);
         top: 2%;
     }
 }

@@ -1,7 +1,7 @@
 .blogimage {
-    max-width: min(70vw, 500px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    max-width: min(var(--vw-70), 500px);
 }
 
 .blogcard {
@@ -12,53 +12,53 @@
     transition: var(--transition-fast);
 }
 
-.blogcard:hover{
+.blogcard:hover {
     box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.452);
 }
 
 .cardholderblog {
     gap: 50px;
-    display: flex;
-    margin: 0 auto;
     padding: 50px 0;
-    flex-wrap: wrap;
     max-width: 1150px;
-    justify-content: center;
+    margin: 0 var(--auto);
+    display: var(--display-flex);
+    flex-wrap: var(--flex-wrap-wrap);
+    justify-content: var(--display-center);
 }
 
 .blogcardinfotexttwo {
     gap: 30px;
-    display: flex;
-    text-align: left !important;
-    flex-direction: column;
+    display: var(--display-flex);
+    text-align: var(--text-left);
+    flex-direction: var(--flex-direction-column);
 }
 
 .blogcardinfotext {
-    display: flex;
-    margin: 20px 0;
-    justify-content: space-between;
+    display: var(--display-flex);
+    margin: var(--20-px) var(--percent-0);
+    justify-content: var(--display-space-between);
 }
 
 .blogtextholder {
-    padding: 0 20px;
+    padding: var(--percent-0) var(--20-px);
 }
 
-.blogcardicon{
+.blogcardicon {
     margin-top: 3px;
 }
 
-.blogcardbtn{
-    gap: 10px;
-    border: none;
-    display: flex;
-    color: black;
-    font-size: 16px;
-    align-items: center;
-    text-decoration: none;
-    align-self: flex-start;
-    background-color: transparent;
+.blogcardbtn {
+    gap: var(--10-px);
+    font-size: var(--16-px);
+    color: var(--black-color);
+    border: var(--display-none);
+    display: var(--display-flex);
+    align-self: var(--flex-start);
+    align-items: var(--display-center);
     transition: var(--transition-fast);
     font-weight: var(--500-font-weight);
+    text-decoration: var(--display-none);
+    background-color: var(--transparent);
 }
 
 .blogcardbtn:hover {
@@ -66,27 +66,27 @@
     color: var(--main-blue-color);
 }
 
-.course_pages button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.course_pages button {
+    display: var(--display-flex);
     transition: var(--transition-fast);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
 }
 
-.course_pages button:hover{
+.course_pages button:hover {
     color: var(--white-color);
     background-color: var(--main-blue-color);
 }
 
 .blogcardinfotext p {
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    color: rgb(93, 92, 92);
+    gap: var(--10-px);
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    color: var(--text-second-gray-color);
 }
 
 .blogcardinfotexttwo p {
-    color: rgb(93, 92, 92);
+    color: var(--text-second-gray-color);
 }
 
 .blogcardinfotexttwo h1 {
