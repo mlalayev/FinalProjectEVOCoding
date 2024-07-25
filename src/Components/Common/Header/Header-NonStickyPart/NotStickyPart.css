@@ -1,7 +1,7 @@
 .header-upper {
-    width: 100%;
     height: 130px;
     gap: var(--20-px);
+    width: var(--percent-100);
     display: var(--display-flex);
     text-align: var(--display-center);
     align-items: var(--display-center);
@@ -28,8 +28,8 @@
 }
 
 .header-upper-down {
-    height: 40px;
     gap: var(--30-px);
+    height: var(--40-px);
     width: var(--percent-70);
     display: var(--display-flex);
     text-align: var(--display-center);
@@ -102,10 +102,10 @@
 }
 
 .header-lower.sticky {
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 999;
+    top: var(--percent-0);
+    left: var(--percent-0);
+    right: var(--percent-0);
     width: var(--percent-100);
     position: var(--position-fixed);
     background-color: var(--white-color);
