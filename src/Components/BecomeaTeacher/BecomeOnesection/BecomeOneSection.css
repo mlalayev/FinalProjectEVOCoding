@@ -6,47 +6,46 @@
   }
   
   .PagesBackground {
-    background-image: url(../../../assets/Pages/PagesBackImg.png);
+    height: var(--vh-50);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    /* background-attachment: fixed; */
+    background-size: var(--object-fit-cover);
+    background-image: url(../../../assets/Pages/PagesBackImg.png);
   }
   
   .BackgorundText {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    height: 100%; 
+    height: var(--percent-100); 
+    display: var(--display-flex);
+    align-items: var(--display-center); 
+    justify-content: var(--display-center); 
+    flex-direction: var(--flex-direction-column);
   }
   
   .BackgorundText .UpText h2 {
     font-size: 50px;
-    font-weight: 700;
     color: var(--white-color);
+    font-weight: var(--700-font-weight);
   }
   
   .DownText {
-    display: flex;
-    align-items: center;
-    font-size: var(--14-px);
     gap: var(--10-px);
+    font-size: var(--14-px);
     color: var(--white-color);
+    display: var(--display-flex);
+    align-items: var(--display-center);
   }
   
   .DownText a {
-    text-decoration: none;
     color: var(--white-color);
-    transition: 0.3s;
+    transition: var(--transition-fast);
+    text-decoration: var(--display-none);
   }
   .DownText a:hover{
-    color: #007bff;
+    color: var(--main-blue-line-color);
   }
   
   @media only screen and (max-width: 767px) {
     .PagesBackground {
-      height: 40vh;
+      height: var(--vh-40);
     }
     .BackgorundText .UpText h2{
       font-size: 25px;
