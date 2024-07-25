@@ -1,8 +1,8 @@
 .header-lower {
-    width: 100%;
     height: 70px;
     max-width: 360px;
     margin: 0 var(--auto);
+    width: var(--percent-100);
     display: var(--display-flex);
     text-align: var(--display-center);
     position: var(--position-relative);
@@ -29,8 +29,8 @@
     background-color: var(--main-blue-color);
 }
 .header-button a{
-    text-decoration: none;
     color: var(--white-color);
+    text-decoration: var(--display-none);
 }
 
 .header-button:hover {
@@ -42,11 +42,11 @@
     color: var(--main-blue-color);
 }
 .menu {
-    left: 0;
     top: 70px;
-    width: 100vw;
-    width: 100%;
     z-index: 1000;
+    width: var(--vw-100);
+    left: var(--percent-0);
+    width: var(--percent-100);
     text-align: var(--text-left);
     position: var(--position-absolute);
     background-color: var(--white-color);
@@ -54,52 +54,41 @@
 }
 
 .submenu-desktop {
-    display: flex;
     margin-top: 3px;
-    flex-direction: column;
     border: 1px solid #33333354;
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
 }
 
 .submenu-desktop a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 0;
+    color: var(--black-color);
+    text-decoration: var(--display-none);
+    padding: var(--10-px) var(--percent-0);
 }
 
 .menu-span {
-    gap: 10px;
-    display: flex;
-    align-items: center;
+    gap: var(--10-px);
+    display: var(--display-flex);
+    align-items: var(--display-center);
 }
 
 .menu-item,
 .navigation-menu li a {
     color: #333;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--16-px) 0;
+    width: var(--percent-100);
+    height: var(--percent-100);
     display: var(--display-flex);
     border-bottom: 1px solid #ddd;
+    transition: var(--transition-medium);
     text-decoration: var(--display-none);
+    justify-content: var(--display-center);
+    padding: var(--16-px) var(--percent-0);
+    flex-direction: var(--flex-direction-column);
 }
-
-/* .menu-item:hover { */
-    /* background-color: rgba(140, 140, 140, 0.395); */
-/* } */
 
 .menu{
-    padding: 0 20px;
+    padding: var(--percent-0) var(--20-px);
 }
-
-/* .menu-item:hover .submenu-desktop { */
-    /* transition: 0; */
-    /* margin-bottom: -10px; */
-    /* width: 100% !important; */
-    /* background-color: #FFF; */
-/* } */
 
 .navigation-menu li a {
     border: var(--display-none);
