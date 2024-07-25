@@ -106,6 +106,22 @@
         "notfoundbackhome": "Əsas səhifəyə qayıt, daha yaxşıdır."
     },
     "view":{
-        "home": "Esas sehife"
+        "home": "Esas sehife",
+        "All":"Bütün kurslar",
+        "computer":"Kompyuter elmləri",
+        "software":"Proqram təminatının inkişafı",
+         "Computer":"Kompyuter elmləri",
+         "Instructure":"Təlimat",
+         "Catogery":"kategoriya",
+         "buy":"İndi al",
+         "text":"Biz həkimlərin qapılarını açacağıq ki, bu sözlərin işığın zəiflədiyi iki ehtiras olub-olmaması, ixtiraçıları xilas etməyin ən asan yolu olub.",
+         "fusi":"Ağıllı dostların önünə qoyduğun sözlərin məzmununu müdrik xalqı rüsvay edən filosofun hisslərini mübahisə etmək üçün görkəmli ölməyə qoymağın qəti əleyhinə idim.",
+         "gess":"O, bunu təkrar etməyə çalışsa da, birdən uğursuzluğa düçar oldu",
+         "Overview" :"Ümumi baxış",
+         "Curriculum":"Kurikulum",
+         "Instructor":"Təlimatçı",
+         "FAQs":"Suallar"
+
     }
+  
 }
