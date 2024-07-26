@@ -1,5 +1,6 @@
 import './Blog.css';
 import React from 'react';
+import '../Common/Root.css';
 import blogsData from '../../../Blog.json';
 import { GrLinkNext } from "react-icons/gr";
 import { FaAngleRight } from 'react-icons/fa';
