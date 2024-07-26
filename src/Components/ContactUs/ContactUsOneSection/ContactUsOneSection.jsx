@@ -1,5 +1,6 @@
-import React from 'react'
-import './ContactUsOneSection.css'
+import React from 'react';
+import '../../Common/Root.css';
+import './ContactUsOneSection.css';
 import { FaAngleRight } from "react-icons/fa6";
 
 const ContactUsOneSection = () => {

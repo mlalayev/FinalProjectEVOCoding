@@ -1,5 +1,6 @@
-import React from 'react'
-import './ContactUs.css'
+import './ContactUs.css';
+import React from 'react';
+import '../Common/Root.css';
 import ContactUsOneSection from './ContactUsOneSection/ContactUsOneSection';
 import ContactUsTwoSection from './ContactUsTwoSection/ContactUsTwoSection';
 

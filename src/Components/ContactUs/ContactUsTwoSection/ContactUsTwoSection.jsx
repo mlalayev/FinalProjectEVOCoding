@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
-import './ContactUsTwoSection.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../../Common/Root.css';
+import './ContactUsTwoSection.css';
+import React, { useEffect } from "react";
 
 const ContactUsTwoSection = () => {
   useEffect(() => {
