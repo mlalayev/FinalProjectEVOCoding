@@ -1,10 +1,10 @@
+import AOS from 'aos';
 import './Categories.css';
+import 'aos/dist/aos.css';
 import { t } from 'i18next';
 import '../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../CategoriesData.json';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 const Categories = ({ interval = 8000, language = 'en' }) => {

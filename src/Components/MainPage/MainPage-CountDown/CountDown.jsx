@@ -1,7 +1,8 @@
-import './CountDown.css';
-import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
+import '../../Common/Root.css'
+import './CountDown.css';
 import 'aos/dist/aos.css';
+import React, { useState, useEffect } from 'react';
 
 
 function CountDown() {
