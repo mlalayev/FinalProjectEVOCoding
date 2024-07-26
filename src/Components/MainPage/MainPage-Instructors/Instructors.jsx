@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Instructors.css';
+import '../../Common/Root.css';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import instructorData from '../../../../InstructorData.json';
 import { FaInstagram, FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 function Instructors() {
 

@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './InputHolder.css';
+import '../../Common/Root.css';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import CountDown from '../MainPage-CountDown/CountDown';

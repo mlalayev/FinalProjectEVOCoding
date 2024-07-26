@@ -1,16 +1,16 @@
 .sectionfifth-card {
-    border: 10px;
     min-width: 290px;
-    margin-left: 15px;
+    min-height: 440px;
+    border: var(--10-px);
     overflow: var(--hidden);
+    margin-left: var(--16-px);
+    border-radius: var(--10-px);
     position: var(--position-relative);
     box-shadow:
         0px 0px 3.6px rgba(0, 0, 0, 0.035),
         0px 0px 10px rgba(0, 0, 0, 0.05),
         0px 0px 24.1px rgba(0, 0, 0, 0.065),
         0px 0px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    min-height: 440px;
 }
 
 .sectionfifth-image-wrapper::before {
@@ -99,8 +99,8 @@
 }
 
 .sectionfifth-card-holder {
-    padding: 0 70px;
     display: var(--display-grid);
+    padding: var(--percent-0) 70px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: var(--display-space-between);
 }
@@ -131,8 +131,8 @@
 
 @media screen and (max-width:1020px) {
     .sectionfifth-card-holder {
+        gap: var(--30-px);
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
     }
 
     .sectionfifth-card {
@@ -167,17 +167,17 @@
 
 @media screen and (max-width:740px) {
     .sectionfifth-card-holder {
+        gap: var(--30-px);
         grid-template-columns: 1fr;
-        gap: 30px;
     }
 
     .sectionfifth-card {
-        min-width: 60vw;
+        min-width: var(--vw-60);
     }
 }
 
 .sectionfifth-card img {
-    border-radius: none !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+    border-radius: var(--display-none) !important;
 }

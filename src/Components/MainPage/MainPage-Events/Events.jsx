@@ -1,6 +1,7 @@
 import './Events.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../../Common/Root.css';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import eventsData from '../../../../Events.json';
