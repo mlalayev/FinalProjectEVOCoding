@@ -1,5 +1,6 @@
-import React from 'react'
-import './BecomeOneSection.css'
+import React from 'react';
+import '../../Common/Root.css';
+import './BecomeOneSection.css';
 import { FaAngleRight } from "react-icons/fa6";
 
 const BecomeOneSection = () => {
