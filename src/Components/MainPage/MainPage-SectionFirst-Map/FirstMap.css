@@ -1,7 +1,7 @@
 .sectionfirst-htag {
-    margin: 14px 0;
-    font-size: var(--20-px);
+    font-size: var(--20-px); 
     font-weight: var(--700-font-weight);
+    margin: var(--14-px) var(--percent-0);
 }
 
 .sectionfirst-ptag {
@@ -30,33 +30,33 @@
     .sectionfirst__item {
         max-width: 200px;
         margin-right: 50px;
-        margin-top: 20px;
+        margin-top: var(--20-px);
         align-items: var(--flex-start);
         justify-content: var(--flex-start);
     }
 
     .sectionfirst {
-        padding-top: 20px;
         padding-left: 170px;
+        padding-top: var(--20-px);
         justify-content: var(--flex-start);
     }
 
     .inputs input {
         height: 50px;
-        border-radius: 25px;
+        border-radius: var(--26-px);
     }
 
     .inputs #select {
         height: 50px;
-        border-radius: 25px;
+        border-radius: var(--26-px);
     }
 
     .inputs-button {
         height: 60px !important;
-        border-radius: 30px !important ;
+        border-radius: var(--30-px) !important ;
     }
 
     .map-holder {
-        gap: 40px;
+        gap: var(--40-px);
     }
 }

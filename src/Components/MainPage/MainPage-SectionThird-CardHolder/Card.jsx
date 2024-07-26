@@ -1,6 +1,7 @@
 import './Card.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../../Common/Root.css';
 import { IoMdStar } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
 import { PiBookLight } from "react-icons/pi";

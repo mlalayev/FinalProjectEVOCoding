@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './SectionSecond.css';
+import '../../Common/Root.css';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import sectionsecondimage from '../../../assets/mainpagesectiontwo.png';

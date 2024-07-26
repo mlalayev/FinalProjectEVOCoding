@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './SectionSixth.css';
+import '../../Common/Root.css';
 import { FaKey } from "react-icons/fa";
 import { PiBookLight } from "react-icons/pi";
 import { IoPlayCircle } from "react-icons/io5";

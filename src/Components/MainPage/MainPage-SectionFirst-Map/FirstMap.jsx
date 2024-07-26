@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import './FirstMap.css';
 import 'aos/dist/aos.css';
+import '../../Common/Root.css';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import sectionfirstContent from '../../../../SectionFirstMap.json';
