@@ -1,9 +1,9 @@
 .inputholder-sectionfirst {
     width: 68vw;
     height: 440px;
-    padding: 10px 20px;
     border-radius: var(--10-px);
     display: var(--display-flex);
+    padding: var(--10-px) var(--20-px);
     background-color: var(--white-color);
     justify-content: var(--display-space-between);
     flex-direction: var(--flex-direction-column);
@@ -66,14 +66,14 @@
 @media screen and (min-width:1230px) {
     .inputholder-sectionfirst {
         top: -100px;
-        right: 10%;
         max-width: 350px;
         min-height: 550px;
-        position: absolute;
-        padding: 20px 40px;
+        right: var(--percent-10);
+        position: var(--position-absolute);
+        padding: var(--20-px) var(--40-px);
     }
 
     .sectionfirst {
-        position: relative;
+        position: var(--position-relative);
     }
 }

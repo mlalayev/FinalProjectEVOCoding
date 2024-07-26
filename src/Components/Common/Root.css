@@ -20,6 +20,7 @@
     --display-space-around: space-around;
     --display-inline-block: inline-block;
     --display-space-between: space-between;
+    --flex-direction-column-reverse: column-reverse;
 
     /* Flex Wrap */
     --flex-wrap-wrap: wrap;
@@ -141,6 +142,7 @@
     /* Colors */
     --white-color: #ffffff;
     --black-color: #000000;
+    --border-color: #d3d3d3;
     --twitter-blue: #1da1f2;
     --grayish-color: #F6F7FA;
     --instagram-red: #e4405f;
