@@ -74,14 +74,14 @@
 }
 
 .skip-link:focus-visible {
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: 100;
   padding: 0.5rem;
+  z-index: 100;
   clip: var(--unset);
   width: var(--auto);
   height: var(--auto);
+  top: var(--percent-0);
+  left: var(--percent-0);
+  margin: var(--percent-0);
   color: var(--black-color);
   text-decoration: var(--display-none);
   border: 1px solid var(--black-color);
@@ -89,12 +89,12 @@
 }
 
 .img-slider-img {
-  width: 100%;
+  width: var(--percent-100);
   transition: transform var(--transition-medium) ease-in-out;
 }
 
 .slide {
-  min-width: 100%;
+  min-width: var(--percent-100);
   box-sizing: var(--border-sizing);
   position: var(--position-relative);
   transition: transform var(--transition-medium) ease-in-out;
@@ -113,7 +113,7 @@
   cursor: var(--cursor-default);
   text-align: var(--text-center);
   position: var(--position-absolute);
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--Open-font-family);
 }
 
 .ptag {
@@ -122,7 +122,6 @@
 }
 
 .hone {
-  /* bottom: 28%; */
   font-size: var(--28-px);
   font-weight: var(--600-font-weight);
 }
@@ -173,9 +172,9 @@
 .slider-button {
   width: 160px;
   height: 50px;
-  margin-top: 30px;
   border-radius: 25px;
   font-size: var(--16-px);
+  margin-top: var(--30-px);
   color: var(--white-color);
   border: 2px solid var(--white-color);
   transition: var(--transition-medium);
@@ -238,16 +237,15 @@
   }
 
   .img-slider-btn {
-    /* top: 0; */
-    bottom: 0px;
-    margin: 0 20px;
     width: 50px;
     height: 50px;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    border-radius: 30px;
-    justify-content: center;
+    margin: 0 var(--20-px);
+    bottom: var(--percent-0);
+    border-radius: var(--30-px);
+    display: var(--display-flex);
+    position: var(--position-absolute);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
   }
 }
 
