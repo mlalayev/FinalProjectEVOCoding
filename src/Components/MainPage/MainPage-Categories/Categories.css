@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: var(--border-sizing);
-}
-
 .category-slider-section {
     overflow: var(--hidden);
     width: var(--percent-100);
@@ -95,13 +89,13 @@
 
 @media (min-width: 600px) and (max-width: 1224px) {
     .category-card-container {
-        padding-right: 35px;
+        padding-right: var(--36-px);
     }
 }
 
 @media (min-width: 0px) and (max-width: 600px) {
     .category-card-container {
-        gap: 0;
-        padding-right: 0;
+        gap: var(--percent-0);
+        padding-right: var(--percent-0);
     }
 }
