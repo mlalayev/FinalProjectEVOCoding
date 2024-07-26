@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
-import "./BecomeTwoSection.css";
-import { FaBookmark } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../../Common/Root.css';
+import "./BecomeTwoSection.css";
+import React, { useEffect } from "react";
+import { FaBookmark } from "react-icons/fa";
 
 const BecomeTwoSection = () => {
   useEffect(() => {
