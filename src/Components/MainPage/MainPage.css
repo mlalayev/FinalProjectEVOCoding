@@ -2,11 +2,11 @@
 
 .sectionfirst {
     gap: 50px;
-    margin: 0 auto;
     max-width: 1350px;
     display: var(--display-flex);
     padding: var(--main-page-padding);
     align-items: var(--display-center);
+    margin: var(--percent-0) var(--auto);
     justify-content: var(--display-center);
     background-color: var(--grayish-color);
     flex-direction: var(--flex-direction-column);
@@ -14,35 +14,35 @@
 
 .sectionfirst::after{
     content: "";
-    background-color: var(--grayish-color);
-    height: 100%;
-    margin-top: 54px;
-    position: absolute;
-    width: 100vw;
     z-index: -1;
-    left: 0;
+    margin-top: 54px;
+    width: var(--vw-100);
+    left: var(--percent-0);
+    height: var(--percent-100);
+    position: var(--position-absolute);
+    background-color: var(--grayish-color);
 }
 
 .sectionfirst::before{
     content: "";
-    background-color: var(--grayish-color);
-    height: 100%;
-    margin-top: 54px;
-    position: absolute;
-    width: 100vw;
     z-index: -1;
-    right: 0;
+    margin-top: 54px;
+    width: var(--vw-100);
+    right: var(--percent-0);
+    height: var(--percent-100);
+    position: var(--position-absolute);
+    background-color: var(--grayish-color);
 }
 
 .sectionsecond {
     display: var(--display-flex);
-    padding: 74px 0;
+    padding: 74px var(--percent-0);
     padding: var(--main-page-padding);
     flex-direction: var(--flex-direction-column);
 }
 
 .sectioneight{
-    margin: 0 auto;
+    margin: var(--percent-0) var(--auto);
 }
 
 .sectionthird {
@@ -55,26 +55,24 @@
 }
 
 .sectionfourth {
+    padding: var(--20-px) 74px;
     display: var(--display-flex);
-    padding: 20px 74px;
-    /* padding: var(--main-page-padding); */
     align-items: var(--display-center);
     justify-content: var(--display-center);
     flex-direction: var(--flex-direction-column);
 }
 
 .sectionfifth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: var(--30-px);
     padding-bottom: 70px;
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    flex-direction: var(--flex-direction-column);
 }
 
 .sectionsixth {
     display: var(--display-flex);
-    /* padding: 74px 30px; */
     padding: var(--main-page-padding);
     align-items: var(--display-center);
     justify-content: var(--display-center);
@@ -83,15 +81,15 @@
 }
 
 .sectionseventh {
-    background-color: #FCFCFD;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    justify-content: var(--display-center);
+    background-color: var(--grayish-color);
+    flex-direction: var(--flex-direction-column);
 }
 
 @media screen and (min-width:1230px) {
     .sectionfirst {
-        flex-direction: row;
+        flex-direction: var(--flex-direction-row);
     }
 }

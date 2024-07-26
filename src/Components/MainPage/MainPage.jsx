@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import './MainPage.css';
 import 'aos/dist/aos.css';
+import '../Common/Root.css';
 import { useTranslation } from 'react-i18next';
 import Events from './MainPage-Events/Events.jsx';
 import React, { useState, useEffect } from 'react';
