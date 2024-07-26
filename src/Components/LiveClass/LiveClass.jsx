@@ -1,7 +1,8 @@
-import React from 'react'
-import './LiveClass.css'
-import LiveClassImg from '../../assets/liveclass.jpg'
-import CountDown from '../MainPage/MainPage-CountDown/CountDown'
+import './LiveClass.css';
+import React from 'react';
+import '../Common/Root.css';
+import LiveClassImg from '../../assets/liveclass.jpg';
+import CountDown from '../MainPage/MainPage-CountDown/CountDown';
 
 const LiveClass = () => {
   return (
