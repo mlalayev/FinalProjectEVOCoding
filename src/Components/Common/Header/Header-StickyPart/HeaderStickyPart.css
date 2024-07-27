@@ -1,3 +1,26 @@
+  /* Progress Bar Start */
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.1); /* Background of the progress bar container */
+    z-index: 1000; /* Make sure it appears above other elements */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the visibility */
+  }
+
+  .progress-bar-container.visible {
+    opacity: 1; /* Show when visible */
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: var(--main-blue-color); /* Color of the progress */
+    transition: width 0.2s ease-out; /* Smooth transition for the progress bar */
+  }
+  /* Progress Bar End */
 .header-lower {
     height: 70px;
     max-width: 360px;
@@ -8,6 +31,8 @@
     position: var(--position-relative);
     align-items: var(--display-center);
     justify-content: var(--display-space-between);
+    transition: top 0.3s ease;
+    position: var(--position-relative);
 }
 
 .logo {
@@ -108,11 +133,6 @@
     transform: rotate(180deg);
 }
 
-.header-lower {
-    transition: top 0.3s ease;
-    position: var(--position-relative);
-}
-
 .header-lower::before {
     left: 0;
     content: "";
@@ -139,8 +159,11 @@
     width: var(--vw-100) !important;
     position: var(--position-fixed);
     background-color: var(--white-color);
+    transform: translateY(0);
 }
-
+.header-lower.hide{
+    transform: translateY(-100%);
+}
 @media screen and (min-width:800px) {
     .header-lower {
         max-width: 700px;

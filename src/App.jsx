@@ -21,6 +21,7 @@ import BecomeTeacher from './Components/BecomeaTeacher/BecomeTeacher.jsx';
 import MyProfile from './Components/MyProfile/MyProfile.jsx';
 import ContactUs from './Components/ContactUs/ContactUs.jsx';
 import LiveClass from './Components/LiveClass/LiveClass.jsx';
+import AnimatedCursor from 'react-animated-cursor';
 
 
 
@@ -28,6 +29,28 @@ import LiveClass from './Components/LiveClass/LiveClass.jsx';
 
 function App() {
   return (
+    <>
+    <AnimatedCursor
+      innerSize={25}
+      outerSize={40}
+      color='0, 0, 255'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={3}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link'
+      ]}
+    />
     <Router>
       <I18nextProvider i18n={i18n}>
         <Routes>
@@ -163,6 +186,7 @@ function App() {
         </Routes>
       </I18nextProvider>
     </Router>
+    </>
   );
 }
 

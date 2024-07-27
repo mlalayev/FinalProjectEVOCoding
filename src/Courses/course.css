@@ -212,7 +212,7 @@ body{
     .inputSearch p{
         position: absolute;
         left: 260px;
-        bottom:16px;
+        bottom:10px;
     }
 
     /* cards */

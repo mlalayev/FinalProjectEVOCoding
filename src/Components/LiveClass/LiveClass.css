@@ -1,15 +1,15 @@
-.ThreeSectionContainerBodys {
+.LiveClassContainerBodys {
     width: var(--percent-100);
     height: var(--percent-100);
     margin-bottom: var(--vh-5);
+    margin-top: var(--vh-5);
     display: var(--display-flex);
     align-items: var(--display-center);
     font-family: var(--Open-font-family);
-    margin: var(--percent-0) var(--auto);
     justify-content: var(--display-center);
 }
 
-.ThreeSectionContainer {
+.LiveClassContainer {
     overflow: var(--hidden);
     grid-template-rows: 785px;
     border-radius: var(--8-px);
@@ -17,93 +17,93 @@
     min-width: var(--percent-100);
     grid-template-columns: 767px 379px;
     margin: var(--percent-0) var(--auto);
-    background-color: var(--white-color);
     justify-content: var(--display-center);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.ThreeSectionContainer .left-section {
+.LiveClassContainer .left-section {
     flex: 1;
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
 }
 
-.ThreeSectionContainer .image-section {
+.LiveClassContainer .image-section {
     flex: 1;
     overflow: var(--hidden);
 }
 
-.ThreeSectionContainer .image-section img {
+.LiveClassContainer .image-section img {
     height: var(--auto);
     width: var(--percent-100);
 }
 
-.ThreeSectionContainer .text-section {
+.LiveClassContainer .text-section {
     color: #555;
     font-size: 0.9em;
     padding: var(--20-px);
 }
 
-.ThreeSectionContainer .text-section p {
+.LiveClassContainer .text-section p {
     font-size: var(--16-px);
     line-height: var(--30-px);
     margin-bottom: var(--16-px);
     color: var(--text-gray-color);
 }
 
-.ThreeSectionContainer .details-section {
+.LiveClassContainer .details-section {
     flex: 1;
-    padding: var(--20-px);
+    padding-left: var(--20-px);
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     justify-content: var(--display-space-between);
 }
-
-.ThreeSectionContainer .countdown {
+.LiveClassContainer .details-section b{
+    margin-bottom: 1vh;
+}
+.LiveClassContainer .countdown {
     margin-bottom: var(--20-px);
     display: var(--display-flex);
     justify-content: var(--display-space-between);
 }
 
-.ThreeSectionContainer .time {
+.LiveClassContainer .time {
     text-align: var(--text-center);
 }
 
-.ThreeSectionContainer .time .number {
+.LiveClassContainer .time .number {
     font-size: 2em;
     font-weight: var(--800-font-weight);
 }
 
-.ThreeSectionContainer .time .label {
+.LiveClassContainer .time .label {
     color: #666;
     font-size: 0.8em;
 }
 
-.ThreeSectionContainer .details {
+.LiveClassContainer .details {
     margin-bottom: var(--20-px);
     background-color: #f2f2f2;
 }
 
-.ThreeSectionContainer .details h2 {
+.LiveClassContainer .details h2 {
     padding: 5px 15px;
     color: var(--white-color);
     box-sizing: var(--border-sizing);
     background-color: var(--black-color);
 }
 
-.ThreeSectionContainer .details p {
+.LiveClassContainer .details p {
     padding: var(--10-px);
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
 }
 
-.ThreeSectionContainer .buttons {
+.LiveClassContainer .buttons {
     gap: var(--10-px);
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
 }
 
-.ThreeSectionContainer button {
+.LiveClassContainer button {
     font-size: 1em;
     padding: var(--10-px);
     border-radius: var(--6-px);
@@ -111,31 +111,32 @@
     cursor: var(--cursor-pointer);
 }
 
-.ThreeSectionContainer .zoom {
+.LiveClassContainer .zoom {
     color: var(--white-color);
     background-color: #b1411e;
 }
 
-.ThreeSectionContainer .web {
+.LiveClassContainer .web {
     color: var(--white-color);
     background-color: #a35739;
 }
 
-.ThreeSectionContainer .start {
+.LiveClassContainer .start {
     color: var(--white-color);
     background-color: var(--twitter-blue);
 }
 
 @media (max-width: 767px) {
-    .ThreeSectionContainer {
+    .LiveClassContainer {
         grid-template-columns: 1fr;
+        padding: 0 80px;
     }
 
-    .ThreeSectionContainer .left-section {
+    .LiveClassContainer .left-section {
         order: 1;
     }
 
-    .ThreeSectionContainer .details-section {
+    .LiveClassContainer .details-section {
         order: 2;
     }
 }

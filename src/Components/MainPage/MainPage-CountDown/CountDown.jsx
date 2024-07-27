@@ -1,11 +1,10 @@
 import AOS from 'aos';
-import '../../Common/Root.css'
+import '../../Common/Root.css';
 import './CountDown.css';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from 'react';
 
-
-function CountDown() {
+function CountDown({ textColor = 'blue', bgColor = 'transparent', borderTop = true, width = "width" }) {
 
     useEffect(() => {
         AOS.init({
@@ -32,29 +31,31 @@ function CountDown() {
     const minutes = Math.floor((time % (60 * 60)) / 60);
     const seconds = Math.floor(time % 60);
 
-
     return (
         <div
             data-aos="fade-right"
-            className="countdowntimer">
-            <div>
-                <p className='blue'>{days}</p>
+            className="countdowntimer"
+            style={{
+                borderTop: borderTop ? '1px solid var(--main-blue-line-color)' : 'none'
+            }}>
+            <div style={{backgroundColor: bgColor, width: width }}>
+                <p style={{ color: textColor}}>{days}</p>
                 <p className='text-gray'>Days</p>
             </div>
-            <div>
-                <p className='blue'>{hours}</p>
+            <div style={{backgroundColor: bgColor, width: width }}>
+                <p style={{ color: textColor }}>{hours}</p>
                 <p className='text-gray'>Hours</p>
             </div>
-            <div>
-                <p className='blue'>{minutes}</p>
+            <div style={{backgroundColor: bgColor, width: width }}>
+                <p style={{ color: textColor }}>{minutes}</p>
                 <p className='text-gray'>Minutes</p>
             </div>
-            <div>
-                <p className='blue'>{seconds}</p>
+            <div style={{backgroundColor: bgColor, width: width }}>
+                <p style={{ color: textColor }}>{seconds}</p>
                 <p className='text-gray'>Seconds</p>
             </div>
         </div>
-    )
+    );
 }
 
 export default CountDown;

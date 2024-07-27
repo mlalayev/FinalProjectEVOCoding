@@ -26,21 +26,21 @@ const Course = () => {
     <main className="course">
       <div className="home-course">
         <Link to={'/'} style={{ textDecoration: 'none' }}>
-          <p style={{ color: '#ACACAC', cursor: 'pointer' }}>{t('home')}</p>
+          <p style={{ color: '#ACACAC', cursor: 'pointer' }}>{t('Home')}</p>
         </Link>
         <p style={{ marginTop: '7px' }}><MdNavigateNext /></p>
-        <p>{t('allCourses')}</p>
+        <p>{t('All courses')}</p>
       </div>
 
       <div className="search">
-        <h1>{t('allCourses')}</h1>
+        <h1>{t('All Courses')}</h1>
         <div className="search-right">
           <div className="inputSearch">
             <input
               type="text"
               name="text"
               id="text"
-              placeholder={t('searchPlaceholder')}
+              placeholder={t('search')}
               style={{ paddingLeft: '20px' }}
               onChange={(e) => setSearch(e.target.value)}
             />

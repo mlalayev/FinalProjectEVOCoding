@@ -28,14 +28,14 @@ const View = () => {
                 </Link>
                 <p style={{ marginTop: '7px' }}>{<MdNavigateNext />}</p>
 
-                <p style={{ color: '#ACACAC', cursor: 'pointer' }}> All courses</p>
+                <p style={{ color: '#ACACAC', cursor: 'pointer' }}> {t('view.All')}</p>
 
                 <p style={{ marginTop: '7px' }}>{<MdNavigateNext />}</p>
 
-                <p style={{ color: '#ACACAC', cursor: 'pointer' }}>Computer Science</p>
+                <p style={{ color: '#ACACAC', cursor: 'pointer' }}>{t("view.computer")}</p>
 
                 <p style={{ marginTop: '7px' }}>{<MdNavigateNext />}</p>
-                <p>Software Development</p>
+                <p>{t('view.software')}</p>
             </div>
 
             <div className="view_card">
@@ -46,7 +46,7 @@ const View = () => {
                                 <img src={photo} alt="" />
                             </div>
                             <div className="up_info">
-                                <p>Instructure</p>
+                                <p>{t('view.Instructure')}</p>
                                 <h3>Adam Smith</h3>
                             </div>
                         </div>
@@ -57,13 +57,13 @@ const View = () => {
                                  />
                             </div>
                             <div className="up_info">
-                                <p>Catogery</p>
-                                <h3>Computer Science</h3>
+                                <p>{t("view.Catogery")}</p>
+                                <h3>{t('view.Computer')}</h3>
                             </div>
                         </div>
                     </div>
                     <div className="card_middle">
-                        <h1>Software Development</h1>
+                        <h1>{t('view.software')}</h1>
                     </div>
                     <div className="card_down">
                         <div className="down_icon">
@@ -131,22 +131,22 @@ const View = () => {
                 <div className='info_left_down'>
                      <div className="left_up">
                         <div className="up_select">
-                            <h2>Overview</h2>
+                            <h2>{t("view.Overview")}</h2>
                         </div>
                         <div className="up_select">
-                            <h2>Curriculum</h2>
+                            <h2>{t("view.Curriculum")}</h2>
                         </div>
                         <div className="up_select">
-                            <h2>Instructor</h2>
+                            <h2>{t("view.Instructor")}</h2>
                         </div>
                         <div className="up_select">
-                            <h2 >FAQs</h2>
+                            <h2 >{t("view.FAQs")}</h2>
                         </div>
                      </div>
 
                      <div className="left_down">
-                         <p>Fusi absolutam contra licentiam contenti verba tu solebat callido anteponebas positum amicos moriare praestantia disputare philosophi affectus turpe sapientis plebem</p>
-                         <p>Gestiret expetenda hoc ennius conveniat defecerit subito</p>
+                         <p>{t("view.fusi")}</p>
+                         <p>{t("view.gess")}</p>
                     </div>
                    
                 </div>
@@ -161,7 +161,7 @@ const View = () => {
                         <h1>$ 120</h1>
                     </div>
                     <div className="info_btn">
-                        <Link to={'/view/buyNow'} style={{width:'80%'}}><button>Buy Now</button></Link>
+                        <Link to={'/view/buyNow'} style={{width:'80%'}}><button>{t("view.buy")}</button></Link>
                     </div>
                     <div className="info_up">
                         <h2>Featured Review</h2>
@@ -170,8 +170,7 @@ const View = () => {
                         <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/>
                     </div>
                     <div className="info_text">
-                        <p>Aperiendum doctorum agimus perspexerit isti verborumne duas illi cupiditatum 
-                        democritus haberent luci facillimum inventoribus eriperes</p>
+                        <p>{t("view.text")}</p>
                     </div>
                 </div>
             </div>

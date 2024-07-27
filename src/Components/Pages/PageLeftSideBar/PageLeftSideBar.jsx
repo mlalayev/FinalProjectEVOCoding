@@ -1,9 +1,10 @@
 import React from 'react';
 import './PageLeftSideBar.css'
+import PagesHeaderProps from '../AboutUs/Onesection/PagesHeaderProps';
 
 const PageLeftSideBar = () => {
   return (
-    <div>PageLeftSideBar</div>
+    <PagesHeaderProps title = "Page Left Sidebar"/>
   )
 }
 
