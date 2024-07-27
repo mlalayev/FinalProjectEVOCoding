@@ -1,6 +1,6 @@
-// Dashboard.js
-import React from 'react';
 import './DashBoard.css';
+import React from 'react';
+import '../../Common/Root.css';
 
 function DashBoard() {
     return (

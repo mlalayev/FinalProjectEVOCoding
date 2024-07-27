@@ -1,12 +1,12 @@
-// Sidebar.js
-import React from 'react';
 import './Sidebar.css';
-import { FaChevronRight } from "react-icons/fa";
+import React from 'react';
+import '../../Common/Root.css';
+import { IoLogOut } from "react-icons/io5";
 import { FaBookOpen } from "react-icons/fa6";
+import { IoMdSettings } from "react-icons/io";
+import { FaChevronRight } from "react-icons/fa";
 import { FaPuzzlePiece } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
-import { IoLogOut } from "react-icons/io5";
 
 const Sidebar = () => {
   return (

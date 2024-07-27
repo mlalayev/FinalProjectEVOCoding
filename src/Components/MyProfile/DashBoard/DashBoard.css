@@ -1,19 +1,19 @@
 .dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
     flex: 1;
-    justify-content: space-around;
     height: 500px;
+    padding: var(--20-px);
+    display: var(--display-flex);
+    flex-wrap: var(--flex-wrap-wrap);
+    justify-content: var(--display-space-around);
 }
 
 .dahboard-card {
-    background-color: var(--white-color);
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
     height: 150px;
-    text-align: center;
+    margin: var(--10-px);
+    padding: var(--20-px);
+    border-radius: var(--6-px);
     flex-basis: calc(33% - 40px);
+    text-align: var(--text-center);
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
 }
