@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import eventsData from "./eventsData.json";
 import { useTranslation } from "react-i18next";
+import PagesHeaderProps from "../../AboutUs/Onesection/PagesHeaderProps";
 
 const EventsCard = ({ avatarSrc, date, title, time, location, description }) => {
   const { t, i18n } = useTranslation();
@@ -60,6 +61,8 @@ const EventsTwoSection = () => {
   }, []);
 
   return (
+    <>
+    <PagesHeaderProps title = "Events"/>
     <div className="EventsTwoSectionContainer">
       <div className="EventsTwoSectionTextpart" data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2>{t('events.title')}</h2>
@@ -81,6 +84,7 @@ const EventsTwoSection = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

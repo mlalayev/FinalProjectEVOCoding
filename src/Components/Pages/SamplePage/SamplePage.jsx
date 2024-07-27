@@ -1,9 +1,10 @@
 import React from 'react';
 import './SamplePage.css'
+import PagesHeaderProps from '../AboutUs/Onesection/PagesHeaderProps';
 
 const SamplePage = () => {
   return (
-    <div>SamplePage</div>
+    <PagesHeaderProps title = "Sample Page"/>
   )
 }
 

@@ -3,11 +3,14 @@ import React from 'react';
 import '../Common/Root.css';
 import LiveClassImg from '../../assets/liveclass.jpg';
 import CountDown from '../MainPage/MainPage-CountDown/CountDown';
+import PagesHeaderProps from '../Pages/AboutUs/Onesection/PagesHeaderProps';
 
 const LiveClass = () => {
   return (
-    <div className="ThreeSectionContainerBodys">
-    <div className="ThreeSectionContainer">
+    <>
+    <PagesHeaderProps title = "Live Class"/>
+    <div className="LiveClassContainerBodys">
+    <div className="LiveClassContainer">
   <div className="left-section">
     <div className="image-section">
       <img src={LiveClassImg} alt="Toplantı Görseli" />
@@ -32,7 +35,12 @@ const LiveClass = () => {
     </div>
   </div>
   <div className="details-section">
-  <b><CountDown/></b>
+  <b><CountDown
+  textColor="white"
+  bgColor="black" 
+  borderTop={false}  
+  width= "90px"
+  /></b>
     <div className="details">
       <h2>Detaylar</h2>
       <p>
@@ -63,6 +71,7 @@ const LiveClass = () => {
   </div>
 </div>
 </div>
+</>
   )
 }
 
