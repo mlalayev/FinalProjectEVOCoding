@@ -31,7 +31,6 @@ const Course = () => {
         <p style={{ marginTop: '7px' }}><MdNavigateNext /></p>
         <p>{t('All courses')}</p>
       </div>
-
       <div className="search">
         <h1>{t('All Courses')}</h1>
         <div className="search-right">
@@ -50,7 +49,6 @@ const Course = () => {
           <p className="icon"><TfiMenuAlt /></p>
         </div>
       </div>
-
       {data.filter((item) => {
         return search.toLowerCase() === '' ? item : item.skill.en.toLowerCase().includes(search.toLowerCase());
       }).map((item) => (
@@ -96,7 +94,7 @@ const Course = () => {
             </div>
             <div className="card_price">
               <p>{item.price}</p>
-              <Link to={'/view'}><button>{t('viewMore')}</button></Link>
+              <Link to={'/view'}><button>{t('View More')}</button></Link>
             </div>
           </div>
         </div>
