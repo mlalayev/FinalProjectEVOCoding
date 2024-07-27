@@ -3,7 +3,7 @@
     display: var(--display-flex);
     margin-top: var(--percent-0);
     justify-content: var(--display-space-between);
-    border-top: 1px solid var(--main-blue-line-color);
+    gap: 2px;
 }
 
 .countdowntimer div {

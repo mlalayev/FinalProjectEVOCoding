@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
 import instructorsData from './instructors.json';
+import PagesHeaderProps from "../../AboutUs/Onesection/PagesHeaderProps";
 
 const InstructorTwoSection = () => {
   const { t, i18n } = useTranslation();
@@ -24,6 +25,8 @@ const InstructorTwoSection = () => {
   }, []);
 
   return (
+    <>
+    <PagesHeaderProps title = "Instructor"/>
     <div className="InstructorTwoSectionContainer">
       <div className="InstructorTwoSectionTextPart" data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2>{t('instructor.textone')}</h2>
@@ -49,6 +52,7 @@ const InstructorTwoSection = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
