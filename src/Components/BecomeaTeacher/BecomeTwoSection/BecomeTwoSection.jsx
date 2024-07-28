@@ -4,8 +4,11 @@ import '../../Common/Root.css';
 import "./BecomeTwoSection.css";
 import React, { useEffect } from "react";
 import { FaBookmark } from "react-icons/fa";
+import PagesHeaderProps from "../../Pages/AboutUs/Onesection/PagesHeaderProps";
+import { useTranslation } from "react-i18next";
 
 const BecomeTwoSection = () => {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     Aos.init({
       offset: 120,
@@ -16,6 +19,7 @@ const BecomeTwoSection = () => {
   }, []);
   return (
     <>
+    <PagesHeaderProps title = {t('header.becomeateacher')} />
     <div className="BecomeTwoSectionContainer">
       <div className="BecomeTwoSectionBody" data-aos="zoom-in">
       <div className="notification">

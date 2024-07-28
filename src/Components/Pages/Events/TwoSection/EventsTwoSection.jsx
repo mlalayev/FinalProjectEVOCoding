@@ -62,7 +62,7 @@ const EventsTwoSection = () => {
 
   return (
     <>
-    <PagesHeaderProps title = "Events"/>
+    <PagesHeaderProps title = {t('pages.events')}/>
     <div className="EventsTwoSectionContainer">
       <div className="EventsTwoSectionTextpart" data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2>{t('events.title')}</h2>
