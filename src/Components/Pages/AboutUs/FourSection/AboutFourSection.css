@@ -9,8 +9,8 @@
 }
 
 .AboutFourSectionText {
-    margin-bottom: 1.5rem;
     line-height: 50px;
+    margin-bottom: 1.5rem;
     width: calc(222px * 4 + 30px * 3);
     
 }
