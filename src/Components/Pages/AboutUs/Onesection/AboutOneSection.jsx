@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutOneSection.css";
+import '../../../Common/Root.css';
 import { FaAngleRight } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next';
 
