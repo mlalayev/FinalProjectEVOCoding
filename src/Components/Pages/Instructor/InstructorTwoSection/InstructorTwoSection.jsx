@@ -26,7 +26,7 @@ const InstructorTwoSection = () => {
 
   return (
     <>
-    <PagesHeaderProps title = "Instructor"/>
+    <PagesHeaderProps title = {t('pages.instructor')}/>
     <div className="InstructorTwoSectionContainer">
       <div className="InstructorTwoSectionTextPart" data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2>{t('instructor.textone')}</h2>
