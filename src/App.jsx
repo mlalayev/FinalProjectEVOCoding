@@ -30,27 +30,6 @@ import AnimatedCursor from 'react-animated-cursor';
 function App() {
   return (
     <>
-    <AnimatedCursor
-      innerSize={25}
-      outerSize={40}
-      color='0, 0, 255'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={3}
-      clickables={[
-        'a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',
-        '.link'
-      ]}
-    />
     <Router>
       <I18nextProvider i18n={i18n}>
         <Routes>
