@@ -4,8 +4,11 @@ import '../../Common/Root.css';
 import "./BecomeTwoSection.css";
 import React, { useEffect } from "react";
 import { FaBookmark } from "react-icons/fa";
+import PagesHeaderProps from "../../Pages/AboutUs/Onesection/PagesHeaderProps";
+import { useTranslation } from "react-i18next";
 
 const BecomeTwoSection = () => {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     Aos.init({
       offset: 120,
@@ -16,80 +19,47 @@ const BecomeTwoSection = () => {
   }, []);
   return (
     <>
-    <div className="BecomeTwoSectionContainer">
+    <PagesHeaderProps title = {t('header.becomeateacher')} />
       <div className="BecomeTwoSectionBody" data-aos="zoom-in">
       <div className="notification">
-        <span>
-          Please <a href="#">login</a> to send your request!
+        <span>  
+          Hesabınız varsa <a href="signup">daxil olun</a> 
         </span>
        <div className="ribbon"><i><FaBookmark /></i></div>
       </div>
       </div>
-      
-      <div className="BecomeTwoSectionForm">
-<div className="BecomeTwoSectionFormContainer">
-  <div className="form-container login-container" data-aos="zoom-in-left">
-    <form action="#">
-      <h2>Login</h2>
-      <label htmlFor="login-username">Username or email *</label>
-      <input
-        type="text"
-        id="login-username"
-        placeholder="Email or username"
-        required
-      />
-      <label htmlFor="login-password">Password *</label>
-      <input
-        type="password"
-        id="login-password"
-        placeholder="Password"
-        required
-      />
-      <div className="remember-me">
-        <input type="checkbox" id="remember-me" required/>
-        <label htmlFor="remember-me">Remember me</label>
+      <section className="become-teacher">
+  <div className="container">
+    <h2>{t('becomeateacher.containerhead')}</h2>
+    <p>
+    {t('becomeateacher.containertitle')}
+    </p>
+    <form action="#" method="post">
+      <div className="form-group">
+        <label htmlFor="name">{t('becomeateacher.formname')}</label>
+        <input type="text" id="name" name="name" required />
       </div>
-      <button type="submit">Login</button>
-      <a href="#" className="forgot-password">
-        Lost your password?
-      </a>
-
+      <div className="form-group">
+        <label htmlFor="email">{t('becomeateacher.formemail')}</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div className="form-group">
+        <label htmlFor="experience">{t('becomeateacher.formexperience')}</label>
+        <textarea
+          id="experience"
+          name="experience"
+          rows={4}
+          required
+          defaultValue={""}
+        />
+      </div>
+      <button type="submit" className="submit-btn">
+      {t('becomeateacher.formapply')}
+      </button>
     </form>
   </div>
+</section>
 
-  <div className="form-container register-container" data-aos="zoom-in-right">
-    <form action="#">
-      <h2>Register</h2>
-      <label htmlFor="register-email">Email address *</label>
-      <input type="email" id="register-email" placeholder="Email" required />
-      <label htmlFor="register-username">Username *</label>
-      <input
-        type="text"
-        id="register-username"
-        placeholder="Username"
-        required
-      />
-      <label htmlFor="register-password">Password *</label>
-      <input
-        type="password"
-        id="register-password"
-        placeholder="Password"
-        required
-      />
-      <label htmlFor="register-confirm-password">Confirm Password *</label>
-      <input
-        type="password"
-        id="register-confirm-password"
-        placeholder="Password"
-        required
-      />
-      <button type="submit">Register</button>
-    </form>
-  </div>
-</div>
-
-</div>
-    </div>
 
 
 

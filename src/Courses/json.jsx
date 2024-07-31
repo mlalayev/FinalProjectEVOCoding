@@ -1,7 +1,7 @@
 export const data=[
    {
        "id": 1,
-       "price": "&160",
+       "price": "$160",
        "course_name": {
            "en": "Software Development",
            "ru": "Разработка программного обеспечения",
@@ -17,7 +17,7 @@ export const data=[
    },
    {
        "id": 2,
-       "price": "&140",
+       "price": "$140",
        "course_name": {
            "en": "Business",
            "ru": "Бизнес",
@@ -33,7 +33,7 @@ export const data=[
    },
    {
        "id": 3,
-       "price": "&100",
+       "price": "$100",
        "course_name": {
            "en": "Arts & Humanities",
            "ru": "Искусства и гуманитарные науки",
@@ -49,7 +49,7 @@ export const data=[
    },
    {
        "id": 4,
-       "price": "&150",
+       "price": "$150",
        "course_name": {
            "en": "Algebra & Calculus",
            "ru": "Алгебра и математический анализ",
@@ -81,7 +81,7 @@ export const data=[
    },
    {
        "id": 6,
-       "price": "&100",
+       "price": "$100",
        "course_name": {
            "en": "Arts & Humanities",
            "ru": "Искусства и гуманитарные науки",
@@ -97,7 +97,7 @@ export const data=[
    },
    {
        "id": 7,
-       "price": "&190",
+       "price": "$190",
        "course_name": {
            "en": "Data Analysis",
            "ru": "Анализ данных",
@@ -113,7 +113,7 @@ export const data=[
    },
    {
        "id": 8,
-       "price": "&150",
+       "price": "$150",
        "course_name": {
            "en": "Evo Coding",
            "ru": "Эво кодирование",

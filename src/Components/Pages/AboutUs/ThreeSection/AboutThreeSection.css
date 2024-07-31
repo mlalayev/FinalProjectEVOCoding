@@ -1,99 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .AboutThreeSectionContainer {
     height: 89vh;
-    background-color: #F8F9FA;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-around;
+    gap: var(--30-px);
     padding-top: 50px;
+    background-color: #F8F9FA;
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    flex-direction: var(--flex-direction-column);
+    justify-content: var(--display-space-around);
 }
 
 .AboutThreeSectionContainer .AboutThreeSectionUp {
-    width: 55vw;
-    display: flex;
-    align-items: center;
     gap: 60px;
+    width: var(--vw-55);
+    display: var(--display-flex);
+    align-items: var(--display-center);
 }
 
 .AboutThreeSectionUpLeft {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: var(--16-px);
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
 }
 
 .AboutThreeSectionUpLeft h2 {
-    font-weight: 400;
-    font-size: 40px;
+    font-size: var(--40-px);
+    font-weight: var(--400-font-weight);
 }
 
 .AboutThreeSectionUpLeft p {
-    font-style: italic;
     color: gray;
     max-width: 27vw;
+    font-style: italic;
 }
 
 .AboutThreeSectionUpLeft button {
-    color: #2572ff;
-    border: 2px solid #7aa8fd;
     width: 180px;
     height: 45px;
-    font-size: 16px;
-    font-weight: 500;
     border-radius: 50px;
-    background-color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
+    font-size: var(--16-px);
+    border: 2px solid #7aa8fd;
+    color: var(--main-blue-color);
+    cursor: var(--cursor-pointer);
+    font-weight: var(--500-font-weight);
+    transition: var(--transition-medium);
+    background-color: var(--white-color);
 }
 
 .AboutThreeSectionUpLeft button a {
-    text-decoration: none;
-    color: #2572ff;
-    transition: 0.5s;
+    color: var(--main-blue-color);
+    transition: var(--transition-medium);
+    text-decoration: var(--display-none);
 }
 
 .AboutThreeSectionUpLeft button:hover {
-    background-color: #2572ff;
+    background-color: var(--main-blue-color);
 }
 
 .AboutThreeSectionUpLeft button:hover a {
-    color: white;
+    color: var(--white-color);
 }
 
 .AboutThreeSectionUpRight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    flex-direction: var(--flex-direction-column);
 }
 
 .AboutThreeSectionUpRight img {
-    width: 20vw;
+    width: var(--vw-20);
 }
 
 @media only screen and (max-width: 767px) {
     .AboutThreeSectionContainer{
-        height: 100%;
-        padding-bottom: 10vh;
+        height: var(--percent-100);
+        padding-bottom: var(--vh-10);
     }
     .AboutThreeSectionContainer .AboutThreeSectionUp {
-        flex-direction: column-reverse;
+        flex-direction: var(--flex-direction-column-reverse);
     }
 
     .AboutThreeSectionUpLeft h2 {
-        font-size: 35px;
+        font-size: var(--36-px);
     }
 
     .AboutThreeSectionUpLeft p {
-        font-size: 14px;
-        max-width: 45vw;
+        font-size: var(--14-px);
+        max-width: var(--vw-45);
     }
     .AboutThreeSectionUpRight img{
-        width: 30vw;
+        width: var(--vw-30);
     }
 }
