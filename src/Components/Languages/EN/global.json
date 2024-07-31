@@ -130,7 +130,13 @@
         "formname": "Name:",
         "formemail": "E-Mail Address:",
         "formexperience": "Your experience:",
-        "formapply": "Apply"
+        "formapply": "Apply",
+        "loginhere": "Login Here!..",
+        "loginputone": "Username",
+        "loginputtwo": "Password",
+        "loginputthree": "SIGN IN",
+        "forgotpassword": "Forgot password?"
+
     }
 
 

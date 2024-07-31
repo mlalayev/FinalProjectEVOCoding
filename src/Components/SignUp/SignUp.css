@@ -7,7 +7,6 @@
   background-image: url(https://photoshop-kopona.com/uploads/posts/2019-02/1550441916_32.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .SignUpContainer:before {
@@ -66,8 +65,6 @@
   opacity: 0;
 }
 
-/* MODAL */
-
 .SignUpContainer .btn-modal {
   position: absolute;
   top: 50%;
@@ -105,7 +102,6 @@
 .SignUpContainer .input-field {
   width: 85%;
   height: 55px;
-  /* background-color: var(--bg-input); */
   margin: 10px 0;
   border-radius: 55px;
   display: grid;
@@ -113,7 +109,10 @@
   padding: 0 0.4rem;
   background: #fdfbfe;
   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
-    background: #ffffff26;
+  background: #ffffff26;
+}
+.SignUpContainer .input-field:focus{
+  outline-color: #2772ff;
 }
 
 .SignUpContainer .input-field i {
@@ -121,15 +120,6 @@
   line-height: 55px;
   color: var(--input-icon);
   font-size: 1.1rem;
-}
-
-.SignUpContainer .key {
-  color: var(--key-color);
-  text-decoration: none;
-}
-
-.SignUpContainer .key:hover {
-  color: var(--pass-hover-color);
 }
 
 .SignUpContainer .pass {
@@ -299,22 +289,23 @@
 }
 
 .SignUpContainer .panel .content {
-  /* color: var(--panel-color); */
   transition: 0.9s 0.6s ease-in-out;
   color: #fff;
 }
-.SignUpContainer .panel .content button:last-child{
-    margin-left: 1vw;
-    background: none;
-    border: 2px solid white;
-    width: 130px;
-    height: 41px;
-    font-weight: 600;
-    font-size: 0.8rem;
-    border-radius: 49px;
-    color: white;
-    cursor: pointer;
+
+.SignUpContainer .panel .content button:last-child {
+  margin-left: 1vw;
+  background: none;
+  border: 2px solid #fff;
+  font-weight: 600;
+  border-radius: 49px;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  font-size: 0.7rem;
 }
+
 .SignUpContainer .panel h3 {
   font-weight: 600;
   line-height: 1;
@@ -346,8 +337,6 @@
 .SignUpContainer .right-panel .image {
   transform: translateX(800px);
 }
-
-/* ANIMATION */
 
 .SignUpContainer.sign-up-mode:before {
   transform: translate(100%, -50%);
@@ -385,8 +374,6 @@
   z-index: 2;
   opacity: 1;
 }
-
-/* KEYBOARD */
 
 .SignUpContainer .keyboard {
   position: fixed;
@@ -465,7 +452,7 @@
 /* MEDIA SCREEN */
 
 @media (max-width: 870px) {
-  .SignUpContainer{
+  .SignUpContainer {
     min-height: 800px;
     height: 100vh;
   }
@@ -525,12 +512,7 @@
     display: none;
   }
 
-  /*.image {
-        width: 200px;
-        transition: 0.9s 0.6s ease-in-out;
-    }*/
-
-    .SignUpContainer .left-panel {
+  .SignUpContainer .left-panel {
     grid-row: 1 / 2;
   }
 
@@ -569,7 +551,7 @@
 }
 
 @media (max-width: 570px) {
-    .SignUpContainer form {
+  .SignUpContainer form {
     padding: 0 1.5rem;
   }
 
@@ -605,7 +587,7 @@
 }
 
 @media (max-width: 385px) {
-    .SignUpContainer .field-icon {
+  .SignUpContainer .field-icon {
     float: right;
     margin-left: 260px;
     margin-top: -55px;
@@ -615,7 +597,7 @@
 }
 
 @media (max-width: 350px) {
-    .SignUpContainer .field-icon {
+  .SignUpContainer .field-icon {
     float: right;
     margin-left: 200px;
     margin-top: -55px;

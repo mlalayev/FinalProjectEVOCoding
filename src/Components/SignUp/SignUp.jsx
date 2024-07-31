@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { FaUser, FaLock, FaEnvelope, FaEye, FaEyeSlash } from 'react-icons/fa';
 import "./SignUp.css";
+import LogoImg from '../../assets/logo.png'
 
 const SignUp = () => {
-    const [isSignUpMode, setIsSignUpMode] = useState(false);
+  const { t } = useTranslation();
+  const [isSignUpMode, setIsSignUpMode] = useState(false);
   const [passwordType, setPasswordType] = useState('password');
   const [regPasswordType, setRegPasswordType] = useState('password');
   const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
@@ -37,43 +41,50 @@ const SignUp = () => {
       <div className="forms-container">
         <div className="signin-signup">
           <form className="sign-in-form">
-            <h2 className="title">Login Here!..</h2>
+            <img src={LogoImg} alt="" />
             <div className="input-field">
-              <i className="fas fa-user" />
+            <i><FaUser /></i>
               <input
                 type="text"
                 name="usuario"
                 autoComplete="username"
-                placeholder="Username"
+                placeholder={t('becomeateacher.loginputone')}
                 required
               />
             </div>
             <div className="input-field">
-              <i className="fas fa-lock" />
+            <i><FaLock /></i>
               <input
                 type={passwordType}
                 name="contraseña"
                 autoComplete="current-password"
-                placeholder="Password"
+                placeholder={t('becomeateacher.loginputtwo')}
                 id="id_password"
                 required
               />
-              <i
-                className={`far fa-eye${passwordType === 'text' ? '-slash' : ''}`}
-                id="togglePassword"
-                onClick={handlePasswordToggle}
-                style={{ cursor: 'pointer' }}
-              />
+              {passwordType === 'text' ? (
+                <i><FaEyeSlash
+                  id="togglePassword"
+                  onClick={handlePasswordToggle}
+                  style={{ cursor: 'pointer' }}
+                /></i>
+              ) : (
+                <i><FaEye
+                  id="togglePassword"
+                  onClick={handlePasswordToggle}
+                  style={{ cursor: 'pointer' }}
+                /></i>
+              )}
             </div>
             <a className="pass" href="#">
-              Forgot your password?
+              {t('becomeateacher.forgotpassword')}
             </a>
-            <input type="submit" value="Sign in" className="btn solid" />
+            <input type="submit" value={t('becomeateacher.loginputthree')} className="btn solid" />
           </form>
           <form className="sign-up-form">
-            <h2 className="title">Register Now!..</h2>
+            <img src={LogoImg} alt="" />
             <div className="input-field">
-              <i className="fas fa-user" />
+              <i><FaUser /></i>
               <input
                 type="text"
                 name="usuario"
@@ -83,7 +94,7 @@ const SignUp = () => {
               />
             </div>
             <div className="input-field">
-              <i className="fas fa-envelope" />
+             <i> <FaEnvelope /></i>
               <input
                 type="email"
                 name="correo"
@@ -93,7 +104,7 @@ const SignUp = () => {
               />
             </div>
             <div className="input-field">
-              <i className="fas fa-lock" />
+              <i><FaLock /></i>
               <input
                 type={regPasswordType}
                 name="contraseña"
@@ -102,12 +113,19 @@ const SignUp = () => {
                 id="id_reg"
                 required
               />
-              <i
-                className={`far fa-eye${regPasswordType === 'text' ? '-slash' : ''}`}
-                id="toggleReg"
-                onClick={handleRegPasswordToggle}
-                style={{ cursor: 'pointer' }}
-              />
+              {regPasswordType === 'text' ? (
+                <i><FaEyeSlash
+                  id="toggleReg"
+                  onClick={handleRegPasswordToggle}
+                  style={{ cursor: 'pointer' }}
+                /></i>
+              ) : (
+                <i><FaEye
+                  id="toggleReg"
+                  onClick={handleRegPasswordToggle}
+                  style={{ cursor: 'pointer' }}
+                /></i>
+              )}
             </div>
             <input
               type="submit"
