@@ -1,127 +1,133 @@
 {
-    "header": {
-        "becomeateacher": "Müəllim ol",
-        "myprofile": "Profilim",
-        "joinliveclass": "Dərsə Qoşul",
-        "home": "Əsas səhifə",
-        "allCourses": "Kurslarımız",
-        "blogClassic": "Bloq",
-        "pages": "Səhifələr",
-        "contactUs": "Bizimlə Əlaqə"
-    },
-    "footer": {
-        "popularcourses": "Populyar Kurslar",
-        "copyright": "© Müəllif Hüququ 2024 Dizayn Evo Coding Tələbələri tərəfindən edilib. Bütün hüquqlar qorunur.",
-        "firsttext": "Harry-nin tortlar bişirməsi, hunky dory mush, xoşbəxt günlər velosipedinizdə getməyə nə qədər də heyrətamizdir.",
-        "algebra": "Cəbr və Hesablama",
-        "business": "Biznes Strategiyası",
-        "computersecurity": "Kompyuter Təhlükəsizliyi və Şəbəkə",
-        "dataanalysis": "Məlumatların Təhlili",
-        "englishlearning": "İngilis Dilini Öyrənmək",
-        "musicart": "Musiqi və İncəsənət",
-        "coursecategories": "Kurs Kateqoriyaları",
-        "artshumanities": "İncəsənət və Humanitar Elmlər",
-        "businesscategory": "Biznes",
-        "computerscience": "Kompyuter Elmi",
-        "datascience": "Məlumat Elmi",
-        "languagelearning": "Dil Öyrənmə",
-        "mathlogic": "Riyaziyyat və Məntiq",
-        "quicklinks": "Sürətli Keçidlər",
-        "liveclass": "Canlı Dərs",
-        "tuitionfees": "Təhsil Haqları",
-        "termsconditions": "Şərtlər və Qaydalar",
-        "privacypolicy": "Gizlilik Siyasəti",
-        "support": "Dəstək",
-        "career": "Karyera"
-    },
-    "pages": {
-        "contactUs": "Bizimlə Əlaqə",
-        "aboutus": "Haqqımızda",
-        "events": "Hadisələr",
-        "instructor": "Təlimatçı",
-        "testimonial": "Referans",
-        "samplepage": "Nümunə Səhifə",
-        "pageleftsidebar": "Səhifənin Sol Yan Paneli",
-        "pagerightsidebar": "Səhifənin Sağ Yan Paneli",
-        "404page": "404 Səhifə"
-    },
-    "mainpage": {
-        "registrationtextone": "Qeydiyyat",
-        "registrationtexttwo": "Kursa qeydiyyat",
-        "inputtextone": "Ad",
-        "inputtexttwo": "E-poçt",
-        "inputtextthree": "Telefon",
-        "inputtextfour": "Kurs adı",
-        "buttonfirsttext": "İstifadə et",
-        "sectionsecondtexthone": "Biz Təhsil Müəssisəsi Mütəxəssisləriyik",
-        "sectionsecondtextptag": "20 İllik Təcrübə",
-        "sectionsecondtextthree": "Birinin bütün körpüldə mümkün olan tək bir bugər all dostum yalnız bir funt o cip şop arasında, bir şübhələ, fransız limonu squeezy bender zonked my lady gosh cayı var, bu spiffing yaxşı vaxt naff rüzgarı birləşdirin codswallop crikey.",
-        "callus": "Zəng edin",
-        "button": "Kursları göstər"
-    },
-    "card": {
-        "texthone": "Araşdırın bizim",
-        "texthtwo": "Populyar Kurslar",
-        "textpone": "Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!"
-    },
-    "sectionsixth": {
-        "textone": "Sizin motivasiyanız və diqqətiniz sizi ən yaxşı şəkildə öyrədəcək",
-        "texttwo": "Cack gormless gənc cinayətkar bits və bobs o nicked it mush, spiffing smashing he legged it have it codswallop.",
-        "graphicsdesign": "Qrafik Dizayn",
-        "selfdevelopment": "Özünü inkişaf etdirmək",
-        "itsoftware": "IT və Proqram təminatı"
-    },
-    "events": {
-        "title": "Gələcəkdəki Tədbirlərimiz",
-        "intro": "Cənab Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!",
-        "button": "Bütün Tədbirlərə Keçid"
-    },
-    "lastsection": {
-        "firsttext": "Tələbələr Deyir",
-        "secondtext": "Haqqımızda."
-    },
-    "category": {
-        "textone": "Kurs Kateqoriyalarını",
-        "texttwo": "Gözdən Keçirin"
-    },
-    "aboutus": {
-        "oneheader": "Varsity haqqında",
-        "onetext": "Varsity təhsil üçün Bootstrap Premium Şablonudur",
-        "onetextt": "Siz ondan müasir təhsil veb-saytınızı yaratmaq üçün istifadə edə bilərsiniz",
-        "twoheader": "Lorem ipsum dolor sit amet",
-        "twotext": "Əmək və möhtəşəm miqyasda işləmək üçün lazım olan hər şeyi seçə bilərsiniz",
-        "twobutton": "Kurslarımız",
-        "threeheader": "Lorem ipsum dolor sit amet",
-        "threetext": "Əmək və hər hansı bir möcüzə ilə işləmək mümkün deyil, adipisinq elitindən istifadə edin.",
-        "threebutton": "Bütün hadisələr",
-        "fourheader": "Komandamız",
-        "fourtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    },
-    "instructor": {
-        "textone": "Ən Yaxşı Təlimçi",
-        "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
-    },
-    "notfoundpage": {
-        "notfoundinfo": "Vay! Bir şey səhvdir.",
-        "notfoundbackhome": "Əsas səhifəyə qayıt, daha yaxşıdır."
-    },
-    "view":{
-        "home": "Esas sehife",
-        "All":"Bütün kurslar",
-        "computer":"Kompyuter elmləri",
-        "software":"Proqram təminatının inkişafı",
-         "Computer":"Kompyuter elmləri",
-         "Instructure":"Təlimat",
-         "Catogery":"kategoriya",
-         "buy":"İndi al",
-         "text":"Biz həkimlərin qapılarını açacağıq ki, bu sözlərin işığın zəiflədiyi iki ehtiras olub-olmaması, ixtiraçıları xilas etməyin ən asan yolu olub.",
-         "fusi":"Ağıllı dostların önünə qoyduğun sözlərin məzmununu müdrik xalqı rüsvay edən filosofun hisslərini mübahisə etmək üçün görkəmli ölməyə qoymağın qəti əleyhinə idim.",
-         "gess":"O, bunu təkrar etməyə çalışsa da, birdən uğursuzluğa düçar oldu",
-         "Overview" :"Ümumi baxış",
-         "Curriculum":"Kurikulum",
-         "Instructor":"Təlimatçı",
-         "FAQs":"Suallar"
-
-    }
-  
+  "header": {
+    "becomeateacher": "Müəllim ol",
+    "myprofile": "Profilim",
+    "joinliveclass": "Dərsə Qoşul",
+    "home": "Əsas səhifə",
+    "allCourses": "Kurslarımız",
+    "blogClassic": "Bloq",
+    "pages": "Səhifələr",
+    "contactUs": "Bizimlə Əlaqə"
+  },
+  "footer": {
+    "popularcourses": "Populyar Kurslar",
+    "copyright": "© Müəllif Hüququ 2024 Dizayn Evo Coding Tələbələri tərəfindən edilib. Bütün hüquqlar qorunur.",
+    "firsttext": "Harry-nin tortlar bişirməsi, hunky dory mush, xoşbəxt günlər velosipedinizdə getməyə nə qədər də heyrətamizdir.",
+    "algebra": "Cəbr və Hesablama",
+    "business": "Biznes Strategiyası",
+    "computersecurity": "Kompyuter Təhlükəsizliyi və Şəbəkə",
+    "dataanalysis": "Məlumatların Təhlili",
+    "englishlearning": "İngilis Dilini Öyrənmək",
+    "musicart": "Musiqi və İncəsənət",
+    "coursecategories": "Kurs Kateqoriyaları",
+    "artshumanities": "İncəsənət və Humanitar Elmlər",
+    "businesscategory": "Biznes",
+    "computerscience": "Kompyuter Elmi",
+    "datascience": "Məlumat Elmi",
+    "languagelearning": "Dil Öyrənmə",
+    "mathlogic": "Riyaziyyat və Məntiq",
+    "quicklinks": "Sürətli Keçidlər",
+    "liveclass": "Canlı Dərs",
+    "tuitionfees": "Təhsil Haqları",
+    "termsconditions": "Şərtlər və Qaydalar",
+    "privacypolicy": "Gizlilik Siyasəti",
+    "support": "Dəstək",
+    "career": "Karyera"
+  },
+  "pages": {
+    "contactUs": "Bizimlə Əlaqə",
+    "aboutus": "Haqqımızda",
+    "events": "Hadisələr",
+    "instructor": "Təlimatçı",
+    "testimonial": "Referans",
+    "samplepage": "Nümunə Səhifə",
+    "pageleftsidebar": "Səhifənin Sol Yan Paneli",
+    "pagerightsidebar": "Səhifənin Sağ Yan Paneli",
+    "404page": "404 Səhifə"
+  },
+  "mainpage": {
+    "registrationtextone": "Qeydiyyat",
+    "registrationtexttwo": "Kursa qeydiyyat",
+    "inputtextone": "Ad",
+    "inputtexttwo": "E-poçt",
+    "inputtextthree": "Telefon",
+    "inputtextfour": "Kurs adı",
+    "buttonfirsttext": "İstifadə et",
+    "sectionsecondtexthone": "Biz Təhsil Müəssisəsi Mütəxəssisləriyik",
+    "sectionsecondtextptag": "20 İllik Təcrübə",
+    "sectionsecondtextthree": "Birinin bütün körpüldə mümkün olan tək bir bugər all dostum yalnız bir funt o cip şop arasında, bir şübhələ, fransız limonu squeezy bender zonked my lady gosh cayı var, bu spiffing yaxşı vaxt naff rüzgarı birləşdirin codswallop crikey.",
+    "callus": "Zəng edin",
+    "button": "Kursları göstər"
+  },
+  "card": {
+    "texthone": "Araşdırın bizim",
+    "texthtwo": "Populyar Kurslar",
+    "textpone": "Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!"
+  },
+  "sectionsixth": {
+    "textone": "Sizin motivasiyanız və diqqətiniz sizi ən yaxşı şəkildə öyrədəcək",
+    "texttwo": "Cack gormless gənc cinayətkar bits və bobs o nicked it mush, spiffing smashing he legged it have it codswallop.",
+    "graphicsdesign": "Qrafik Dizayn",
+    "selfdevelopment": "Özünü inkişaf etdirmək",
+    "itsoftware": "IT və Proqram təminatı"
+  },
+  "events": {
+    "title": "Gələcəkdəki Tədbirlərimiz",
+    "intro": "Cənab Jeffrey, victoria sponge, mush spiffing super arse, matie boy smashing. Little rotter off his nut codswallop.!",
+    "button": "Bütün Tədbirlərə Keçid"
+  },
+  "lastsection": {
+    "firsttext": "Tələbələr Deyir",
+    "secondtext": "Haqqımızda."
+  },
+  "category": {
+    "textone": "Kurs Kateqoriyalarını",
+    "texttwo": "Gözdən Keçirin"
+  },
+  "aboutus": {
+    "oneheader": "Varsity haqqında",
+    "onetext": "Varsity təhsil üçün Bootstrap Premium Şablonudur",
+    "onetextt": "Siz ondan müasir təhsil veb-saytınızı yaratmaq üçün istifadə edə bilərsiniz",
+    "twoheader": "Lorem ipsum dolor sit amet",
+    "twotext": "Əmək və möhtəşəm miqyasda işləmək üçün lazım olan hər şeyi seçə bilərsiniz",
+    "twobutton": "Kurslarımız",
+    "threeheader": "Lorem ipsum dolor sit amet",
+    "threetext": "Əmək və hər hansı bir möcüzə ilə işləmək mümkün deyil, adipisinq elitindən istifadə edin.",
+    "threebutton": "Bütün hadisələr",
+    "fourheader": "Komandamız",
+    "fourtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
+  "instructor": {
+    "textone": "Ən Yaxşı Təlimçi",
+    "texttwo": "Jeffrey vay vay victoria keks dostum əla super yan gədə oğlan möhtəşəm. Kiçik dəcəl ağlını itirib boş-boş danışır.!"
+  },
+  "notfoundpage": {
+    "notfoundinfo": "Vay! Bir şey səhvdir.",
+    "notfoundbackhome": "Əsas səhifəyə qayıt, daha yaxşıdır."
+  },
+  "view": {
+    "home": "Esas sehife",
+    "All": "Bütün kurslar",
+    "computer": "Kompyuter elmləri",
+    "software": "Proqram təminatının inkişafı",
+    "Computer": "Kompyuter elmləri",
+    "Instructure": "Təlimat",
+    "Catogery": "kategoriya",
+    "buy": "İndi al",
+    "text": "Biz həkimlərin qapılarını açacağıq ki, bu sözlərin işığın zəiflədiyi iki ehtiras olub-olmaması, ixtiraçıları xilas etməyin ən asan yolu olub.",
+    "fusi": "Ağıllı dostların önünə qoyduğun sözlərin məzmununu müdrik xalqı rüsvay edən filosofun hisslərini mübahisə etmək üçün görkəmli ölməyə qoymağın qəti əleyhinə idim.",
+    "gess": "O, bunu təkrar etməyə çalışsa da, birdən uğursuzluğa düçar oldu",
+    "Overview": "Ümumi baxış",
+    "Curriculum": "Kurikulum",
+    "Instructor": "Təlimatçı",
+    "FAQs": "Suallar"
+  },
+  "becomeateacher": {
+    "containerhead": "Müəllim ol!",
+    "containertitle": "Müəllim olmaq istəyirsiniz? Bilik və təcrübənizi bölüşməklə insanları ruhlandırın! Müraciət etmək üçün aşağıdakı formanı doldurun.",
+    "formname": "Ad:",
+    "formemail": "E-poçt ünvanı:",
+    "formexperience": "Sizin təcrübəniz:",
+    "formapply": "Tətbiq et"
+  }
 }

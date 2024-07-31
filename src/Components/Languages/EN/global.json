@@ -123,6 +123,14 @@
         "Curriculum":"Curriculum",
         "Instructor":"Instructor",
         "FAQs":"FAQs"
+    },
+    "becomeateacher" : {
+        "containerhead": "Become a Teacher!",
+        "containertitle": "Do you want to be a teacher? Inspire people by sharing your knowledge and experience! Fill out the form below to apply.",
+        "formname": "Name:",
+        "formemail": "E-Mail Address:",
+        "formexperience": "Your experience:",
+        "formapply": "Apply"
     }
 
 

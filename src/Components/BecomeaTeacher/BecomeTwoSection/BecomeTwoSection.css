@@ -35,95 +35,72 @@
     position: var(--position-absolute);
 }
 
-.BecomeTwoSectionForm {
-    margin: var(--percent-0);
-    height: var(--percent-100);
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    font-family: var(--Open-font-family);
-    justify-content: var(--display-center);
+.become-teacher {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.BecomeTwoSectionFormContainer {
-    display: var(--display-flex);
-    flex-wrap: var(--flex-wrap-wrap);
-    justify-content: var(--display-center);
+.become-teacher  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.form-container {
-    background: #fff;
-    border-radius: 5px;
-    width: var(--vw-30);
-    margin: var(--20-px);
-    padding: var(--30-px);
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.become-teacher  h2 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.BecomeTwoSectionFormContainer h2 {
-    font-size: var(--24-px);
-    margin-bottom: var(--20-px);
+.become-teacher  p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-.BecomeTwoSectionFormContainer label {
-    margin: 10px 0 5px;
-    display: var(--display-block);
+.become-teacher  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="password"] {
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: calc(100% - 20px);
-    border: 1px solid #ddd;
+.become-teacher  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-.BecomeTwoSectionFormContainer button {
-    width: 100%;
-    border: none;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #007bff;
-}
-
-#inputs{
-    margin-bottom: 10px;
-}
-
-.BecomeTwoSectionFormContainer button:hover {
-    background-color: #0056b3;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.remember-me input {
-    margin-right: 5px;
-}
-
-.forgot-password {
+.become-teacher  label {
     display: block;
-    margin-top: 10px;
-    text-align: right;
-    color: #007bff;
-    text-decoration: none;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-.forgot-password:hover {
-    text-decoration: underline;
+.become-teacher  input[type="text"],
+.become-teacher  input[type="email"],
+.become-teacher  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 767px) {
+.become-teacher  textarea {
+    resize: none;
+}
 
-    .form-container {
-        width: 100%;
-    }
+.become-teacher  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.become-teacher  .submit-btn:hover {
+    background-color: #0056b3;
 }
