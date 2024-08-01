@@ -57,7 +57,11 @@
     "sectionsecondtextptag": "20 İllik Təcrübə",
     "sectionsecondtextthree": "Birinin bütün körpüldə mümkün olan tək bir bugər all dostum yalnız bir funt o cip şop arasında, bir şübhələ, fransız limonu squeezy bender zonked my lady gosh cayı var, bu spiffing yaxşı vaxt naff rüzgarı birləşdirin codswallop crikey.",
     "callus": "Zəng edin",
-    "button": "Kursları göstər"
+    "button": "Kursları göstər",
+    "days": "Gün",
+    "hours": "Saat",
+    "minutes": "Dəqiqə",
+    "seconds": "Saniyə"
   },
   "card": {
     "texthone": "Araşdırın bizim",
@@ -128,6 +132,20 @@
     "formname": "Ad:",
     "formemail": "E-poçt ünvanı:",
     "formexperience": "Sizin təcrübəniz:",
-    "formapply": "Tətbiq et"
+    "formapply": "Tətbiq et",
+    "loginhere": "Buraya daxil olun!..",
+    "loginputone": "İstifadəçi adı",
+    "loginputtwo": "Parol",
+    "loginputthree": "Daxil olun",
+    "forgotpassword": "Şifrəni unutmusan?",
+    "createacc": "Hesab yarat",
+    "havntacc": "Hesabınız yoxdur?",
+    "havacc": "Artıq hesabınız var?",
+    "createtitle": "İnsanları izləmək və nəşrləri bəyənmək üçün indi öz hesabınızı yaradın",
+    "logtitle": "Bildirişlərinizi görmək və sevimli şəkillərinizi yerləşdirmək üçün daxil olun",
+    "register": "Qeydiyyatdan keç",
+    "backmain": "Əsas Səhifə",
+    "weakpass": "Parolunuz zəifdir. Daha güclü paroldan istifadə edin.",
+    "strongpass": "Parolunuz güclüdür!"
   }
 }

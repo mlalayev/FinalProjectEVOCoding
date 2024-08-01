@@ -1,10 +1,19 @@
-// Dashboard.js
-import React from 'react';
+import React, { useEffect } from "react";
 import './DashBoard.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function DashBoard() {
+    useEffect(() => {
+        Aos.init({
+          offset: 120,
+          duration: 2000,
+          easing: "ease",
+          once: true,
+        });
+      }, []);
     return (
-        <div className="dashboard">
+        <div className="dashboard" data-aos="zoom-in-right">
             <div className="dahboard-card">
                 <p>Enrolled Courses</p>
                 <h3>0</h3>

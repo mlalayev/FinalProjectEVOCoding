@@ -59,7 +59,9 @@
 .SignUpContainer form.sign-in-form {
   z-index: 2;
 }
-
+.SignUpContainer form.sign-in-form img{
+  margin-bottom: 2vh;
+}
 .SignUpContainer form.sign-up-form {
   z-index: 1;
   opacity: 0;
@@ -324,9 +326,17 @@
   width: 130px;
   height: 41px;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
-
+.SignUpContainer .btn.transparent a button{
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
 .SignUpContainer .image {
   width: 90%;
   margin-top: 10px;
@@ -374,7 +384,9 @@
   z-index: 2;
   opacity: 1;
 }
-
+.SignUpContainer.sign-up-mode form.sign-up-form img{
+  margin-bottom: 2vh;
+}
 .SignUpContainer .keyboard {
   position: fixed;
   left: 0;
@@ -584,6 +596,19 @@
     position: relative;
     z-index: 1;
   }
+}
+.SignUpContainer .password-warning {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.SignUpContainer .password-warning.weak {
+  color: #ff0000;
+}
+
+.SignUpContainer .password-warning.strong {
+  color: #00ff00; 
 }
 
 @media (max-width: 385px) {

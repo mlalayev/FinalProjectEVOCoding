@@ -23,13 +23,13 @@ const BecomeTwoSection = () => {
       <div className="BecomeTwoSectionBody" data-aos="zoom-in">
       <div className="notification">
         <span>  
-          Hesabınız varsa <a href="signup">daxil olun</a> 
+        {t('becomeateacher.havacc')} <a href="signup">{t('becomeateacher.loginputthree')}</a> 
         </span>
        <div className="ribbon"><i><FaBookmark /></i></div>
       </div>
       </div>
       <section className="become-teacher">
-  <div className="container">
+  <div className="container" data-aos="zoom-in">
     <h2>{t('becomeateacher.containerhead')}</h2>
     <p>
     {t('becomeateacher.containertitle')}

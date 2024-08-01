@@ -57,7 +57,11 @@
         "sectionsecondtextptag": "20 Years of Experience",
         "sectionsecondtextthree": "Do one absolutely bladdered say bugger all mate only a quid that chip shop amongst, cuppa excuse my French lemon squeezy bender zonked my lady gosh cup of tea, have it spiffing good time naff wind up codswallop crikey.",
         "callus": "Call Us",
-        "button": "View Courses"
+        "button": "View Courses",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
     },
     "card": {
         "texthone": "Explore our",
@@ -134,8 +138,19 @@
         "loginhere": "Login Here!..",
         "loginputone": "Username",
         "loginputtwo": "Password",
-        "loginputthree": "SIGN IN",
-        "forgotpassword": "Forgot password?"
+        "loginputthree": "Sign In",
+        "forgotpassword": "Forgot password?",
+        "createacc": "Create Account",
+        "havntacc": "You don't have an account?",
+        "havacc": "Already have an account?",
+        "createtitle": "Create your account right now to follow people and like publications",
+        "logtitle": "Login to see your notifications and post your favorite photos",
+        "register": "Register",
+        "backmain": "Back Main Page",
+        "weakpass": "Your password is weak. Use a stronger one.",
+        "strongpass": "Your password is strong!"
+
+
 
     }
 
