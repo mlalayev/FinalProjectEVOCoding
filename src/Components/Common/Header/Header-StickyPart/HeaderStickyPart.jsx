@@ -79,9 +79,6 @@ function HeaderStickyPart() {
               {openSubMenu === 'home' && (
                 <div className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
                   <a href="/" className='submenu-item'>Homepage Style One</a>
-                  <a href="/" className='submenu-item'>Homepage Style Two</a>
-                  <a href="/" className='submenu-item'>Homepage Style Three</a>
-                  <a href="/" className='submenu-item'>Homepage Style Four</a>
                 </div>
               )}
             </div>
@@ -93,10 +90,6 @@ function HeaderStickyPart() {
               {openSubMenu === 'all-courses' && (
                 <div className={`submenu-desktop ${openSubMenu === 'all-courses' ? 'open' : ''}`}>
                   <a href="/all-courses" className='submenu-item'>Course List</a>
-                  <a href="/all-courses" className='submenu-item'>Course Grid</a>
-                  <a href="/all-courses" className='submenu-item'>Course Slider</a>
-                  <a href="/all-courses" className='submenu-item'>Course Details</a>
-                  <a href="/all-courses" className='submenu-item'>Course Category</a>
                 </div>
               )}
             </div>
@@ -108,9 +101,6 @@ function HeaderStickyPart() {
               {openSubMenu === 'blog-classic' && (
                 <div className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                   <a href="/blog" className='submenu-item'>Blog Grid</a>
-                  <a href="/blog" className='submenu-item'>Blog Slider</a>
-                  <a href="/blog" className='submenu-item'>Blog Left Sidebar</a>
-                  <a href="/blog" className='submenu-item'>Blog Right Sidebar</a>
                 </div>
               )}
             </div>
@@ -124,10 +114,6 @@ function HeaderStickyPart() {
                   <a href="/aboutus" className='submenu-item'>{t('pages.aboutus')}</a>
                   <a href="/events" className='submenu-item'>{t('pages.events')}</a>
                   <a href="/instructor" className='submenu-item'>{t('pages.instructor')}</a>
-                  <a href="/aboutus" className='submenu-item'>{t('pages.testimonial')}</a>
-                  <a href="/instructor" className='submenu-item'>{t('pages.samplepage')}</a>
-                  <a href="/events" className='submenu-item'>{t('pages.pageleftsidebar')}</a>
-                  <a href="/events" className='submenu-item'>{t('pages.pagerightsidebar')}</a>
                   <a href="/404page" className='submenu-item'>{t('pages.404page')}</a>
                 </div>
               )}
@@ -142,9 +128,6 @@ function HeaderStickyPart() {
             {openSubMenu === 'home' && (
               <ul className={`submenu-desktop ${openSubMenu === 'home' ? 'open' : ''}`}>
                 <li><a href="/">Homepage Style One</a></li>
-                <li><a href="/">Homepage Style Two</a></li>
-                <li><a href="/">Homepage Style Three</a></li>
-                <li><a href="/">Homepage Style Four</a></li>
               </ul>
             )}
           </li>
@@ -153,10 +136,6 @@ function HeaderStickyPart() {
             {openSubMenu === 'all-courses' && (
               <ul className='submenu-desktop'>
                 <li><a href="/all-courses">Course List</a></li>
-                <li><a href="/all-courses">Course Grid</a></li>
-                <li><a href="/all-courses">Course Slider</a></li>
-                <li><a href="/all-courses">Course Details</a></li>
-                <li><a href="/all-courses">Course Category</a></li>
               </ul>
             )}
           </li>
@@ -165,9 +144,6 @@ function HeaderStickyPart() {
             {openSubMenu === 'blog-classic' && (
               <ul className={`submenu-desktop ${openSubMenu === 'blog-classic' ? 'open' : ''}`}>
                 <li><a href="/blog">Blog Grid</a></li>
-                <li><a href="/blog">Blog Slider</a></li>
-                <li><a href="/blog">Blog Left Sidebar</a></li>
-                <li><a href="/blog">Blog Right Sidebar</a></li>
               </ul>
             )}
           </li>
@@ -178,10 +154,6 @@ function HeaderStickyPart() {
                 <li><a href="/aboutus">{t('pages.aboutus')}</a></li>
                 <li><a href="/events">{t('pages.events')}</a></li>
                 <li><a href="/instructor">{t('pages.instructor')}</a></li>
-                <li><a href="/testimonial">{t('pages.testimonial')}</a></li>
-                <li><a href="/samplepage">{t('pages.samplepage')}</a></li>
-                <li><a href="/pageleftsidebar">{t('pages.pageleftsidebar')}</a></li>
-                <li><a href="/pagerightsidebar">{t('pages.pagerightsidebar')}</a></li>
                 <li><a href="/404page">{t('pages.404page')}</a></li>
               </ul>
             )}
