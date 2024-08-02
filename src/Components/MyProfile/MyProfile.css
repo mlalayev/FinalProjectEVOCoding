@@ -8,6 +8,10 @@
     padding: 80px var(--20-px) var(--percent-0) var(--20-px);
 }
 
+.sidebar ul li{
+    cursor: pointer;
+}
+
 .app-myprofile::before{
     content: "";
     z-index: -1;

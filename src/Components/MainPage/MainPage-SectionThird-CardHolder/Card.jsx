@@ -86,7 +86,8 @@ const CardSlider = ({ interval = 8000 }) => {
             color: "gray",
             margin: "20px 0"
           }}
-          className='text-gray margin-btm text-center'>{t('card.textpone')}</p>
+          className='text-gray margin-btm text-center'>{t('card.textpone')}
+        </p>
 
         <div
           data-aos="fade-right"

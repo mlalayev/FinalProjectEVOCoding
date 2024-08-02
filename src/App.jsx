@@ -29,7 +29,6 @@ function App() {
   useEffect(() => {
     const load = async () => {
       try {
-        // Simulate delay
         await new Promise(resolve => setTimeout(resolve, 1000));
       } finally {
         setLoading(false); 

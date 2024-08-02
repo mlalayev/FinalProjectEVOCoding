@@ -6,10 +6,10 @@ import ContactUsTwoSection from './ContactUsTwoSection/ContactUsTwoSection';
 
 const ContactUs = () => {
   return (
-    <>
-   <ContactUsOneSection/>
-   <ContactUsTwoSection/>
-   </>
+    <div className="contuctusdiv">
+      <ContactUsOneSection />
+      <ContactUsTwoSection />
+    </div>
   )
 }
 
