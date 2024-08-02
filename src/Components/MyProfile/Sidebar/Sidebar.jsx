@@ -10,7 +10,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar" data-aos="zoom-out-down">
       <ul>
         <li className="sidebar-item active">
           <FaBookOpen className='left-icon' /><p>Courses</p><FaChevronRight className='icon' />

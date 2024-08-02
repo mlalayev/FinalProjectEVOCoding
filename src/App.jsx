@@ -21,34 +21,53 @@ import ContactUs from './Components/ContactUs/ContactUs.jsx';
 import LiveClass from './Components/LiveClass/LiveClass.jsx';
 import Layout from './Components/Layout/Layout.jsx';
 import SignUp from './Components/SignUp/SignUp.jsx';
+import Loader from './Components/Loader/Loader.jsx'; 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        // Simulate delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      } finally {
+        setLoading(false); 
+      }
+    };
+
+    load();
+  }, []);
 
   return (
     <>
       <Router>
         <I18nextProvider i18n={i18n}>
-          <Routes>
-            <Route path="/" element={<Layout><MainPage /></Layout>} />
-            <Route path='/aboutus' element={<Layout><AboutUs /></Layout>} />
-            <Route path='/events' element={<Layout><Events /></Layout>} />
-            <Route path='/instructor' element={<Layout><Instructor /></Layout>} />
-            <Route path='/testimonial' element={<Layout><Testimonial /></Layout>} />
-            <Route path='/samplepage' element={<Layout><SamplePage /></Layout>} />
-            <Route path='/pageleftsidebar' element={<Layout><PageLeftSideBar /></Layout>} />
-            <Route path='/pagerightsidebar' element={<Layout><PageRightSideBar /></Layout>} />
-            <Route path='/404page' element={<Layout><NotFoundPage /></Layout>} />
-            <Route path='/blog' element={<Layout><Blog /></Layout>} />
-            <Route path='/contactus' element={<Layout><ContactUs /></Layout>} />
-            <Route path='/all-courses' element={<Layout><Course /></Layout>} />
-            <Route path='/view' element={<Layout><View /></Layout>} />
-            <Route path='/view/buyNow' element={<Layout><Buy /></Layout>} />
-            <Route path='/becomeateacher' element={<Layout><BecomeTeacher /></Layout>} />
-            <Route path='/myprofile' element={<Layout><MyProfile /></Layout>} />
-            <Route path='/liveclass' element={<Layout><LiveClass /></Layout>} />
-            <Route path='/signup' element={<SignUp/>} />
-            <Route path='*' element={<Layout><NotFoundPage /></Layout>} />
-          </Routes>
+          {loading ? (
+            <Loader /> 
+          ) : (
+            <Routes>
+              <Route path="/" element={<Layout><MainPage /></Layout>} />
+              <Route path='/aboutus' element={<Layout><AboutUs /></Layout>} />
+              <Route path='/events' element={<Layout><Events /></Layout>} />
+              <Route path='/instructor' element={<Layout><Instructor /></Layout>} />
+              <Route path='/testimonial' element={<Layout><Testimonial /></Layout>} />
+              <Route path='/samplepage' element={<Layout><SamplePage /></Layout>} />
+              <Route path='/pageleftsidebar' element={<Layout><PageLeftSideBar /></Layout>} />
+              <Route path='/pagerightsidebar' element={<Layout><PageRightSideBar /></Layout>} />
+              <Route path='/404page' element={<Layout><NotFoundPage /></Layout>} />
+              <Route path='/blog' element={<Layout><Blog /></Layout>} />
+              <Route path='/contactus' element={<Layout><ContactUs /></Layout>} />
+              <Route path='/all-courses' element={<Layout><Course /></Layout>} />
+              <Route path='/view' element={<Layout><View /></Layout>} />
+              <Route path='/view/buyNow' element={<Layout><Buy /></Layout>} />
+              <Route path='/becomeateacher' element={<Layout><BecomeTeacher /></Layout>} />
+              <Route path='/myprofile' element={<Layout><MyProfile /></Layout>} />
+              <Route path='/liveclass' element={<Layout><LiveClass /></Layout>} />
+              <Route path='/signup' element={<SignUp />} />
+              <Route path='*' element={<Layout><NotFoundPage /></Layout>} />
+            </Routes>
+          )}
         </I18nextProvider>
       </Router>
     </>

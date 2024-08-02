@@ -1,63 +1,78 @@
-.bodys {
-    align-items: center;
-    background-color: rgba(0, 0, 255, 0.651);
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    margin: 0;
-    overflow: hidden;
-    z-index: 9999999999999999;
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loader .jimu-primary-loading:before,
+.loader .jimu-primary-loading:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.loader .jimu-primary-loading:before {
+  left: -19.992px;
+}
+
+.loader .jimu-primary-loading:after {
+  left: 19.992px;
+  -webkit-animation-delay: 0.32s !important;
+  animation-delay: 0.32s !important;
+}
+
+.loader .jimu-primary-loading:before,
+.loader .jimu-primary-loading:after,
+.loader .jimu-primary-loading {
+  background: #076fe5;
+  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  width: 13.6px;
+  height: 32px;
+}
+
+.loader .jimu-primary-loading {
+  text-indent: -9999em;
+  margin: auto;
+  position: absolute;
+  right: calc(50% - 6.8px);
+  top: calc(50% - 16px);
+  -webkit-animation-delay: 0.16s !important;
+  animation-delay: 0.16s !important;
+}
+
+@-webkit-keyframes loading-keys-app-loading {
+
+  0%,
+  80%,
+  100% {
+    opacity: .75;
+    box-shadow: 0 0 #076fe5;
+    height: 32px;
   }
-  
-  .kinetic {
-    height: 80px;
-    position: relative;
-    width: 80px;
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #076fe5;
+    height: 40px;
   }
-  
-  .kinetic::after,
-  .kinetic::before {
-    animation: rotateA 2s linear infinite 0.5s;
-    border: 50px solid transparent;
-    border-bottom-color: #fff;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
+}
+
+@keyframes loading-keys-app-loading {
+
+  0%,
+  80%,
+  100% {
+    opacity: .75;
+    box-shadow: 0 0 #076fe5;
+    height: 32px;
   }
-  
-  .kinetic::before {
-    animation: rotateB 2s linear infinite;
-    transform: rotate(90deg);
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #076fe5;
+    height: 40px;
   }
-  
-  @keyframes rotateA {
-    0%,
-    25% {
-      transform: rotate(0deg);
-    }
-    50%,
-    75% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes rotateB {
-    0%,
-    25% {
-      transform: rotate(90deg);
-    }
-    50%,
-    75% {
-      transform: rotate(270deg);
-    }
-    100% {
-      transform: rotate(450deg);
-    }
-  }
-  
+}

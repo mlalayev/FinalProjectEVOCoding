@@ -3,9 +3,12 @@ import "./Loader.css";
 
 const Loader = () => {
   return (
-    <div class="bodys">
-      <div class="kinetic"></div>
-    </div>
+    <div className="loader">
+  <div className="justify-content-center jimu-primary-loading" />
+</div>
+
+
+
   );
 };
 

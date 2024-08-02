@@ -3,8 +3,10 @@ import '../../Common/Root.css';
 import './CountDown.css';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 
 function CountDown({ textColor = 'blue', bgColor = 'transparent', borderTop = true, width = "width" }) {
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         AOS.init({
@@ -40,19 +42,19 @@ function CountDown({ textColor = 'blue', bgColor = 'transparent', borderTop = tr
             }}>
             <div style={{backgroundColor: bgColor, width: width }}>
                 <p style={{ color: textColor}}>{days}</p>
-                <p className='text-gray'>Days</p>
+                <p className='text-gray'>{t('mainpage.days')}</p>
             </div>
             <div style={{backgroundColor: bgColor, width: width }}>
                 <p style={{ color: textColor }}>{hours}</p>
-                <p className='text-gray'>Hours</p>
+                <p className='text-gray'>{t('mainpage.hours')}</p>
             </div>
             <div style={{backgroundColor: bgColor, width: width }}>
                 <p style={{ color: textColor }}>{minutes}</p>
-                <p className='text-gray'>Minutes</p>
+                <p className='text-gray'>{t('mainpage.minutes')}</p>
             </div>
             <div style={{backgroundColor: bgColor, width: width }}>
                 <p style={{ color: textColor }}>{seconds}</p>
-                <p className='text-gray'>Seconds</p>
+                <p className='text-gray'>{t('mainpage.seconds')}</p>
             </div>
         </div>
     );
