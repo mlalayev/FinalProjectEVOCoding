@@ -14,6 +14,7 @@ function StickyHeader() {
         <div
         style={{
             maxWidth:"1350px",
+            padding:"0 90px",
             margin:"0 auto"
         }}
         className={`header-upper ${isSticky ? 'hidden' : ''}`}>
