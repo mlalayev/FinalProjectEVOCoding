@@ -27,7 +27,7 @@ header {
 
     .header-upper-up {
         gap: var(--40-px);
-        width: var(--percent-100);
+        /* width: var(--percent-100); */
         display: var(--display-flex);
         align-items: var(--display-center);
         justify-content: var(--display-center);
