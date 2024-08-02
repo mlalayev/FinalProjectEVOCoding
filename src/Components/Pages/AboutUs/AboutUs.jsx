@@ -8,12 +8,12 @@ import AboutFourSection from './FourSection/AboutFourSection.jsx';
 
 const AboutUs = () => {
   return (
-    <>
+    <div className="aboutusdiv">
    <AboutOneSection/>
    <AboutTwoSection/>
    <AboutThreeSection/>
    <AboutFourSection/>
-   </>
+   </div>
   )
 }
 

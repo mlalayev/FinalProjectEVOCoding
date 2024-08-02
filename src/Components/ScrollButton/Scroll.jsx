@@ -2,6 +2,7 @@ import './Scroll.css';
 import React, { useState, useEffect } from 'react';
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
 import { TbCircleChevronsUp } from "react-icons/tb";
+import { TiArrowUpOutline } from "react-icons/ti";
 
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +33,7 @@ const ScrollButton = () => {
   return (
     <div className={`scroll-to-top ${isVisible ? 'show' : 'hide'}`}>
       <button className="scroll-button" onClick={scrollToTop}>
-        <i className='scroll-button-i'><TbCircleChevronsUp size={45} /></i>
+        <i className='scroll-button-i'><TiArrowUpOutline size={30} /></i>
       </button>
     </div>
   );
