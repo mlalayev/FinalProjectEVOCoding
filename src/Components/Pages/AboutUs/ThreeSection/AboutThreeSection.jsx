@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
-import "./AboutThreeSection.css";
-import AboutThreeSectionUpRightImg from '../../../../assets/Pages/AboutUs/AboutThreeSectionUp.png'
-import AboutThreeSectionUpRightImgTwo from '../../../../assets/Pages/AboutUs/three.png'
 import Aos from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
+import "./AboutThreeSection.css";
+import '../../../Common/Root.css';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import AboutThreeSectionUpRightImgTwo from '../../../../assets/Pages/AboutUs/three.png';
+import AboutThreeSectionUpRightImg from '../../../../assets/Pages/AboutUs/AboutThreeSectionUp.png';
 
 
 const AboutThreeSection = () => {

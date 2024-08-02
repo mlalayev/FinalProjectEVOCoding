@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import './DashBoard.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import './DashBoard.css';
+import '../../Common/Root.css';
 
 function DashBoard() {
     useEffect(() => {

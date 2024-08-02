@@ -1,38 +1,38 @@
 .app-myprofile{
-    display: flex;
-    background-color: #f8f9fa;
     max-width: 1250px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-    padding: 80px 20px 0 20px;
+    height: var(--percent-100);
+    display: var(--display-flex);
+    position: var(--position-relative);
+    margin: var(--percent-0) var(--auto);
+    background-color: var(--grayish-color);
+    padding: 80px var(--20-px) var(--percent-0) var(--20-px);
 }
 
 .app-myprofile::before{
     content: "";
-    position: absolute;
-    background-color: #f8f9fa;
-    width: 100vw;
-    height: 100%;
     z-index: -1;
-    bottom: 0;
-    right: 0;
+    width: var(--vw-100);
+    right: var(--percent-0);
+    bottom: var(--percent-0);
+    height: var(--percent-100);
+    position: var(--position-absolute);
+    background-color: var(--grayish-color);
 }
 
 .app-myprofile::after{
     content: "";
-    position: absolute;
-    background-color: #f8f9fa;
-    width: 100vw;
-    height: 100%;
     z-index: -1;
-    bottom: 0;
-    left: 0;
+    width: var(--vw-100);
+    left: var(--percent-0);
+    bottom: var(--percent-0);
+    height: var(--percent-100);
+    position: var(--position-absolute);
+    background-color: var(--grayish-color);
 }
 
 @media screen and (max-width:800px){
     .app-myprofile{
-        flex-direction: column;
+        flex-direction: var(--flex-direction-column);
     }
 
     .sidebar ul li{
@@ -40,14 +40,14 @@
     }
 
     .sidebar ul{
-        display: flex;
+        display: var(--display-flex);
     }
 
     .sidebar ul p{
-        display: none;
+        display: var(--display-none);
     }
 
     .sidebar .icon{
-        display: none;
+        display: var(--display-none);
     }
 }

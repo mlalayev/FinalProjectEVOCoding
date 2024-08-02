@@ -89,7 +89,11 @@ const Categories = ({ interval = 8000, language = 'en' }) => {
                     </div>
                 ))}
             </div>
-            <div className="dots-categories">
+            <div
+            style={{
+                margin:"40px 0 0 0"
+            }}
+            className="dots-categories">
                 {Array.from({ length: Math.ceil(CategoriesData.length / visibleCards) }).map((_, index) => (
                     <span
                         key={index}
